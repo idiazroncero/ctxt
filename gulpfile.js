@@ -36,6 +36,11 @@ function watchAll() {
     return  watch(['src/html/**/*.njk', 'src/scss/**/*.scss'], parallel(renderHTML, compileCSS));
 }
 
+function copyAssets() {
+    return  src(['src/fonts/**/*', 'src/images/**/*'], { base : 'src'})
+            .pipe(dest('docs'))
+}
+
 function server() {
     browserSync.init({
         server: {
@@ -54,5 +59,6 @@ exports.watchCSS = watchCSS;
 exports.watchHTML = watchHTML;
 exports.watch = watchAll;
 exports.server = server;
+exports.copyAssets = copyAssets;
 
-exports.default = parallel(renderHTML, compileCSS);
+exports.default = parallel(renderHTML, compileCSS, copyAssets);
