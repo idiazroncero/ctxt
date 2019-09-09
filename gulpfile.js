@@ -14,13 +14,13 @@ function renderHTML() {
                 path: ['src/html']
             }))
             // output files in app folder
-            .pipe(dest('dist'));
+            .pipe(dest('docs'));
 }
 
 function compileCSS() {
     return  src('src/scss/style.scss')
             .pipe(sass().on('error', sass.logError))
-            .pipe(dest('dist/css'))
+            .pipe(dest('docs/css'))
             .pipe(browserSync.stream());
 }
 
@@ -39,7 +39,7 @@ function watchAll() {
 function server() {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./docs"
         }
     });
 
