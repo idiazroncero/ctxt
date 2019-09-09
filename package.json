@@ -1,0 +1,29 @@
+{
+  "name": "ctxt",
+  "version": "0.0.0",
+  "description": "Front-end para ctxt.es y ctxt.cat desarrollado por idiaz.roncero",
+  "main": "index.js",
+  "author": "Nacho Díaz",
+  "license": "MIT",
+  "scripts" : {
+    "serve" : "yarn gulp server",
+    "watch": "yarn gulp watch",
+    "build": "yarn gulp",
+    "css:watch" : "yarn gulp watchCSS",
+    "css:build" : "yarn gulp compileCSS",
+    "html:watch" : "yarn gulp watchHTML",
+    "html:build" : "yarn gulp renderHTML"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3",
+    "huesos": "^1.3.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-connect": "^5.7.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.12.0"
+  }
+}
