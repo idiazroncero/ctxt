@@ -46,3 +46,8 @@ Tenga en cuanta que estos scripts pueden ser ejecutados con `npx` (includo con n
 
 - `yarn/npx html:watch` - Observa cambios en `src/html`
 - `yarn/npx html:build` - Compila `src/html/pages` a `docs`
+
+
+## Algunas consideraciones sobre el HTML
+
+- El HTML generado se encuentra envuelto en un `<div>` con `id="main-wrapper"` que permite un ancho máximo de 1500px y establece un padding aldedor de todo el código. Basta eliminar este `id` para conseguir una web fullwidth y alineada con los márgenes del viewport.

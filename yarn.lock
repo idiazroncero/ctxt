@@ -1765,9 +1765,9 @@ http-signature@~1.2.0:
     sshpk "^1.7.0"
 
 huesos@^1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/huesos/-/huesos-1.3.3.tgz#688e40507c9f24c653692c72ad48ca8596dcb5cb"
-  integrity sha512-j+l2LIAYvZ6W8fr/iGcVW56Ebc4GTKenDCwTbRUyM5EDuerWQ9+zMuGkauKQSPql5/c9tLQnTSSHNjasbmFw+g==
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/huesos/-/huesos-1.3.4.tgz#fb8adeb7fb2166ee91d691846b264e4eac147f03"
+  integrity sha512-XU8vJgtE/M5zeYji0QnQxWdjJ4Skg/Qimj4+xF5mMDWuRKHxhE8OUqKxRcf4kfTjD39KgGz1jz9nAkl5bHYfGQ==
   dependencies:
     breakpoint-sass "^2.7.1"
     family.scss "^1.0.8"
@@ -2918,9 +2918,9 @@ pseudomap@^1.0.2:
   integrity sha1-8FKijacOYYkX7wqKw0wa5aaChrM=
 
 psl@^1.1.24:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/psl/-/psl-1.3.1.tgz#d5aa3873a35ec450bc7db9012ad5a7246f6fc8bd"
-  integrity sha512-2KLd5fKOdAfShtY2d/8XDWVRnmp3zp40Qt6ge2zBPFARLXOGUf2fHD5eg+TV/5oxBtQKVhjUaKFsAaE4HnwfSA==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/psl/-/psl-1.4.0.tgz#5dd26156cdb69fa1fdb8ab1991667d3f80ced7c2"
+  integrity sha512-HZzqCGPecFLyoRj5HLfuDSKYTJkAfB5thKBIkRHtGjWwY7p1dAyveIbXIq4tO0KYfDF2tHqPUgY9SDnGm00uFw==
 
 pump@^2.0.0:
   version "2.0.1"

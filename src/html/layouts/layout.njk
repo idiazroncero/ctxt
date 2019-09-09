@@ -9,6 +9,44 @@
 
     {% block content %} {% endblock %}
 
-    {# <script src="js/main.js"></script> #}
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <script>
+      $(function(){
+        var isMenuOpen = false;
+
+        $('.menu-toggle').click(function(){
+          var $menu = $(this).siblings('.main-menu__list');
+          var newHeight = 'initial';
+
+          $menu.toggleClass('main-menu__list--open');
+
+          isMenuOpen = !isMenuOpen;
+
+          if(isMenuOpen) {
+
+            var $submenus = $menu.find('ul');
+            var menuHeight = $menu.outerHeight();
+            var taller = 0;
+
+            $submenus.each(function(){
+              if($(this).outerHeight() > taller) {
+                taller = $(this).outerHeight()
+              }
+            })
+
+            newHeight = parseInt(taller + menuHeight);
+          }
+
+            $('.main-menu').css({
+              height: newHeight
+            })
+
+        })
+      })
+    </script>
   </body>
 </html>

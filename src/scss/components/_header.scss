@@ -1,0 +1,122 @@
+// Colors
+$bg-color: #fff;
+$dot-color: $gray4;
+
+// Dimensions
+$dot-size: 1px;
+$dot-space: 6px;
+
+
+
+.header__inner {
+    border: 1px solid $black;
+    border-top-width: $gutter / 2;
+    margin-top: -$gutter / 2;
+}
+
+.header__tagline {
+    font-family: $avenir;
+    text-transform: uppercase;
+    color: $white;
+    line-height:1;
+    
+    p {
+        background-color: $black;
+        display:inline-block;
+        padding: $gutter / 8 $gutter / 2;
+        margin:0;
+        position:relative;
+        font-weight:bold;
+        @include ritmo-font-size($h6-font-size);
+        letter-spacing: $letter-spacing * 3;
+        
+        &:before {
+            content:"";
+            position:absolute;
+            top:0;
+            left:100%;
+            width:0;
+            height:0;
+            border-color: transparent transparent $black $black;
+            border-width: ( $h6-font-size * $vertical-rhythm ) / 2;
+            border-style:solid;
+        }
+    }
+}
+
+.header__top {
+    display:flex;
+    justify-content:space-between;
+    padding: $gutter;
+
+    background:
+        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+        $dot-color;
+    
+    background-size: $dot-space $dot-space;
+}
+
+.header__issue,
+.header__logo,
+.header__user {
+    width: 33%;
+}
+
+.header__nav {
+    border-top: 1px solid $black;
+}
+
+.header__logo {
+    max-height: 125px;
+    text-align:center;
+    img {
+        max-height:100%;
+        width: auto;
+    }
+}
+
+.header__user {
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+
+    .button {
+        line-height:1;
+    }
+}
+
+.header__cart {
+    margin: 0 0 0 ritmo(1);
+    @include kill-link();
+    .icon {
+        margin:0;
+        display: block;
+        height: ritmo(4);
+    }
+}
+
+
+// ISSUE
+
+.issue {
+    background-color: $white;
+    padding: 0 $gutter / 8;
+    display:inline-block;
+
+    button,p {
+        display:inline-block;
+        vertical-align:top;
+        padding:0;
+    }
+}
+
+.issue__current {
+    font-family: $futura;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.issue__number {
+    color: get-color(base, primary);
+}

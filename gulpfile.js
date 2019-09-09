@@ -49,6 +49,7 @@ function server() {
     });
 
     watchCSS()
+    watchHTML()
     watch('src/html/**/*.njk').on('change', browserSync.reload);
 };
 

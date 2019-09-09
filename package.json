@@ -5,14 +5,14 @@
   "main": "index.js",
   "author": "Nacho Díaz",
   "license": "MIT",
-  "scripts" : {
-    "serve" : "yarn gulp server",
+  "scripts": {
+    "serve": "yarn gulp server",
     "watch": "yarn gulp watch",
     "build": "yarn gulp",
-    "css:watch" : "yarn gulp watchCSS",
-    "css:build" : "yarn gulp compileCSS",
-    "html:watch" : "yarn gulp watchHTML",
-    "html:build" : "yarn gulp renderHTML"
+    "css:watch": "yarn gulp watchCSS",
+    "css:build": "yarn gulp compileCSS",
+    "html:watch": "yarn gulp watchHTML",
+    "html:build": "yarn gulp renderHTML"
   },
   "dependencies": {
     "gulp": "^4.0.2",
