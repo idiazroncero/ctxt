@@ -3,7 +3,9 @@ const   { series, parallel, src, dest, watch } = require('gulp'),
         nunjucksRender = require('gulp-nunjucks-render'),
         debug = require('gulp-debug'),
         sass = require('gulp-sass'),
-        browserSync = require('browser-sync').create();
+        browserSync = require('browser-sync').create(),
+        postcss = require('gulp-postcss'),
+        postcssPresetEnv = require('postcss-preset-env');
 
 // TASKS
 function renderHTML() {
@@ -26,6 +28,14 @@ function compileCSS() {
 
 function watchCSS() {
     return  watch('src/scss/**/*.scss', compileCSS);
+}
+
+function postCSS(){
+    return  src('docs/css/*.css')
+            .pipe(
+                postcss( [postcssPresetEnv()] )
+            )
+            .pipe(dest('docs/css'));
 }
 
 function watchHTML() {
@@ -57,9 +67,10 @@ function server() {
 exports.renderHTML = renderHTML;
 exports.compileCSS = compileCSS;
 exports.watchCSS = watchCSS;
+exports.postCSS = postCSS;
 exports.watchHTML = watchHTML;
 exports.watch = watchAll;
 exports.server = server;
 exports.copyAssets = copyAssets;
 
-exports.default = parallel(renderHTML, compileCSS, copyAssets);
+exports.default = parallel(renderHTML, compileCSS, postCSS, copyAssets);

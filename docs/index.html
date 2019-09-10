@@ -100,7 +100,7 @@
             </ul>
         </li>
         <li>
-            <a href="#">Viñetas/media</a>
+            <a href="#">Viñetas</a>
             <ul>
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Segundo item</a></li>
@@ -147,35 +147,10 @@
 
     <script>
       $(function(){
-        var isMenuOpen = false;
 
         $('.menu-toggle').click(function(){
-          var $menu = $(this).siblings('.main-menu__list');
-          var newHeight = 'initial';
-
-          $menu.toggleClass('main-menu__list--open');
-
-          isMenuOpen = !isMenuOpen;
-
-          if(isMenuOpen) {
-
-            var $submenus = $menu.find('ul');
-            var menuHeight = $menu.outerHeight();
-            var taller = 0;
-
-            $submenus.each(function(){
-              if($(this).outerHeight() > taller) {
-                taller = $(this).outerHeight()
-              }
-            })
-
-            newHeight = parseInt(taller + menuHeight);
-          }
-
-            $('.main-menu').css({
-              height: newHeight
-            })
-
+          var $menu = $(this).parent('.main-menu');
+          $menu.toggleClass('main-menu--open');
         })
       })
     </script>

@@ -1,16 +1,31 @@
+$scale-menu: 1000px;
+$hide-menu: 750px;
+
 .main-menu {
     margin:0;
     display:flex;
     align-items:flex-start;
+    position:relative;
 }
 
 .main-menu__list {
-    @include inline-list();
-    display:flex;
-    justify-content:space-between;
+
+    margin-bottom:0;
     flex:1;
+    margin-right: -1px;
+    margin-left: -1px;
+    display:none;
+    padding:0;
+
+    @include breakpoint($hide-menu) {
+        display:flex;
+        margin-right: -1px;
+    }
+
     > li {
-        flex: 0 0 12.5%; // 100% / 8;
+        @include breakpoint($hide-menu) {
+            flex: 0 0 (100% / 7); // 100% / 7;
+        }
         white-space:nowrap;
         margin:0;
         text-align:center;
@@ -18,6 +33,11 @@
         text-transform: uppercase;
         > a {
             @include kill-link();
+
+            @include breakpoint($hide-menu $scale-menu) {
+                @include ritmo-font-size($h6-font-size, 4);
+            }
+
             display:block;
             padding: $gutter / 4 $gutter / 2;
         }
@@ -31,28 +51,37 @@
     }
     // Second-level menu
     ul {
-        display:none;
-        position:absolute;
-        top:100%;
-        top: calc(100% - 1px);
-        background-color: $white;
-        left:-1px;
-        right:-1px;
-        border: 1px solid $black;
-        border-top: none;
+        @include breakpoint($hide-menu) {
+            display:none;
+            position:absolute;
+            top:100%;
+            top: calc(100% - 1px);
+            background-color: $white;
+            left:-1px;
+            right:-1px;
+            border: 1px solid $black;
+            border-top: none;
+        }
         padding: $gutter / 2;
         margin:0;
         > li {
             display:block;
-            text-align:left;
             text-transform: initial;
             white-space:normal;
             margin-bottom: ritmo(2);
             line-height: 1;
+            @include breakpoint($hide-menu) {
+                text-align:left;
+            }
             &:last-child {
                 margin-bottom:0;
             }
             a {
+                @include breakpoint($hide-menu $medium) {
+                    @include ritmo-font-size($h6-font-size);
+                    line-height: 1;
+                }
+
                 @include set-link(
                     $gray,
                     $gray,
@@ -66,22 +95,51 @@
     }
 }
 
-.main-menu__list--open {
-    background-color: $white;
-    ul {
+.main-menu--open {
+    .main-menu__list {
         display:block;
-        border:0;
-        background-color: transparent;
+        @include breakpoint($hide-menu) {
+            display:flex;
+        }
+        background-color: $white;
+        margin-right: 0;
+        margin-left: 0;
+        padding-bottom: ritmo(2);
+        ul {
+            position:relative;
+            top:0;
+            left:0;
+            right:0;
+            display:block;
+            border:0;
+            background-color: transparent;
+        }
+        > li {
+            &:hover {
+                border:none;
+            }
+            > a {
+                @include breakpoint($hide-menu) {
+                    text-align: left;
+                }
+            }
+        }
     }
-    > li {
-        &:hover {
-            border:none;
+
+    .menu-toggle {
+        position:absolute;
+        top:0;
+        left:0;
+        z-index: 9;
+        @include breakpoint($hide-menu) {
+            position:static;
         }
     }
 }
 
 .menu-toggle {
     padding:ritmo(0.5) $gutter / 2;
+
     .icon {
         margin:0;
         height: ritmo(5);
