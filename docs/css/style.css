@@ -2036,6 +2036,9 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-top: 1.5rem;
   margin-bottom: 0; }
 
+.header {
+  margin: 1.5rem 0; }
+
 .header__inner {
   border-top: 0.75rem solid #000;
   margin-top: -0.75rem; }
@@ -2057,16 +2060,31 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     line-height: 18px;
     line-height: 1.125rem;
     letter-spacing: 0.15em; }
-    .header__tagline p:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 100%;
-      width: 0;
-      height: 0;
-      border-color: transparent transparent #000 #000;
-      border-width: 0.56264rem;
-      border-style: solid; }
+    @media (min-width: 415px) {
+      .header__tagline p:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border-color: transparent transparent #000 #000;
+        border-width: 0.56264rem;
+        border-style: solid; } }
+  .header__tagline a {
+    text-decoration: none; }
+    .header__tagline a:hover, .header__tagline a:focus {
+      text-decoration: none; }
+  .header__tagline a, .header__tagline a:link {
+    color: #fff; }
+  .header__tagline a:visited {
+    color: #fff; }
+  .header__tagline a:focus, .header__tagline a:hover {
+    color: #fff; }
+  .header__tagline a:active {
+    color: #fff; }
+  .header__tagline a:focus, .header__tagline a:hover {
+    text-decoration: none; }
 
 .header__top {
   padding: 1.5rem;
@@ -2273,6 +2291,60 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   padding-bottom: 0.75rem; }
   @media (min-width: 750px) {
     .main-menu--open .main-menu__list {
+      display: flex; } }
+  .main-menu--open .main-menu__list ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    border: 0;
+    background-color: transparent; }
+  .main-menu--open .main-menu__list > li:hover {
+    border: none; }
+  @media (min-width: 750px) {
+    .main-menu--open .main-menu__list > li > a {
+      text-align: left; } }
+
+.main-menu--open .menu-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9; }
+  @media (min-width: 750px) {
+    .main-menu--open .menu-toggle {
+      position: static; } }
+
+.menu-toggle {
+  padding: 0.1875rem 0.75rem; }
+  .menu-toggle .icon {
+    margin: 0;
+    height: 1.875rem;
+    vertical-align: middle; }
+.125rem;
+          line-height: 1; } }
+      .main-menu__list ul > li a {
+        text-decoration: none; }
+        .main-menu__list ul > li a:hover, .main-menu__list ul > li a:focus {
+          text-decoration: none; }
+      .main-menu__list ul > li a, .main-menu__list ul > li a:link {
+        color: #a3a3a3; }
+      .main-menu__list ul > li a:visited {
+        color: #a3a3a3; }
+      .main-menu__list ul > li a:focus, .main-menu__list ul > li a:hover {
+        color: #000; }
+      .main-menu__list ul > li a:active {
+        color: #a3a3a3; }
+
+.main-menu--open .main-menu__list {
+  display: block;
+  background-color: #fff;
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 0.75rem; }
+  @media (min-width: 750px) {
+    .main-menu--open .main-menu__list {
+      display: -webkit-box;
       display: flex; } }
   .main-menu--open .main-menu__list ul {
     position: relative;
