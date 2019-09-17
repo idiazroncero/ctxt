@@ -8,6 +8,9 @@ $dot-space: 6px;
 
 .header {
     margin: $gutter 0;
+    .button {
+        line-height:1;
+    }
 }
 
 .header__inner {
@@ -30,18 +33,18 @@ $dot-space: 6px;
         font-weight:bold;
         @include ritmo-font-size($h6-font-size);
         letter-spacing: $letter-spacing * 3;
-        
-        @include breakpoint(415px) {
-            &:before {
-                content:"";
-                position:absolute;
-                top:0;
-                left:100%;
-                width:0;
-                height:0;
-                border-color: transparent transparent $black $black;
+        &:before {
+            content:"";
+            position:absolute;
+            top:0;
+            left:100%;
+            width:0;
+            height:0;
+            border-color: transparent transparent $black $black;
+            border-width: ( $h6-font-size * $vertical-rhythm ) ( ( $h6-font-size * $vertical-rhythm ) / 2);
+            border-style:solid;
+            @include breakpoint($small) {
                 border-width: ( $h6-font-size * $vertical-rhythm ) / 2;
-                border-style:solid;
             }
         }
     }
@@ -49,15 +52,19 @@ $dot-space: 6px;
     a {
         @include kill-link($white);
     }
+
+    span {
+        display:block;
+        @include breakpoint($small) {
+            display:inline;
+        }
+    }
 }
 
 .header__top {
-    @include breakpoint($small) {
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-between
-    }
     @include breakpoint($medium) {
+        display:flex;
+        justify-content:space-between;
         flex-wrap:nowrap;
     }
     padding: $gutter;
@@ -73,32 +80,30 @@ $dot-space: 6px;
 }
 
 .header__issue {
-    text-align:center;
-    @include breakpoint($small) {
+    display:none;
+    @include breakpoint($medium) {
+        display:block;
         text-align:left;
     }
 }
 
 .header__issue,
 .header__user {
-    @include breakpoint($small) {
+    @include breakpoint($medium) {
         width:50%;
     }
 }
 
 .header__logo {
     text-align:center;
-    margin: $gutter 0;
-    @include breakpoint($small) {
-        margin: $gutter 0 0 0;
-    }
-    @include breakpoint($small $medium) {
-        width:50%;
-        margin: $gutter auto 0 auto;
-        order: 99999;
-    }
+    margin: 0 0 $gutter 0;
     @include breakpoint($medium) {
         margin: 0;
+    }
+
+    img {
+        max-width:100%;
+        max-height: 110px;
     }
 }
 
@@ -118,12 +123,8 @@ $dot-space: 6px;
     display:flex;
     justify-content:center;
     align-items: flex-start;
-    @include breakpoint($small) {
+    @include breakpoint($medium) {
         justify-content:flex-end;
-    }
-
-    .button {
-        line-height:1;
     }
 }
 
@@ -145,7 +146,7 @@ $dot-space: 6px;
     padding: 0 $gutter / 8;
     display:inline-block;
 
-    button,p {
+    button, div, ol, li, p {
         display:inline-block;
         vertical-align:top;
         padding:0;

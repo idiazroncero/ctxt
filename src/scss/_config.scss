@@ -320,18 +320,18 @@ $inverse-link-strategy-hover: false;
 // ------
 
 // Global variables
-$form-border-radius: $border-radius;
+$form-border-radius: 0;
 
 // Labels
 $label-as-minititle: true;
 
 // Inputs
-$input-border-strategy: full; // Options: full, bottom, none;
-$input-border-color: $gray2;
+$input-border-strategy: none; // Options: full, bottom, none;
+$input-border-color: $gray3;
 $input-border-width: 1px;
 $input-padding-lines: 1;
 $input-border: $input-border-width solid $input-border-color;
-$input-padding: $spacer / 4 $spacer / 2;
+$input-padding: $spacer / 4 0;
 
 // Buttons
 $button-font-family: $futura;

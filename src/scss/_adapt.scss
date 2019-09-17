@@ -1,0 +1,28 @@
+#numeros div ol{
+    // float: left;
+    // position: relative;
+}
+
+#numeros {
+    div {
+        display:inline-block;
+    }
+    ol {
+        display:block;
+        margin:0;
+        padding:0;
+    }
+    li {
+        list-style-type: none;
+        margin:0;
+    }
+}
+  
+  .cabecera_new .font-secondary,
+  .cabecera_new h1,
+  .cabecera_new h2,
+  .cabecera_new h3,
+  .cabecera_new h4,
+  .cabecera_new dt,
+  .cabecera_new nav {
+    font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
