@@ -10,6 +10,18 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Futura CTXT';
+  src: url("../fonts/futura/FuturaPT-Book.woff2") format("woff2"), url("../fonts/futura/FuturaPT-Book.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura CTXT';
+  src: url("../fonts/futura/FuturaBQ-Medium.woff2") format("woff2"), url("../fonts/futura/FuturaBQ-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
 *,
 ::before,
 ::after {
@@ -625,7 +637,7 @@ h3,
 h4,
 dt,
 nav {
-  font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .minititle {
   font-size: 16px;
@@ -1343,7 +1355,7 @@ a.button:focus, a.button:hover {
   letter-spacing: 0.05rem;
   vertical-align: bottom;
   font-weight: normal;
-  font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .button::-moz-focus-inner, input[type=file] + label::-moz-focus-inner {
     border: 0;
     padding: 0; }
@@ -1854,7 +1866,8 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 .header {
   margin: 1.5rem 0; }
   .header .button, .header input[type=file] + label {
-    line-height: 1; }
+    line-height: 1;
+    font-weight: bold; }
 
 .header__inner {
   border-top: 0.75rem solid #000;
@@ -1992,7 +2005,7 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     padding: 0; }
 
 .issue__current {
-  font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin: 0; }
 
@@ -2057,7 +2070,8 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
         flex: 0 0 14.28571%; } }
     .main-menu__list > li > a {
       display: block;
-      padding: 0.375rem 0.75rem; }
+      padding: 0.375rem 0.75rem;
+      font-weight: bold; }
       .main-menu__list > li > a {
         text-decoration: none; }
         .main-menu__list > li > a:hover, .main-menu__list > li > a:focus {

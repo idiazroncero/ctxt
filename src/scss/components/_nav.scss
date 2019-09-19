@@ -66,14 +66,14 @@ $hide-menu: 750px;
         position:relative;
         text-transform: uppercase;
         > a {
+            display:block;
+            padding: $gutter / 4 $gutter / 2;
+            font-weight:bold;
             @include kill-link();
 
             @include breakpoint($hide-menu $scale-menu) {
                 @include ritmo-font-size($h6-font-size, 4);
             }
-
-            display:block;
-            padding: $gutter / 4 $gutter / 2;
         }
         &:hover {
             border-left: 1px solid $black;
