@@ -7,29 +7,29 @@
 @import "./node_modules/huesos/src/scss/base/sanitize"; // Huesos' fork of sanitize.css, a fork itself of normalize.css
 
 // html
-// @import "./node_modules/huesos/src/components/html/table/table";
+@import "./node_modules/huesos/src/components/html/table/table";
 @import "./node_modules/huesos/src/components/html/link/link";
-// @import "./node_modules/huesos/src/components/html/blockquote/blockquote";
-// @import "./node_modules/huesos/src/components/html/details/details";
+@import "./node_modules/huesos/src/components/html/blockquote/blockquote";
+@import "./node_modules/huesos/src/components/html/details/details";
 @import "./node_modules/huesos/src/components/html/list/list";
-// @import "./node_modules/huesos/src/components/html/hr/hr";
-// @import "./node_modules/huesos/src/components/html/iframe/iframe";
-// @import "./node_modules/huesos/src/components/html/images/images";
+@import "./node_modules/huesos/src/components/html/hr/hr";
+@import "./node_modules/huesos/src/components/html/iframe/iframe";
+@import "./node_modules/huesos/src/components/html/images/images";
 
 // typography
 @import "./node_modules/huesos/src/components/typography/headings/headings";
 @import "./node_modules/huesos/src/components/typography/font-secondary/font-secondary";
 @import "./node_modules/huesos/src/components/typography/minititle/minititle";
-// @import "./node_modules/huesos/src/components/typography/code/code";
+@import "./node_modules/huesos/src/components/typography/code/code";
 // @import "./node_modules/huesos/src/components/typography/text-wrapper/text-wrapper";
-// @import "./node_modules/huesos/src/components/typography/abbreviation/abbreviation";
+@import "./node_modules/huesos/src/components/typography/abbreviation/abbreviation";
 @import "./node_modules/huesos/src/components/typography/strong/strong";
 @import "./node_modules/huesos/src/components/typography/definition/definition";
 @import "./node_modules/huesos/src/components/typography/mark/mark";
 // @import "./node_modules/huesos/src/components/typography/maximum-characters/maximum-characters";
 @import "./node_modules/huesos/src/components/typography/small/small";
-// @import "./node_modules/huesos/src/components/typography/sub-sup/sub-sup";
-// @import "./node_modules/huesos/src/components/typography/quotes/quotes";
+@import "./node_modules/huesos/src/components/typography/sub-sup/sub-sup";
+@import "./node_modules/huesos/src/components/typography/quotes/quotes";
 
 
 // forms
@@ -48,7 +48,7 @@
 
 // elements
 // @import "./node_modules/huesos/src/components/elements/tag/tag";
-// @import "./node_modules/huesos/src/components/elements/card/card";
+@import "./node_modules/huesos/src/components/elements/card/card";
 @import "./node_modules/huesos/src/components/elements/button/button";
 @import "./node_modules/huesos/src/components/elements/icon/icon";
 // @import "./node_modules/huesos/src/components/elements/alert/alert";
@@ -57,7 +57,7 @@
 @import "./node_modules/huesos/src/components/huesitos/huesitos";
 
 // Visual debug 
-// @import "./node_modules/huesos/src/components/debug/show-grid/show-grid";
+@import "./node_modules/huesos/src/components/debug/show-grid/show-grid";
 
 // helpers
 @import "./node_modules/huesos/src/components/helpers/scrollbar-hidden/scrollbar-hidden";
@@ -66,7 +66,7 @@
 @import "./node_modules/huesos/src/components/helpers/disabled/disabled";
 @import "./node_modules/huesos/src/components/helpers/kill-link/kill-link";
 @import "./node_modules/huesos/src/components/helpers/kill-link-decoration/kill-link-decoration";
-// @import "./node_modules/huesos/src/components/helpers/lobotomized-owl/lobotomized-owl";
+@import "./node_modules/huesos/src/components/helpers/lobotomized-owl/lobotomized-owl";
 
 // Third-party libraries
 // @import "./node_modules/huesos/src/scss/external/selectr";

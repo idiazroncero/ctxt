@@ -12,7 +12,7 @@ $colors: (
 	base: (
 		"primary": $base,
 		"secondary": $base,
-		"separator": $gray2,
+		"separator": $black,
 		"black": $black,
 		"white": $white,
 	),
@@ -117,9 +117,10 @@ $courier: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida S
 
 $avenir: 'Avenir Next Condensed', $helvetica;
 $futura: 'Futura CTXT', 'Futura', $helvetica;
+$chentelham: 'Chentelham', $georgia;
 
 // Global variables. It is good practice (performance & design) to only use one or two typefaces.
-$font-main: $georgia;
+$font-main: $chentelham;
 $font-secondary: $futura;
 $font-tertiary: $avenir;
 $font-monospace: $courier;
@@ -134,7 +135,7 @@ $normal: normal;
 
 // List of all elements which use $font-secondary.
 $font-secondary-items:
-	h1, h2, h3, h4, dt, nav;
+	nav;
 
 // Heading overrides
 // Select a font weight and an alternate line height for your headings
@@ -189,8 +190,10 @@ $augmented-fourth: 1.414 !default;
 $perfect-fifth:    1.500 !default;
 $golden-ratio:     1.618 !default;
 
+$contexto: 1.4 !default;
+
 // Choose your type-scale ratio
-$scale-ratio: $perfect-fourth !default;
+$scale-ratio: $contexto !default;
 
 // Uses concise.css typeScale mixin to map font-sizes
 $h0-font-size: typeScale(7); // Extra big font
@@ -205,8 +208,8 @@ $h7-font-size: typeScale(0); // Extra small font
 // Set vetical rhythm using ritmo lines for headings
 // This might be needed to manually override automatic ritmo.scss calculations
 // For example: h1 and h2 legibility usually benefit from a reduced line height.
-$h1-ritmo-lines: 8;
-$h2-ritmo-lines: 6;
+$h1-ritmo-lines: 10;
+$h2-ritmo-lines: 8;
 $h3-ritmo-lines: 6;
 $h4-ritmo-lines: 4;
 $h5-ritmo-lines: 4;
@@ -245,7 +248,7 @@ $table-th-align: left;
 $blockquote-whitespace: $spacer * 2;
 $blockquote-font: $font-secondary;
 
-$shadows: true;
+$shadows: false;
 $shadow-definition: 2px 2px 2px 0px rgba($black, 0.1);
 
 
@@ -447,7 +450,7 @@ $max-grid-cols: 6;
 // We asume a centered, responsive and max-width limited viewport.
 // ------
 
-$max-width: 1500px;
+$max-width: 1300px;
 $layout-align: center; // left, right
 $layout-padding: $spacer;
 

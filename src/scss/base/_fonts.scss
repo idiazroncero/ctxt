@@ -29,3 +29,28 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Cheltenham';
+    src: url('../fonts/cheltenham/CheltenhamLight.woff2') format('woff2'),
+        url('../fonts/cheltenham/CheltenhamLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cheltenham';
+    src: url('../fonts/cheltenham/CheltenhamBook.woff2') format('woff2'),
+        url('../fonts/cheltenham/CheltenhamBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cheltenham';
+    src: url('../fonts/cheltenham/Cheltenham-Bold.woff2') format('woff2'),
+        url('../fonts/cheltenham/Cheltenham-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

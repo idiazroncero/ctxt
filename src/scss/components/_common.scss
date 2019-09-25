@@ -1,0 +1,33 @@
+.box {
+    @extend .p;
+    @extend .b;
+}
+
+.section {
+    text-transform: uppercase;
+    @extend .font-secondary;
+    margin-bottom: $gutter;
+    //@include ritmo-font-size($h5-font-size);
+}
+
+.autor {
+    text-transform: uppercase;
+    @extend .font-secondary;
+    @include ritmo-font-size($h4-font-size);
+    span + span {
+        &:before {
+            content: "/";
+            padding: 0 5px;
+        }
+    }
+}
+
+.ts {
+    img {
+        margin: 0 auto;
+    }
+    margin-bottom: $gutter * 8;
+    &:last-child {
+        margin-bottom:0;
+    }
+}

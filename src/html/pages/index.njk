@@ -3,8 +3,43 @@
 
 {% block content%}
 
-<div>
+<div id="main-wrapper">
+
+    <div class="dev">
+        <p>Todo el contenido debería ir rodeado de un #main-wrapper que limita el ancho máximo de la  página y establece el padding global.
+        </p>
+    </div>
+
     {% include "partials/header.njk" %}
+
+    <div class="dev">
+        <p>
+            Para trabajar más fácilmente a nivel HTML y CSS, propongo desacoplar ciertos estilos.
+            Por ejemplo: la caja que rodea grupos de noticias, definida por tener un borde negro y un padding interno, debería ser un código 100% independiente de lo que haya dentro.
+        </p>
+        <p>
+            La clase [.card] cumple esta labor, y sólo esta. Aplicada a un elemento, esta clase proporciona exclusivamente el borde y el padding.
+        </p>
+    </div>
+    <div class="dev">
+        <p>
+            Llamaré a las vistas previas de noticias "teasers", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-huge y ts_huge.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
+        </p>
+    </div>
+
+    <section class="card">
+        <div class="section">
+            Política >
+        </div>
+        {% include "partials/content/ts_huge.njk" %}
+        {% include "partials/content/ts_flotante.njk" %}
+    </section>
+
+    <div class="dev">
+        <p>Cuidado! El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
+        <p><a href="/tsflotante.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
+    </div>
+
 </div>
 
 {% endblock %}

@@ -47,7 +47,7 @@ function watchAll() {
 }
 
 function copyAssets() {
-    return  src(['src/fonts/**/*', 'src/images/**/*'], { base : 'src'})
+    return  src(['src/fonts/**/*', 'src/images/**/*', 'src/js/**/*'], { base : 'src'})
             .pipe(dest('docs'))
 }
 

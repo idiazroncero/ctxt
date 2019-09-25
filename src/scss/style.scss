@@ -2,8 +2,12 @@
 @import "config";
 @import "huesos";
 
+@import "components/common";
 @import "components/header";
 @import "components/nav";
+
+@import "components/teaser/huge";
+@import "components/teaser/flotante";
 
 
 @import "adapt";

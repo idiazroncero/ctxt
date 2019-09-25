@@ -1,0 +1,57 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% block content%}
+
+<div id="main-wrapper">
+
+    <article class="card">
+        <p class="minititle">Teaser Flotante</p>
+        {% include "partials/content/ts_flotante.njk" %}
+    </article>
+
+    <article class="card">
+        <p class="minititle">Si se recorta el texto sin adaptar la imagen:<br> sobresale demasiado</p>
+        <article class="ts ts-flotante">
+            <div class="ts-flotante__textos">
+                <h1 class="ts-flotante__title">
+                    Tomar escaño<br>
+                </h1>
+                <p class="ts-flotante__body">
+                    Es la legislatura número 13 y ha arrancado en martes.
+                </p>
+                <div class="ts-flotante__autor autor">
+                    Gerardo Tecé
+                </div> 
+            </div>
+            <div class="ts-flotante__img">
+                <img src="http://placehold.it/800x550.jpg" alt="Imagenes">
+            </div>
+        </article>
+    </article>
+
+    <article class="card">
+        <p class="minititle">Si se reduce la imagen o alarga el texto:<br> se queda corto</p>
+        <article class="ts ts-flotante">
+            <div class="ts-flotante__textos">
+                <h1 class="ts-flotante__title">
+                    Tomar escaño,<br>
+                    pulir escaño
+                </h1>
+                <p class="ts-flotante__body">
+                    Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
+                </p>
+                <div class="ts-flotante__autor autor">
+                    Gerardo Tecé
+                </div> 
+            </div>
+            <div class="ts-flotante__img">
+                <img src="http://placehold.it/800x300.jpg" alt="Imagenes">
+            </div>
+        </article>
+    </article>
+
+
+
+
+{% endblock %}

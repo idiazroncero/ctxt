@@ -7,7 +7,7 @@ $dot-size: 1px;
 $dot-space: 6px;
 
 .header {
-    margin: $gutter 0;
+    margin-bottom: $gutter;
     .button {
         line-height:1;
         font-weight:bold;
@@ -104,7 +104,7 @@ $dot-space: 6px;
 
     img {
         max-width:100%;
-        max-height: 110px;
+        max-height: $gutter * 4;
     }
 }
 

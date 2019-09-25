@@ -5,12 +5,95 @@
     <title>Ctxt.es</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <style>
+      .dev {
+        padding: 10px 15px;
+        color: #7f656b;
+        background-color: #e6dee0;
+        border-radius: 6px;
+        font-family: monospace;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+      .dev p {
+        margin-bottom: 10px;
+        line-height:1.1;
+      }
+      .dev p:first-child:before {
+        content:"!";
+        background-color: #bbf01b;
+        font-weight:bold;
+        color: #000;
+        width:1em;
+        height:1em;
+        line-height:1em;
+        text-align:center;
+        display:inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+
+      }
+      .dev p:last-child {
+        margin:0;
+      }
+      .debug {
+        position:fixed;
+        bottom:-15px;
+        left:5px;
+        font-family: "Futura CTXT";
+        margin:0;
+        padding:0;
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+      }
+      .debug li {
+        display:inline-block;
+        text-transform:uppercase;
+        padding: 0 15px 0 0;
+        margin:0;
+        cursor:pointer;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+      $(function(){
+
+        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li></ul>');
+        $('.grid').click(function(){
+          $('.card').toggleClass('show-grid');
+        })
+        $('.notas').click(function(){
+          $('.dev').toggle();
+        })
+        $('.dev').click(function(){
+          $(this).remove();
+        })
+      })
+
+    </script>
+    
+
+    <script src="js/interactions.js"></script>
+
   </head>
   <body>
 
     
 
-<div>
+<div id="main-wrapper">
+
+    <div class="dev">
+        <p>Todo el contenido debería ir rodeado de un #main-wrapper que limita el ancho máximo de la  página y establece el padding global.
+        </p>
+    </div>
+
     <header class="header">
     <div class="header__tagline">
         <p><a href="#"><span>Orgulloses d'arribar tard</span> <span>a les últimes notícies</span></a></p>
@@ -153,23 +236,63 @@
     </div>
 
 </header>
+
+    <div class="dev">
+        <p>
+            Para trabajar más fácilmente a nivel HTML y CSS, propongo desacoplar ciertos estilos.
+            Por ejemplo: la caja que rodea grupos de noticias, definida por tener un borde negro y un padding interno, debería ser un código 100% independiente de lo que haya dentro.
+        </p>
+        <p>
+            La clase [.card] cumple esta labor, y sólo esta. Aplicada a un elemento, esta clase proporciona exclusivamente el borde y el padding.
+        </p>
+    </div>
+    <div class="dev">
+        <p>
+            Llamaré a las vistas previas de noticias "teasers", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-huge y ts_huge.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
+        </p>
+    </div>
+
+    <section class="card">
+        <div class="section">
+            Política >
+        </div>
+        <article class="ts ts-huge">
+    <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
+    <h1 class="ts-huge__title">
+        Abaratando costes: Congreso, tribunal y cárcel en el mismo sitio
+    </h1>
+    <div class="ts-huge__autor autor">
+        <span>Guillem Martínez</span>
+        <span>Madrid</span>
+    </div> 
+</article>
+        <article class="ts ts-flotante">
+    <div class="ts-flotante__textos">
+        <h1 class="ts-flotante__title">
+            Tomar escaño,<br>
+            pulir escaño
+        </h1>
+        <p class="ts-flotante__body">
+            Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
+        </p>
+        <div class="ts-flotante__autor autor">
+            Gerardo Tecé
+        </div> 
+    </div>
+    <div class="ts-flotante__img">
+        <img src="http://placehold.it/800x550.jpg" alt="Imagenes">
+    </div>
+</article>
+    </section>
+
+    <div class="dev">
+        <p>Cuidado! El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
+        <p><a href="/tsflotante.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
+    </div>
+
 </div>
 
 
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-
-    <script>
-      $(function(){
-
-        $('.menu-toggle').click(function(){
-          var $menu = $(this).parent('.main-menu');
-          $menu.toggleClass('main-menu--open');
-        })
-      })
-    </script>
   </body>
 </html>
