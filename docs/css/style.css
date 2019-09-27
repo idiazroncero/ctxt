@@ -2555,3 +2555,104 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 .cabecera_new dt,
 .cabecera_new nav {
   font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+   position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: auto; }
+
+.ts-flotante__title {
+  font-size: 44px;
+  font-size: 2.744rem;
+  line-height: 48px;
+  line-height: 3rem; }
+
+.ts-title {
+  display: -webkit-box;
+  display: flex; }
+
+.ts-title__img {
+  -webkit-box-flex: 0;
+          flex: 0 0 50%; }
+
+.ts-title__textos {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-left: 4.5rem;
+  margin-right: 1.5rem; }
+
+.ts-title--inverse .ts-title__textos {
+  margin-right: 4.5rem;
+  margin-left: 1.5rem; }
+
+.col2 {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 6rem; }
+  .col2 .ts-col:first-child {
+    padding-right: 4.5rem;
+    border-right: 1px solid #a3a3a3; }
+  .col2 .ts-col:last-child {
+    padding-left: 4.5rem;
+    border-left: 1px solid #a3a3a3; }
+
+.ts-col {
+  -webkit-box-flex: 1;
+          flex: 1;
+  margin-bottom: 0; }
+  .ts-col img {
+    margin-bottom: 3rem; }
+
+.ts-col__title {
+  font-size: 44px;
+  font-size: 2.744rem;
+  line-height: 48px;
+  line-height: 3rem; }
+
+.ts-body {
+  display: -webkit-box;
+  display: flex; }
+
+.ts-body__textos {
+  -webkit-box-flex: 1;
+          flex: 1; }
+
+.ts-body__title {
+  font-size: 44px;
+  font-size: 2.744rem;
+  line-height: 48px;
+  line-height: 3rem; }
+
+.ts-body__img {
+  max-width: 60%;
+  padding-left: 3rem; }
+
+.ts-body--inverse .ts-body__img {
+  padding-left: 0;
+  padding-right: 3rem; }
+
+#numeros div {
+  display: inline-block; }
+
+#numeros ol {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+#numeros li {
+  list-style-type: none;
+  margin: 0; }
+
+.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .section__category, .cabecera_new .section__subtitle,
+.cabecera_new h1,
+.cabecera_new h2,
+.cabecera_new h3,
+.cabecera_new h4,
+.cabecera_new dt,
+.cabecera_new nav {
+  font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
