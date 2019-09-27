@@ -1,0 +1,29 @@
+
+.col2 {
+    display:flex;
+    margin-bottom: $ts-margin;
+    .ts-col:first-child {
+        padding-right: $gutter * 3;
+        border-right:1px solid $gray;
+    }
+    .ts-col:last-child {
+        padding-left: $gutter * 3;
+        border-left:1px solid $gray;
+    }
+}
+
+.ts-col {
+    flex:1;
+    margin-bottom:0;
+    img {
+        margin-bottom: $gutter * 2;
+    }
+}
+
+.ts-col__title {
+    @include ritmo-font-size($h2-font-size);
+}
+
+.ts-col__body {
+    @extend .body;
+}

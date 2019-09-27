@@ -1,0 +1,21 @@
+.ts-title {
+    display:flex;
+}
+
+.ts-title__img {
+    flex: 0 0 50%;
+}
+.ts-title__textos {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left: $gutter * 3;
+    margin-right: $gutter;
+}
+
+.ts-title--inverse {
+    .ts-title__textos {
+        margin-right: $gutter * 3;
+        margin-left: $gutter;
+    }
+}

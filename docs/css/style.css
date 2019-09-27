@@ -24,20 +24,20 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'Cheltenham';
+  font-family: 'Cheltenham CTXT';
   src: url("../fonts/cheltenham/CheltenhamLight.woff2") format("woff2"), url("../fonts/cheltenham/CheltenhamLight.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Cheltenham';
+  font-family: 'Cheltenham CTXT';
   src: url("../fonts/cheltenham/CheltenhamBook.woff2") format("woff2"), url("../fonts/cheltenham/CheltenhamBook.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Cheltenham';
-  src: url("../fonts/cheltenham/Cheltenham-Bold.woff2") format("woff2"), url("../fonts/cheltenham/Cheltenham-Bold.woff") format("woff");
+  font-family: 'Cheltenham CTXT';
+  src: url("../fonts/cheltenham/CheltenhamBold.woff2") format("woff2"), url("../fonts/cheltenham/CheltenhamBold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
@@ -65,7 +65,7 @@ html {
   /* 3 */
   -webkit-text-size-adjust: 100%;
   /* 3 */
-  font-family: "Chentelham", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: "Cheltenham CTXT", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   color: #000;
   scroll-behavior: smooth; }
 
@@ -733,7 +733,7 @@ h1, h2, h3, h4, h5, h6,
   .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .h3 a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .h5 a:hover, .h6 a:focus, .h6 a:hover {
     text-decoration: none; }
 
-.font-secondary, .section, .autor,
+.font-secondary, .autor, .section__category, .section__subtitle,
 nav {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -2045,10 +2045,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-top: 1.5rem;
   margin-bottom: 0; }
 
-.section {
-  text-transform: uppercase;
-  margin-bottom: 1.5rem; }
-
 .autor {
   text-transform: uppercase;
   font-size: 22px;
@@ -2060,11 +2056,23 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     padding: 0 5px; }
 
 .ts {
-  margin-bottom: 12rem; }
+  margin-bottom: 6rem; }
   .ts img {
     margin: 0 auto; }
   .ts:last-child {
     margin-bottom: 0; }
+
+.body, .ts-flotante__body, .ts-col__body, .ts-body__body {
+  font-size: 22px;
+  font-size: 1.4rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-weight: lighter; }
+
+.separator {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 1px solid #a3a3a3; }
 
 .header {
   margin-bottom: 1.5rem; }
@@ -2387,6 +2395,43 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     height: 1.875rem;
     vertical-align: middle; }
 
+.section {
+  margin-bottom: 3rem;
+  border-bottom-width: 1px;
+  border-bottom-width: 0.0625rem;
+  padding-bottom: 23px;
+  padding-bottom: 1.4375rem;
+  border-bottom-style: solid;
+  border-bottom-color: #000; }
+
+.section__category {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem; }
+  .section__category:after {
+    content: ">"; }
+
+.section__title {
+  text-align: center;
+  font-size: 61px;
+  font-size: 3.8416rem;
+  line-height: 66px;
+  line-height: 4.125rem;
+  font-weight: bold; }
+
+.section__subtitle {
+  text-align: center;
+  color: #f01b4d;
+  text-transform: uppercase;
+  font-size: 31px;
+  font-size: 1.96rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.05em;
+  font-weight: bold; }
+
+.seccion__subtitle--gris {
+  color: #a3a3a3; }
+
 .ts-huge {
   text-align: center; }
   .ts-huge img {
@@ -2411,12 +2456,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   padding-left: 1.5rem;
   padding-right: 3rem; }
 
-.ts-flotante__body {
-  font-size: 22px;
-  font-size: 1.4rem;
-  line-height: 30px;
-  line-height: 1.875rem; }
-
 .ts-flotante__textos {
   width: 50%;
   padding-right: 1.5rem; }
@@ -2437,6 +2476,65 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   line-height: 48px;
   line-height: 3rem; }
 
+.ts-title {
+  display: flex; }
+
+.ts-title__img {
+  flex: 0 0 50%; }
+
+.ts-title__textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4.5rem;
+  margin-right: 1.5rem; }
+
+.ts-title--inverse .ts-title__textos {
+  margin-right: 4.5rem;
+  margin-left: 1.5rem; }
+
+.col2 {
+  display: flex;
+  margin-bottom: 6rem; }
+  .col2 .ts-col:first-child {
+    padding-right: 4.5rem;
+    border-right: 1px solid #a3a3a3; }
+  .col2 .ts-col:last-child {
+    padding-left: 4.5rem;
+    border-left: 1px solid #a3a3a3; }
+
+.ts-col {
+  flex: 1;
+  margin-bottom: 0; }
+  .ts-col img {
+    margin-bottom: 3rem; }
+
+.ts-col__title {
+  font-size: 44px;
+  font-size: 2.744rem;
+  line-height: 48px;
+  line-height: 3rem; }
+
+.ts-body {
+  display: flex; }
+
+.ts-body__textos {
+  flex: 1; }
+
+.ts-body__title {
+  font-size: 44px;
+  font-size: 2.744rem;
+  line-height: 48px;
+  line-height: 3rem; }
+
+.ts-body__img {
+  max-width: 60%;
+  padding-left: 3rem; }
+
+.ts-body--inverse .ts-body__img {
+  padding-left: 0;
+  padding-right: 3rem; }
+
 #numeros div {
   display: inline-block; }
 
@@ -2449,7 +2547,7 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   list-style-type: none;
   margin: 0; }
 
-.cabecera_new .font-secondary, .cabecera_new .section, .cabecera_new .autor,
+.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .section__category, .cabecera_new .section__subtitle,
 .cabecera_new h1,
 .cabecera_new h2,
 .cabecera_new h3,

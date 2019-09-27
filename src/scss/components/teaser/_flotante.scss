@@ -13,7 +13,7 @@
 }
 
 .ts-flotante__body {
-    @include ritmo-font-size($h4-font-size);
+    @extend .body;
 }
 
 .ts-flotante__textos {

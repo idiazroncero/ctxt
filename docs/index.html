@@ -55,6 +55,24 @@
         margin:0;
         cursor:pointer;
       }
+      *[data-show] {
+        outline: 1px solid red;
+        position:relative;
+      }
+      *[data-show]:before {
+        content:"class | " attr(class);
+        background-color: red;
+        color: #fff;
+        font-family: Futura, sans-serif;
+        font-size:12px;
+        padding: 0px 5px;
+        position:absolute;
+        bottom:100%;
+        left: 10px;
+        text-transform: lowercase;
+        letter-spacing: 0;
+        font-weight:normal;
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -65,7 +83,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li></ul>');
+        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li><li class="showitems">Estructura</li></ul>');
         $('.grid').click(function(){
           $('.card').toggleClass('show-grid');
         })
@@ -74,6 +92,10 @@
         })
         $('.dev').click(function(){
           $(this).remove();
+        })
+        $('.showitems').click(function(){
+          $('.ts, .section, .card, .separator')
+          .attr('data-show', true);
         })
       })
 
@@ -248,15 +270,21 @@
     </div>
 
     <section class="card">
-        <div class="section">
-            Política >
-        </div>
+        <header class="section">
+            <div class="section__category">
+                Política
+            </div>
+            <h1 class="section__title">España</h1>
+            <p class="section__subtitle">Nace la XVIII legislatura</p>
+        </header>
         <div class="dev">
             <p>
                 Llamaré a las vistas previas de noticias "teasers", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-huge y ts_huge.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
             </p>
         </div>
-        <article class="ts ts-huge">
+        
+
+<article class="ts ts-huge">
     <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
     <h1 class="ts-huge__title">
         Abaratando costes: Congreso, tribunal y cárcel en el mismo sitio
@@ -266,7 +294,9 @@
         <span>Madrid</span>
     </div> 
 </article>
-        <article class="ts ts-flotante">
+        
+
+<article class="ts ts-flotante">
     <div class="ts-flotante__textos">
         <h1 class="ts-flotante__title">
             Tomar escaño,<br>
@@ -289,6 +319,124 @@
         <p>Cuidado! El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
         <p><a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
     </div>
+
+    <section class="card">
+        <div class="dev">
+            <p>Algunos elementos, como el '>' después de la categoría (FIRMAS), se insertan directamente usando CSS por lo que no hace falta escribirlos</p>
+        </div>
+        <header class="section">
+            <div class="section__category">
+                Firmas
+            </div>
+            <h1 class="section__title">Editorial</h1>
+        </header>
+        <div class="dev">
+            <p>En este teaser, como en muchos otros, la altura total de la caja depende de la altura del elemento más alto (usualmente, y en este caso, la imagen) y el texto se centra verticalmente respecto a esta altura.</p>
+            <p>Esto significa que para conseguir una caja más baja basta con cambiar la relación de aspecto del recorte de la imagen.</p>
+        </div>
+        <article class="ts ts-title">
+    <div class="ts-title__img">
+        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+    </div>
+    <div class="ts-title__textos">
+        <h1 class="ts-title__title">Sánchez coquetea con el abismo</h1>
+        <div class="ts-title__autor autor">
+            <span>CTXT</span>
+        </div> 
+    </div>
+</article>
+
+<div class="dev">
+    <p>La clase modificadora 'ts-title--inverse' permite invertir el orden. Hay que acordarse también de modifiacr el HTML para poner la imagen después del texto</p>
+</div>
+
+<article class="ts ts-title ts-title--inverse">
+    <div class="ts-title__textos">
+        <h1 class="ts-title__title">Sánchez coquetea con el abismo</h1>
+        <div class="ts-title__autor autor">
+            <span>CTXT</span>
+        </div> 
+    </div>
+    <div class="ts-title__img">
+        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+    </div>
+</article>
+    </section>
+
+    <section class="card">
+        <header class="section">
+            <div class="section__category">
+                Firmas
+            </div>
+            <h1 class="section__title">Tribunas y debates</h1>
+            <div class="dev">
+                <p>Aqui se puede ver en acción un modificador BEM (clase seccion__subtitle--gris) para lograr el color gris</p>
+            </div>
+            <p class="section__subtitle seccion__subtitle--gris">Madrid, pieza capital</p>
+        </header>
+        <div class="col2">
+    <article class="ts ts-col">
+        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+        <h1 class="ts-col__title">Madrid o la incógnita del bocadillo de calamares</h1>
+        <p class="ts-col__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+        <p class="ts-col__autor autor">Emmanuel Rodríguez</p>
+    </article>
+    <article class="ts ts-col">
+        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+        <h1 class="ts-col__title">La unidad de la izquierda o la Comunidad de Madrid </h1>
+        <p class="ts-col__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+        <p class="ts-col__autor autor">Jorge Lago</p>
+    </article>
+</div>
+
+        <div class="dev">
+            <p>El separador se trata como un elemento HTML diferente. De este modo, se puede insertar como y cuando sea neceario.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="dev">
+            <p>En este tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imgen del 60%)</p>
+            <p><a href="./tsbody.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
+        </div>
+
+        <div class="dev">
+            <p>La clase modificadora 'ts-body--inverse' permite invertir el orden. Hay que acordarse también de modifiacr el HTML para poner la imagen después del texto</p>
+        </div>
+
+        
+
+<article class="ts ts-body">
+    <div class="ts-body__textos">
+        <h1 class="ts-body__title">
+            Esto es un título y poco más puedo decir
+        </h1>
+        <p class="ts-body__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+        </p>
+        <div class="ts-autor__autor autor">Pablo Casado</div>
+    </div>
+    <div class="ts-body__img">
+        <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
+    </div>
+</article>
+
+<article class="ts ts-body ts-body--inverse">
+    <div class="ts-body__img">
+        <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
+    </div>
+    <div class="ts-body__textos">
+        <h1 class="ts-body__title">
+            Esto es un título y poco más puedo decir
+        </h1>
+        <p class="ts-body__body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+        </p>
+        <div class="ts-autor__autor autor">Pablo Casado</div>
+    </div>
+</article>
+
+    </section>
 
 </div>
 

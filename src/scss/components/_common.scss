@@ -3,13 +3,6 @@
     @extend .b;
 }
 
-.section {
-    text-transform: uppercase;
-    @extend .font-secondary;
-    margin-bottom: $gutter;
-    //@include ritmo-font-size($h5-font-size);
-}
-
 .autor {
     text-transform: uppercase;
     @extend .font-secondary;
@@ -26,8 +19,19 @@
     img {
         margin: 0 auto;
     }
-    margin-bottom: $gutter * 8;
+    margin-bottom: $ts-margin;
     &:last-child {
         margin-bottom:0;
     }
+}
+
+.body {
+    @include ritmo-font-size($h4-font-size);
+    font-weight:lighter;
+}
+
+.separator {
+    margin-top:$ts-margin / 2;
+    margin-bottom: $ts-margin / 2;
+    border: 1px solid $gray;
 }

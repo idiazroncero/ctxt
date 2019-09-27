@@ -55,6 +55,24 @@
         margin:0;
         cursor:pointer;
       }
+      *[data-show] {
+        outline: 1px solid red;
+        position:relative;
+      }
+      *[data-show]:before {
+        content:"class | " attr(class);
+        background-color: red;
+        color: #fff;
+        font-family: Futura, sans-serif;
+        font-size:12px;
+        padding: 0px 5px;
+        position:absolute;
+        bottom:100%;
+        left: 10px;
+        text-transform: lowercase;
+        letter-spacing: 0;
+        font-weight:normal;
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -65,7 +83,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li></ul>');
+        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li><li class="showitems">Estructura</li></ul>');
         $('.grid').click(function(){
           $('.card').toggleClass('show-grid');
         })
@@ -74,6 +92,10 @@
         })
         $('.dev').click(function(){
           $(this).remove();
+        })
+        $('.showitems').click(function(){
+          $('.ts, .section, .card, .separator')
+          .attr('data-show', true);
         })
       })
 

@@ -23,9 +23,13 @@
     </div>
 
     <section class="card">
-        <div class="section">
-            Política >
-        </div>
+        <header class="section">
+            <div class="section__category">
+                Política
+            </div>
+            <h1 class="section__title">España</h1>
+            <p class="section__subtitle">Nace la XVIII legislatura</p>
+        </header>
         <div class="dev">
             <p>
                 Llamaré a las vistas previas de noticias "teasers", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-huge y ts_huge.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
@@ -39,6 +43,55 @@
         <p>Cuidado! El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
         <p><a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
     </div>
+
+    <section class="card">
+        <div class="dev">
+            <p>Algunos elementos, como el '>' después de la categoría (FIRMAS), se insertan directamente usando CSS por lo que no hace falta escribirlos</p>
+        </div>
+        <header class="section">
+            <div class="section__category">
+                Firmas
+            </div>
+            <h1 class="section__title">Editorial</h1>
+        </header>
+        <div class="dev">
+            <p>En este teaser, como en muchos otros, la altura total de la caja depende de la altura del elemento más alto (usualmente, y en este caso, la imagen) y el texto se centra verticalmente respecto a esta altura.</p>
+            <p>Esto significa que para conseguir una caja más baja basta con cambiar la relación de aspecto del recorte de la imagen.</p>
+        </div>
+        {% include "partials/content/ts_title.njk" %}
+    </section>
+
+    <section class="card">
+        <header class="section">
+            <div class="section__category">
+                Firmas
+            </div>
+            <h1 class="section__title">Tribunas y debates</h1>
+            <div class="dev">
+                <p>Aqui se puede ver en acción un modificador BEM (clase seccion__subtitle--gris) para lograr el color gris</p>
+            </div>
+            <p class="section__subtitle seccion__subtitle--gris">Madrid, pieza capital</p>
+        </header>
+        {% include "partials/content/ts_2col.njk" %}
+
+        <div class="dev">
+            <p>El separador se trata como un elemento HTML diferente. De este modo, se puede insertar como y cuando sea neceario.</p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="dev">
+            <p>En este tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imgen del 60%)</p>
+            <p><a href="./tsbody.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
+        </div>
+
+        <div class="dev">
+            <p>La clase modificadora 'ts-body--inverse' permite invertir el orden. Hay que acordarse también de modifiacr el HTML para poner la imagen después del texto</p>
+        </div>
+
+        {% include "partials/content/ts_body.njk" %}
+
+    </section>
 
 </div>
 

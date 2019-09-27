@@ -1,0 +1,36 @@
+.section {
+    margin-bottom: $gutter * 2;
+    @include ritmo-bottom-border(1px, $lines:4);
+    border-bottom-style: solid;
+    border-bottom-color: $separator-color;
+}
+
+
+.section__category {
+    text-transform: uppercase;
+    @extend .font-secondary;
+    margin-bottom: $gutter;
+    &:after {
+        content:">";
+    }
+}
+
+.section__title {
+    text-align:center;
+    @include ritmo-font-size($h1-font-size);
+    font-weight:bold;
+}
+
+.section__subtitle {
+    text-align:center;
+    @extend .font-secondary;
+    color: get-color(base, primary);
+    text-transform: uppercase;
+    @include ritmo-font-size($h3-font-size);
+    letter-spacing: $letter-spacing;
+    font-weight:bold;
+}
+
+.seccion__subtitle--gris {
+    color: $gray;
+}
