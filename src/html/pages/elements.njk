@@ -1,0 +1,68 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% block content%}
+
+<div id="main-wrapper">
+    <section class="box">
+        <h1 class="font-secondary">Títulos</h1>
+        <hr>
+        <h1>Título tamaño h1</h1>
+        <h2>Título tamaño h2</h2>
+        <h3>Título tamaño h3</h3>
+        <h4>Título tamaño h4</h4>
+        <h5>Título tamaño h5</h5>
+        <h6>Título tamaño h6</h6>
+        <div class="dev">
+            <p>Se pueden conseguir estos tamaños usando las clases .h1 - .h6.</p>
+            <p>Por ejemplo, y siguiendo buenas prácticas SEO, el HTML de títulos dentro de un 'article' o 'section' es 'h1' y el tamaño de la tipografía se controla mediante estas clases.</p>
+        </div>
+        <h1 class="h1">Elemento con clase .h1</h1>
+        <h1 class="h2">Elemento con clase .h2</h1>
+        <h1 class="h3">Elemento con clase .h3</h1>
+        <h1 class="h4">Elemento h1 con clase .h4</h1>
+        <h1 class="h5">Elemento h1 con clase .h5</h1>
+        <h1 class="h6">Elemento h1 con clase .h6</h1>
+    </section>
+
+    <section class="box">
+        <h1 class="font-secondary">Tipografía</h1>
+        <hr>
+        <p class="font-secondary">Usa la clase .font-secondary para cambiar a la fuente secundaria, en este caso Futura</p>
+        <p class="strong">Usa la clase .strong para imponer la negrita sin usar el elemento HTML</p>
+        <p class="font-secondary strong">Las clases son acumulables con facilidad: este parrafo es .font-secondary y .strong</p>
+    </section>
+
+    <section class="box">
+        <h1 class="font-secondary">Elementos específicos de CTXT</h1>
+        <hr>
+        <section class="box">
+            <p>Utiliza la clase .box para añadir un borde y padding a cualquier elemento</p>
+        </section>
+        <section class="body">
+            <p>
+                Usa la clase .body aplicada a un cuerpo de texto para aumentar el tamaño de la tipografía y reducir la anchura de la fuente.
+            </p>
+            <p>
+                De este modo podemos separar el tamaño de fuente del sitio en su conjunto (16px) del tamaño de fuente de los cuerpos de texto, más grande y legibles.
+            </p>
+            <p>
+                Se aplica principalmente en el texto de artículos y en los resúmenes que aparecen en los teasers.
+            </p>
+        </section>
+        <section>
+            <p class="autor">Utiliza la clase .autor para dar rápidamente el formato común a todos los autores</p>
+            <p class="autor autor--big">El modificador .autor--big se añade para aumentar el tamaño</p>
+            <p class="autor">
+                <span>Si incluyes cada autor</span>
+                <span>dentro de un elemento 'span'</span>
+                <span>consigues separadores</span>
+                <span>automáticos vía css</span>
+            </p>
+        </section>
+
+    </section>
+
+</div>
+
+{% endblock %}

@@ -653,33 +653,33 @@ figure {
 
 figcaption {
   display: block;
-  font-size: 11px;
-  font-size: 0.71429rem;
+  font-size: 12px;
+  font-size: 0.74074rem;
   line-height: 24px;
   line-height: 1.5rem;
   text-align: left; }
 
 h1, .h1 {
-  font-size: 61px;
-  font-size: 3.8416rem;
-  line-height: 60px;
-  line-height: 3.75rem; }
+  font-size: 53px;
+  font-size: 3.32151rem;
+  line-height: 54px;
+  line-height: 3.375rem; }
 
 h2, .h2 {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
+  font-size: 39px;
+  font-size: 2.46038rem;
+  line-height: 42px;
+  line-height: 2.625rem; }
 
 h3, .h3 {
-  font-size: 31px;
-  font-size: 1.96rem;
+  font-size: 29px;
+  font-size: 1.8225rem;
   line-height: 36px;
   line-height: 2.25rem; }
 
 h4, .h4 {
   font-size: 22px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   line-height: 24px;
   line-height: 1.5rem; }
 
@@ -690,8 +690,8 @@ h5, .h5 {
   line-height: 1.5rem; }
 
 h6, .h6 {
-  font-size: 11px;
-  font-size: 0.71429rem;
+  font-size: 12px;
+  font-size: 0.74074rem;
   line-height: 12px;
   line-height: 0.75rem; }
 
@@ -733,7 +733,7 @@ h1, h2, h3, h4, h5, h6,
   .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .h3 a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .h5 a:hover, .h6 a:focus, .h6 a:hover {
     text-decoration: none; }
 
-.font-secondary, .autor, .section__category, .section__subtitle,
+.font-secondary, .autor, .section__category, .section__subtitle, .subsection,
 nav {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -800,20 +800,20 @@ mark {
 
 small,
 .small {
-  font-size: 11px;
-  font-size: 0.71429rem;
+  font-size: 12px;
+  font-size: 0.74074rem;
   line-height: 18px;
   line-height: 1.125rem; }
 
 h1 small {
-  font-size: 31px;
-  font-size: 1.96rem;
+  font-size: 29px;
+  font-size: 1.8225rem;
   line-height: 36px;
   line-height: 2.25rem; }
 
 h2 small {
   font-size: 22px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   line-height: 30px;
   line-height: 1.875rem; }
 
@@ -825,8 +825,8 @@ h3 small {
 
 sub,
 sup {
-  font-size: 11px;
-  font-size: 0.71429rem;
+  font-size: 12px;
+  font-size: 0.74074rem;
   line-height: 18px;
   line-height: 1.125rem;
   line-height: 0;
@@ -939,8 +939,8 @@ fieldset.fieldset--disabled {
   align-items: center; }
   .form-item label {
     flex: 0 1 auto;
-    font-size: 11px;
-    font-size: 0.71429rem;
+    font-size: 12px;
+    font-size: 0.74074rem;
     line-height: 24px;
     line-height: 1.5rem;
     font-weight: bold;
@@ -1520,8 +1520,8 @@ a.button:focus, a.button:hover {
   display: inline-block;
   padding: 0;
   /* IE8 and FF freak out if this rule is within another selector */
-  font-size: 11px;
-  font-size: 0.71429rem;
+  font-size: 12px;
+  font-size: 0.74074rem;
   line-height: 24px;
   line-height: 1.5rem;
   text-transform: uppercase;
@@ -1540,11 +1540,11 @@ a.button:focus, a.button:hover {
     border: 0;
     background: none; }
   .button .icon, input[type=file] + label .icon {
-    font-size: 11px;
-    font-size: 0.71429rem;
+    font-size: 12px;
+    font-size: 0.74074rem;
     line-height: 18px;
     line-height: 1.125rem;
-    height: 0.71429rem;
+    height: 0.74074rem;
     line-height: 1; }
     .button .icon svg, input[type=file] + label .icon svg {
       fill: currentColor; }
@@ -2048,12 +2048,18 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 .autor {
   text-transform: uppercase;
   font-size: 22px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   line-height: 30px;
   line-height: 1.875rem; }
   .autor span + span:before {
     content: "/";
     padding: 0 5px; }
+
+.autor--big {
+  font-size: 29px;
+  font-size: 1.8225rem;
+  line-height: 36px;
+  line-height: 2.25rem; }
 
 .ts {
   margin-bottom: 6rem; }
@@ -2062,11 +2068,18 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   .ts:last-child {
     margin-bottom: 0; }
 
-.body, .ts-flotante__body, .ts-col__body, .ts-body__body {
+.body {
   font-size: 22px;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   line-height: 30px;
   line-height: 1.875rem;
+  font-weight: lighter; }
+
+.body--big {
+  font-size: 29px;
+  font-size: 1.8225rem;
+  line-height: 36px;
+  line-height: 2.25rem;
   font-weight: lighter; }
 
 .separator {
@@ -2096,8 +2109,8 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     margin: 0;
     position: relative;
     font-weight: bold;
-    font-size: 11px;
-    font-size: 0.71429rem;
+    font-size: 12px;
+    font-size: 0.74074rem;
     line-height: 18px;
     line-height: 1.125rem;
     letter-spacing: 0.15em; }
@@ -2109,11 +2122,11 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
       width: 0;
       height: 0;
       border-color: transparent transparent #000 #000;
-      border-width: 1.07143rem 0.53571rem;
+      border-width: 1.11111rem 0.55556rem;
       border-style: solid; }
       @media (min-width: 640px) {
         .header__tagline p:before {
-          border-width: 0.53571rem; } }
+          border-width: 0.55556rem; } }
   .header__tagline a {
     text-decoration: none; }
     .header__tagline a:hover, .header__tagline a:focus {
@@ -2299,8 +2312,8 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
         text-decoration: none; }
       @media (min-width: 750px) and (max-width: 1000px) {
         .main-menu__list > li > a {
-          font-size: 11px;
-          font-size: 0.71429rem;
+          font-size: 12px;
+          font-size: 0.74074rem;
           line-height: 24px;
           line-height: 1.5rem; } }
     .main-menu__list > li:hover {
@@ -2335,8 +2348,8 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
         margin-bottom: 0; }
       @media (min-width: 750px) and (max-width: 960px) {
         .main-menu__list ul > li a {
-          font-size: 11px;
-          font-size: 0.71429rem;
+          font-size: 12px;
+          font-size: 0.74074rem;
           line-height: 18px;
           line-height: 1.125rem;
           line-height: 1; } }
@@ -2412,18 +2425,14 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 
 .section__title {
   text-align: center;
-  font-size: 61px;
-  font-size: 3.8416rem;
-  line-height: 66px;
-  line-height: 4.125rem;
   font-weight: bold; }
 
 .section__subtitle {
   text-align: center;
   color: #f01b4d;
   text-transform: uppercase;
-  font-size: 31px;
-  font-size: 1.96rem;
+  font-size: 29px;
+  font-size: 1.8225rem;
   line-height: 36px;
   line-height: 2.25rem;
   letter-spacing: 0.05em;
@@ -2431,6 +2440,20 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 
 .seccion__subtitle--gris {
   color: #a3a3a3; }
+
+.subsection {
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-size: 1.8225rem;
+  line-height: 36px;
+  line-height: 2.25rem;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 5px dotted #000; }
 
 .ts-huge {
   text-align: center; }
@@ -2470,12 +2493,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     left: 0;
     height: auto; }
 
-.ts-flotante__title {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
-
 .ts-title {
   display: flex; }
 
@@ -2493,27 +2510,21 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-right: 4.5rem;
   margin-left: 1.5rem; }
 
-.col2 {
-  display: flex;
-  margin-bottom: 6rem; }
-  .col2 .ts-col:first-child {
-    padding-right: 4.5rem;
-    border-right: 1px solid #a3a3a3; }
-  .col2 .ts-col:last-child {
-    padding-left: 4.5rem;
-    border-left: 1px solid #a3a3a3; }
-
 .ts-col {
-  flex: 1;
   margin-bottom: 0; }
   .ts-col img {
     margin-bottom: 3rem; }
 
-.ts-col__title {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
+.col2 .col.ts-col {
+  max-width: 100%; }
+
+.col2 .col.ts-col:first-child {
+  padding-right: 4.5rem;
+  border-right: 1px solid #a3a3a3; }
+
+.col2 .col.ts-col:last-child {
+  padding-left: 4.5rem;
+  border-left: 1px solid #a3a3a3; }
 
 .ts-body {
   display: flex; }
@@ -2521,12 +2532,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 .ts-body__textos {
   flex: 1; }
 
-.ts-body__title {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
-
 .ts-body__img {
   max-width: 60%;
   padding-left: 3rem; }
@@ -2535,106 +2540,121 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   padding-left: 0;
   padding-right: 3rem; }
 
-#numeros div {
-  display: inline-block; }
+.ts-tab {
+  border: 1px solid #000;
+  position: relative;
+  margin-top: 1.5rem; }
 
-#numeros ol {
-  display: block;
-  margin: 0;
-  padding: 0; }
-
-#numeros li {
-  list-style-type: none;
-  margin: 0; }
-
-.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .section__category, .cabecera_new .section__subtitle,
-.cabecera_new h1,
-.cabecera_new h2,
-.cabecera_new h3,
-.cabecera_new h4,
-.cabecera_new dt,
-.cabecera_new nav {
-  font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-   position: absolute;
+.ts-tab__category {
+  position: absolute;
+  top: -1.875rem;
+  left: -1px;
+  border: 1px solid #000;
+  border-bottom: none;
+  padding: 0.75rem 0.75rem 0 1.5rem;
+  line-height: 1.125rem;
+  height: 1.875rem;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; }
+  .ts-tab__category:before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #fff;
     bottom: 0;
-    right: 0;
-    left: 0;
-    height: auto; }
+    left: 0px;
+    right: 0px; }
 
-.ts-flotante__title {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
+.ts-tab__triangle {
+  position: absolute;
+  top: -1px;
+  bottom: 1px;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-width: 0.9375rem 0.375rem;
+  border-color: transparent transparent #000 #000;
+  border-style: solid;
+  transform: translateX(1px); }
+  .ts-tab__triangle:before {
+    content: "";
+    position: absolute;
+    top: -0.9375rem;
+    left: -0.375rem;
+    width: 0;
+    height: 0;
+    border-width: 0.9375rem 0.375rem;
+    border-color: transparent transparent #fff #fff;
+    border-style: solid;
+    transform: translate(-1px, 1px); }
 
-.ts-title {
-  display: -webkit-box;
+.ts-tab__content {
   display: flex; }
 
-.ts-title__img {
-  -webkit-box-flex: 0;
-          flex: 0 0 50%; }
-
-.ts-title__textos {
-  display: -webkit-box;
+.ts-tab__textos {
+  padding: 1.5rem;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
-  margin-left: 4.5rem;
-  margin-right: 1.5rem; }
+  width: 66%;
+  align-items: flex-end; }
 
-.ts-title--inverse .ts-title__textos {
-  margin-right: 4.5rem;
-  margin-left: 1.5rem; }
+.ts-tab__meta {
+  width: 40%;
+  padding-right: 3rem; }
+
+.ts-tab__title {
+  width: 60%; }
+
+.ts-tab__title {
+  margin: 0; }
+
+.ts-tab__image {
+  flex: 1; }
+  .ts-tab__image img {
+    width: 100%; }
+
+.ts-tab__meta {
+  font-size: 22px;
+  font-size: 1.35rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.ts-tab__info {
+  text-transform: uppercase;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #a3a3a3; }
+
+.ts-tab__autor {
+  color: #a3a3a3; }
+
+.ts-small {
+  display: flex;
+  align-items: center; }
+
+.ts-small__img,
+.ts-small__textos {
+  width: 50%; }
+
+.ts-small__textos {
+  padding: 1.5rem; }
+
+.ts-vertical {
+  text-align: center; }
+
+.ts-vertical__img {
+  margin-bottom: 1.5rem; }
+  .ts-vertical__img img {
+    margin: 0 auto; }
 
 .col2 {
-  display: -webkit-box;
   display: flex;
-  margin-bottom: 6rem; }
-  .col2 .ts-col:first-child {
-    padding-right: 4.5rem;
-    border-right: 1px solid #a3a3a3; }
-  .col2 .ts-col:last-child {
-    padding-left: 4.5rem;
-    border-left: 1px solid #a3a3a3; }
-
-.ts-col {
-  -webkit-box-flex: 1;
-          flex: 1;
-  margin-bottom: 0; }
-  .ts-col img {
-    margin-bottom: 3rem; }
-
-.ts-col__title {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
-
-.ts-body {
-  display: -webkit-box;
-  display: flex; }
-
-.ts-body__textos {
-  -webkit-box-flex: 1;
-          flex: 1; }
-
-.ts-body__title {
-  font-size: 44px;
-  font-size: 2.744rem;
-  line-height: 48px;
-  line-height: 3rem; }
-
-.ts-body__img {
-  max-width: 60%;
-  padding-left: 3rem; }
-
-.ts-body--inverse .ts-body__img {
-  padding-left: 0;
-  padding-right: 3rem; }
+  justify-content: space-between; }
+  .col2 .col {
+    flex: 1;
+    max-width: calc(50% - 1.5rem);
+    margin-bottom: 0; }
 
 #numeros div {
   display: inline-block; }
@@ -2648,7 +2668,7 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   list-style-type: none;
   margin: 0; }
 
-.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .section__category, .cabecera_new .section__subtitle,
+.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .section__category, .cabecera_new .section__subtitle, .cabecera_new .subsection,
 .cabecera_new h1,
 .cabecera_new h2,
 .cabecera_new h3,

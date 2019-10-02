@@ -17,7 +17,6 @@
 
 .section__title {
     text-align:center;
-    @include ritmo-font-size($h1-font-size);
     font-weight:bold;
 }
 
@@ -33,4 +32,17 @@
 
 .seccion__subtitle--gris {
     color: $gray;
+}
+
+.subsection {
+    text-align:center;
+    @extend .font-secondary;
+    color: $black;
+    text-transform: uppercase;
+    @include ritmo-font-size($h3-font-size);
+    letter-spacing: $letter-spacing;
+    font-weight:bold;
+    margin-bottom: $ts-margin / 2;
+    padding-bottom: $ts-margin / 2;
+    border-bottom: 5px dotted $black;
 }

@@ -286,10 +286,14 @@
 
 <article class="ts ts-huge">
     <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
-    <h1 class="ts-huge__title">
+    <div class="dev left">
+        <p>El tamaño de la tipografía puede ser modificado independientemente del tipo de teaser usando las clases .h1-.h6.</p>
+        <p>Visita <a target="_blank" href="/elements.html">elementos</a> para ver todas las 'utility classes'</p>
+    </div>
+    <h1>
         Abaratando costes: Congreso, tribunal y cárcel en el mismo sitio
     </h1>
-    <div class="ts-huge__autor autor">
+    <div class="autor autor--big">
         <span>Guillem Martínez</span>
         <span>Madrid</span>
     </div> 
@@ -298,14 +302,14 @@
 
 <article class="ts ts-flotante">
     <div class="ts-flotante__textos">
-        <h1 class="ts-flotante__title">
+        <h1 class="h2">
             Tomar escaño,<br>
             pulir escaño
         </h1>
-        <p class="ts-flotante__body">
+        <p class="body">
             Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
         </p>
-        <div class="ts-flotante__autor autor">
+        <div class="autor">
             Gerardo Tecé
         </div> 
     </div>
@@ -339,8 +343,8 @@
         <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
     </div>
     <div class="ts-title__textos">
-        <h1 class="ts-title__title">Sánchez coquetea con el abismo</h1>
-        <div class="ts-title__autor autor">
+        <h1>Sánchez coquetea con el abismo</h1>
+        <div class="autor">
             <span>CTXT</span>
         </div> 
     </div>
@@ -352,8 +356,8 @@
 
 <article class="ts ts-title ts-title--inverse">
     <div class="ts-title__textos">
-        <h1 class="ts-title__title">Sánchez coquetea con el abismo</h1>
-        <div class="ts-title__autor autor">
+        <h1>Sánchez coquetea con el abismo</h1>
+        <div class="autor">
             <span>CTXT</span>
         </div> 
     </div>
@@ -374,18 +378,19 @@
             </div>
             <p class="section__subtitle seccion__subtitle--gris">Madrid, pieza capital</p>
         </header>
+
         <div class="col2">
-    <article class="ts ts-col">
+    <article class="col ts ts-col">
         <img src="http://placehold.it/700x900.jpg" alt="Imagen">
-        <h1 class="ts-col__title">Madrid o la incógnita del bocadillo de calamares</h1>
-        <p class="ts-col__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-        <p class="ts-col__autor autor">Emmanuel Rodríguez</p>
+        <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
+        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+        <p class="autor">Emmanuel Rodríguez</p>
     </article>
-    <article class="ts ts-col">
+    <article class="col ts ts-col">
         <img src="http://placehold.it/700x900.jpg" alt="Imagen">
-        <h1 class="ts-col__title">La unidad de la izquierda o la Comunidad de Madrid </h1>
-        <p class="ts-col__body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-        <p class="ts-col__autor autor">Jorge Lago</p>
+        <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
+        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+        <p class="autor">Jorge Lago</p>
     </article>
 </div>
 
@@ -396,7 +401,7 @@
         <div class="separator"></div>
 
         <div class="dev">
-            <p>En este tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imgen del 60%)</p>
+            <p>En el siguiente tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imagen del 60%)</p>
             <p><a href="./tsbody.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
         </div>
 
@@ -408,13 +413,13 @@
 
 <article class="ts ts-body">
     <div class="ts-body__textos">
-        <h1 class="ts-body__title">
+        <h1 class="h2">
             Esto es un título y poco más puedo decir
         </h1>
-        <p class="ts-body__body">
+        <p class="body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
         </p>
-        <div class="ts-autor__autor autor">Pablo Casado</div>
+        <div class="autor">Pablo Casado</div>
     </div>
     <div class="ts-body__img">
         <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
@@ -426,17 +431,176 @@
         <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
     </div>
     <div class="ts-body__textos">
-        <h1 class="ts-body__title">
+        <h1 class="h2">
             Esto es un título y poco más puedo decir
         </h1>
-        <p class="ts-body__body">
+        <p class="body">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
         </p>
-        <div class="ts-autor__autor autor">Pablo Casado</div>
+        <div class="autor">Pablo Casado</div>
     </div>
 </article>
 
     </section>
+
+    <section class="card">
+        <header class="section">
+            <div class="section__category">
+                Economía
+            </div>
+            <h1 class="section__title">Contexto Económico</h1>
+            <p class="section__subtitle">Estado del Poder 2019</p>
+        </header>
+
+        <article class="ts ts-body ts-body--inverse">
+            <div class="ts-body__img">
+                <img src="http://placehold.it/400x500.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-body__textos">
+                <div class="dev">
+                    <p>Se pueden usar variaciones también en elementos individuales como .ts-body__title</p>
+                </div>
+                <h1>
+                    El capitalismo<br> financiero prepara<br> la recesión 2.0
+                </h1>
+                <p class="body body--big">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <div class="autor autor--big">Walden Bello</div>
+            </div>
+        </article>
+
+        
+
+<article class="ts ts-tab">
+    <div class="ts-tab__category">
+        Hemeroteca CTXT
+        <span class="ts-tab__triangle"></span>
+    </div>
+    <div class="ts-tab__content">
+        <div class="ts-tab__textos">
+            <div class="ts-tab__meta">
+                <div class="ts-tab__info">Noam Chomsky / Filósofo y lingüista</div>
+                <div class="ts-tab__autor">Vaios Triantafyllou (Jacobin)</div>
+            </div>
+            <h1 class="ts-tab__title h2">
+                "El capitalismo se basa en supuestos despiadados antihumanos"
+            </h1>
+        </div>
+        <div class="ts-tab__image">
+            <img src="https://placehold.it/400x225.jpg" alt="Imagen">
+        </div>
+    </div>
+</article>
+
+        <div class="subsection">
+            Análisis
+        </div>
+
+        <div class="dev">
+            <p>Repetimos ts_2col...</p>
+        </div>
+
+        <div class="col2">
+    <article class="col ts ts-col">
+        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+        <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
+        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+        <p class="autor">Emmanuel Rodríguez</p>
+    </article>
+    <article class="col ts ts-col">
+        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+        <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
+        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+        <p class="autor">Jorge Lago</p>
+    </article>
+</div>
+
+        <div class="separator"></div>
+
+        <div class="dev">
+            <p>.col2 y .col pueden ser reutilizados independiente del contenido</p>
+        </div>
+
+        <div class="col2">
+            <div class="col">
+                <article class="ts ts-small">
+    <div class="ts-small__img">
+        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+    </div>
+    <div class="ts-small__textos">
+        <h1 class="h3">Sánchez coquetea con el abismo</h1>
+        <div class="autor">
+            <span>CTXT</span>
+        </div> 
+    </div>
+</article>
+            </div>
+            <div class="col">
+                <article class="ts ts-small">
+    <div class="ts-small__img">
+        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+    </div>
+    <div class="ts-small__textos">
+        <h1 class="h3">Sánchez coquetea con el abismo</h1>
+        <div class="autor">
+            <span>CTXT</span>
+        </div> 
+    </div>
+</article>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="dev">
+        <p>Se puede usar .col2 y .col en cualquier sitio</p>
+    </div>
+
+    <div class="col2">
+        <div class="col">
+            <div class="box">
+                <header class="section">
+                    <div class="section__category">
+                        Entrevistas
+                    </div>
+                    <h1 class="section__title">Entrevista</h1>
+                    <p class="section__subtitle">Santiago Alba Rico / Filósofo</p>
+                </header>
+
+                <article class="ts ts-vertical">
+    <div class="ts-vertical__img">
+        <img src="http://placehold.it/300x300.jpg" alt="Imagen">
+    </div>
+    <h1 class="h2">"Es mucho más peligrosa la islamofobia que el islamismo radical"</h1>
+    <div class="autor">
+        <span>Amanda Andrades / David Perejil</span>
+    </div> 
+</article>
+
+                <div class="subsection">
+                    Hablando de racismo
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb">
+                <img src="http://placehold.it/800x800.jpg" alt="Col">
+            </div>
+            <div class="box">
+
+                <header class="section">
+                    <div class="section__category">
+                        Internacional
+                    </div>
+                    <h1 class="section__title">Oriente Medio</h1>
+                    <p class="section__subtitle">Gran Reportaje</p>
+                </header>
+            
+            </div>
+        </div>
+    </div>
 
 </div>
 

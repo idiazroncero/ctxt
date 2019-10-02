@@ -1,0 +1,10 @@
+.ts-vertical {
+    text-align:center;
+}
+
+.ts-vertical__img {
+    margin-bottom: $gutter;
+    img {
+        margin: 0 auto;
+    }
+}

@@ -12,10 +12,6 @@
     padding-right: $gutter * 2;
 }
 
-.ts-flotante__body {
-    @extend .body;
-}
-
 .ts-flotante__textos {
     width: 50%;
     padding-right: $gutter;
@@ -31,8 +27,4 @@
         left:0;
         height:auto;
     }
-}
-
-.ts-flotante__title {
-    @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
 }

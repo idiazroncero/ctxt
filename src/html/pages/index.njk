@@ -72,6 +72,7 @@
             </div>
             <p class="section__subtitle seccion__subtitle--gris">Madrid, pieza capital</p>
         </header>
+
         {% include "partials/content/ts_2col.njk" %}
 
         <div class="dev">
@@ -81,7 +82,7 @@
         <div class="separator"></div>
 
         <div class="dev">
-            <p>En este tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imgen del 60%)</p>
+            <p>En el siguiente tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imagen del 60%)</p>
             <p><a href="./tsbody.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
         </div>
 
@@ -92,6 +93,103 @@
         {% include "partials/content/ts_body.njk" %}
 
     </section>
+
+    <section class="card">
+        <header class="section">
+            <div class="section__category">
+                Economía
+            </div>
+            <h1 class="section__title">Contexto Económico</h1>
+            <p class="section__subtitle">Estado del Poder 2019</p>
+        </header>
+
+        <article class="ts ts-body ts-body--inverse">
+            <div class="ts-body__img">
+                <img src="http://placehold.it/400x500.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-body__textos">
+                <div class="dev">
+                    <p>Se pueden usar variaciones también en elementos individuales como .ts-body__title</p>
+                </div>
+                <h1>
+                    El capitalismo<br> financiero prepara<br> la recesión 2.0
+                </h1>
+                <p class="body body--big">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <div class="autor autor--big">Walden Bello</div>
+            </div>
+        </article>
+
+        {% include "partials/content/ts_tab.njk" %}
+
+        <div class="subsection">
+            Análisis
+        </div>
+
+        <div class="dev">
+            <p>Repetimos ts_2col...</p>
+        </div>
+
+        {% include "partials/content/ts_2col.njk" %}
+
+        <div class="separator"></div>
+
+        <div class="dev">
+            <p>.col2 y .col pueden ser reutilizados independiente del contenido</p>
+        </div>
+
+        <div class="col2">
+            <div class="col">
+                {% include "partials/content/ts_small.njk" %}
+            </div>
+            <div class="col">
+                {% include "partials/content/ts_small.njk" %}
+            </div>
+        </div>
+
+    </section>
+
+    <div class="dev">
+        <p>Se puede usar .col2 y .col en cualquier sitio</p>
+    </div>
+
+    <div class="col2">
+        <div class="col">
+            <div class="box">
+                <header class="section">
+                    <div class="section__category">
+                        Entrevistas
+                    </div>
+                    <h1 class="section__title">Entrevista</h1>
+                    <p class="section__subtitle">Santiago Alba Rico / Filósofo</p>
+                </header>
+
+                {% include "partials/content/ts_vertical.njk" %}
+
+                <div class="subsection">
+                    Hablando de racismo
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="mb">
+                <img src="http://placehold.it/800x800.jpg" alt="Col">
+            </div>
+            <div class="box">
+
+                <header class="section">
+                    <div class="section__category">
+                        Internacional
+                    </div>
+                    <h1 class="section__title">Oriente Medio</h1>
+                    <p class="section__subtitle">Gran Reportaje</p>
+                </header>
+            
+            </div>
+        </div>
+    </div>
 
 </div>
 

@@ -190,7 +190,7 @@ $augmented-fourth: 1.414 !default;
 $perfect-fifth:    1.500 !default;
 $golden-ratio:     1.618 !default;
 
-$contexto: 1.4 !default;
+$contexto: 1.35 !default;
 
 // Choose your type-scale ratio
 $scale-ratio: $contexto !default;
@@ -208,8 +208,8 @@ $h7-font-size: typeScale(0); // Extra small font
 // Set vetical rhythm using ritmo lines for headings
 // This might be needed to manually override automatic ritmo.scss calculations
 // For example: h1 and h2 legibility usually benefit from a reduced line height.
-$h1-ritmo-lines: 10;
-$h2-ritmo-lines: 8;
+$h1-ritmo-lines: 9;
+$h2-ritmo-lines: 7;
 $h3-ritmo-lines: 6;
 $h4-ritmo-lines: 4;
 $h5-ritmo-lines: 4;

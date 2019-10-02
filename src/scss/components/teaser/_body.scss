@@ -6,14 +6,6 @@
     flex:1;
 }
 
-.ts-body__title {
-    @include ritmo-font-size($h2-font-size);
-}
-
-.ts-body__body {
-    @extend .body;
-}
-
 .ts-body__img {
     max-width:60%;
     padding-left: $gutter * 2;
