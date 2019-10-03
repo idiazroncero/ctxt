@@ -59,6 +59,18 @@
         outline: 1px solid red;
         position:relative;
       }
+      *.col[data-show]:before {
+        top:0;
+        bottom: auto;
+      }
+      *[data-show]:hover {
+        outline: 1px solid green;
+      } 
+      *[data-show]:hover:before {
+        z-index:9999;
+        font-size:16px;
+        background-color: green;
+      }
       *[data-show]:before {
         content:"class | " attr(class);
         background-color: red;
@@ -73,6 +85,9 @@
         letter-spacing: 0;
         font-weight:normal;
       }
+      .minititle {
+        font-family: "Futura CTXT"
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -83,10 +98,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li><li class="showitems">Estructura</li></ul>');
-        $('.grid').click(function(){
-          $('.card').toggleClass('show-grid');
-        })
+        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/elements.html">Docs</a></li></ul>');
         $('.notas').click(function(){
           $('.dev').toggle();
         })
@@ -94,7 +106,7 @@
           $(this).remove();
         })
         $('.showitems').click(function(){
-          $('.ts, .section, .card, .separator')
+          $('.ts, .section, .box, .separator, .col2, .col, .subsection')
           .attr('data-show', true);
         })
       })
@@ -110,18 +122,24 @@
     
 
 <div id="main-wrapper">
-
+    <article class="body box">
+        <h1>Teaser Body</h1>
+        <hr>
+        <p>El teaser "body" es el más genérico y maleable de todos. Se distingue porque distribuye el contenido en dos columnas (imagen y textos) y <strong>no fuerza ningún tamaño predefinido a cada columna.</strong> </p>
+        <p>Es decir, el teaser será tan alto como el elemento más alto y la anchura de cada columna dependerá del espacio disponible. <strong>Generalmente, el tamaño y relación de aspecto de la imagen serán el principal factor a tener en cuenta.</strong> Para evitar desajustes, se ha impuesto un límite del 60% del ancho en la imagen.</p>
+        <p>El teaser body también incluye clases modificadoras para cambiar el orden de las columnas y modificar la alineación vertical de los elementos.</p>
+    </article>
     <article class="card">
         <p class="minititle">Teaser Body</p>
         <article class="ts ts-body">
             <div class="ts-body__textos">
-                <h1 class="ts-body__title">
+                <h1>
                     Esto es un título y poco más puedo decir
                 </h1>
-                <p class="ts-body__body">
+                <p class="body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
                 </p>
-                <div class="ts-autor__autor autor">Pablo Casado</div>
+                <div class="autor">Pablo Casado</div>
             </div>
             <div class="ts-body__img">
                 <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
@@ -133,13 +151,13 @@
         <p class="minititle">Una imagen muy ancha puede tomar hasta el 60% del espacio. El texto se adapta.</p>
         <article class="ts ts-body">
             <div class="ts-body__textos">
-                <h1 class="ts-body__title">
+                <h1>
                     Esto es un título y poco más puedo decir
                 </h1>
-                <p class="ts-body__body">
+                <p class="body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
                 </p>
-                <div class="ts-autor__autor autor">Pablo Casado</div>
+                <div class="autor">Pablo Casado</div>
             </div>
             <div class="ts-body__img">
                 <img src="http://placehold.it/1900x800.jpg" alt="Imagenes">
@@ -151,13 +169,13 @@
         <p class="minititle">Una imagen muy estrecha permite al texto ampliar su espacio</p>
         <article class="ts ts-body">
             <div class="ts-body__textos">
-                <h1 class="ts-body__title">
+                <h1>
                     Esto es un título y poco más puedo decir
                 </h1>
-                <p class="ts-body__body">
+                <p class="body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
                 </p>
-                <div class="ts-autor__autor autor">Pablo Casado</div>
+                <div class="autor">Pablo Casado</div>
             </div>
             <div class="ts-body__img">
                 <img src="http://placehold.it/250x300.jpg" alt="Imagenes">
@@ -165,7 +183,84 @@
         </article>
     </article>
 
+    <article class="card">
+        <p class="minititle">Puede adaptarse a espacios menores, aunque se recomienda reducir el tamaño de los títulos, prescindir del resumen, etc...</p>
+        <article class="ts ts-body" style="width:500px">
+            <div class="ts-body__textos">
+                <h1 class="h3">
+                    Esto es un título y poco más puedo decir
+                </h1>
+                <div class="autor">Pablo Casado</div>
+            </div>
+            <div class="ts-body__img">
+                <img src="http://placehold.it/150x150.jpg" alt="Imagenes">
+            </div>
+        </article>
+    </article>
 
+    <article class="card">
+        <p class="minititle">El modificador ts-body--inverse permite cambiar la imagen de sitio</p>
+        <article class="ts ts-body ts-body--inverse">
+            <div class="ts-body__img">
+                <img src="http://placehold.it/450x300.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-body__textos">
+                <h1>
+                    Esto es un título y poco más puedo decir
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <div class="autor">Pablo Casado</div>
+            </div>
+        </article>
+    </article>
+
+    <article class="card">
+        <p class="minititle">Si los elementos tienen alturas diferentes, es normal que se genere espacio blanco. Las clases .ts-body--center, .ts-body__bottom y .ts-body__expanded permiten cambiar el modo en que texto e imagen se alinean verticalmente:</p>
+        <article class="ts ts-body ts-body--center">
+            <div class="ts-body__textos">
+                <h1>
+                    Esto es un título y poco más puedo decir
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <div class="autor">Pablo Casado</div>
+            </div>
+            <div class="ts-body__img">
+                <img src="http://placehold.it/450x500.jpg" alt="Imagenes">
+            </div>
+        </article>
+        <article class="ts ts-body ts-body--bottom">
+            <div class="ts-body__textos">
+                <h1>
+                    Esto es un título y poco más puedo decir
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <div class="autor">Pablo Casado</div>
+            </div>
+            <div class="ts-body__img">
+                <img src="http://placehold.it/450x500.jpg" alt="Imagenes">
+            </div>
+        </article>
+        <article class="ts ts-body ts-body--expanded">
+            <div class="ts-body__textos">
+                <h1>
+                    Esto es un título y poco más puedo decir
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <div class="autor">Pablo Casado</div>
+            </div>
+            <div class="ts-body__img">
+                <img src="http://placehold.it/450x500.jpg" alt="Imagenes">
+            </div>
+        </article>
+    </article>
 
 
 

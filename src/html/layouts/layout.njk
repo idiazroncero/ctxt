@@ -59,6 +59,18 @@
         outline: 1px solid red;
         position:relative;
       }
+      *.col[data-show]:before {
+        top:0;
+        bottom: auto;
+      }
+      *[data-show]:hover {
+        outline: 1px solid green;
+      } 
+      *[data-show]:hover:before {
+        z-index:9999;
+        font-size:16px;
+        background-color: green;
+      }
       *[data-show]:before {
         content:"class | " attr(class);
         background-color: red;
@@ -73,6 +85,9 @@
         letter-spacing: 0;
         font-weight:normal;
       }
+      .minititle {
+        font-family: "Futura CTXT"
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -83,10 +98,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li><li class="showitems">Estructura</li></ul>');
-        $('.grid').click(function(){
-          $('.card').toggleClass('show-grid');
-        })
+        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/elements.html">Docs</a></li></ul>');
         $('.notas').click(function(){
           $('.dev').toggle();
         })
@@ -94,7 +106,7 @@
           $(this).remove();
         })
         $('.showitems').click(function(){
-          $('.ts, .section, .card, .separator')
+          $('.ts, .section, .box, .separator, .col2, .col, .subsection')
           .attr('data-show', true);
         })
       })

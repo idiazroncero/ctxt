@@ -59,6 +59,18 @@
         outline: 1px solid red;
         position:relative;
       }
+      *.col[data-show]:before {
+        top:0;
+        bottom: auto;
+      }
+      *[data-show]:hover {
+        outline: 1px solid green;
+      } 
+      *[data-show]:hover:before {
+        z-index:9999;
+        font-size:16px;
+        background-color: green;
+      }
       *[data-show]:before {
         content:"class | " attr(class);
         background-color: red;
@@ -73,6 +85,9 @@
         letter-spacing: 0;
         font-weight:normal;
       }
+      .minititle {
+        font-family: "Futura CTXT"
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -83,10 +98,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="grid">Grid</li><li class="notas">Notas</li><li class="showitems">Estructura</li></ul>');
-        $('.grid').click(function(){
-          $('.card').toggleClass('show-grid');
-        })
+        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/elements.html">Docs</a></li></ul>');
         $('.notas').click(function(){
           $('.dev').toggle();
         })
@@ -94,7 +106,7 @@
           $(this).remove();
         })
         $('.showitems').click(function(){
-          $('.ts, .section, .card, .separator')
+          $('.ts, .section, .box, .separator, .col2, .col, .subsection')
           .attr('data-show', true);
         })
       })
@@ -265,11 +277,11 @@
             Por ejemplo: la caja que rodea grupos de noticias, definida por tener un borde negro y un padding interno, debería ser un código 100% independiente de lo que haya dentro.
         </p>
         <p>
-            La clase [.card] cumple esta labor, y sólo esta. Aplicada a un elemento, esta clase proporciona exclusivamente el borde y el padding.
+            La clase [.box] cumple esta labor, y sólo esta. Aplicada a un elemento, esta clase proporciona exclusivamente el borde y el padding.
         </p>
     </div>
 
-    <section class="card">
+    <section class="box">
         <header class="section">
             <div class="section__category">
                 Política
@@ -324,7 +336,7 @@
         <p><a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
     </div>
 
-    <section class="card">
+    <section class="box">
         <div class="dev">
             <p>Algunos elementos, como el '>' después de la categoría (FIRMAS), se insertan directamente usando CSS por lo que no hace falta escribirlos</p>
         </div>
@@ -367,7 +379,7 @@
 </article>
     </section>
 
-    <section class="card">
+    <section class="box">
         <header class="section">
             <div class="section__category">
                 Firmas
@@ -443,7 +455,7 @@
 
     </section>
 
-    <section class="card">
+    <section class="box">
         <header class="section">
             <div class="section__category">
                 Economía
@@ -554,12 +566,15 @@
     </section>
 
     <div class="dev">
-        <p>Se puede usar .col2 y .col en cualquier sitio</p>
+        <p>Se puede usar .col2 y .col en cualquier sitio, también <u>fuera</u> de un .box</p>
+        <p>Este caso, que se resuelve mediante una combinación de casos anteriores, require el uso de clases como .m0 para eliminar algunos márgenes</p>
+        <p>Conseguir equal heights (alturas iguales) en contenidos en dos columnas es bastante complicado. La clase especial .col2--equal-heights estira todos los elementos del tipo .box que haya en el interior de cada columna para lograr que se llegun a ocupar el 100% de la altura</p>
+        <p>Aun así, se pueden generar espacios en blanco demasiado grandes si las alturas son muy diferentes.</p>
     </div>
 
-    <div class="col2">
+    <div class="col2 col2--equal-heights">
         <div class="col">
-            <div class="box">
+            <section class="box m0">
                 <header class="section">
                     <div class="section__category">
                         Entrevistas
@@ -582,13 +597,51 @@
                     Hablando de racismo
                 </div>
 
-            </div>
+                <div class="dev">
+                    <p>Ejemplo de cómo este teaser se puede solucionar recurriendo a .ts-body, sus modificadores y clases tipo .mb, .h3 y.autor--small en lugar de crear un nuevo tipo de ts</p>
+                    <p><a href="/tsbody.html">Ver documentación de .ts-body</a></p>
+                </div>
+
+                <article class="m0 ts ts-body ts-body--inverse ts-body--center">
+                    <div class="ts-body__img">
+                        <img src="http://placehold.it/150x200.jpg" alt="Imagenes">
+                    </div>
+                    <div class="ts-body__textos">
+                        <div class="autor autor--small mb">
+                            Keeanga-Yamahtta Taylor<br> - 
+                            Activista y Escritora
+                        </div>
+                        <h1 class="h3">
+                            "El racismo se usa para dividir a la clase obrera"
+                        </h1>
+                        <div class="autor autor--small">Lucía Mbomío</div>
+                    </div>
+                </article>
+                <div class="separator"></div>
+                <article class="ts ts-body ts-body--inverse ts-body--center">
+                    <div class="ts-body__img">
+                        <img src="http://placehold.it/150x200.jpg" alt="Imagenes">
+                    </div>
+                    <div class="ts-body__textos">
+                        <div class="autor autor--small mb">
+                            Emilia Roig / Directora del <br> 
+                            Center for Intersectional Justice
+                        </div>
+                        <h1 class="h3">
+                            "El racismo sistémico está creciendo"
+                        </h1>
+                        <div class="autor autor--small">Anna Oakes</div>
+                    </div>
+                </article>
+
+            </section>
         </div>
+
         <div class="col">
             <div class="mb">
                 <img src="http://placehold.it/800x800.jpg" alt="Col">
             </div>
-            <div class="box">
+            <section class="box m0">
 
                 <header class="section">
                     <div class="section__category">
@@ -597,10 +650,56 @@
                     <h1 class="section__title">Oriente Medio</h1>
                     <p class="section__subtitle">Gran Reportaje</p>
                 </header>
+
+                <article class="ts ts-vertical">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/400x300.jpg" alt="Imagen">
+                    </div>
+                    <h1>"Dios se ha olvidado<br> de nosotros"</h1>
+                    <div class="body">El precio de una guerra en Líbano es demasiado elevado, pero esto puede cambiar. En el país confluyen todos los problemas de Oriente Medio.</div>
+                    <div class="autor">
+                        <span>Arnon Gruberg · Beirut</span>
+                    </div> 
+                </article>
             
-            </div>
+            </section>
         </div>
     </div>
+
+    <div class="dev">
+        <p>Con elementos de igual altura, .col2 funciona a la perfección sin ayuda de modificadores</p>
+    </div>
+
+    <div class="col2 mb">
+        <div class="col">
+            <img src="http://placehold.it/800x800.jpg" alt="Placehold">
+        </div>
+        <div class="col">
+            <img src="http://placehold.it/800x800.jpg" alt="Placehold">
+        </div>
+    </div>
+
+    <section class="box">
+        <header class="section">
+            <div class="section__category">
+                Comunicación
+            </div>
+            <h1 class="section__title">Comunicación</h1>
+            <p class="section__subtitle">Manifiesto</p>
+        </header>
+        <article class="ts ts-body ts-body--inverse ts-body--expanded">
+            <div class="ts-body__img">
+                <img src="http://placehold.it/625x400.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-body__textos">
+                <h1>
+                    Nace Ctxt.cat
+                </h1>
+                <p class="body body--big">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid perspiciatis eius repudiandae consequuntur velit odit.</p>
+                <div class="autor autor--big">Mar Calpena</div>
+            </div>
+        </article>
+    </section>
 
 </div>
 

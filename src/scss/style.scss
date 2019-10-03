@@ -18,6 +18,9 @@
 
 @import "components/layouts/cols";
 
+// Utility classes. Allow them to override the rest.
+@import "./node_modules/huesos/src/components/huesitos/huesitos";
+
 
 @import "adapt";
 

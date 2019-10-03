@@ -20,13 +20,17 @@
     @include ritmo-font-size($h3-font-size);
 }
 
+.autor--small {
+    @include ritmo-font-size($h5-font-size);
+}
+
 .ts {
     img {
         margin: 0 auto;
     }
     margin-bottom: $ts-margin;
     &:last-child {
-        margin-bottom:0;
+        margin-bottom: $gutter;
     }
 }
 

@@ -1,5 +1,8 @@
 .ts-vertical {
     text-align:center;
+    .body {
+        margin-bottom: $gutter;
+    }
 }
 
 .ts-vertical__img {

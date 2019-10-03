@@ -4,6 +4,31 @@
 {% block content%}
 
 <div id="main-wrapper">
+
+    <section class="box">
+        <h1 class="font-secondary">Márgenes y paddings</h1>
+        <hr>
+        <div class="body">
+            <p>
+                Por defecto, todos los elementos 'article, 'section' y 'p' tienen aplicado un margen inferior. Para añadir un margen a cualquier otro elemento, se aplica la clase .mb (margin-bottom). <strong>Es preferible añadir siempre el margin al bottom para evitar bugs causados por el  <a href="https://css-tricks.com/what-you-should-know-about-collapsing-margins/" target="_blank">margin collapse.</a></strong>
+            <p>
+            <p>
+                De hecho, existen varias clases "helper" que ayudan a añadir rápidamente márgenes y paddings a los elementos:
+            </p>
+            <ul>
+                <li>.mt - margin-top</li>
+                <li>.ml - margin-left</li>
+                <li>.mb - margin-bottom</li>
+                <li>.mr - margin-right</li>
+                <li>.pt - padding-top</li>
+                <li>.pl - padding-left</li>
+                <li>.pb - padding-bottom</li>
+                <li>.pr - padding-righ</li>
+            </ul>
+            <p>Existen además dos clases, .m0 y .p0 que eliminan cualquier margin/padding previo</p>
+        </div>
+    </section>
+
     <section class="box">
         <h1 class="font-secondary">Títulos</h1>
         <hr>
@@ -53,6 +78,7 @@
         <section>
             <p class="autor">Utiliza la clase .autor para dar rápidamente el formato común a todos los autores</p>
             <p class="autor autor--big">El modificador .autor--big se añade para aumentar el tamaño</p>
+            <p class="autor autor--small">Lo contrario es válido para autor--small</p>
             <p class="autor">
                 <span>Si incluyes cada autor</span>
                 <span>dentro de un elemento 'span'</span>

@@ -164,7 +164,7 @@ $letter-spacing: 0.05em;
 // List margin-bottom between <li> items.
 $list-separator: $gutter / 2;
 // List paddings. We recommend either 1em or 0.
-$list-padding: 0;
+$list-padding: 1em;
 
 // Maximum characters per line, to apply using .max-ch class
 $max-ch: 65ch;

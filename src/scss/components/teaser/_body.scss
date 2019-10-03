@@ -17,3 +17,20 @@
         padding-right: $gutter * 2;
     }
 }
+
+.ts-body--center {
+    align-items: center;
+}
+
+.ts-body--bottom {
+    align-items: flex-end;
+}
+
+.ts-body--expanded {
+    .ts-body__textos {
+        padding: $gutter 0;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+}
