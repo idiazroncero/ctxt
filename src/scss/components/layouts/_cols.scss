@@ -2,12 +2,12 @@
 .col2 {
     display:flex;
     justify-content:space-between;
-    margin-bottom: $gutter;
-    .col {
+    margin-bottom: $box-margin;
+    > .col {
         flex:1;
         max-width: calc(50% - #{$gutter});
         margin-bottom:0;
-        .ts {
+        > .ts {
             margin-bottom:0;
         }
     }

@@ -1887,9 +1887,11 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-top: 1.5rem;
   margin-bottom: 0; }
 
-.box .ts:last-child,
-.box .col2:last-child {
-  margin-bottom: 1.5rem; }
+.box {
+  margin-bottom: 4.5rem; }
+  .box .ts:last-child,
+  .box .col2:last-child {
+    margin-bottom: 1.5rem; }
 
 .box-2col {
   display: flex;
@@ -2616,12 +2618,12 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 .col2 {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem; }
-  .col2 .col {
+  margin-bottom: 4.5rem; }
+  .col2 > .col {
     flex: 1;
     max-width: calc(50% - 1.5rem);
     margin-bottom: 0; }
-    .col2 .col .ts {
+    .col2 > .col > .ts {
       margin-bottom: 0; }
 
 .col2--equal-heights > .col {
