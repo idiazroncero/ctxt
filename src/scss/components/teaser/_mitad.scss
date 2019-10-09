@@ -1,0 +1,38 @@
+.ts-mitad {
+    display:flex;
+}
+
+.ts-mitad__img {
+    flex: 0 0 50%;
+}
+
+.ts-mitad__textos {
+    display:flex;
+    flex-direction:column;
+    margin-left: 5%;
+}
+
+.ts-mitad--inverse {
+    .ts-mitad__textos {
+        margin-right: 5%;
+        margin-left: 0;
+    }
+}
+
+.ts-mitad--center {
+    .ts-mitad__textos {
+        justify-content: center;
+    }
+}
+
+.ts-mitad--bottom {
+    .ts-mitad__textos {
+        justify-content: flex-end;
+    }
+}
+
+.ts-mitad--expanded {
+    .ts-mitad__textos {
+        justify-content: space-around;
+    }
+}

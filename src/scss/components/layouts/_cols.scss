@@ -7,6 +7,9 @@
         flex:1;
         max-width: calc(50% - #{$gutter});
         margin-bottom:0;
+        .ts {
+            margin-bottom:0;
+        }
     }
 }
 
@@ -17,5 +20,19 @@
         > .box {
             flex:1;
         }
+    }
+}
+
+.col2--separator {
+    .col {
+        max-width: 50%;
+    }
+    .col:first-child {
+        padding-right: $gutter * 3;
+        border-right:1px solid $gray;
+    }
+    .col:last-child {
+        padding-left: $gutter * 3;
+        border-left:1px solid $gray;
     }
 }

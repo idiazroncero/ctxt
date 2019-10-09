@@ -5,22 +5,52 @@
 
 <div id="main-wrapper">
 
+    {% include 'partials/docs_menu.njk' %}
+
+    <article class="body box">
+        <h1 class="font-secondary">Teaser Flotante</h1>
+        <hr>
+        <p>El teaser "flotante" es un tipo muy específico que incluye imágenes y texto al 50%, bordes arriba y abajo y una imagen que "flota" (overflow) sobre la caja</p>
+        <p>Tiene una especificidad y es que la imagen debe ser cuidadosamente elegida para evitar problemas</p>
+    </article>
+
     <article class="card">
-        <p class="minititle">Teaser Flotante</p>
+        <p class="minititle">Teaser Flotante:<br> Siempre incluye un margen superior grande para generar espacio para la imagen</p>
         {% include "partials/content/ts_flotante.njk" %}
     </article>
 
     <article class="card">
-        <p class="minititle">Si se recorta el texto sin adaptar la imagen:<br> sobresale demasiado</p>
+        <p class="minititle">Existe la posibilidad de invertir el punto fijo de la imagen:<br> de la parte inferior a la superior</p>
+        <article class="ts ts-flotante ts-flotante--inverse">
+            <div class="ts-flotante__textos">
+                <h1 class="h2">
+                    Tomar escaño,<br>
+                    pulir escaño
+                </h1>
+                <p class="body">
+                    Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
+                </p>
+                <div class="autor">
+                    Gerardo Tecé
+                </div> 
+            </div>
+            <div class="ts-flotante__img">
+                <img src="http://placehold.it/800x600.jpg" alt="Imagenes">
+            </div>
+        </article>
+    </article>
+
+    <article class="card">
+        <p class="minititle"><mark>Cuidado!</mark> <br>Si se recorta el texto sin adaptar la imagen<br> sobresale demasiado</p>
         <article class="ts ts-flotante">
             <div class="ts-flotante__textos">
-                <h1 class="ts-flotante__title">
+                <h1 class="h2">
                     Tomar escaño<br>
                 </h1>
-                <p class="ts-flotante__body">
+                <p class="body">
                     Es la legislatura número 13 y ha arrancado en martes.
                 </p>
-                <div class="ts-flotante__autor autor">
+                <div class="autor">
                     Gerardo Tecé
                 </div> 
             </div>
@@ -31,17 +61,17 @@
     </article>
 
     <article class="card">
-        <p class="minititle">Si se reduce la imagen o alarga el texto:<br> se queda corto</p>
+        <p class="minititle"><mark>Al contrario:</mark><br>Si se reduce la imagen o se alarga el texto,<br> se queda corto</p>
         <article class="ts ts-flotante">
             <div class="ts-flotante__textos">
-                <h1 class="ts-flotante__title">
+                <h1 class="h2">
                     Tomar escaño,<br>
                     pulir escaño
                 </h1>
-                <p class="ts-flotante__body">
+                <p class="body">
                     Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
                 </p>
-                <div class="ts-flotante__autor autor">
+                <div class="autor">
                     Gerardo Tecé
                 </div> 
             </div>
@@ -50,8 +80,5 @@
             </div>
         </article>
     </article>
-
-
-
 
 {% endblock %}

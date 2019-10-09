@@ -4,6 +4,27 @@
     margin-top:$gutter;
 }
 
+.ts-tab--center {
+    .ts-tab__textos {
+        align-items: center;
+    }
+}
+
+.ts-tab--bottom {
+    .ts-tab__textos {
+        align-items: flex-end;
+    }
+}
+
+.ts-tab--expanded {
+    .ts-tab__meta,
+    .ts-tab__title {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+}
+
 .ts-tab__category {
     position:absolute;
     top: - ritmo(5);
@@ -60,7 +81,7 @@
     padding: $gutter;
     display:flex;
     width:66%;
-    align-items:flex-end;
+    // align-items:flex-end;
 }
 
 .ts-tab__meta {

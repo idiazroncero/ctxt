@@ -5,6 +5,28 @@
 
 <div id="main-wrapper">
 
+    {% include 'partials/docs_menu.njk' %}
+
+    <section class="box">
+        <h1 class="font-secondary">Imágenes</h1>
+        <hr>
+        <p class="body">
+            Las imágenes proporcionadas, sus tamaños y relaciones de aspecto <strong>no son una especificación.</strong> Se usan tamaños que funcionan para los textos de prueba, pero en el día a día de CTXT esto puede y debe variar.
+        </p>
+        <p class="body">
+            En la medida de lo posible, se intentan indicar tamaños que permitan deducir una relación de aspecto rápidamente. Por ejemplo, se usará 700x300 (7:3) en lugar de 800x343 o 300x129.
+        </p>
+        <div class="mb">
+            <img src="http://placehold.it/700x300" alt="" style="width:300px">
+            <img src="http://placehold.it/300x129" alt="" style="width:300px">
+            <p class="small">Es mucho más sencillo saber la relación de aspecto de la primera imagen (7:3). <br>Sin embargo, la segunda imagen es la correcta para este tamaño <br> A lo largo de esta documentación, usaremos siempre la imagen cuya relación de aspecto sea más fácil de entender aunque no sea la óptima.<br>
+            En la web definitiva, debería ocurrir lo contrario.</p>
+        </div>
+        <p class="body">
+            Esto significa que, al centrarnos en la relación de aspecto, <strong>no se deben tomar literalmente las medidas que aparecen como recomendaciones o indicaciones.</strong>
+        </p>
+    </section>
+
     <section class="box">
         <h1 class="font-secondary">Márgenes y paddings</h1>
         <hr>

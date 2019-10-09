@@ -1,7 +1,7 @@
 .ts-flotante {
     display:flex;
     justify-content:space-between;
-    margin-top: $gutter * 5;
+    margin-top: $ts-margin * 2;
     @include ritmo-top-border($lines: $base-line-multi);
     @include ritmo-bottom-border($lines: $base-line-multi * 2);
     border-top-color: $separator-color;
@@ -10,6 +10,22 @@
     border-bottom-style:solid;
     padding-left: $gutter;
     padding-right: $gutter * 2;
+}
+
+.ts-flotante--inverse {
+    margin-top:0;
+    margin-bottom: $ts-margin * 2 !important;
+
+    .ts-flotante__img {
+        img {
+            position:absolute;
+            top:0;
+            right:0;
+            bottom: auto;
+            left:0;
+            height:auto;
+        }
+    }
 }
 
 .ts-flotante__textos {

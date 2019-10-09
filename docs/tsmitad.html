@@ -125,7 +125,6 @@
     
 
 <div id="main-wrapper">
-
     <nav class="nav doc-menu">
     <ul class="list--inline font-secondary">
         <li><a href="/docs.html" rel="noopener noreferrer">Todo el sitio</a></li>
@@ -134,98 +133,89 @@
         <li><a href="/tsflotante.html" rel="noopener noreferrer">Teaser Flotante</a></li>
     </ul>
 </nav>
-
     <article class="body box">
-        <h1 class="font-secondary">Teaser Flotante</h1>
+        <h1 class="font-secondary">Teaser Mitad</h1>
         <hr>
-        <p>El teaser "flotante" es un tipo muy específico que incluye imágenes y texto al 50%, bordes arriba y abajo y una imagen que "flota" (overflow) sobre la caja</p>
-        <p>Tiene una especificidad y es que la imagen debe ser cuidadosamente elegida para evitar problemas</p>
+        <p>El teaser "mitad" se diferencia del "flex" en que aquí <strong>las dos partes del teaser ocupan exactamente el 50% del espacio disponible</strong>
     </article>
 
-    <article class="card">
-        <p class="minititle">Teaser Flotante:<br> Siempre incluye un margen superior grande para generar espacio para la imagen</p>
-        
-
-<article class="ts ts-flotante">
-    <div class="ts-flotante__textos">
-        <h1 class="h2">
-            Tomar escaño,<br>
-            pulir escaño
-        </h1>
-        <p class="body">
-            Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
-        </p>
-        <div class="autor">
-            Gerardo Tecé
-        </div> 
-    </div>
-    <div class="ts-flotante__img">
-        <img src="http://placehold.it/800x550.jpg" alt="Imagenes">
-    </div>
-</article>
-    </article>
-
-    <article class="card">
-        <p class="minititle">Existe la posibilidad de invertir el punto fijo de la imagen:<br> de la parte inferior a la superior</p>
-        <article class="ts ts-flotante ts-flotante--inverse">
-            <div class="ts-flotante__textos">
-                <h1 class="h2">
-                    Tomar escaño,<br>
-                    pulir escaño
-                </h1>
-                <p class="body">
-                    Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
-                </p>
+    <section class="box">
+        <p class="minititle">Normal</p>
+        <article class="ts ts-mitad">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
                 <div class="autor">
-                    Gerardo Tecé
+                    <span>CTXT</span>
                 </div> 
             </div>
-            <div class="ts-flotante__img">
-                <img src="http://placehold.it/800x600.jpg" alt="Imagenes">
-            </div>
         </article>
-    </article>
+    </section>
 
-    <article class="card">
-        <p class="minititle"><mark>Cuidado!</mark> <br>Si se recorta el texto sin adaptar la imagen<br> sobresale demasiado</p>
-        <article class="ts ts-flotante">
-            <div class="ts-flotante__textos">
-                <h1 class="h2">
-                    Tomar escaño<br>
-                </h1>
-                <p class="body">
-                    Es la legislatura número 13 y ha arrancado en martes.
-                </p>
+    <section class="box">
+        <p class="minititle">Inverso (.ts-mitad--inverse)</p>
+        <article class="ts ts-mitad ts-mitad--inverse">
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
                 <div class="autor">
-                    Gerardo Tecé
+                    <span>CTXT</span>
                 </div> 
             </div>
-            <div class="ts-flotante__img">
-                <img src="http://placehold.it/800x550.jpg" alt="Imagenes">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
             </div>
         </article>
-    </article>
+    </section>
 
-    <article class="card">
-        <p class="minititle"><mark>Al contrario:</mark><br>Si se reduce la imagen o se alarga el texto,<br> se queda corto</p>
-        <article class="ts ts-flotante">
-            <div class="ts-flotante__textos">
-                <h1 class="h2">
-                    Tomar escaño,<br>
-                    pulir escaño
-                </h1>
-                <p class="body">
-                    Es la legislatura número 13 y ha arrancado en martes. Esperemos que la cosa que empieza hoy no acabe dejándonos a todos con la misma cara que ponía Millán Salcedo cuando guiñaba el ojo.
-                </p>
+    <section class="box">
+        <p class="minititle">Alineado al centro (.ts-mitad--center)</p>
+        <article class="ts ts-mitad ts-mitad--center">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
                 <div class="autor">
-                    Gerardo Tecé
+                    <span>CTXT</span>
                 </div> 
             </div>
-            <div class="ts-flotante__img">
-                <img src="http://placehold.it/800x300.jpg" alt="Imagenes">
+        </article>
+    </section>
+
+    <section class="box">
+        <p class="minititle">Alineado al fondo (.ts-mitad--bottom)</p>
+        <article class="ts ts-mitad ts-mitad--bottom">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
+                <div class="autor">
+                    <span>CTXT</span>
+                </div> 
             </div>
         </article>
-    </article>
+    </section>
+
+    <section class="box">
+        <p class="minititle">Espaciado (.ts-mitad--expanded)</p>
+        <article class="ts ts-mitad ts-mitad--expanded">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1 class="h2">Sánchez coquetea con el abismo</h1>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim maiores magnam, fuga assumenda quos iste eveniet at, iure labore cupiditate! Nisi impedit, ipsa adipisci nostrum rem sit facere facilis.</p>
+                <div class="autor autor--small">
+                    <span>CTXT</span>
+                </div> 
+            </div>
+        </article>
+    </section>
+
+</div>
 
 
 

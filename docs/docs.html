@@ -101,7 +101,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/elements.html">Docs</a></li></ul>');
+        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/docs.html">Docs</a></li></ul>');
         $('.notas').click(function(){
           $('.dev').toggle();
         })
@@ -128,11 +128,32 @@
 
     <nav class="nav doc-menu">
     <ul class="list--inline font-secondary">
-        <li><a href="/docs.html" target="_blank" rel="noopener noreferrer">Todo el sitio</a></li>
-        <li><a href="/tsbody.html" target="_blank" rel="noopener noreferrer">Teaser Body</a></li>
-        <li><a href="/tsflotante.html" target="_blank" rel="noopener noreferrer">Teaser Flotante</a></li>
+        <li><a href="/docs.html" rel="noopener noreferrer">Todo el sitio</a></li>
+        <li><a href="/tsflex.html" rel="noopener noreferrer">Teaser Flexible</a></li>
+        <li><a href="/tsmitad.html" rel="noopener noreferrer">Teaser Mitad</a></li>
+        <li><a href="/tsflotante.html" rel="noopener noreferrer">Teaser Flotante</a></li>
     </ul>
 </nav>
+
+    <section class="box">
+        <h1 class="font-secondary">Imágenes</h1>
+        <hr>
+        <p class="body">
+            Las imágenes proporcionadas, sus tamaños y relaciones de aspecto <strong>no son una especificación.</strong> Se usan tamaños que funcionan para los textos de prueba, pero en el día a día de CTXT esto puede y debe variar.
+        </p>
+        <p class="body">
+            En la medida de lo posible, se intentan indicar tamaños que permitan deducir una relación de aspecto rápidamente. Por ejemplo, se usará 700x300 (7:3) en lugar de 800x343 o 300x129.
+        </p>
+        <div class="mb">
+            <img src="http://placehold.it/700x300" alt="" style="width:300px">
+            <img src="http://placehold.it/300x129" alt="" style="width:300px">
+            <p class="small">Es mucho más sencillo saber la relación de aspecto de la primera imagen (7:3). <br>Sin embargo, la segunda imagen es la correcta para este tamaño <br> A lo largo de esta documentación, usaremos siempre la imagen cuya relación de aspecto sea más fácil de entender aunque no sea la óptima.<br>
+            En la web definitiva, debería ocurrir lo contrario.</p>
+        </div>
+        <p class="body">
+            Esto significa que, al centrarnos en la relación de aspecto, <strong>no se deben tomar literalmente las medidas que aparecen como recomendaciones o indicaciones.</strong>
+        </p>
+    </section>
 
     <section class="box">
         <h1 class="font-secondary">Márgenes y paddings</h1>

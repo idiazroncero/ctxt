@@ -1,0 +1,91 @@
+{% extends "layouts/layout.njk" %}
+
+{% block content %}
+
+<div id="main-wrapper">
+    {% include 'partials/docs_menu.njk' %}
+    <article class="body box">
+        <h1 class="font-secondary">Teaser Mitad</h1>
+        <hr>
+        <p>El teaser "mitad" se diferencia del "flex" en que aquí <strong>las dos partes del teaser ocupan exactamente el 50% del espacio disponible</strong>
+    </article>
+
+    <section class="box">
+        <p class="minititle">Normal</p>
+        <article class="ts ts-mitad">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
+                <div class="autor">
+                    <span>CTXT</span>
+                </div> 
+            </div>
+        </article>
+    </section>
+
+    <section class="box">
+        <p class="minititle">Inverso (.ts-mitad--inverse)</p>
+        <article class="ts ts-mitad ts-mitad--inverse">
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
+                <div class="autor">
+                    <span>CTXT</span>
+                </div> 
+            </div>
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+        </article>
+    </section>
+
+    <section class="box">
+        <p class="minititle">Alineado al centro (.ts-mitad--center)</p>
+        <article class="ts ts-mitad ts-mitad--center">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
+                <div class="autor">
+                    <span>CTXT</span>
+                </div> 
+            </div>
+        </article>
+    </section>
+
+    <section class="box">
+        <p class="minititle">Alineado al fondo (.ts-mitad--bottom)</p>
+        <article class="ts ts-mitad ts-mitad--bottom">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1>Sánchez coquetea con el abismo</h1>
+                <div class="autor">
+                    <span>CTXT</span>
+                </div> 
+            </div>
+        </article>
+    </section>
+
+    <section class="box">
+        <p class="minititle">Espaciado (.ts-mitad--expanded)</p>
+        <article class="ts ts-mitad ts-mitad--expanded">
+            <div class="ts-mitad__img">
+                <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+            </div>
+            <div class="ts-mitad__textos">
+                <h1 class="h2">Sánchez coquetea con el abismo</h1>
+                <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim maiores magnam, fuga assumenda quos iste eveniet at, iure labore cupiditate! Nisi impedit, ipsa adipisci nostrum rem sit facere facilis.</p>
+                <div class="autor autor--small">
+                    <span>CTXT</span>
+                </div> 
+            </div>
+        </article>
+    </section>
+
+</div>
+
+{% endblock %}

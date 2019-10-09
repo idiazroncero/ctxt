@@ -1,6 +1,78 @@
 .box {
     @extend .p;
     @extend .b;
+    .ts:last-child,
+    .col2:last-child {
+        margin-bottom: $gutter;
+    }
+}
+
+.box-2col {
+    display:flex;
+    margin-top:$gutter;
+    position:relative;
+}
+
+.box-2col__left {
+    width: 33%;
+}
+
+.box-2col__right {
+    width: 66%; 
+    padding-left: $gutter * 2;
+    margin-top: $gutter;
+}
+
+.box-tab {
+    position:relative;
+}
+
+.box-tab__category {
+    position:absolute;
+    top: - ritmo(5);
+    left: -1px;
+    border: 1px solid $black;
+    border-bottom: none;
+    padding: ritmo(2) $gutter / 2 0 $gutter;
+    line-height:ritmo(3);
+    height: ritmo(5);
+    font-family: $futura;
+    font-weight:bold;
+    text-transform: uppercase;
+    &:before {
+        content:"";
+        position:absolute;
+        height:1px;
+        background-color: $white;
+        bottom:0;
+        left: 0px;
+        right: 0px;
+    }
+}
+
+.box-tab__triangle {
+    position:absolute;
+    top:-1px;
+    bottom:1px;
+    left:100%;
+    width:0;
+    height:0;
+    border-width: ritmo(5) * 0.5 ritmo(1);
+    border-color: transparent transparent $black $black;
+    border-style: solid;
+    transform:translateX(1px);
+    &:before {
+        content:"";
+        position:absolute;
+        top: - ritmo(2.5);
+        left: - ritmo(1);
+        width:0;
+        height:0;
+        border-width: ritmo(5) * 0.5 ritmo(1);
+        border-color: transparent transparent $white $white;
+        border-style: solid;
+        transform:translate(-1px, 1px);     
+    }
 }
 
 .autor {
@@ -29,9 +101,6 @@
         margin: 0 auto;
     }
     margin-bottom: $ts-margin;
-    &:last-child {
-        margin-bottom: $gutter;
-    }
 }
 
 .body {
@@ -48,4 +117,12 @@
     margin-top:$ts-margin / 2;
     margin-bottom: $ts-margin / 2;
     border: 1px solid $gray;
+}
+
+.ts--mb {
+    margin-bottom: $ts-margin;
+}
+
+.ts--mt {
+    margin-top: $ts-margin;
 }

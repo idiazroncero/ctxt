@@ -88,6 +88,9 @@
       .minititle {
         font-family: "Futura CTXT"
       }
+      .doc-menu li a {
+        margin-right: 15px;
+      }
     </style>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -98,7 +101,7 @@
     <script>
       $(function(){
 
-        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/elements.html">Docs</a></li></ul>');
+        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="/docs.html">Docs</a></li></ul>');
         $('.notas').click(function(){
           $('.dev').toggle();
         })
@@ -294,10 +297,10 @@
                 Llamaré a las vistas previas de noticias "teasers", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-huge y ts_huge.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
             </p>
         </div>
-        
-
-<article class="ts ts-huge">
-    <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
+        <article class="ts ts-vertical">
+    <div class="ts-vertical__img">
+        <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
+    </div>
     <div class="dev left">
         <p>El tamaño de la tipografía puede ser modificado independientemente del tipo de teaser usando las clases .h1-.h6.</p>
         <p>Visita <a target="_blank" href="/elements.html">elementos</a> para ver todas las 'utility classes'</p>
@@ -332,8 +335,8 @@
     </section>
 
     <div class="dev">
-        <p>Cuidado! El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
-        <p><a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
+        <p>El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
+        <p>También se pueden usar clases modificadoras para cambiar por donde sobresale la imagen. Más info y ejemplos en: <a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">la documentación</a></p>
     </div>
 
     <section class="box">
@@ -347,34 +350,20 @@
             <h1 class="section__title">Editorial</h1>
         </header>
         <div class="dev">
-            <p>En este teaser, como en muchos otros, la altura total de la caja depende de la altura del elemento más alto (usualmente, y en este caso, la imagen) y el texto se centra verticalmente respecto a esta altura.</p>
+            <p>El teaser "mitad" (ts_mitad) fuerza al contenido a dividirse en dos bloques siempre al 50% de ancho</p>
+            <p><a href="/tsmitad.html" target="_blank" rel="noopener noreferrer">Ver documentación</a></p>
+            <p>En este teaser, como en muchos otros, la altura total de la caja depende de la altura del elemento más alto (usualmente, y en este caso, la imagen)</p>
             <p>Esto significa que para conseguir una caja más baja basta con cambiar la relación de aspecto del recorte de la imagen.</p>
         </div>
-        <article class="ts ts-title">
-    <div class="ts-title__img">
+        <article class="ts ts-mitad ts-mitad--center">
+    <div class="ts-mitad__img">
         <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
     </div>
-    <div class="ts-title__textos">
+    <div class="ts-mitad__textos">
         <h1>Sánchez coquetea con el abismo</h1>
         <div class="autor">
             <span>CTXT</span>
         </div> 
-    </div>
-</article>
-
-<div class="dev">
-    <p>La clase modificadora 'ts-title--inverse' permite invertir el orden. Hay que acordarse también de modifiacr el HTML para poner la imagen después del texto</p>
-</div>
-
-<article class="ts ts-title ts-title--inverse">
-    <div class="ts-title__textos">
-        <h1>Sánchez coquetea con el abismo</h1>
-        <div class="autor">
-            <span>CTXT</span>
-        </div> 
-    </div>
-    <div class="ts-title__img">
-        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
     </div>
 </article>
     </section>
@@ -391,40 +380,52 @@
             <p class="section__subtitle seccion__subtitle--gris">Madrid, pieza capital</p>
         </header>
 
-        <div class="col2">
-    <article class="col ts ts-col">
-        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
-        <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
-        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-        <p class="autor">Emmanuel Rodríguez</p>
-    </article>
-    <article class="col ts ts-col">
-        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
-        <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
-        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-        <p class="autor">Jorge Lago</p>
-    </article>
-</div>
+        <div class="dev">
+            <p>
+                El layout "2col" establece dos columnas. En este caso, se usan dos ts-vertical dentro de cada columna.
+            </p>
+            <p>
+                El modificador 'col2--separator' sirve para sustituir el intercolumnado por una línea.
+            </p>
+        </div>
+        <div class="col2 col2--separator">
+            <div class="col">
+                <article class="ts ts-vertical left">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
+                    <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+                    <p class="autor">Emmanuel Rodríguez</p>
+                </article>
+            </div>
+            <div class="col">
+                <article class="ts ts-vertical left">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
+                    <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+                    <p class="autor">Jorge Lago</p>
+                </article>
+            </div>
+        </div>
 
         <div class="dev">
-            <p>El separador se trata como un elemento HTML diferente. De este modo, se puede insertar como y cuando sea neceario.</p>
+            <p>El separador horizontal se trata como un elemento HTML diferente. De este modo, se puede insertar como y cuando sea necesario:</p>
         </div>
 
         <div class="separator"></div>
 
         <div class="dev">
-            <p>En el siguiente tipo de teaser, el ancho de la imagen tiene prioridad y determina el espacio que tiene el texto (con un máximo para la imagen del 60%)</p>
-            <p><a href="./tsbody.html" target="_blank" rel="noopener noreferrer">Ver ejemplos</a></p>
-        </div>
-
-        <div class="dev">
-            <p>La clase modificadora 'ts-body--inverse' permite invertir el orden. Hay que acordarse también de modifiacr el HTML para poner la imagen después del texto</p>
+            <p>En teaser flex (siguiente), el ancho de la imagen determina el espacio que tiene el texto (con un máximo para la imagen del 60%). También usamos clases modificadoras.</p>
+            <p><a href="./tsflex.html" target="_blank" rel="noopener noreferrer">Ver ejemplos y documentación</a></p>
         </div>
 
         
 
-<article class="ts ts-body">
-    <div class="ts-body__textos">
+<article class="ts ts-flex ts-flex--center">
+    <div class="ts-flex__textos">
         <h1 class="h2">
             Esto es un título y poco más puedo decir
         </h1>
@@ -433,23 +434,8 @@
         </p>
         <div class="autor">Pablo Casado</div>
     </div>
-    <div class="ts-body__img">
+    <div class="ts-flex__img">
         <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
-    </div>
-</article>
-
-<article class="ts ts-body ts-body--inverse">
-    <div class="ts-body__img">
-        <img src="http://placehold.it/600x400.jpg" alt="Imagenes">
-    </div>
-    <div class="ts-body__textos">
-        <h1 class="h2">
-            Esto es un título y poco más puedo decir
-        </h1>
-        <p class="body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
-        </p>
-        <div class="autor">Pablo Casado</div>
     </div>
 </article>
 
@@ -464,14 +450,11 @@
             <p class="section__subtitle">Estado del Poder 2019</p>
         </header>
 
-        <article class="ts ts-body ts-body--inverse">
-            <div class="ts-body__img">
+        <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
+            <div class="ts-flex__img">
                 <img src="http://placehold.it/400x500.jpg" alt="Imagenes">
             </div>
-            <div class="ts-body__textos">
-                <div class="dev">
-                    <p>Se pueden usar variaciones también en elementos individuales como .ts-body__title</p>
-                </div>
+            <div class="ts-flex__textos">
                 <h1>
                     El capitalismo<br> financiero prepara<br> la recesión 2.0
                 </h1>
@@ -482,9 +465,14 @@
             </div>
         </article>
 
+        <div class="dev">
+            <p>El siguiente teaser es el 'ts-tab', cuyo HTML es mucho más rígido. Existen, como en otros teasers, los modificadores .ts-tab--center, .ts-tab--expanded y .ts-tab--bottom para alinear verticalmente texto e imágenes</p>
+            <p>En este tipo de teaser, respetar la estructura (incluyendo las clases) es necesario para obtener un buen resultado</p>
+        </div>
+        <br>
         
 
-<article class="ts ts-tab">
+<article class="ts ts-tab ts-tab--expanded">
     <div class="ts-tab__category">
         Hemeroteca CTXT
         <span class="ts-tab__triangle"></span>
@@ -510,65 +498,73 @@
         </div>
 
         <div class="dev">
-            <p>Repetimos ts_2col...</p>
+            <p>Repetimos col2.col2--separator y ts-vertical</p>
         </div>
 
-        <div class="col2">
-    <article class="col ts ts-col">
-        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
-        <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
-        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-        <p class="autor">Emmanuel Rodríguez</p>
-    </article>
-    <article class="col ts ts-col">
-        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
-        <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
-        <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-        <p class="autor">Jorge Lago</p>
-    </article>
-</div>
+        <div class="col2 col2--separator">
+            <div class="col">
+                <article class="ts ts-vertical left">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
+                    <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+                    <p class="autor">Emmanuel Rodríguez</p>
+                </article>
+            </div>
+            <div class="col">
+                <article class="ts ts-vertical left">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/700x900.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
+                    <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
+                    <p class="autor">Jorge Lago</p>
+                </article>
+            </div>
+        </div>
 
         <div class="separator"></div>
 
         <div class="dev">
-            <p>.col2 y .col pueden ser reutilizados independiente del contenido</p>
+            <p>Repetimos col2 y ts-mitad</p>
         </div>
 
         <div class="col2">
             <div class="col">
-                <article class="ts ts-small">
-    <div class="ts-small__img">
-        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
-    </div>
-    <div class="ts-small__textos">
-        <h1 class="h3">Sánchez coquetea con el abismo</h1>
-        <div class="autor">
-            <span>CTXT</span>
-        </div> 
-    </div>
-</article>
+                <article class="ts ts-mitad ts-mitad--center">
+                    <div class="ts-mitad__img">
+                        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-mitad__textos">
+                        <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                        <div class="autor">
+                            <span>CTXT</span>
+                        </div> 
+                    </div>
+                </article>
             </div>
             <div class="col">
-                <article class="ts ts-small">
-    <div class="ts-small__img">
-        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
-    </div>
-    <div class="ts-small__textos">
-        <h1 class="h3">Sánchez coquetea con el abismo</h1>
-        <div class="autor">
-            <span>CTXT</span>
-        </div> 
-    </div>
-</article>
+                <article class="ts ts-mitad ts-mitad--center">
+                    <div class="ts-mitad__img">
+                        <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-mitad__textos">
+                        <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                        <div class="autor">
+                            <span>CTXT</span>
+                        </div> 
+                    </div>
+                </article>
             </div>
         </div>
 
     </section>
 
     <div class="dev">
-        <p>Se puede usar .col2 y .col en cualquier sitio, también <u>fuera</u> de un .box</p>
+        <p>Se puede usar .col2 y .col en cualquier sitio, también <u>como envoltorio</u> de .box</p>
         <p>Este caso, que se resuelve mediante una combinación de casos anteriores, require el uso de clases como .m0 para eliminar algunos márgenes</p>
-        <p>Conseguir equal heights (alturas iguales) en contenidos en dos columnas es bastante complicado. La clase especial .col2--equal-heights estira todos los elementos del tipo .box que haya en el interior de cada columna para lograr que se llegun a ocupar el 100% de la altura</p>
+        <p>Conseguir equal heights (alturas iguales) en contenidos en dos columnas es bastante complicado. La clase especial .col2--equal-heights estira todos los elementos del tipo .box que haya en el interior de cada columna para lograr que se llegue a ocupar el 100% de la altura</p>
         <p>Aun así, se pueden generar espacios en blanco demasiado grandes si las alturas son muy diferentes.</p>
     </div>
 
@@ -584,29 +580,29 @@
                 </header>
 
                 <article class="ts ts-vertical">
-    <div class="ts-vertical__img">
-        <img src="http://placehold.it/300x300.jpg" alt="Imagen">
-    </div>
-    <h1 class="h2">"Es mucho más peligrosa la islamofobia que el islamismo radical"</h1>
-    <div class="autor">
-        <span>Amanda Andrades / David Perejil</span>
-    </div> 
-</article>
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/300x300.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h2">"Es mucho más peligrosa la islamofobia que el islamismo radical"</h1>
+                    <div class="autor">
+                        <span>Amanda Andrades / David Perejil</span>
+                    </div> 
+                </article>
 
                 <div class="subsection">
                     Hablando de racismo
                 </div>
 
                 <div class="dev">
-                    <p>Ejemplo de cómo este teaser se puede solucionar recurriendo a .ts-body, sus modificadores y clases tipo .mb, .h3 y.autor--small en lugar de crear un nuevo tipo de ts</p>
-                    <p><a href="/tsbody.html">Ver documentación de .ts-body</a></p>
+                    <p>Ejemplo de cómo este teaser se puede solucionar recurriendo a .ts-flex, sus modificadores y clases tipo .mb, .h3 y.autor--small en lugar de crear un nuevo tipo de ts</p>
+                    <p><a href="/tsflex.html">Ver documentación de .ts-flex</a></p>
                 </div>
 
-                <article class="m0 ts ts-body ts-body--inverse ts-body--center">
-                    <div class="ts-body__img">
+                <article class="m0 ts ts-flex ts-flex--inverse ts-flex--center">
+                    <div class="ts-flex__img">
                         <img src="http://placehold.it/150x200.jpg" alt="Imagenes">
                     </div>
-                    <div class="ts-body__textos">
+                    <div class="ts-flex__textos">
                         <div class="autor autor--small mb">
                             Keeanga-Yamahtta Taylor<br> - 
                             Activista y Escritora
@@ -618,11 +614,11 @@
                     </div>
                 </article>
                 <div class="separator"></div>
-                <article class="ts ts-body ts-body--inverse ts-body--center">
-                    <div class="ts-body__img">
+                <article class="ts ts-flex ts-flex--inverse ts-flex--center">
+                    <div class="ts-flex__img">
                         <img src="http://placehold.it/150x200.jpg" alt="Imagenes">
                     </div>
-                    <div class="ts-body__textos">
+                    <div class="ts-flex__textos">
                         <div class="autor autor--small mb">
                             Emilia Roig / Directora del <br> 
                             Center for Intersectional Justice
@@ -667,7 +663,7 @@
     </div>
 
     <div class="dev">
-        <p>Con elementos de igual altura, .col2 funciona a la perfección sin ayuda de modificadores</p>
+        <p>Con elementos de igual altura, .col2 funciona sin ayuda de modificadores</p>
     </div>
 
     <div class="col2 mb">
@@ -687,11 +683,11 @@
             <h1 class="section__title">Comunicación</h1>
             <p class="section__subtitle">Manifiesto</p>
         </header>
-        <article class="ts ts-body ts-body--inverse ts-body--expanded">
-            <div class="ts-body__img">
+        <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
+            <div class="ts-flex__img">
                 <img src="http://placehold.it/625x400.jpg" alt="Imagenes">
             </div>
-            <div class="ts-body__textos">
+            <div class="ts-flex__textos">
                 <h1>
                     Nace Ctxt.cat
                 </h1>
@@ -701,7 +697,187 @@
         </article>
     </section>
 
-</div>
+    <section class="box">
+        <header class="section">
+            <div class="section__category">
+                Ciencia
+            </div>
+            <div class="section__patrocinador">
+                <span>Sección patrocinada por:</span>
+                <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+            </div>
+            <h1 class="section__title">Ciencia y tecnología</h1>
+            <p class="section__subtitle">Batalla Digital</p>
+        </header>
+        <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
+            <div class="ts-flex__img">
+                <img src="http://placehold.it/650x350.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-flex__textos">
+                <h1 class="h2">
+                    Huawei y el lobby chino de la seguridad contraatacan
+                </h1>
+                <p class="body">La tecnológica se convierte en el peón para que China sea líder mundial en ciberseguridad y tecnología 5G, y retome las antiguas rutas comerciales y económicas de la ruta de la seda que le permitan desembarcar en EEUU.</p>
+                <div class="autor">Daniel Toledo</div>
+            </div>
+        </article> 
+        <div class="separator"></div>
+        <div class="col2 ts--mt">
+            <div class="col">
+                <article class="ts ts-flex ts-flex--inverse">
+                    <div class="ts-flex__img">
+                        <img src="http://placehold.it/200x200.jpg" alt="">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <h1 class="h3">La inteligencia artificial también cambia el periodismo</h1>
+                        <p class="autor">Silvia Nortes</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="ts ts-flex ts-flex--inverse">
+                    <div class="ts-flex__img">
+                        <img src="http://placehold.it/300x200.jpg" alt="">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <h1 class="h3">Diseñando mentes extendidas</h1>
+                        <p class="autor">Gloria Andrada</p>
+                    </div>
+
+                </article>
+            </div>
+        </div>      
+    </section>
+    <div class="dev">
+        <p>
+            Un tipo especial de .box se encarga de este layout
+        </p>
+    </div>
+    <section class="box box-2col">
+        <div class="box-2col__left">
+            <header class="section">
+                <div class="section__category">
+                    Especial
+                </div>
+                <h1 class="section__title h2">The Baffler</h1>
+                <p class="section__subtitle section__subtitle--small">Emociones en venta</p>
+            </header>
+        </div>
+        <div class="box-2col__right">
+            <article class="ts ts-flex ts-flex--inverse">
+                <div class="ts-flex__img">
+                    <img src="http://placehold.it/350x250.jpg" alt="">
+                </div>
+                <div class="ts-flex__textos">
+                    <h1 class="h3">Spotify, el Gran Hermano musical</h1>
+                    <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequiciu.</p>
+                    <p class="autor">Liz Pelly (The Baffler)</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="col2 col2--equal-heights">
+        <div class="col">
+            <section class="box">
+                <header class="section">
+                    <div class="section__category">
+                        Artes y Letras
+                    </div>
+                    <h1 class="section__title h2">El Ministerio</h1>
+                    <p class="section__subtitle section__subtitle--gris section__subtitle--small">Carlos Barral / Editor y escritor </p>
+                </header>
+                <article class="ts ts-vertical">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/400x300.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h3">"El barco-fantasma existe. Y los peces. Yo los he visto"</h1>
+                    <p class="autor">Constantino Bértolo</p>
+                </article>
+            </section>
+        
+        </div>
+        <div class="col">
+            <section class="box">
+                <header class="section">
+                    <div class="section__category">
+                        Músicas
+                    </div>
+                    <h1 class="section__title">Jazz</h1>
+                </header>
+                <article class="ts ts-vertical">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/400x300.jpg" alt="Imagen">
+                    </div>
+                    <h1 class="h3">La quinta disminuida</h1>
+                    <p class="autor">Nicolás Peña</p>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <div class="col2">
+        <div class="col">
+            <article class="box box-tab">
+                <div class="box-tab__category h4">
+                    Lo más leído
+                    <span class="box-tab__triangle"></span>
+                </div>
+                <div class="box-tab__content">
+                    <article class="ts ts-mitad ts-mitad--expanded">
+                        <div class="ts-mitad__img">
+                            <img src="http://placehold.it/400x200.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-mitad__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="autor">
+                                <span>CTXT</span>
+                            </div> 
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-mitad ts-mitad--expanded">
+                        <div class="ts-mitad__img">
+                            <img src="http://placehold.it/400x200.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-mitad__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="autor">
+                                <span>CTXT</span>
+                            </div> 
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-mitad ts-mitad--expanded">
+                        <div class="ts-mitad__img">
+                            <img src="http://placehold.it/400x200.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-mitad__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="autor">
+                                <span>CTXT</span>
+                            </div> 
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-mitad ts-mitad--expanded">
+                        <div class="ts-mitad__img">
+                            <img src="http://placehold.it/400x200.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-mitad__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="autor">
+                                <span>CTXT</span>
+                            </div> 
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </div>
+        <div class="col"></div>
+    </div>
+
+</div> <!-- MAIN WRAPPER -->
 
 
 

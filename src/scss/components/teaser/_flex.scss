@@ -1,34 +1,33 @@
-.ts-body {
+.ts-flex {
     display:flex;
 }
 
-.ts-body__textos {
+.ts-flex__textos {
     flex:1;
 }
 
-.ts-body__img {
+.ts-flex__img {
     max-width:60%;
     padding-left: $gutter * 2;
 }
 
-.ts-body--inverse {
-    .ts-body__img {
+.ts-flex--inverse {
+    .ts-flex__img {
         padding-left:0;
         padding-right: $gutter * 2;
     }
 }
 
-.ts-body--center {
+.ts-flex--center {
     align-items: center;
 }
 
-.ts-body--bottom {
+.ts-flex--bottom {
     align-items: flex-end;
 }
 
-.ts-body--expanded {
-    .ts-body__textos {
-        padding: $gutter 0;
+.ts-flex--expanded {
+    .ts-flex__textos {
         display:flex;
         flex-direction:column;
         justify-content: space-around;
