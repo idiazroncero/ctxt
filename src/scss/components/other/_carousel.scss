@@ -1,0 +1,25 @@
+.carousel__slides {
+    margin-bottom: $gutter;
+}
+
+.carousel__controls {
+    font-family: $font-secondary;
+    color: $gray;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    text-align:center;
+}
+
+.carousel__link {
+    width:100%;
+
+    a {
+        display:inline-block;
+        padding: 0 $gutter;
+        text-transform: uppercase;
+        margin-top: $gutter / 2;
+        padding-top: $gutter / 2;
+        border-top: 1px solid $gray;
+    }
+}

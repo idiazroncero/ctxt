@@ -13,7 +13,8 @@
     "css:build": "yarn gulp compileCSS; yarn css:post",
     "css:post": "yarn gulp postCSS",
     "html:watch": "yarn gulp watchHTML",
-    "html:build": "yarn gulp renderHTML"
+    "html:build": "yarn gulp renderHTML",
+    "js:build": "parcel build src/js/ctxt.js -d src/js/ -o ctxt-bundle.js"
   },
   "dependencies": {
     "gulp": "^4.0.2",
@@ -28,6 +29,8 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0",
-    "postcss": "^7.0.18"
+    "parcel": "^1.12.4",
+    "postcss": "^7.0.18",
+    "siema": "^1.5.1"
   }
 }

@@ -1,6 +1,6 @@
 .section {
     margin-bottom: $gutter * 2;
-    @include ritmo-bottom-border(1px, $lines:4);
+    @include ritmo-bottom-border(1px, $lines:8);
     border-bottom-style: solid;
     border-bottom-color: $separator-color;
     position:relative;
@@ -39,6 +39,7 @@
 
 .section__subtitle {
     text-align:center;
+    margin:0;
     @extend .font-secondary;
     color: get-color(base, primary);
     text-transform: uppercase;
@@ -54,7 +55,7 @@
     @include ritmo-font-size($h4-font-size);
 }
 
-.seccion__subtitle--gris {
+.section__subtitle--gris {
     color: $gray;
 }
 
@@ -85,4 +86,27 @@
     margin-bottom: $ts-margin / 2;
     padding-bottom: $ts-margin / 2;
     border-bottom: 5px dotted $black;
+}
+
+// ESPECIAL
+
+.section--especial {
+    margin-bottom: $gutter * 2;
+    margin-top: $gutter * 2;
+    @include ritmo-bottom-border(4px, $lines:8);
+    border-bottom-style: dotted;
+    border-bottom-color: $separator-color;
+    @include ritmo-top-border(4px, $lines:8);
+    border-top-style: dotted;
+    border-top-color: $separator-color;
+
+    .section__title {
+        @include ritmo-font-size($h0-font-size);
+    }
+
+    .section__category {
+        position:absolute;
+        top: - ritmo(8);
+        left:0;
+    }
 }
