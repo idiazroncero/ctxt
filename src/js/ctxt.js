@@ -37,4 +37,31 @@ $(function(){
 
     })
 
+    $('.galeria').each(function(index, item){
+      let thisNode = $(this).children('.galeria__slides')[0];
+      let slides  = $(this).find('.galeria__item').length;
+      let $next = $(this).find('.galeria__next');
+      let $prev = $(this).find('.galeria__prev');
+      
+      const siema = new Siema({
+        selector: thisNode,
+        perPage: 3,
+      });
+
+      function updateNumber() {
+        $number.text(siema.currentSlide + 1);
+      }
+
+      $next.click(function(){
+        siema.next();
+        updateNumber();
+      })
+
+      $prev.click(function(){
+        siema.prev();
+        updateNumber();
+      })
+
+    })
+
 })

@@ -1,7 +1,11 @@
 .ts-vertical {
     text-align:center;
     .body {
-        margin-bottom: $gutter;
+        margin-bottom: $gutter * 2;
+        padding: 0 $gutter * 2;
+    }
+    h1 {
+        padding: 0 $gutter;
     }
 }
 

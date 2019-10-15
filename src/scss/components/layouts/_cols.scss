@@ -36,3 +36,29 @@
         border-left:1px solid $gray;
     }
 }
+
+// 3
+
+.col3 {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: $box-margin;
+    > .col {
+        flex:1;
+        max-width: calc(33.33% - #{$gutter});
+        margin-bottom:0;
+        > .ts {
+            margin-bottom:0;
+        }
+    }
+}
+
+.col3--equal-heights {
+    > .col {
+        display:flex;
+        flex-direction:column;
+        > .box {
+            flex:1;
+        }
+    }
+}

@@ -1,31 +1,52 @@
-.ts-tab {
-    border: 1px solid $black;
+.box {
+    padding: $gutter * 2;
+    @extend .b;
+    .ts:last-child,
+    .col2:last-child,
+    .col3:last-child {
+        margin-bottom: $gutter;
+    }
+    margin-bottom: $box-margin;
+
+    &.box--gray {
+        border: 0;
+        background-color: $gray0;
+        
+        // Some overrides
+        .section__subtitle {
+            color: $black;
+        }
+        .ts-tab__category:before {
+            background-color: $gray0;
+        }
+        .ts-tab__triangle:before {
+            border-color: transparent transparent $gray0 $gray0;
+        }
+    }
+}
+
+
+.box-2col {
+    display:flex;
+    margin-top:$gutter;
     position:relative;
-    margin-top:$gutter * 3;
 }
 
-.ts-tab--center {
-    .ts-tab__textos {
-        align-items: center;
-    }
+.box-2col__left {
+    width: 33%;
 }
 
-.ts-tab--bottom {
-    .ts-tab__textos {
-        align-items: flex-end;
-    }
+.box-2col__right {
+    width: 66%; 
+    padding-left: $gutter * 2;
+    margin-top: $gutter;
 }
 
-.ts-tab--expanded {
-    .ts-tab__meta,
-    .ts-tab__title {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-    }
+.box-tab {
+    position:relative;
 }
 
-.ts-tab__category {
+.box-tab__category {
     position:absolute;
     top: - ritmo(5);
     left: -1px;
@@ -48,7 +69,7 @@
     }
 }
 
-.ts-tab__triangle {
+.box-tab__triangle {
     position:absolute;
     top:-1px;
     bottom:1px;
@@ -71,50 +92,4 @@
         border-style: solid;
         transform:translate(-1px, 1px);     
     }
-}
-
-.ts-tab__content {
-    display:flex;
-}
-
-.ts-tab__textos {
-    padding: $gutter;
-    display:flex;
-    width:66%;
-    // align-items:flex-end;
-}
-
-.ts-tab__meta {
-    width:40%;
-    padding-right: $gutter * 2;
-}
-.ts-tab__title {
-    width:60%;
-}
-
-.ts-tab__title {
-    margin:0;
-}
-
-.ts-tab__image {
-    flex:1;
-    img {
-        width:100%;
-    }
-}
-
-.ts-tab__meta {
-    @include ritmo-font-size($h4-font-size);
-    font-family: $futura;
-}
-
-.ts-tab__info {
-    text-transform: uppercase;
-    padding-bottom: $gutter / 2;
-    margin-bottom: $gutter / 2;
-    border-bottom: 1px solid $gray;
-}
-
-.ts-tab__autor {
-    color: $gray;
 }

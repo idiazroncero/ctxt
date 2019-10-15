@@ -21,7 +21,10 @@
 .section__category {
     text-transform: uppercase;
     @extend .font-secondary;
-    margin-bottom: $gutter;
+    margin-bottom: 0;
+    // position:absolute;
+    // top:0;
+    // left:0;
     &:after {
         content:">";
     }
@@ -61,12 +64,13 @@
 
 .section__patrocinador {
     position:absolute;
-    top: -$gutter / 2;
+    top: 0;
     right: 0;
     text-align:center;
     span {
         font-family: $font-secondary;
-        @include ritmo-font-size($h6-font-size, $base-line-multi);
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        margin-bottom: $gutter / 2;
         display:block;
         font-weight:bold;
     }
