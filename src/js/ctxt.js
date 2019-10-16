@@ -39,28 +39,39 @@ $(function(){
 
     $('.galeria').each(function(index, item){
       let thisNode = $(this).children('.galeria__slides')[0];
-      let slides  = $(this).find('.galeria__item').length;
       let $next = $(this).find('.galeria__next');
       let $prev = $(this).find('.galeria__prev');
+      let width = $(window).width();
+      let pages = 1;
+
+      if(width>500 && width<780) {
+        pages = 2
+      } else if(width>780){
+        pages = 3;
+      }
       
       const siema = new Siema({
         selector: thisNode,
-        perPage: 3,
+        perPage: pages,
+        onInit: function(){
+
+          function updateNumber() {
+            $number.text(siema.currentSlide + 1);
+          }
+
+          $next.click(function(){
+            siema.next();
+            updateNumber();
+          })
+    
+          $prev.click(function(){
+            siema.prev();
+            updateNumber();
+          })
+        }
       });
 
-      function updateNumber() {
-        $number.text(siema.currentSlide + 1);
-      }
 
-      $next.click(function(){
-        siema.next();
-        updateNumber();
-      })
-
-      $prev.click(function(){
-        siema.prev();
-        updateNumber();
-      })
 
     })
 

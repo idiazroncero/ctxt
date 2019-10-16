@@ -5,15 +5,17 @@
     border-bottom-color: $separator-color;
     position:relative;
     .box-2col & {
-        height:100%;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        padding-right: $gutter * 2;
-        border:none;
-        border-right: 1px solid $separator-color;
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
+        @include breakpoint($medium) {
+            height:100%;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            padding-right: $gutter * 2;
+            border:none;
+            border-right: 1px solid $separator-color;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+        }
     }
 }
 
@@ -21,17 +23,22 @@
 .section__category {
     text-transform: uppercase;
     @extend .font-secondary;
-    margin-bottom: 0;
+    margin-bottom: $gutter;
+    @include breakpoint($small) {
+        margin-bottom: 0;
+    }
     // position:absolute;
     // top:0;
     // left:0;
     &:after {
         content:">";
     }
-    .box-2col & {
-        position:absolute;
-        top:0;
-        left:0;
+    @include breakpoint($medium) {
+        .box-2col & {
+            position:absolute;
+            top:0;
+            left:0;
+        }
     }
 }
 
@@ -41,12 +48,12 @@
 }
 
 .section__subtitle {
+    @extend .h3;
     text-align:center;
     margin:0;
     @extend .font-secondary;
     color: get-color(base, primary);
     text-transform: uppercase;
-    @include ritmo-font-size($h3-font-size);
     letter-spacing: $letter-spacing;
     font-weight:bold;
     .box-2col & {
@@ -55,7 +62,7 @@
 }
 
 .section__subtitle--small {
-    @include ritmo-font-size($h4-font-size);
+    @extend .h4;
 }
 
 .section__subtitle--gris {
@@ -63,13 +70,19 @@
 }
 
 .section__patrocinador {
-    position:absolute;
-    top: 0;
-    right: 0;
     text-align:center;
+    margin-bottom: $gutter;
+
+    @include breakpoint($small) {
+        margin-bottom: 0;
+        position:absolute;
+        top: 0;
+        right: 0;
+    }
+
     span {
         font-family: $font-secondary;
-        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        @extend .h6;
         margin-bottom: $gutter / 2;
         display:block;
         font-weight:bold;
@@ -84,7 +97,7 @@
     @extend .font-secondary;
     color: $black;
     text-transform: uppercase;
-    @include ritmo-font-size($h3-font-size);
+    @extend .h3;
     letter-spacing: $letter-spacing;
     font-weight:bold;
     margin-bottom: $ts-margin / 2;
@@ -105,7 +118,7 @@
     border-top-color: $separator-color;
 
     .section__title {
-        @include ritmo-font-size($h0-font-size);
+        @extend .h0;
     }
 
     .section__category {

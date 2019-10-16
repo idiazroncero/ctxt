@@ -74,22 +74,35 @@
 }
 
 .ts-tab__content {
-    display:flex;
+    @include breakpoint($medium) {
+       display:flex;
+    }
 }
 
 .ts-tab__textos {
     padding: $gutter;
-    display:flex;
-    width:66%;
+    @include breakpoint($medium) {
+        display:flex;
+        width:66%;
+    }
     // align-items:flex-end;
 }
 
 .ts-tab__meta {
-    width:40%;
-    padding-right: $gutter * 2;
+    margin-bottom: $gutter;
+    @include ritmo-font-size($h4-font-size);
+    font-family: $futura;
+    
+    @include breakpoint($medium) {
+        width:40%;
+        padding-right: $gutter * 2;
+        margin-bottom: 0;
+    }
 }
 .ts-tab__title {
-    width:60%;
+    @include breakpoint($medium) {
+        width:60%;
+    }
 }
 
 .ts-tab__title {
@@ -102,12 +115,6 @@
         width:100%;
     }
 }
-
-.ts-tab__meta {
-    @include ritmo-font-size($h4-font-size);
-    font-family: $futura;
-}
-
 .ts-tab__info {
     text-transform: uppercase;
     padding-bottom: $gutter / 2;

@@ -1,35 +1,53 @@
-.ts-flex {
+.ts-flex {        
     display:flex;
-}
-
-.ts-flex__textos {
-    flex:1;
-}
-
-.ts-flex__img {
-    max-width:60%;
-    padding-left: $gutter * 2;
-}
-
-.ts-flex--inverse {
-    .ts-flex__img {
-        padding-left:0;
-        padding-right: $gutter * 2;
+    flex-direction:column;
+    @include breakpoint($small) {
+        flex-direction:row;
     }
 }
 
-.ts-flex--center {
-    align-items: center;
+.ts-flex__textos {
+    order:2;
+    @include breakpoint($small) {
+        order:1;
+        flex:1;
+    }
 }
 
-.ts-flex--bottom {
-    align-items: flex-end;
+.ts-flex__img {
+    margin-bottom: $gutter;
+    order:1;
+    @include breakpoint($small) {
+        order:2;
+        margin-bottom: 0;
+        max-width:60%;
+        padding-left: $gutter * 2;
+    }
 }
 
-.ts-flex--expanded {
-    .ts-flex__textos {
-        display:flex;
-        flex-direction:column;
-        justify-content: space-around;
+.ts-flex--inverse {
+    @include breakpoint($small) {
+        .ts-flex__img {
+            padding-left:0;
+            padding-right: $gutter * 2;
+        }
+    }
+}
+
+@include breakpoint($small) {
+    .ts-flex--center {
+        align-items: center;
+    }
+
+    .ts-flex--bottom {
+        align-items: flex-end;
+    }
+
+    .ts-flex--expanded {
+        .ts-flex__textos {
+            display:flex;
+            flex-direction:column;
+            justify-content: space-around;
+        }
     }
 }

@@ -1,11 +1,19 @@
 .footer {
     background-color: $gray9;
-    padding: $gutter * 2;
+    padding: $gutter;
+    @include breakpoint($medium) {
+        padding: $gutter * 2;
+    }
     color: $white;
+    .body {
+        color: $white;
+    }
 }
 
 .footer__info {
-    max-width: 45%;
+    @include breakpoint($medium) {
+        max-width: 45%; 
+    }
     margin-bottom: $gutter * 2;
 }
 
@@ -58,7 +66,7 @@
 .footer__menu {
     margin: $gutter * 2 0;
     ul {
-        padding:0;
+
     }
     li {
         list-style-type: disc;

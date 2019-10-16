@@ -1,11 +1,16 @@
 .ts-vertical {
     text-align:center;
+    // @include breakpoint($small) {
+    //     &.tc .body {
+    //         margin-bottom: $gutter * 2;
+    //         padding: 0 $gutter;
+    //     }
+    //     &.tc h1 {
+    //         padding: 0 $gutter;
+    //     }
+    // }
     .body {
-        margin-bottom: $gutter * 2;
-        padding: 0 $gutter * 2;
-    }
-    h1 {
-        padding: 0 $gutter;
+        margin-bottom: $gutter;
     }
 }
 

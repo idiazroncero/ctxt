@@ -1,12 +1,17 @@
 .box {
-    padding: $gutter * 2;
+    padding: $gutter;
+    margin-bottom: $box-margin;
     @extend .b;
+
+    @include breakpoint($medium) {
+        padding: $gutter * 2;
+    }
+
     .ts:last-child,
     .col2:last-child,
     .col3:last-child {
         margin-bottom: $gutter;
     }
-    margin-bottom: $box-margin;
 
     &.box--gray {
         border: 0;
@@ -16,9 +21,11 @@
         .section__subtitle {
             color: $black;
         }
+
         .ts-tab__category:before {
             background-color: $gray0;
         }
+        
         .ts-tab__triangle:before {
             border-color: transparent transparent $gray0 $gray0;
         }
@@ -27,19 +34,25 @@
 
 
 .box-2col {
-    display:flex;
-    margin-top:$gutter;
-    position:relative;
+    @include breakpoint($medium) {
+        display:flex;
+        margin-top:$gutter;
+        position:relative;
+    }
 }
 
 .box-2col__left {
-    width: 33%;
+    @include breakpoint($medium) {
+        width: 33%;
+    }
 }
 
 .box-2col__right {
-    width: 66%; 
-    padding-left: $gutter * 2;
-    margin-top: $gutter;
+    @include breakpoint($medium) {
+        width: 66%; 
+        padding-left: $gutter * 2;
+        margin-top: $gutter;
+    }
 }
 
 .box-tab {

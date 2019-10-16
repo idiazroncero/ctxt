@@ -1,9 +1,39 @@
+.h0 {
+    @include breakpoint(max-width $medium) {
+        @include ritmo-font-size($h1-font-size, $h1-ritmo-lines);
+    }
+}
 
+h1,.h1 {
+    @include breakpoint(max-width $medium) {
+        @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
+    }
+}
+h2,.h2 {
+    @include breakpoint(max-width $medium) {
+        @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    }
+}
+h3,.h3 {
+    @include breakpoint(max-width $medium) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
+}
+// h4,.h4 {
+//     @include breakpoint(max-width $medium) {
+//         @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+//     }
+// }
+// h5,.h5 {
+//     @include breakpoint(max-width $medium) {
+//         @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+//     }
+// }
 
 .autor {
     text-transform: uppercase;
     @extend .font-secondary;
-    @include ritmo-font-size($h4-font-size);
+    @extend .h4;
     span + span {
         &:before {
             content: "/";
@@ -14,27 +44,39 @@
 }
 
 .autor--big {
-    @include ritmo-font-size($h3-font-size);
+    @extend .h3;
 }
 
 .autor--small {
-    @include ritmo-font-size($h5-font-size);
+    @extend .h5;
 }
 
 .ts {
     margin-bottom: $ts-margin;
     img {
         margin: 0 auto;
+        display:block;
+    }
+    @include breakpoint(max-width $small) {
+        text-align:center;
+    }
+}
+
+.tl,
+.tc,
+.tr {
+    @include breakpoint(max-width $small) {
+        text-align:center !important;
     }
 }
 
 .body {
-    @include ritmo-font-size($h4-font-size);
+    @extend .h4;
     font-weight:lighter;
 }
 
 .body--big {
-    @include ritmo-font-size($h3-font-size);
+    @extend .h3;
     font-weight:lighter;
 }
 
@@ -50,4 +92,8 @@
 
 .mt--big {
     margin-top: $ts-margin;
+}
+
+iframe {
+    max-width:100%;
 }

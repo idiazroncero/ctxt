@@ -1,38 +1,56 @@
 .ts-mitad {
     display:flex;
+    flex-direction:column;
+    @include breakpoint($small) {
+        flex-direction:row;
+    }
 }
 
 .ts-mitad__img {
-    flex: 0 0 50%;
+    margin-bottom: $gutter;
+    order: 1;
+    @include breakpoint($small) {
+        order: 2;
+        margin-bottom: 0;
+        flex: 0 0 50%;
+    }
 }
 
 .ts-mitad__textos {
-    display:flex;
-    flex-direction:column;
-    margin-left: 5%;
+    order: 2;
+    @include breakpoint($small) {
+        order: 1;
+        display:flex;
+        flex-direction:column;
+        margin-left: 5%;
+    }
 }
 
 .ts-mitad--inverse {
-    .ts-mitad__textos {
-        margin-right: 5%;
-        margin-left: 0;
+    @include breakpoint($small) {
+        .ts-mitad__textos {
+            margin-right: 5%;
+            margin-left: 0;
+        }
     }
 }
 
-.ts-mitad--center {
-    .ts-mitad__textos {
-        justify-content: center;
+@include breakpoint($small) {
+    .ts-mitad--center {
+        .ts-mitad__textos {
+            justify-content: center;
+        }
     }
-}
 
-.ts-mitad--bottom {
-    .ts-mitad__textos {
-        justify-content: flex-end;
+    .ts-mitad--bottom {
+        .ts-mitad__textos {
+            justify-content: flex-end;
+        }
     }
-}
 
-.ts-mitad--expanded {
-    .ts-mitad__textos {
-        justify-content: space-around;
+    .ts-mitad--expanded {
+        .ts-mitad__textos {
+            justify-content: space-around;
+        }
     }
 }

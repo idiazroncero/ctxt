@@ -1,14 +1,21 @@
 
 .col2 {
-    display:flex;
-    justify-content:space-between;
     margin-bottom: $box-margin;
+
+    @include breakpoint($medium) {
+        display:flex;
+        justify-content:space-between;
+    }
+
     > .col {
-        flex:1;
-        max-width: calc(50% - #{$gutter});
-        margin-bottom:0;
-        > .ts {
+        margin-bottom: $box-margin;
+        @include breakpoint($medium) {
+            flex:1;
+            max-width: calc(50% - #{$gutter});
             margin-bottom:0;
+            > .ts {
+                margin-bottom:0;
+            }
         }
     }
 }
@@ -24,31 +31,39 @@
 }
 
 .col2--separator {
-    .col {
-        max-width: 50%;
-    }
-    .col:first-child {
-        padding-right: $gutter * 3;
-        border-right:1px solid $gray;
-    }
-    .col:last-child {
-        padding-left: $gutter * 3;
-        border-left:1px solid $gray;
+    @include breakpoint($medium) {
+        .col {
+            max-width: 50%;
+        }
+        .col:first-child {
+            padding-right: $gutter * 3;
+            border-right:1px solid $gray;
+        }
+        .col:last-child {
+            padding-left: $gutter * 3;
+            border-left:1px solid $gray;
+        }
     }
 }
 
 // 3
 
+
 .col3 {
-    display:flex;
-    justify-content:space-between;
     margin-bottom: $box-margin;
+    @include breakpoint($medium) {
+        display:flex;
+        justify-content:space-between;
+    }
     > .col {
-        flex:1;
-        max-width: calc(33.33% - #{$gutter});
-        margin-bottom:0;
-        > .ts {
+        margin-bottom: $gutter;
+        @include breakpoint($medium) {
             margin-bottom:0;
+            flex:1;
+            max-width: calc(33.33% - #{$gutter});
+            > .ts {
+                margin-bottom:0;
+            }
         }
     }
 }

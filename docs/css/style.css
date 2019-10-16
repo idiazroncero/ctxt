@@ -666,25 +666,25 @@ h2, .h2 {
   line-height: 42px;
   line-height: 2.625rem; }
 
-h3, .h3 {
+h3, .h3, .autor--big, .body--big, .section__subtitle, .subsection {
   font-size: 29px;
   font-size: 1.8225rem;
   line-height: 36px;
   line-height: 2.25rem; }
 
-h4, .h4 {
+h4, .h4, .autor, .body, .section__subtitle--small {
   font-size: 22px;
   font-size: 1.35rem;
   line-height: 24px;
   line-height: 1.5rem; }
 
-h5, .h5 {
+h5, .h5, .autor--small {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
   line-height: 1.5rem; }
 
-h6, .h6 {
+h6, .h6, .section__patrocinador span {
   font-size: 12px;
   font-size: 0.74074rem;
   line-height: 12px;
@@ -695,37 +695,37 @@ h2, .h2 {
   letter-spacing: -0.03em; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+.h1, .h2, .h3, .autor--big, .body--big, .section__subtitle, .subsection, .h4, .autor, .body, .section__subtitle--small, .h5, .autor--small, .h6, .section__patrocinador span {
   color: #000;
   font-weight: normal; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
-  .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
+  .h1 small, .h2 small, .h3 small, .autor--big small, .body--big small, .section__subtitle small, .subsection small, .h4 small, .autor small, .body small, .section__subtitle--small small, .h5 small, .autor--small small, .h6 small, .section__patrocinador span small {
     color: inherit;
     vertical-align: 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-  .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
+  .h1 a, .h2 a, .h3 a, .autor--big a, .body--big a, .section__subtitle a, .subsection a, .h4 a, .autor a, .body a, .section__subtitle--small a, .h5 a, .autor--small a, .h6 a, .section__patrocinador span a {
     text-decoration: none; }
     h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus,
     .h1 a:hover,
-    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .h3 a:focus, .h4 a:hover, .h4 a:focus, .h5 a:hover, .h5 a:focus, .h6 a:hover, .h6 a:focus {
+    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h3 a:focus, .autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h5 a:hover, .autor--small a:hover, .h5 a:focus, .autor--small a:focus, .h6 a:hover, .section__patrocinador span a:hover, .h6 a:focus, .section__patrocinador span a:focus {
       text-decoration: none; }
   h1 a, h1 a:link, h2 a, h2 a:link, h3 a, h3 a:link, h4 a, h4 a:link, h5 a, h5 a:link, h6 a, h6 a:link,
   .h1 a,
-  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .h3 a:link, .h4 a, .h4 a:link, .h5 a, .h5 a:link, .h6 a, .h6 a:link {
+  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .autor--big a, .body--big a, .section__subtitle a, .subsection a, .h3 a:link, .autor--big a:link, .body--big a:link, .section__subtitle a:link, .subsection a:link, .h4 a, .autor a, .body a, .section__subtitle--small a, .h4 a:link, .autor a:link, .body a:link, .section__subtitle--small a:link, .h5 a, .autor--small a, .h5 a:link, .autor--small a:link, .h6 a, .section__patrocinador span a, .h6 a:link, .section__patrocinador span a:link {
     color: #000; }
   h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
-  .h1 a:visited, .h2 a:visited, .h3 a:visited, .h4 a:visited, .h5 a:visited, .h6 a:visited {
+  .h1 a:visited, .h2 a:visited, .h3 a:visited, .autor--big a:visited, .body--big a:visited, .section__subtitle a:visited, .subsection a:visited, .h4 a:visited, .autor a:visited, .body a:visited, .section__subtitle--small a:visited, .h5 a:visited, .autor--small a:visited, .h6 a:visited, .section__patrocinador span a:visited {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .h3 a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .h5 a:hover, .h6 a:focus, .h6 a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor--small a:focus, .h5 a:hover, .autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
     color: #000; }
   h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active,
-  .h1 a:active, .h2 a:active, .h3 a:active, .h4 a:active, .h5 a:active, .h6 a:active {
+  .h1 a:active, .h2 a:active, .h3 a:active, .autor--big a:active, .body--big a:active, .section__subtitle a:active, .subsection a:active, .h4 a:active, .autor a:active, .body a:active, .section__subtitle--small a:active, .h5 a:active, .autor--small a:active, .h6 a:active, .section__patrocinador span a:active {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .h3 a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .h5 a:hover, .h6 a:focus, .h6 a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor--small a:focus, .h5 a:hover, .autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
     text-decoration: none; }
 
 .font-secondary, .autor, .section__category, .section__subtitle, .subsection,
@@ -1955,45 +1955,59 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-top: 1.5rem;
   margin-bottom: 0; }
 
+@media (max-width: 960px) {
+  .h0, .section--especial .section__title {
+    font-size: 53px;
+    font-size: 3.32151rem;
+    line-height: 54px;
+    line-height: 3.375rem; } }
+
+@media (max-width: 960px) {
+  h1, .h1 {
+    font-size: 39px;
+    font-size: 2.46038rem;
+    line-height: 42px;
+    line-height: 2.625rem; } }
+
+@media (max-width: 960px) {
+  h2, .h2 {
+    font-size: 29px;
+    font-size: 1.8225rem;
+    line-height: 36px;
+    line-height: 2.25rem; } }
+
+@media (max-width: 960px) {
+  h3, .h3, .autor--big, .body--big, .section__subtitle, .subsection {
+    font-size: 22px;
+    font-size: 1.35rem;
+    line-height: 24px;
+    line-height: 1.5rem; } }
+
 .autor {
-  text-transform: uppercase;
-  font-size: 22px;
-  font-size: 1.35rem;
-  line-height: 30px;
-  line-height: 1.875rem; }
+  text-transform: uppercase; }
   .autor span + span:before {
     content: "/";
     padding: 0 5px; }
 
-.autor--big {
-  font-size: 29px;
-  font-size: 1.8225rem;
-  line-height: 36px;
-  line-height: 2.25rem; }
-
-.autor--small {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 24px;
-  line-height: 1.5rem; }
-
 .ts {
   margin-bottom: 6rem; }
   .ts img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 640px) {
+    .ts {
+      text-align: center; } }
+
+@media (max-width: 640px) {
+  .tl,
+  .tc,
+  .tr {
+    text-align: center !important; } }
 
 .body {
-  font-size: 22px;
-  font-size: 1.35rem;
-  line-height: 30px;
-  line-height: 1.875rem;
   font-weight: lighter; }
 
 .body--big {
-  font-size: 29px;
-  font-size: 1.8225rem;
-  line-height: 36px;
-  line-height: 2.25rem;
   font-weight: lighter; }
 
 .separator {
@@ -2006,6 +2020,9 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 
 .mt--big {
   margin-top: 6rem; }
+
+iframe {
+  max-width: 100%; }
 
 .header {
   margin-bottom: 1.5rem; }
@@ -2330,12 +2347,19 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 
 .footer {
   background-color: #2E2E2E;
-  padding: 3rem;
+  padding: 1.5rem;
   color: #fff; }
+  @media (min-width: 960px) {
+    .footer {
+      padding: 3rem; } }
+  .footer .body {
+    color: #fff; }
 
 .footer__info {
-  max-width: 45%;
   margin-bottom: 3rem; }
+  @media (min-width: 960px) {
+    .footer__info {
+      max-width: 45%; } }
 
 .footer__desc {
   margin: 3rem 0; }
@@ -2381,8 +2405,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 
 .footer__menu {
   margin: 3rem 0; }
-  .footer__menu ul {
-    padding: 0; }
   .footer__menu li {
     list-style-type: disc; }
   .footer__menu a {
@@ -2440,26 +2462,31 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   border-bottom-style: solid;
   border-bottom-color: #000;
   position: relative; }
-  .box-2col .section {
-    height: 100%;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    padding-right: 3rem;
-    border: none;
-    border-right: 1px solid #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
+  @media (min-width: 960px) {
+    .box-2col .section {
+      height: 100%;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      padding-right: 3rem;
+      border: none;
+      border-right: 1px solid #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .section__category {
   text-transform: uppercase;
-  margin-bottom: 0; }
+  margin-bottom: 1.5rem; }
+  @media (min-width: 640px) {
+    .section__category {
+      margin-bottom: 0; } }
   .section__category:after {
     content: ">"; }
-  .box-2col .section__category {
-    position: absolute;
-    top: 0;
-    left: 0; }
+  @media (min-width: 960px) {
+    .box-2col .section__category {
+      position: absolute;
+      top: 0;
+      left: 0; } }
 
 .section__title {
   text-align: center;
@@ -2470,35 +2497,25 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin: 0;
   color: #f01b4d;
   text-transform: uppercase;
-  font-size: 29px;
-  font-size: 1.8225rem;
-  line-height: 36px;
-  line-height: 2.25rem;
   letter-spacing: 0.05em;
   font-weight: bold; }
   .box-2col .section__subtitle {
     margin-bottom: 0; }
 
-.section__subtitle--small {
-  font-size: 22px;
-  font-size: 1.35rem;
-  line-height: 30px;
-  line-height: 1.875rem; }
-
 .section__subtitle--gris {
   color: #a3a3a3; }
 
 .section__patrocinador {
-  position: absolute;
-  top: 0;
-  right: 0;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 640px) {
+    .section__patrocinador {
+      margin-bottom: 0;
+      position: absolute;
+      top: 0;
+      right: 0; } }
   .section__patrocinador span {
     font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-    font-size: 0.74074rem;
-    line-height: 12px;
-    line-height: 0.75rem;
     margin-bottom: 0.75rem;
     display: block;
     font-weight: bold; }
@@ -2509,10 +2526,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   text-align: center;
   color: #000;
   text-transform: uppercase;
-  font-size: 29px;
-  font-size: 1.8225rem;
-  line-height: 36px;
-  line-height: 2.25rem;
   letter-spacing: 0.05em;
   font-weight: bold;
   margin-bottom: 3rem;
@@ -2534,11 +2547,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   padding-top: 2.75rem;
   border-top-style: dotted;
   border-top-color: #000; }
-  .section--especial .section__title {
-    font-size: 72px;
-    font-size: 4.48403rem;
-    line-height: 78px;
-    line-height: 4.875rem; }
   .section--especial .section__category {
     position: absolute;
     top: -3rem;
@@ -2603,8 +2611,11 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     transform: rotate(45deg); }
 
 .box {
-  padding: 3rem;
+  padding: 1.5rem;
   margin-bottom: 4.5rem; }
+  @media (min-width: 960px) {
+    .box {
+      padding: 3rem; } }
   .box .ts:last-child,
   .box .col2:last-child,
   .box .col3:last-child {
@@ -2619,18 +2630,21 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     .box.box--gray .ts-tab__triangle:before {
       border-color: transparent transparent #CCCCCA #CCCCCA; }
 
-.box-2col {
-  display: flex;
-  margin-top: 1.5rem;
-  position: relative; }
+@media (min-width: 960px) {
+  .box-2col {
+    display: flex;
+    margin-top: 1.5rem;
+    position: relative; } }
 
-.box-2col__left {
-  width: 33%; }
+@media (min-width: 960px) {
+  .box-2col__left {
+    width: 33%; } }
 
-.box-2col__right {
-  width: 66%;
-  padding-left: 3rem;
-  margin-top: 1.5rem; }
+@media (min-width: 960px) {
+  .box-2col__right {
+    width: 66%;
+    padding-left: 3rem;
+    margin-top: 1.5rem; } }
 
 .box-tab {
   position: relative; }
@@ -2680,9 +2694,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     transform: translate(-1px, 1px); }
 
 .ts-flotante {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 12rem;
   border-top-width: 1px;
   border-top-width: 0.0625rem;
   padding-top: 23px;
@@ -2694,83 +2705,123 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   border-top-color: #000;
   border-bottom-color: #000;
   border-top-style: solid;
-  border-bottom-style: solid;
-  padding-left: 1.5rem;
-  padding-right: 3rem; }
+  border-bottom-style: solid; }
+  @media (min-width: 640px) {
+    .ts-flotante {
+      padding-left: 1.5rem;
+      padding-right: 3rem;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12rem; } }
 
 .ts-flotante--inverse {
-  margin-top: 0;
-  margin-bottom: 12rem !important; }
-  .ts-flotante--inverse .ts-flotante__img img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    left: 0;
-    height: auto; }
+  margin-top: 0; }
+  @media (min-width: 640px) {
+    .ts-flotante--inverse {
+      margin-bottom: 12rem !important; }
+      .ts-flotante--inverse .ts-flotante__img img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        height: auto; } }
 
 .ts-flotante__textos {
-  width: 50%;
-  padding-right: 1.5rem; }
+  margin-bottom: 1.5rem; }
+  @media (min-width: 640px) {
+    .ts-flotante__textos {
+      margin-bottom: 0;
+      width: 50%;
+      padding-right: 1.5rem; } }
 
-.ts-flotante__img {
-  width: 50%;
-  position: relative; }
-  .ts-flotante__img img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: auto; }
+@media (min-width: 640px) {
+  .ts-flotante__img {
+    width: 50%;
+    position: relative; }
+    .ts-flotante__img img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: auto; } }
 
 .ts-mitad {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 640px) {
+    .ts-mitad {
+      flex-direction: row; } }
 
 .ts-mitad__img {
-  flex: 0 0 50%; }
+  margin-bottom: 1.5rem;
+  order: 1; }
+  @media (min-width: 640px) {
+    .ts-mitad__img {
+      order: 2;
+      margin-bottom: 0;
+      flex: 0 0 50%; } }
 
 .ts-mitad__textos {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5%; }
+  order: 2; }
+  @media (min-width: 640px) {
+    .ts-mitad__textos {
+      order: 1;
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%; } }
 
-.ts-mitad--inverse .ts-mitad__textos {
-  margin-right: 5%;
-  margin-left: 0; }
+@media (min-width: 640px) {
+  .ts-mitad--inverse .ts-mitad__textos {
+    margin-right: 5%;
+    margin-left: 0; } }
 
-.ts-mitad--center .ts-mitad__textos {
-  justify-content: center; }
-
-.ts-mitad--bottom .ts-mitad__textos {
-  justify-content: flex-end; }
-
-.ts-mitad--expanded .ts-mitad__textos {
-  justify-content: space-around; }
+@media (min-width: 640px) {
+  .ts-mitad--center .ts-mitad__textos {
+    justify-content: center; }
+  .ts-mitad--bottom .ts-mitad__textos {
+    justify-content: flex-end; }
+  .ts-mitad--expanded .ts-mitad__textos {
+    justify-content: space-around; } }
 
 .ts-flex {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 640px) {
+    .ts-flex {
+      flex-direction: row; } }
 
 .ts-flex__textos {
-  flex: 1; }
+  order: 2; }
+  @media (min-width: 640px) {
+    .ts-flex__textos {
+      order: 1;
+      flex: 1; } }
 
 .ts-flex__img {
-  max-width: 60%;
-  padding-left: 3rem; }
+  margin-bottom: 1.5rem;
+  order: 1; }
+  @media (min-width: 640px) {
+    .ts-flex__img {
+      order: 2;
+      margin-bottom: 0;
+      max-width: 60%;
+      padding-left: 3rem; } }
 
-.ts-flex--inverse .ts-flex__img {
-  padding-left: 0;
-  padding-right: 3rem; }
+@media (min-width: 640px) {
+  .ts-flex--inverse .ts-flex__img {
+    padding-left: 0;
+    padding-right: 3rem; } }
 
-.ts-flex--center {
-  align-items: center; }
-
-.ts-flex--bottom {
-  align-items: flex-end; }
-
-.ts-flex--expanded .ts-flex__textos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+@media (min-width: 640px) {
+  .ts-flex--center {
+    align-items: center; }
+  .ts-flex--bottom {
+    align-items: flex-end; }
+  .ts-flex--expanded .ts-flex__textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; } }
 
 .ts-tab {
   border: 1px solid #000;
@@ -2833,20 +2884,33 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     border-style: solid;
     transform: translate(-1px, 1px); }
 
-.ts-tab__content {
-  display: flex; }
+@media (min-width: 960px) {
+  .ts-tab__content {
+    display: flex; } }
 
 .ts-tab__textos {
-  padding: 1.5rem;
-  display: flex;
-  width: 66%; }
+  padding: 1.5rem; }
+  @media (min-width: 960px) {
+    .ts-tab__textos {
+      display: flex;
+      width: 66%; } }
 
 .ts-tab__meta {
-  width: 40%;
-  padding-right: 3rem; }
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+  font-size: 1.35rem;
+  line-height: 30px;
+  line-height: 1.875rem;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  @media (min-width: 960px) {
+    .ts-tab__meta {
+      width: 40%;
+      padding-right: 3rem;
+      margin-bottom: 0; } }
 
-.ts-tab__title {
-  width: 60%; }
+@media (min-width: 960px) {
+  .ts-tab__title {
+    width: 60%; } }
 
 .ts-tab__title {
   margin: 0; }
@@ -2855,13 +2919,6 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   flex: 1; }
   .ts-tab__image img {
     width: 100%; }
-
-.ts-tab__meta {
-  font-size: 22px;
-  font-size: 1.35rem;
-  line-height: 30px;
-  line-height: 1.875rem;
-  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .ts-tab__info {
   text-transform: uppercase;
@@ -2875,10 +2932,7 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
 .ts-vertical {
   text-align: center; }
   .ts-vertical .body {
-    margin-bottom: 3rem;
-    padding: 0 3rem; }
-  .ts-vertical h1 {
-    padding: 0 1.5rem; }
+    margin-bottom: 1.5rem; }
 
 .ts-vertical__img {
   margin-bottom: 1.5rem; }
@@ -2886,15 +2940,20 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     margin: 0 auto; }
 
 .col2 {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 4.5rem; }
+  @media (min-width: 960px) {
+    .col2 {
+      display: flex;
+      justify-content: space-between; } }
   .col2 > .col {
-    flex: 1;
-    max-width: calc(50% - 1.5rem);
-    margin-bottom: 0; }
-    .col2 > .col > .ts {
-      margin-bottom: 0; }
+    margin-bottom: 4.5rem; }
+    @media (min-width: 960px) {
+      .col2 > .col {
+        flex: 1;
+        max-width: calc(50% - 1.5rem);
+        margin-bottom: 0; }
+        .col2 > .col > .ts {
+          margin-bottom: 0; } }
 
 .col2--equal-heights > .col {
   display: flex;
@@ -2902,27 +2961,31 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   .col2--equal-heights > .col > .box {
     flex: 1; }
 
-.col2--separator .col {
-  max-width: 50%; }
-
-.col2--separator .col:first-child {
-  padding-right: 4.5rem;
-  border-right: 1px solid #a3a3a3; }
-
-.col2--separator .col:last-child {
-  padding-left: 4.5rem;
-  border-left: 1px solid #a3a3a3; }
+@media (min-width: 960px) {
+  .col2--separator .col {
+    max-width: 50%; }
+  .col2--separator .col:first-child {
+    padding-right: 4.5rem;
+    border-right: 1px solid #a3a3a3; }
+  .col2--separator .col:last-child {
+    padding-left: 4.5rem;
+    border-left: 1px solid #a3a3a3; } }
 
 .col3 {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 4.5rem; }
+  @media (min-width: 960px) {
+    .col3 {
+      display: flex;
+      justify-content: space-between; } }
   .col3 > .col {
-    flex: 1;
-    max-width: calc(33.33% - 1.5rem);
-    margin-bottom: 0; }
-    .col3 > .col > .ts {
-      margin-bottom: 0; }
+    margin-bottom: 1.5rem; }
+    @media (min-width: 960px) {
+      .col3 > .col {
+        margin-bottom: 0;
+        flex: 1;
+        max-width: calc(33.33% - 1.5rem); }
+        .col3 > .col > .ts {
+          margin-bottom: 0; } }
 
 .col3--equal-heights > .col {
   display: flex;
@@ -3072,10 +3135,10 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   color: #fff; }
   .invert h1, .invert .h1,
   .invert h2, .invert .h2,
-  .invert h3, .invert .h3,
-  .invert h4, .invert .h4,
-  .invert h5, .invert .h5,
-  .invert h6, .invert .h6 {
+  .invert h3, .invert .h3, .invert .autor--big, .invert .body--big, .invert .section__subtitle, .invert .subsection,
+  .invert h4, .invert .h4, .invert .autor, .invert .body, .invert .section__subtitle--small,
+  .invert h5, .invert .h5, .invert .autor--small,
+  .invert h6, .invert .h6, .invert .section__patrocinador span, .section__patrocinador .invert span {
     color: inherit; }
   .invert a {
     text-decoration: underline;
