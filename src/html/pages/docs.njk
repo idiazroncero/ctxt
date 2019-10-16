@@ -42,6 +42,8 @@
                 <li>.ml - margin-left</li>
                 <li>.mb - margin-bottom</li>
                 <li>.mr - margin-right</li>
+                <li>.mb- -big - margin-bottom 2x</li>
+                <li>.mt- -big - margin-right 2x</li>
                 <li>.pt - padding-top</li>
                 <li>.pl - padding-left</li>
                 <li>.pb - padding-bottom</li>
@@ -61,9 +63,10 @@
         <h5>Título tamaño h5</h5>
         <h6>Título tamaño h6</h6>
         <div class="dev">
-            <p>Se pueden conseguir estos tamaños usando las clases .h1 - .h6.</p>
+            <p>Se pueden conseguir estos tamaños usando las clases .h0 - .h6.</p>
             <p>Por ejemplo, y siguiendo buenas prácticas SEO, el HTML de títulos dentro de un 'article' o 'section' es 'h1' y el tamaño de la tipografía se controla mediante estas clases.</p>
         </div>
+        <h1 class="h0">Elemento con clase .h0 (extra)</h1>
         <h1 class="h1">Elemento con clase .h1</h1>
         <h1 class="h2">Elemento con clase .h2</h1>
         <h1 class="h3">Elemento con clase .h3</h1>
@@ -83,10 +86,10 @@
     <section class="box">
         <h1 class="font-secondary">Elementos específicos de CTXT</h1>
         <hr>
-        <section class="box">
+        <section class="box mb--big">
             <p>Utiliza la clase .box para añadir un borde y padding a cualquier elemento</p>
         </section>
-        <section class="body">
+        <section class="body mb--big">
             <p>
                 Usa la clase .body aplicada a un cuerpo de texto para aumentar el tamaño de la tipografía y reducir la anchura de la fuente.
             </p>
@@ -97,7 +100,7 @@
                 Se aplica principalmente en el texto de artículos y en los resúmenes que aparecen en los teasers.
             </p>
         </section>
-        <section>
+        <section class="mb--big">
             <p class="autor">Utiliza la clase .autor para dar rápidamente el formato común a todos los autores</p>
             <p class="autor autor--big">El modificador .autor--big se añade para aumentar el tamaño</p>
             <p class="autor autor--small">Lo contrario es válido para autor--small</p>

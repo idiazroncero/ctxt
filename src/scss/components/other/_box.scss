@@ -3,7 +3,8 @@
     margin-bottom: $box-margin;
     @extend .b;
 
-    @include breakpoint($medium) {
+
+    @include breakpoint($large) {
         padding: $gutter * 2;
     }
 
@@ -33,7 +34,7 @@
 }
 
 
-.box-2col {
+.box--2col {
     @include breakpoint($medium) {
         display:flex;
         margin-top:$gutter;
@@ -41,13 +42,13 @@
     }
 }
 
-.box-2col__left {
+.box--2col__left {
     @include breakpoint($medium) {
         width: 33%;
     }
 }
 
-.box-2col__right {
+.box--2col__right {
     @include breakpoint($medium) {
         width: 66%; 
         padding-left: $gutter * 2;
@@ -55,11 +56,11 @@
     }
 }
 
-.box-tab {
+.box--tab {
     position:relative;
 }
 
-.box-tab__category {
+.box--tab__category {
     position:absolute;
     top: - ritmo(5);
     left: -1px;
@@ -82,7 +83,7 @@
     }
 }
 
-.box-tab__triangle {
+.box--tab__triangle {
     position:absolute;
     top:-1px;
     bottom:1px;

@@ -77,3 +77,28 @@
         }
     }
 }
+
+// TEASER OVERRIDES
+
+.col {
+    @include breakpoint(max-width $large) {
+        .ts-flex,
+        .ts-mitad {
+            flex-direction:column;
+        }
+        .ts-flex__img,
+        .ts-mitad__img, {
+            order: -999;
+            margin-bottom: $gutter;
+            padding:0;
+            max-width:100%;
+            width:100%;
+        }
+        .ts-flex__textos,
+        .ts-mitad__textos {
+            text-align:center;
+            margin-left:0;
+            margin-right:0;
+        }
+    }
+}

@@ -666,7 +666,7 @@ h2, .h2 {
   line-height: 42px;
   line-height: 2.625rem; }
 
-h3, .h3, .autor--big, .body--big, .section__subtitle, .subsection {
+h3, .h3, .autor.autor--big, .body--big, .section__subtitle, .subsection {
   font-size: 29px;
   font-size: 1.8225rem;
   line-height: 36px;
@@ -678,7 +678,7 @@ h4, .h4, .autor, .body, .section__subtitle--small {
   line-height: 24px;
   line-height: 1.5rem; }
 
-h5, .h5, .autor--small {
+h5, .h5, .autor.autor--small {
   font-size: 16px;
   font-size: 1rem;
   line-height: 24px;
@@ -695,37 +695,37 @@ h2, .h2 {
   letter-spacing: -0.03em; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .autor--big, .body--big, .section__subtitle, .subsection, .h4, .autor, .body, .section__subtitle--small, .h5, .autor--small, .h6, .section__patrocinador span {
+.h1, .h2, .h3, .autor.autor--big, .body--big, .section__subtitle, .subsection, .h4, .autor, .body, .section__subtitle--small, .h5, .autor.autor--small, .h6, .section__patrocinador span {
   color: #000;
   font-weight: normal; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
-  .h1 small, .h2 small, .h3 small, .autor--big small, .body--big small, .section__subtitle small, .subsection small, .h4 small, .autor small, .body small, .section__subtitle--small small, .h5 small, .autor--small small, .h6 small, .section__patrocinador span small {
+  .h1 small, .h2 small, .h3 small, .autor.autor--big small, .body--big small, .section__subtitle small, .subsection small, .h4 small, .autor small, .body small, .section__subtitle--small small, .h5 small, .autor.autor--small small, .h6 small, .section__patrocinador span small {
     color: inherit;
     vertical-align: 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-  .h1 a, .h2 a, .h3 a, .autor--big a, .body--big a, .section__subtitle a, .subsection a, .h4 a, .autor a, .body a, .section__subtitle--small a, .h5 a, .autor--small a, .h6 a, .section__patrocinador span a {
+  .h1 a, .h2 a, .h3 a, .autor.autor--big a, .body--big a, .section__subtitle a, .subsection a, .h4 a, .autor a, .body a, .section__subtitle--small a, .h5 a, .autor.autor--small a, .h6 a, .section__patrocinador span a {
     text-decoration: none; }
     h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus,
     .h1 a:hover,
-    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h3 a:focus, .autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h5 a:hover, .autor--small a:hover, .h5 a:focus, .autor--small a:focus, .h6 a:hover, .section__patrocinador span a:hover, .h6 a:focus, .section__patrocinador span a:focus {
+    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .autor.autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h3 a:focus, .autor.autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h6 a:hover, .section__patrocinador span a:hover, .h6 a:focus, .section__patrocinador span a:focus {
       text-decoration: none; }
   h1 a, h1 a:link, h2 a, h2 a:link, h3 a, h3 a:link, h4 a, h4 a:link, h5 a, h5 a:link, h6 a, h6 a:link,
   .h1 a,
-  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .autor--big a, .body--big a, .section__subtitle a, .subsection a, .h3 a:link, .autor--big a:link, .body--big a:link, .section__subtitle a:link, .subsection a:link, .h4 a, .autor a, .body a, .section__subtitle--small a, .h4 a:link, .autor a:link, .body a:link, .section__subtitle--small a:link, .h5 a, .autor--small a, .h5 a:link, .autor--small a:link, .h6 a, .section__patrocinador span a, .h6 a:link, .section__patrocinador span a:link {
+  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .autor.autor--big a, .body--big a, .section__subtitle a, .subsection a, .h3 a:link, .autor.autor--big a:link, .body--big a:link, .section__subtitle a:link, .subsection a:link, .h4 a, .autor a, .body a, .section__subtitle--small a, .h4 a:link, .autor a:link, .body a:link, .section__subtitle--small a:link, .h5 a, .autor.autor--small a, .h5 a:link, .autor.autor--small a:link, .h6 a, .section__patrocinador span a, .h6 a:link, .section__patrocinador span a:link {
     color: #000; }
   h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
-  .h1 a:visited, .h2 a:visited, .h3 a:visited, .autor--big a:visited, .body--big a:visited, .section__subtitle a:visited, .subsection a:visited, .h4 a:visited, .autor a:visited, .body a:visited, .section__subtitle--small a:visited, .h5 a:visited, .autor--small a:visited, .h6 a:visited, .section__patrocinador span a:visited {
+  .h1 a:visited, .h2 a:visited, .h3 a:visited, .autor.autor--big a:visited, .body--big a:visited, .section__subtitle a:visited, .subsection a:visited, .h4 a:visited, .autor a:visited, .body a:visited, .section__subtitle--small a:visited, .h5 a:visited, .autor.autor--small a:visited, .h6 a:visited, .section__patrocinador span a:visited {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor--small a:focus, .h5 a:hover, .autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .autor.autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .autor.autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
     color: #000; }
   h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active,
-  .h1 a:active, .h2 a:active, .h3 a:active, .autor--big a:active, .body--big a:active, .section__subtitle a:active, .subsection a:active, .h4 a:active, .autor a:active, .body a:active, .section__subtitle--small a:active, .h5 a:active, .autor--small a:active, .h6 a:active, .section__patrocinador span a:active {
+  .h1 a:active, .h2 a:active, .h3 a:active, .autor.autor--big a:active, .body--big a:active, .section__subtitle a:active, .subsection a:active, .h4 a:active, .autor a:active, .body a:active, .section__subtitle--small a:active, .h5 a:active, .autor.autor--small a:active, .h6 a:active, .section__patrocinador span a:active {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor--small a:focus, .h5 a:hover, .autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .autor.autor--big a:focus, .body--big a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .autor.autor--big a:hover, .body--big a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .autor a:focus, .body a:focus, .section__subtitle--small a:focus, .h4 a:hover, .autor a:hover, .body a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
     text-decoration: none; }
 
 .font-secondary, .autor, .section__category, .section__subtitle, .subsection,
@@ -1977,7 +1977,7 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     line-height: 2.25rem; } }
 
 @media (max-width: 960px) {
-  h3, .h3, .autor--big, .body--big, .section__subtitle, .subsection {
+  h3, .h3, .autor.autor--big, .body--big, .section__subtitle, .subsection {
     font-size: 22px;
     font-size: 1.35rem;
     line-height: 24px;
@@ -1994,11 +1994,20 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   .ts img {
     margin: 0 auto;
     display: block; }
-  @media (max-width: 640px) {
+  @media (max-width: 960px) {
     .ts {
       text-align: center; } }
+  .ts .body {
+    max-width: 50ch;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (min-width: 1120px) {
+      .ts .body {
+        max-width: 65ch;
+        margin-left: initial;
+        margin-right: initial; } }
 
-@media (max-width: 640px) {
+@media (max-width: 960px) {
   .tl,
   .tc,
   .tr {
@@ -2022,7 +2031,9 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-top: 6rem; }
 
 iframe {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; }
 
 .header {
   margin-bottom: 1.5rem; }
@@ -2463,7 +2474,7 @@ iframe {
   border-bottom-color: #000;
   position: relative; }
   @media (min-width: 960px) {
-    .box-2col .section {
+    .box--2col .section {
       height: 100%;
       padding-bottom: 0;
       margin-bottom: 0;
@@ -2477,13 +2488,10 @@ iframe {
 .section__category {
   text-transform: uppercase;
   margin-bottom: 1.5rem; }
-  @media (min-width: 640px) {
-    .section__category {
-      margin-bottom: 0; } }
   .section__category:after {
     content: ">"; }
   @media (min-width: 960px) {
-    .box-2col .section__category {
+    .box--2col .section__category {
       position: absolute;
       top: 0;
       left: 0; } }
@@ -2499,7 +2507,7 @@ iframe {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: bold; }
-  .box-2col .section__subtitle {
+  .box--2col .section__subtitle {
     margin-bottom: 0; }
 
 .section__subtitle--gris {
@@ -2508,7 +2516,7 @@ iframe {
 .section__patrocinador {
   text-align: center;
   margin-bottom: 1.5rem; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .section__patrocinador {
       margin-bottom: 0;
       position: absolute;
@@ -2613,7 +2621,7 @@ iframe {
 .box {
   padding: 1.5rem;
   margin-bottom: 4.5rem; }
-  @media (min-width: 960px) {
+  @media (min-width: 1120px) {
     .box {
       padding: 3rem; } }
   .box .ts:last-child,
@@ -2631,25 +2639,25 @@ iframe {
       border-color: transparent transparent #CCCCCA #CCCCCA; }
 
 @media (min-width: 960px) {
-  .box-2col {
+  .box--2col {
     display: flex;
     margin-top: 1.5rem;
     position: relative; } }
 
 @media (min-width: 960px) {
-  .box-2col__left {
+  .box--2col__left {
     width: 33%; } }
 
 @media (min-width: 960px) {
-  .box-2col__right {
+  .box--2col__right {
     width: 66%;
     padding-left: 3rem;
     margin-top: 1.5rem; } }
 
-.box-tab {
+.box--tab {
   position: relative; }
 
-.box-tab__category {
+.box--tab__category {
   position: absolute;
   top: -1.875rem;
   left: -1px;
@@ -2661,7 +2669,7 @@ iframe {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase; }
-  .box-tab__category:before {
+  .box--tab__category:before {
     content: "";
     position: absolute;
     height: 1px;
@@ -2670,7 +2678,7 @@ iframe {
     left: 0px;
     right: 0px; }
 
-.box-tab__triangle {
+.box--tab__triangle {
   position: absolute;
   top: -1px;
   bottom: 1px;
@@ -2681,7 +2689,7 @@ iframe {
   border-color: transparent transparent #000 #000;
   border-style: solid;
   transform: translateX(1px); }
-  .box-tab__triangle:before {
+  .box--tab__triangle:before {
     content: "";
     position: absolute;
     top: -0.9375rem;
@@ -2706,17 +2714,19 @@ iframe {
   border-bottom-color: #000;
   border-top-style: solid;
   border-bottom-style: solid; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-flotante {
-      padding-left: 1.5rem;
-      padding-right: 3rem;
       display: flex;
       justify-content: space-between;
       margin-top: 12rem; } }
+  @media (min-width: 1120px) {
+    .ts-flotante {
+      padding-left: 1.5rem;
+      padding-right: 3rem; } }
 
 .ts-flotante--inverse {
   margin-top: 0; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-flotante--inverse {
       margin-bottom: 12rem !important; }
       .ts-flotante--inverse .ts-flotante__img img {
@@ -2729,13 +2739,13 @@ iframe {
 
 .ts-flotante__textos {
   margin-bottom: 1.5rem; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-flotante__textos {
       margin-bottom: 0;
       width: 50%;
       padding-right: 1.5rem; } }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   .ts-flotante__img {
     width: 50%;
     position: relative; }
@@ -2749,34 +2759,34 @@ iframe {
 .ts-mitad {
   display: flex;
   flex-direction: column; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-mitad {
       flex-direction: row; } }
 
 .ts-mitad__img {
   margin-bottom: 1.5rem;
   order: 1; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-mitad__img {
-      order: 2;
+      order: unset;
       margin-bottom: 0;
       flex: 0 0 50%; } }
 
 .ts-mitad__textos {
   order: 2; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-mitad__textos {
-      order: 1;
+      order: unset;
       display: flex;
       flex-direction: column;
       margin-left: 5%; } }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   .ts-mitad--inverse .ts-mitad__textos {
     margin-right: 5%;
     margin-left: 0; } }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   .ts-mitad--center .ts-mitad__textos {
     justify-content: center; }
   .ts-mitad--bottom .ts-mitad__textos {
@@ -2787,33 +2797,33 @@ iframe {
 .ts-flex {
   display: flex;
   flex-direction: column; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-flex {
       flex-direction: row; } }
 
 .ts-flex__textos {
   order: 2; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-flex__textos {
-      order: 1;
+      order: unset;
       flex: 1; } }
 
 .ts-flex__img {
   margin-bottom: 1.5rem;
   order: 1; }
-  @media (min-width: 640px) {
+  @media (min-width: 960px) {
     .ts-flex__img {
-      order: 2;
+      order: unset;
       margin-bottom: 0;
       max-width: 60%;
       padding-left: 3rem; } }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   .ts-flex--inverse .ts-flex__img {
     padding-left: 0;
     padding-right: 3rem; } }
 
-@media (min-width: 640px) {
+@media (min-width: 960px) {
   .ts-flex--center {
     align-items: center; }
   .ts-flex--bottom {
@@ -2993,6 +3003,23 @@ iframe {
   .col3--equal-heights > .col > .box {
     flex: 1; }
 
+@media (max-width: 1120px) {
+  .col .ts-flex,
+  .col .ts-mitad {
+    flex-direction: column; }
+  .col .ts-flex__img,
+  .col .ts-mitad__img {
+    order: -999;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    max-width: 100%;
+    width: 100%; }
+  .col .ts-flex__textos,
+  .col .ts-mitad__textos {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0; } }
+
 .m {
   margin: 1.5rem; }
 
@@ -3135,9 +3162,9 @@ iframe {
   color: #fff; }
   .invert h1, .invert .h1,
   .invert h2, .invert .h2,
-  .invert h3, .invert .h3, .invert .autor--big, .invert .body--big, .invert .section__subtitle, .invert .subsection,
+  .invert h3, .invert .h3, .invert .autor.autor--big, .invert .body--big, .invert .section__subtitle, .invert .subsection,
   .invert h4, .invert .h4, .invert .autor, .invert .body, .invert .section__subtitle--small,
-  .invert h5, .invert .h5, .invert .autor--small,
+  .invert h5, .invert .h5, .invert .autor.autor--small,
   .invert h6, .invert .h6, .invert .section__patrocinador span, .section__patrocinador .invert span {
     color: inherit; }
   .invert a {

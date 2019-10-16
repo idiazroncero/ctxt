@@ -7,18 +7,20 @@
     border-bottom-style:solid;
 
 
-    @include breakpoint($small){
-        padding-left: $gutter;
-        padding-right: $gutter * 2;
+    @include breakpoint($medium){
         display:flex;
         justify-content:space-between;
         margin-top: $ts-margin * 2;
     } 
+    @include breakpoint($large){
+        padding-left: $gutter;
+        padding-right: $gutter * 2;
+    }
 }
 
 .ts-flotante--inverse {
     margin-top:0;
-    @include breakpoint($small){
+    @include breakpoint($medium){
         margin-bottom: $ts-margin * 2 !important;
         .ts-flotante__img {
             img {
@@ -36,7 +38,7 @@
 
 .ts-flotante__textos {
     margin-bottom: $gutter;
-    @include breakpoint($small){
+    @include breakpoint($medium){
         margin-bottom:0;
         width: 50%;
         padding-right: $gutter;
@@ -44,7 +46,7 @@
 }
 
 .ts-flotante__img {
-    @include breakpoint($small){
+    @include breakpoint($medium){
         width:50%;
         position:relative;
         img {

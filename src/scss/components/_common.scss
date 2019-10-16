@@ -40,16 +40,14 @@ h3,.h3 {
             padding: 0 5px;
         }
     }
-
+    &.autor--big {
+        @extend .h3;
+    }
+    &.autor--small {
+        @extend .h5;
+    }
 }
 
-.autor--big {
-    @extend .h3;
-}
-
-.autor--small {
-    @extend .h5;
-}
 
 .ts {
     margin-bottom: $ts-margin;
@@ -57,15 +55,25 @@ h3,.h3 {
         margin: 0 auto;
         display:block;
     }
-    @include breakpoint(max-width $small) {
+    @include breakpoint(max-width $medium) {
         text-align:center;
+    }
+    .body {
+        max-width: 50ch;
+        margin-left:auto;
+        margin-right: auto;
+        @include breakpoint($large) {
+            max-width: 65ch;
+            margin-left:initial;
+            margin-right: initial;
+        }
     }
 }
 
 .tl,
 .tc,
 .tr {
-    @include breakpoint(max-width $small) {
+    @include breakpoint(max-width $medium) {
         text-align:center !important;
     }
 }
@@ -96,4 +104,6 @@ h3,.h3 {
 
 iframe {
     max-width:100%;
+    display:block;
+    margin: 0 auto;
 }

@@ -1,7 +1,7 @@
 .ts-mitad {
     display:flex;
     flex-direction:column;
-    @include breakpoint($small) {
+    @include breakpoint($medium) {
         flex-direction:row;
     }
 }
@@ -9,8 +9,8 @@
 .ts-mitad__img {
     margin-bottom: $gutter;
     order: 1;
-    @include breakpoint($small) {
-        order: 2;
+    @include breakpoint($medium) {
+        order: unset;
         margin-bottom: 0;
         flex: 0 0 50%;
     }
@@ -18,8 +18,8 @@
 
 .ts-mitad__textos {
     order: 2;
-    @include breakpoint($small) {
-        order: 1;
+    @include breakpoint($medium) {
+        order: unset;
         display:flex;
         flex-direction:column;
         margin-left: 5%;
@@ -27,7 +27,7 @@
 }
 
 .ts-mitad--inverse {
-    @include breakpoint($small) {
+    @include breakpoint($medium) {
         .ts-mitad__textos {
             margin-right: 5%;
             margin-left: 0;
@@ -35,7 +35,7 @@
     }
 }
 
-@include breakpoint($small) {
+@include breakpoint($medium) {
     .ts-mitad--center {
         .ts-mitad__textos {
             justify-content: center;

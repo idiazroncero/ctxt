@@ -1,15 +1,15 @@
 .ts-flex {        
     display:flex;
     flex-direction:column;
-    @include breakpoint($small) {
+    @include breakpoint($medium) {
         flex-direction:row;
     }
 }
 
 .ts-flex__textos {
     order:2;
-    @include breakpoint($small) {
-        order:1;
+    @include breakpoint($medium) {
+        order:unset;
         flex:1;
     }
 }
@@ -17,8 +17,8 @@
 .ts-flex__img {
     margin-bottom: $gutter;
     order:1;
-    @include breakpoint($small) {
-        order:2;
+    @include breakpoint($medium) {
+        order:unset;
         margin-bottom: 0;
         max-width:60%;
         padding-left: $gutter * 2;
@@ -26,7 +26,7 @@
 }
 
 .ts-flex--inverse {
-    @include breakpoint($small) {
+    @include breakpoint($medium) {
         .ts-flex__img {
             padding-left:0;
             padding-right: $gutter * 2;
@@ -34,7 +34,7 @@
     }
 }
 
-@include breakpoint($small) {
+@include breakpoint($medium) {
     .ts-flex--center {
         align-items: center;
     }

@@ -14,8 +14,8 @@
 
     <div class="dev">
         <p>
-            Para trabajar más fácilmente a nivel HTML y CSS, propongo desacoplar ciertos estilos.
-            Por ejemplo: la caja que rodea grupos de noticias, definida por tener un borde negro y un padding interno, debería ser un código 100% independiente de lo que haya dentro.
+            Para trabajar más fácilmente a nivel HTML y CSS, los estilos se encuentran desacoplados.
+            Por ejemplo: la caja (.box) que rodea grupos de noticias, definida por tener un borde negro y un padding interno, es ser un código 100% independiente de lo que haya dentro.
         </p>
         <p>
             La clase [.box] cumple esta labor, y sólo esta. Aplicada a un elemento, esta clase proporciona exclusivamente el borde y el padding.
@@ -24,6 +24,9 @@
 
     <main>
         <section class="box">
+            <div class="dev">
+                <p>La clase '.section' proporciona los elementos de cada cabecera</p>
+            </div>
             <header class="section">
                 <div class="section__category">
                     Política
@@ -33,16 +36,20 @@
             </header>
             <div class="dev">
                 <p>
-                    Llamaré a las vistas previas de noticias "teasers", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-huge y ts_huge.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
+                    Cada vistas previa de una noticia se lla "teaser", como suele ser común en inglés. Para identificarlo, los partials y la clases CSS a aplicar están todas prefijadas con `ts` (por ejemplo, .ts-flex y ts_flex.njk). Las clases siguen la terminología <a href="http://getbem.com/introduction/">BEM</a>
                 </p>
             </div>
             {% include "partials/content/ts_vertical.njk" %}
             {% include "partials/content/ts_flotante.njk" %}
+            <div class="dev">
+                <p>El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
+                <p>También se pueden usar clases modificadoras para cambiar por donde sobresale la imagen. Más info y ejemplos en: <a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">la documentación</a></p>
+            </div>
         </section>
 
-        <div class="dev">
-            <p>El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
-            <p>También se pueden usar clases modificadoras para cambiar por donde sobresale la imagen. Más info y ejemplos en: <a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">la documentación</a></p>
+        <div class="dev left">
+            <p>El tamaño de los titulares, así como muchos otros elementos (márgenes, bordes) pueden ser modificados usando "utility classes"</p>
+            <p>Visita <a target="_blank" href="/docs.html">la documentación</a> para ver todas las 'utility classes'</p>
         </div>
 
         <section class="box">
@@ -71,7 +78,7 @@
                 </div>
                 <h1 class="section__title">Tribunas y debates</h1>
                 <div class="dev">
-                    <p>Aqui se puede ver en acción un modificador BEM (clase section__subtitle--gris) para lograr el color gris</p>
+                    <p>En este subtítulo se puede ver en acción un modificador BEM (clase section__subtitle--gris) para lograr el color gris</p>
                 </div>
                 <p class="section__subtitle section__subtitle--gris">Madrid, pieza capital</p>
             </header>
@@ -157,10 +164,6 @@
                 Análisis
             </div>
 
-            <div class="dev">
-                <p>Repetimos col2.col2--separator y ts-vertical</p>
-            </div>
-
             <div class="col2 col2--separator">
                 <div class="col">
                     <article class="ts ts-vertical tl">
@@ -185,10 +188,6 @@
             </div>
 
             <div class="separator"></div>
-
-            <div class="dev">
-                <p>Repetimos col2 y ts-mitad</p>
-            </div>
 
             <div class="col2">
                 <div class="col">
@@ -254,7 +253,7 @@
                     </div>
 
                     <div class="dev">
-                        <p>Ejemplo de cómo este teaser se puede solucionar recurriendo a .ts-flex, sus modificadores y clases tipo .mb, .h3 y.autor--small en lugar de crear un nuevo tipo de ts</p>
+                        <p>A continuación un ejemplo de cómo este pequeño teaser se puede solucionar recurriendo a .ts-flex, sus modificadores y utility clases tipo .mb, .h3 y.autor--small en lugar de crear un nuevo tipo de ts</p>
                         <p><a href="/tsflex.html">Ver documentación de .ts-flex</a></p>
                     </div>
 
@@ -323,7 +322,7 @@
         </div>
 
         <div class="dev">
-            <p>Con elementos de igual altura, .col2 funciona sin ayuda de modificadores</p>
+            <p>Con elementos de igual altura, .col2 consigue "equal heights" sin ayuda de modificadores</p>
         </div>
 
         <div class="col2">
@@ -358,6 +357,11 @@
         </section>
 
         <section class="box">
+            <div class="dev">
+                <p>
+                    Primera aparición del patrocinador dentro de section.
+                </p>
+            </div>
             <header class="section">
                 <div class="section__category">
                     Ciencia
@@ -410,11 +414,11 @@
         </section>
         <div class="dev">
             <p>
-                Un tipo especial de .box se encarga de este layout
+                Este layout es una modificación sobre '.box' usando '.box--2col'
             </p>
         </div>
-        <section class="box box-2col">
-            <div class="box-2col__left">
+        <section class="box box--2col">
+            <div class="box--2col__left">
                 <header class="section">
                     <div class="section__category">
                         Especial
@@ -423,7 +427,7 @@
                     <p class="section__subtitle section__subtitle--small">Emociones en venta</p>
                 </header>
             </div>
-            <div class="box-2col__right">
+            <div class="box--2col__right">
                 <article class="ts ts-flex ts-flex--inverse">
                     <div class="ts-flex__img">
                         <img src="http://placehold.it/350x250.jpg" alt="">
@@ -476,14 +480,19 @@
             </div>
         </div>
 
+        <div class="dev">
+            <p>
+                EL .box de la izquierda es una modificación sobre '.box' usando '.box--tab'
+            </p>
+        </div>
         <div class="col2 col2--equal-heights">
             <div class="col">
-                <article class="box box-tab m0">
-                    <div class="box-tab__category h4">
+                <article class="box box--tab m0">
+                    <div class="box--tab__category h4">
                         Lo más leído
-                        <span class="box-tab__triangle"></span>
+                        <span class="box--tab__triangle"></span>
                     </div>
-                    <div class="box-tab__content">
+                    <div class="box--tab__content">
                         <article class="ts ts-mitad ts-mitad--expanded m0">
                             <div class="ts-mitad__img">
                                 <img src="http://placehold.it/400x200.jpg" alt="Imagen">
@@ -567,14 +576,18 @@
                         <h1 class="section__title">Viñeta del día</h1>
                         <p class="section__subtitle section__subtitle--small section__subtitle--gris">Opinión Gráfica</p>
                     </header>
-
+                    <div class="dev">
+                        <p>
+                            Si se respeta el HTML de este carousel, el javascript activará automaticamente un slider de 1 item y contador
+                        </p>
+                    </div>
                     <div class="carousel">
                         <div class="carousel__slides">
-                            <div class="carousel__item"><img src="http://placehold.it/600x400.jpg" alt="Image"></div>
-                            <div class="carousel__item"><img src="http://placehold.it/600x400.jpg" alt="Image"></div>
-                            <div class="carousel__item"><img src="http://placehold.it/600x400.jpg" alt="Image"></div>
-                            <div class="carousel__item"><img src="http://placehold.it/600x400.jpg" alt="Image"></div>
-                            <div class="carousel__item"><img src="http://placehold.it/600x400.jpg" alt="Image"></div>
+                            <div class="carousel__item"><img src="http://placehold.it/1200x800.jpg" alt="Image"></div>
+                            <div class="carousel__item"><img src="http://placehold.it/1200x800.jpg" alt="Image"></div>
+                            <div class="carousel__item"><img src="http://placehold.it/1200x800.jpg" alt="Image"></div>
+                            <div class="carousel__item"><img src="http://placehold.it/1200x800.jpg" alt="Image"></div>
+                            <div class="carousel__item"><img src="http://placehold.it/1200x800.jpg" alt="Image"></div>
                         </div>
                         <div class="carousel__controls">
                             <button class="carousel__prev">&lt; <span class="visually-hidden">Anterior</span></button>
@@ -590,6 +603,11 @@
         </div>
 
         <section class="box">
+            <div class="dev">
+                <p>
+                    Este tipo de sección usa el modificador '.section--especial'
+                </p>
+            </div>
             <header class="section section--especial">
                 <div class="section__category">
                     Cultural CTXT Fin de Semana
@@ -597,7 +615,6 @@
                 <h1 class="section__title">Testigo Ferlosio</h1>
                 <p class="section__subtitle">Especial El Dobladillo Nº 25</p>
             </header>
-
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
                 <div class="ts-flex__img">
                     <img src="http://placehold.it/1000x1200.jpg" alt="Imagenes">
@@ -787,6 +804,11 @@
                 <h1 class="section__title h2">Encuesta posdebate electoral</h1>
                 <p class="section__subtitle section__subtitle--gris">Contéxtame si puedes</p>
             </header>
+            <div class="dev">
+                <p>
+                    Los iframes y embeds pueden tomar el lugar de las imágenes sin problema.
+                </p>
+            </div>
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
                 <div class="ts-flex__img">
                     <iframe width="550" height="350" src="https://www.youtube.com/embed/ehyEFjOFp4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -800,6 +822,11 @@
                 </div>
             </article> 
             <div class="separator"></div>
+            <div class="dev">
+                <p>
+                    Del mismo modo que hay .col2, hay .col3.
+                </p>
+            </div>
             <div class="col3">
                 <div class="col">
                     <article class="ts ts-vertical">
@@ -828,11 +855,21 @@
             </div>      
         </section>
 
+        <div class="dev">
+            <p>
+                Este tipo de box especial usa el modificador 'box--gray'
+            </p>
+        </div>
         <section class="box box--gray">
             <header class="section">
                 <h1 class="section__title">El dobladillo</h1>
                 <p class="section__subtitle section__subtitle--small">Edición CTXT en papel</p>
             </header>
+            <div class="dev">
+                <p>
+                    Si se respeta el HTML de esta galería, el javascript activará automaticamente un slider de 3 items
+                </p>
+            </div>
             <section class="galeria">
                 <div class="galeria__slides">
                     <div class="galeria__item"><img src="http://placehold.it/400x600/fff/000.jpg" alt=""></div>
@@ -855,7 +892,11 @@
             <div class="tc mb--big mt--big">
                 <p class="body body--big">Compra números sueltos de El Dobladillo o <strong><u><a href="#">suscríbete a CTXT</a></u></strong> y recíbelo a domicilio</p>
             </div>
-
+            <div class="dev">
+                <p>
+                    El ts-tab y todos los teasers pueden ser fácilmente reutilizados para otros usos (publicidad, por ejemplo) ya que en el fondo sólo definen un layout.                
+                </p>
+            </div>
             <article class="ts ts-tab ts-tab--center">
                 <div class="ts-tab__category">
                     Tienda
@@ -878,6 +919,11 @@
         </section>
     </main>
 
+    <div class="dev">
+        <p>
+            El footer define una estructura muy contreta y no reutilizable        
+        </p>
+    </div>
     <footer class="footer">
         <div class="footer__info">
             <img src="https://placehold.it/250x125/fff/000.jpg" alt="Imagen">
