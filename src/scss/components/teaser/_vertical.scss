@@ -1,5 +1,7 @@
 .ts-vertical {
-    text-align:center;
+    @include breakpoint($medium) {
+        text-align:center;
+    }
     // @include breakpoint($small) {
     //     &.tc .body {
     //         margin-bottom: $gutter * 2;

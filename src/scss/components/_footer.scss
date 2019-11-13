@@ -4,9 +4,9 @@
     @include breakpoint($medium) {
         padding: $gutter * 2;
     }
-    color: $white;
+    color: $gray5;
     .body {
-        color: $white;
+        color: $gray5;
     }
 }
 
@@ -46,7 +46,7 @@
 .footer__newsletter {
     margin: $gutter * 2 0;
     padding: $gutter;
-    border: 1px solid $white;
+    border: 1px solid $gray5;
     p {
         font-family: $font-secondary;
         text-transform: uppercase;
@@ -57,8 +57,8 @@
         display:block;
     }
     input[type="email"] {
-        background-color: $white;
-        border-color: $white;
+        background-color: $gray5;
+        border-color: $gray5;
         margin-bottom: $gutter / 2;
     }
 }
@@ -72,10 +72,9 @@
         list-style-type: disc;
     }
     a {
-        @include ritmo-font-size($h4-font-size);
         @include set-link(
-            $white,
-            $white,
+            $gray5,
+            $gray5,
             $base,
             $base,
             false,
@@ -97,8 +96,8 @@
 
 .footer__medios__row {
     padding: $gutter 0 0 0;
-    border-top: 1px solid $white;
-    border-bottom: 1px solid $white;
+    border-top: 1px solid $gray5;
+    border-bottom: 1px solid $gray5;
 
     display:flex;
     flex-wrap: wrap;

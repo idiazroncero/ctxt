@@ -10,6 +10,8 @@
 @import "components/other/section";
 @import "components/other/carousel";
 @import "components/other/box";
+@import "components/other/tienda";
+@import "components/other/icon";
 
 @import "components/teaser/flotante";
 @import "components/teaser/mitad";
@@ -18,6 +20,7 @@
 @import "components/teaser/vertical";
 
 @import "components/layouts/cols";
+@import "components/layouts/flex";
 
 // Utility classes. Allow them to override the rest.
 @import "./node_modules/huesos/src/components/huesitos/huesitos";

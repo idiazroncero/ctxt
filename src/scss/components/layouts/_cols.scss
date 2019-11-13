@@ -102,3 +102,17 @@
         }
     }
 }
+
+
+// EL SISTEMA ANTERIOR
+
+.col2-old {
+    column-count: 2;
+    column-gap: $gutter;
+    > div,
+    > section,
+    > article {
+        display:inline-block;
+        width:100%;
+    }
+}

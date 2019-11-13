@@ -1,16 +1,25 @@
 .h0 {
-    @include breakpoint(max-width $medium) {
+    @include breakpoint(max-width $small) {
+        @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
+    }
+    @include breakpoint($small $medium) {
         @include ritmo-font-size($h1-font-size, $h1-ritmo-lines);
     }
 }
 
 h1,.h1 {
-    @include breakpoint(max-width $medium) {
+    @include breakpoint(max-width $small) {
+        @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    }
+    @include breakpoint($small $medium) {
         @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
     }
 }
 h2,.h2 {
-    @include breakpoint(max-width $medium) {
+    @include breakpoint(max-width $small) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
+    @include breakpoint($small $medium) {
         @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
     }
 }
@@ -33,7 +42,9 @@ h3,.h3 {
 .autor {
     text-transform: uppercase;
     @extend .font-secondary;
-    @extend .h4;
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
     span + span {
         &:before {
             content: "/";
@@ -41,7 +52,7 @@ h3,.h3 {
         }
     }
     &.autor--big {
-        @extend .h3;
+        // @extend .h3;
     }
     &.autor--small {
         @extend .h5;
@@ -56,7 +67,7 @@ h3,.h3 {
         display:block;
     }
     @include breakpoint(max-width $medium) {
-        text-align:center;
+        text-align:left;
     }
     .body {
         max-width: 50ch;
@@ -74,17 +85,22 @@ h3,.h3 {
 .tc,
 .tr {
     @include breakpoint(max-width $medium) {
-        text-align:center !important;
+        text-align:left !important;
     }
 }
 
 .body {
-    @extend .h4;
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
     font-weight:lighter;
 }
 
 .body--big {
-    @extend .h3;
+    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    }
     font-weight:lighter;
 }
 
@@ -106,4 +122,10 @@ iframe {
     max-width:100%;
     display:block;
     margin: 0 auto;
+}
+
+#main-wrapper {
+    @include breakpoint(max-width $medium) {
+        padding: $gutter / 2;
+    }
 }

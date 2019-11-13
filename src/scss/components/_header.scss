@@ -131,11 +131,13 @@ $dot-space: 6px;
 
 .header__cart {
     margin: 0 0 0 ritmo(1);
-    @include kill-link();
+    background-color: $white;
+    span,.icon {
+        vertical-align:bottom;
+    }
     .icon {
-        margin:0;
-        display: block;
-        height: ritmo(4);
+        margin:0 0 0 ritmo(0.25);
+        height: $h6-font-size;
     }
 }
 

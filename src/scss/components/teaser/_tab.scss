@@ -5,13 +5,13 @@
 }
 
 .ts-tab--center {
-    .ts-tab__textos {
+    .ts-tab__left {
         align-items: center;
     }
 }
 
 .ts-tab--bottom {
-    .ts-tab__textos {
+    .ts-tab__left {
         align-items: flex-end;
     }
 }
@@ -79,11 +79,12 @@
     }
 }
 
-.ts-tab__textos {
+.ts-tab__left {
     padding: $gutter;
     @include breakpoint($medium) {
         display:flex;
-        width:66%;
+        flex:1;
+        min-width:66%;
     }
     // align-items:flex-end;
 }
@@ -92,14 +93,23 @@
     margin-bottom: $gutter;
     @include ritmo-font-size($h4-font-size);
     font-family: $futura;
-    
     @include breakpoint($medium) {
-        width:40%;
         padding-right: $gutter * 2;
         margin-bottom: 0;
     }
 }
+
+.ts-tab__40 {
+    @include breakpoint($medium) {
+        width:40%;
+    }
+}
+
 .ts-tab__title {
+
+}
+
+.ts-tab__60 {
     @include breakpoint($medium) {
         width:60%;
     }
@@ -109,7 +119,7 @@
     margin:0;
 }
 
-.ts-tab__image {
+.ts-tab__right {
     flex:1;
     img {
         width:100%;
@@ -124,4 +134,24 @@
 
 .ts-tab__autor {
     color: $gray;
+}
+
+.ts-tab--sepia {
+    background-color: $sepia;
+    border-color: $sepia;
+    .ts-tab__category {
+        border-color: $sepia;
+        background-color: $sepia;
+        &:before,
+        &:after {
+            border-color: $sepia;
+            background-color: $sepia;
+        }
+        .ts-tab__triangle {
+            border-color: transparent transparent $sepia $sepia;
+            &:before {
+                border-color: transparent transparent $sepia $sepia;
+            } 
+        }
+    }
 }

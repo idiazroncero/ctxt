@@ -1,0 +1,35 @@
+
+
+@include breakpoint($medium) {
+    .flex {
+        display:flex;
+        justify-content: space-between;
+    }
+    .flex-50 {
+        flex: 1 0 50%;
+    }
+
+    .flex-33 {
+        flex: 1 0 33%;
+    }
+
+    .flex-40 {
+        flex: 1 0 40%;
+    }
+
+    .flex-60 {
+        flex: 1 0 60%;
+    }
+
+    .flex-66 {
+        flex: 1 0 66%;
+    }
+
+    .flex-75 {
+        flex: 1 0 75%;
+    }
+
+    .flex-25 {
+        flex: 1 0 25%;
+    }
+}
