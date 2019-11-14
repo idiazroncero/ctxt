@@ -1,9 +1,11 @@
 .box {
     padding: $gutter;
-    margin-bottom: $box-margin;
+    margin-bottom: $box-margin / 2;
     @extend .b;
 
-
+    @include breakpoint($medium) {
+        margin-bottom: $box-margin;
+    }
     @include breakpoint($large) {
         padding: $gutter * 2;
     }

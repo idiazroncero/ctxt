@@ -1,6 +1,9 @@
 .ts-vertical {
-    @include breakpoint($medium) {
-        text-align:center;
+    text-align:center;
+    @include breakpoint(max-width $medium) {
+        .body {
+            margin-left: auto;
+        }
     }
     // @include breakpoint($small) {
     //     &.tc .body {

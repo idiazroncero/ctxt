@@ -1,6 +1,12 @@
 .ts-mitad {
     display:flex;
     flex-direction:column;
+    @include breakpoint(max-width $medium) {
+        text-align:center;
+        .body {
+            margin-left: auto;
+        }
+    }
     @include breakpoint($medium) {
         flex-direction:row;
     }
@@ -18,6 +24,9 @@
 
 .ts-mitad__textos {
     order: 2;
+    @include breakpoint(max-width $medium) {
+        text-align:center;
+    }
     @include breakpoint($medium) {
         order: unset;
         display:flex;

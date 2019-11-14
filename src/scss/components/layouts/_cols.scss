@@ -1,15 +1,26 @@
 
 .col2 {
-    margin-bottom: $box-margin;
 
     @include breakpoint($medium) {
+        margin-bottom: $box-margin;
         display:flex;
         justify-content:space-between;
     }
 
     > .col {
-        margin-bottom: $box-margin;
+        margin-bottom: $box-margin / 2;
+        // Enforces center until medium (instead of small) because cols have
+        // less space available (they become "mobile" sooner)
+        > .ts {
+            @include breakpoint(max-width $medium) {
+                text-align:center;
+                .body {
+                    margin-left: auto;
+                }
+            }
+        }
         @include breakpoint($medium) {
+            margin-bottom: $box-margin;
             flex:1;
             max-width: calc(50% - #{$gutter});
             margin-bottom:0;
@@ -96,7 +107,6 @@
         }
         .ts-flex__textos,
         .ts-mitad__textos {
-            text-align:center;
             margin-left:0;
             margin-right:0;
         }

@@ -1,5 +1,7 @@
 .tienda {
     .ts-tab {
-        margin-top: 0;
+        @include breakpoint($medium) {
+            margin-top: 0;
+        }
     }
 }

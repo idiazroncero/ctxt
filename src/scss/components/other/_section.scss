@@ -42,7 +42,13 @@
 }
 
 .section__subtitle {
-    @extend .h3;
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+    @include breakpoint($small) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    }
     text-align:center;
     margin:0;
     @extend .font-secondary;
@@ -56,7 +62,10 @@
 }
 
 .section__subtitle--small {
-    @extend .h4;
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
 }
 
 .section__subtitle--gris {

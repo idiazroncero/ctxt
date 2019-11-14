@@ -666,13 +666,13 @@ h2, .h2 {
   line-height: 42px;
   line-height: 2.625rem; }
 
-h3, .h3, .section__subtitle, .subsection {
+h3, .h3, .subsection {
   font-size: 27px;
   font-size: 1.69rem;
   line-height: 36px;
   line-height: 2.25rem; }
 
-h4, .h4, .section__subtitle--small {
+h4, .h4 {
   font-size: 21px;
   font-size: 1.3rem;
   line-height: 24px;
@@ -695,37 +695,37 @@ h2, .h2 {
   letter-spacing: -0.03em; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .section__subtitle, .subsection, .h4, .section__subtitle--small, .h5, .autor.autor--small, .h6, .section__patrocinador span {
+.h1, .h2, .h3, .subsection, .h4, .h5, .autor.autor--small, .h6, .section__patrocinador span {
   color: #000;
   font-weight: normal; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
-  .h1 small, .h2 small, .h3 small, .section__subtitle small, .subsection small, .h4 small, .section__subtitle--small small, .h5 small, .autor.autor--small small, .h6 small, .section__patrocinador span small {
+  .h1 small, .h2 small, .h3 small, .subsection small, .h4 small, .h5 small, .autor.autor--small small, .h6 small, .section__patrocinador span small {
     color: inherit;
     vertical-align: 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-  .h1 a, .h2 a, .h3 a, .section__subtitle a, .subsection a, .h4 a, .section__subtitle--small a, .h5 a, .autor.autor--small a, .h6 a, .section__patrocinador span a {
+  .h1 a, .h2 a, .h3 a, .subsection a, .h4 a, .h5 a, .autor.autor--small a, .h6 a, .section__patrocinador span a {
     text-decoration: none; }
     h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus,
     .h1 a:hover,
-    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .section__subtitle a:hover, .subsection a:hover, .h3 a:focus, .section__subtitle a:focus, .subsection a:focus, .h4 a:hover, .section__subtitle--small a:hover, .h4 a:focus, .section__subtitle--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h6 a:hover, .section__patrocinador span a:hover, .h6 a:focus, .section__patrocinador span a:focus {
+    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .subsection a:hover, .h3 a:focus, .subsection a:focus, .h4 a:hover, .h4 a:focus, .h5 a:hover, .autor.autor--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h6 a:hover, .section__patrocinador span a:hover, .h6 a:focus, .section__patrocinador span a:focus {
       text-decoration: none; }
   h1 a, h1 a:link, h2 a, h2 a:link, h3 a, h3 a:link, h4 a, h4 a:link, h5 a, h5 a:link, h6 a, h6 a:link,
   .h1 a,
-  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .section__subtitle a, .subsection a, .h3 a:link, .section__subtitle a:link, .subsection a:link, .h4 a, .section__subtitle--small a, .h4 a:link, .section__subtitle--small a:link, .h5 a, .autor.autor--small a, .h5 a:link, .autor.autor--small a:link, .h6 a, .section__patrocinador span a, .h6 a:link, .section__patrocinador span a:link {
+  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .subsection a, .h3 a:link, .subsection a:link, .h4 a, .h4 a:link, .h5 a, .autor.autor--small a, .h5 a:link, .autor.autor--small a:link, .h6 a, .section__patrocinador span a, .h6 a:link, .section__patrocinador span a:link {
     color: #000; }
   h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
-  .h1 a:visited, .h2 a:visited, .h3 a:visited, .section__subtitle a:visited, .subsection a:visited, .h4 a:visited, .section__subtitle--small a:visited, .h5 a:visited, .autor.autor--small a:visited, .h6 a:visited, .section__patrocinador span a:visited {
+  .h1 a:visited, .h2 a:visited, .h3 a:visited, .subsection a:visited, .h4 a:visited, .h5 a:visited, .autor.autor--small a:visited, .h6 a:visited, .section__patrocinador span a:visited {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .section__subtitle--small a:focus, .h4 a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .h3 a:hover, .subsection a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .autor.autor--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
     color: #000; }
   h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active,
-  .h1 a:active, .h2 a:active, .h3 a:active, .section__subtitle a:active, .subsection a:active, .h4 a:active, .section__subtitle--small a:active, .h5 a:active, .autor.autor--small a:active, .h6 a:active, .section__patrocinador span a:active {
+  .h1 a:active, .h2 a:active, .h3 a:active, .subsection a:active, .h4 a:active, .h5 a:active, .autor.autor--small a:active, .h6 a:active, .section__patrocinador span a:active {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .section__subtitle a:focus, .subsection a:focus, .h3 a:hover, .section__subtitle a:hover, .subsection a:hover, .h4 a:focus, .section__subtitle--small a:focus, .h4 a:hover, .section__subtitle--small a:hover, .h5 a:focus, .autor.autor--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .h3 a:hover, .subsection a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .autor.autor--small a:focus, .h5 a:hover, .autor.autor--small a:hover, .h6 a:focus, .section__patrocinador span a:focus, .h6 a:hover, .section__patrocinador span a:hover {
     text-decoration: none; }
 
 .font-secondary, .autor, .section__category, .section__subtitle, .subsection,
@@ -1998,7 +1998,7 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     line-height: 2.25rem; } }
 
 @media (max-width: 960px) {
-  h3, .h3, .section__subtitle, .subsection {
+  h3, .h3, .subsection {
     font-size: 21px;
     font-size: 1.3rem;
     line-height: 24px;
@@ -2017,28 +2017,34 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     padding: 0 5px; }
 
 .ts {
-  margin-bottom: 6rem; }
+  margin-bottom: 3rem; }
+  @media (min-width: 960px) {
+    .ts {
+      margin-bottom: 6rem; } }
+  @media (max-width: 640px) {
+    .ts {
+      text-align: center; } }
   .ts img {
     margin: 0 auto;
     display: block; }
-  @media (max-width: 960px) {
-    .ts {
-      text-align: left; } }
   .ts .body {
     max-width: 50ch;
-    margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-left: auto; }
+    @media (min-width: 640px) {
+      .ts .body {
+        margin-left: 0; } }
     @media (min-width: 1120px) {
       .ts .body {
         max-width: 65ch;
         margin-left: initial;
         margin-right: initial; } }
 
-@media (max-width: 960px) {
+@media (max-width: 640px) {
   .tl,
   .tc,
   .tr {
-    text-align: left !important; } }
+    text-align: center !important; } }
 
 .body {
   font-weight: lighter; }
@@ -2531,14 +2537,42 @@ iframe {
   font-weight: bold; }
 
 .section__subtitle {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem;
   text-align: center;
   margin: 0;
   color: #f01b4d;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: bold; }
+  @media (min-width: 640px) {
+    .section__subtitle {
+      font-size: 21px;
+      font-size: 1.3rem;
+      line-height: 24px;
+      line-height: 1.5rem; } }
+  @media (min-width: 960px) {
+    .section__subtitle {
+      font-size: 27px;
+      font-size: 1.69rem;
+      line-height: 36px;
+      line-height: 2.25rem; } }
   .box--2col .section__subtitle {
     margin-bottom: 0; }
+
+.section__subtitle--small {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 24px;
+  line-height: 1.5rem; }
+  @media (min-width: 960px) {
+    .section__subtitle--small {
+      font-size: 21px;
+      font-size: 1.3rem;
+      line-height: 24px;
+      line-height: 1.5rem; } }
 
 .section__subtitle--gris {
   color: #a3a3a3; }
@@ -2650,7 +2684,10 @@ iframe {
 
 .box {
   padding: 1.5rem;
-  margin-bottom: 4.5rem; }
+  margin-bottom: 2.25rem; }
+  @media (min-width: 960px) {
+    .box {
+      margin-bottom: 4.5rem; } }
   @media (min-width: 1120px) {
     .box {
       padding: 3rem; } }
@@ -2731,8 +2768,9 @@ iframe {
     border-style: solid;
     transform: translate(-1px, 1px); }
 
-.tienda .ts-tab {
-  margin-top: 0; }
+@media (min-width: 960px) {
+  .tienda .ts-tab {
+    margin-top: 0; } }
 
 .icon-h1 {
   height: 2.8561rem;
@@ -2812,6 +2850,11 @@ iframe {
 .ts-mitad {
   display: flex;
   flex-direction: column; }
+  @media (max-width: 960px) {
+    .ts-mitad {
+      text-align: center; }
+      .ts-mitad .body {
+        margin-left: auto; } }
   @media (min-width: 960px) {
     .ts-mitad {
       flex-direction: row; } }
@@ -2827,6 +2870,9 @@ iframe {
 
 .ts-mitad__textos {
   order: 2; }
+  @media (max-width: 960px) {
+    .ts-mitad__textos {
+      text-align: center; } }
   @media (min-width: 960px) {
     .ts-mitad__textos {
       order: unset;
@@ -2850,6 +2896,11 @@ iframe {
 .ts-flex {
   display: flex;
   flex-direction: column; }
+  @media (max-width: 960px) {
+    .ts-flex {
+      text-align: center; }
+      .ts-flex .body {
+        margin-left: auto; } }
   @media (min-width: 960px) {
     .ts-flex {
       flex-direction: row; } }
@@ -3010,33 +3061,40 @@ iframe {
       .ts-tab--sepia .ts-tab__category .ts-tab__triangle:before {
         border-color: transparent transparent #f4ecde #f4ecde; }
 
-@media (min-width: 960px) {
-  .ts-vertical {
-    text-align: center; } }
-
-.ts-vertical .body {
-  margin-bottom: 1.5rem; }
+.ts-vertical {
+  text-align: center; }
+  @media (max-width: 960px) {
+    .ts-vertical .body {
+      margin-left: auto; } }
+  .ts-vertical .body {
+    margin-bottom: 1.5rem; }
 
 .ts-vertical__img {
   margin-bottom: 1.5rem; }
   .ts-vertical__img img {
     margin: 0 auto; }
 
-.col2 {
-  margin-bottom: 4.5rem; }
+@media (min-width: 960px) {
+  .col2 {
+    margin-bottom: 4.5rem;
+    display: flex;
+    justify-content: space-between; } }
+
+.col2 > .col {
+  margin-bottom: 2.25rem; }
+  @media (max-width: 960px) {
+    .col2 > .col > .ts {
+      text-align: center; }
+      .col2 > .col > .ts .body {
+        margin-left: auto; } }
   @media (min-width: 960px) {
-    .col2 {
-      display: flex;
-      justify-content: space-between; } }
-  .col2 > .col {
-    margin-bottom: 4.5rem; }
-    @media (min-width: 960px) {
-      .col2 > .col {
-        flex: 1;
-        max-width: calc(50% - 1.5rem);
-        margin-bottom: 0; }
-        .col2 > .col > .ts {
-          margin-bottom: 0; } }
+    .col2 > .col {
+      margin-bottom: 4.5rem;
+      flex: 1;
+      max-width: calc(50% - 1.5rem);
+      margin-bottom: 0; }
+      .col2 > .col > .ts {
+        margin-bottom: 0; } }
 
 .col2--equal-heights > .col {
   display: flex;
@@ -3089,7 +3147,6 @@ iframe {
     width: 100%; }
   .col .ts-flex__textos,
   .col .ts-mitad__textos {
-    text-align: center;
     margin-left: 0;
     margin-right: 0; } }
 
@@ -3101,6 +3158,17 @@ iframe {
   .col2-old > article {
     display: inline-block;
     width: 100%; }
+
+@media (max-width: 960px) {
+  .flex .flex-25,
+  .flex .flex-33,
+  .flex .flex-40,
+  .flex .flex-50,
+  .flex .flex-60,
+  .flex .flex-66,
+  .flex .flex-75 {
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (min-width: 960px) {
   .flex {
@@ -3263,268 +3331,8 @@ iframe {
   color: #fff; }
   .invert h1, .invert .h1,
   .invert h2, .invert .h2,
-  .invert h3, .invert .h3, .invert .section__subtitle, .invert .subsection,
-  .invert h4, .invert .h4, .invert .section__subtitle--small,
-  .invert h5, .invert .h5, .invert .autor.autor--small,
-  .invert h6, .invert .h6, .invert .section__patrocinador span, .section__patrocinador .invert span {
-    color: inherit; }
-  .invert a {
-    text-decoration: underline;
-    background-color: transparent;
-    border-bottom: none;
-    padding-left: 0;
-    padding-right: 0; }
-    .invert a:after {
-      display: none; }
-    .invert a:hover, .invert a:focus {
-      text-decoration: none; }
-  .invert a, .invert a:link {
-    color: #cfdafb; }
-  .invert a:visited {
-    color: #cfdafb; }
-  .invert a:focus, .invert a:hover {
-    color: #b2c4f9; }
-  .invert a:active {
-    color: #b2c4f9; }
-
-#numeros div {
-  display: inline-block; }
-
-#numeros ol {
-  display: block;
-  margin: 0;
-  padding: 0; }
-
-#numeros li {
-  list-style-type: none;
-  margin: 0; }
-
-.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .section__category, .cabecera_new .section__subtitle, .cabecera_new .subsection,
-.cabecera_new h1,
-.cabecera_new h2,
-.cabecera_new h3,
-.cabecera_new h4,
-.cabecera_new dt,
-.cabecera_new nav {
-  font-family: "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-    margin-bottom: 0; } }
-
-.col3--equal-heights > .col {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column; }
-  .col3--equal-heights > .col > .box {
-    -webkit-box-flex: 1;
-            flex: 1; }
-
-@media (max-width: 1120px) {
-  .col .ts-flex,
-  .col .ts-mitad {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column; }
-  .col .ts-flex__img,
-  .col .ts-mitad__img {
-    -webkit-box-ordinal-group: -998;
-            order: -999;
-    margin-bottom: 1.5rem;
-    padding: 0;
-    max-width: 100%;
-    width: 100%; }
-  .col .ts-flex__textos,
-  .col .ts-mitad__textos {
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0; } }
-
-.col2-old {
-  -webkit-column-count: 2;
-     -moz-column-count: 2;
-          column-count: 2;
-  grid-column-gap: 1.5rem;
-  -webkit-column-gap: 1.5rem;
-     -moz-column-gap: 1.5rem;
-          column-gap: 1.5rem; }
-  .col2-old > div,
-  .col2-old > section,
-  .col2-old > article {
-    display: inline-block;
-    width: 100%; }
-
-@media (min-width: 960px) {
-  .flex {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between; }
-  .flex-50 {
-    -webkit-box-flex: 1;
-            flex: 1 0 50%; }
-  .flex-33 {
-    -webkit-box-flex: 1;
-            flex: 1 0 33%; }
-  .flex-40 {
-    -webkit-box-flex: 1;
-            flex: 1 0 40%; }
-  .flex-60 {
-    -webkit-box-flex: 1;
-            flex: 1 0 60%; }
-  .flex-66 {
-    -webkit-box-flex: 1;
-            flex: 1 0 66%; }
-  .flex-75 {
-    -webkit-box-flex: 1;
-            flex: 1 0 75%; }
-  .flex-25 {
-    -webkit-box-flex: 1;
-            flex: 1 0 25%; } }
-
-.m {
-  margin: 1.5rem; }
-
-.mt {
-  margin-top: 1.5rem; }
-
-.mr {
-  margin-right: 1.5rem; }
-
-.mb {
-  margin-bottom: 1.5rem; }
-
-.ml {
-  margin-left: 1.5rem; }
-
-.m0 {
-  margin: 0; }
-
-.p {
-  padding: 1.5rem; }
-
-.pt {
-  padding-top: 1.5rem; }
-
-.pr {
-  padding-right: 1.5rem; }
-
-.pb {
-  padding-bottom: 1.5rem; }
-
-.pl {
-  padding-left: 1.5rem; }
-
-.p0 {
-  padding: 0; }
-
-.b, .box {
-  border: 1px solid #000; }
-
-.bt {
-  border-top: 1px solid #000; }
-
-.br {
-  border-right: 1px solid #000; }
-
-.bb {
-  border-bottom: 1px solid #000; }
-
-.bl {
-  border-left: 1px solid #000; }
-
-.b0 {
-  border: none; }
-
-.half-gutter.m {
-  margin: 0.75rem; }
-
-.half-gutter.mt {
-  margin-top: 0.75rem; }
-
-.half-gutter.mr {
-  margin-right: 0.75rem; }
-
-.half-gutter.mb {
-  margin-bottom: 0.75rem; }
-
-.half-gutter.ml {
-  margin-left: 0.75rem; }
-
-.half-gutter.p {
-  padding: 0.75rem; }
-
-.half-gutter.pt {
-  padding-top: 0.75rem; }
-
-.half-gutter.pr {
-  padding-right: 0.75rem; }
-
-.half-gutter.pb {
-  padding-bottom: 0.75rem; }
-
-.half-gutter.pl {
-  padding-left: 0.75rem; }
-
-.quarter-gutter.m {
-  margin: 0.375rem; }
-
-.quarter-gutter.mt {
-  margin-top: 0.375rem; }
-
-.quarter-gutter.mr {
-  margin-right: 0.375rem; }
-
-.quarter-gutter.mb {
-  margin-bottom: 0.375rem; }
-
-.quarter-gutter.ml {
-  margin-left: 0.375rem; }
-
-.quarter-gutter.p {
-  padding: 0.375rem; }
-
-.quarter-gutter.pt {
-  padding-top: 0.375rem; }
-
-.quarter-gutter.pr {
-  padding-right: 0.375rem; }
-
-.quarter-gutter.pb {
-  padding-bottom: 0.375rem; }
-
-.quarter-gutter.pl {
-  padding-left: 0.375rem; }
-
-.tl {
-  text-align: left; }
-
-.tc {
-  text-align: center; }
-
-.tr {
-  text-align: right; }
-
-.up {
-  text-transform: uppercase; }
-
-.st {
-  font-weight: bold; }
-
-.em {
-  font-style: italic; }
-
-.ls {
-  letter-spacing: 0.05em; }
-
-.sh {
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1); }
-
-.invert {
-  color: #fff; }
-  .invert h1, .invert .h1,
-  .invert h2, .invert .h2,
-  .invert h3, .invert .h3, .invert .section__subtitle, .invert .subsection,
-  .invert h4, .invert .h4, .invert .section__subtitle--small,
+  .invert h3, .invert .h3, .invert .subsection,
+  .invert h4, .invert .h4,
   .invert h5, .invert .h5, .invert .autor.autor--small,
   .invert h6, .invert .h6, .invert .section__patrocinador span, .section__patrocinador .invert span {
     color: inherit; }

@@ -1,6 +1,12 @@
 .ts-flex {        
     display:flex;
     flex-direction:column;
+    @include breakpoint(max-width $medium) {
+        text-align:center;
+        .body {
+            margin-left: auto;
+        }
+    }
     @include breakpoint($medium) {
         flex-direction:row;
     }
