@@ -1,0 +1,20 @@
+.suscribete {
+    // padding: $gutter;
+    font-family: $font-tertiary;
+}
+
+.suscribete__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $white;
+    background-color: $black;
+    display:inline;
+    padding: 0 5px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    @include ritmo-font-size($h3-font-size, 6);
+}
+
+.suscribete__text {
+    margin-top: $gutter;
+}

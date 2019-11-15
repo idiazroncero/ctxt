@@ -23,3 +23,13 @@
         right:0;
     }
 }
+
+.quote--full {
+    float:none;
+    width:100%;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    border-left: none;
+    margin: $gutter 0;
+    padding: $gutter / 2 $gutter $gutter / 2 $gutter * 3;
+}

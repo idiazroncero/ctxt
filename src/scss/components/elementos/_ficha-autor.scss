@@ -1,0 +1,60 @@
+.ficha-autor {
+    font-family: $font-secondary;
+}
+
+.ficha-autor__category {
+    text-transform: uppercase;
+    margin:0;
+}
+
+.ficha-autor__ficha{
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    padding: $gutter / 2 0;
+    display:flex;
+    align-items:center;
+}
+
+.ficha-autor__img {
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.ficha-autor__content {
+    margin-left: $gutter * 2;
+}
+
+.ficha-autor__title {
+    @extend .h3;
+    font-family: $font-main;
+    font-weight:bold;
+    margin-bottom: $gutter / 2;
+}
+
+.ficha-autor__body {
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+}
+
+.ficha-autor__meta {
+    display:flex;
+    align-items:center;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+}
+
+.ficha-autor__redes {
+    @include inline-list();
+    margin-left: auto;
+    li {
+        margin-left: $gutter / 2;
+        margin-bottom:0;
+    }
+    a {
+        display:block;
+        i {
+            vertical-align:bottom;
+            svg {
+                fill: $black;
+            }
+        }
+    }
+}
