@@ -118,11 +118,12 @@ $courier: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida S
 $avenir: 'Avenir Next Condensed', $helvetica;
 $futura: 'Futura CTXT', 'Futura', $helvetica;
 $cheltenham: 'Cheltenham CTXT', $georgia;
+$roboto: 'Roboto', $helvetica;
 
 // Global variables. It is good practice (performance & design) to only use one or two typefaces.
 $font-main: $cheltenham;
 $font-secondary: $futura;
-$font-tertiary: $helvetica;
+$font-tertiary: $roboto;
 $font-monospace: $courier;
 
 // Setting custom values for bold and light (100, 500, etc) allow for more precise mapping

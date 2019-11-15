@@ -12,6 +12,18 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Futura CTXT';
   src: url("../fonts/futura/FuturaPT-Book.woff2") format("woff2"), url("../fonts/futura/FuturaPT-Book.woff2") format("woff");
   font-weight: normal;
@@ -666,7 +678,7 @@ h2, .h2 {
   line-height: 41px;
   line-height: 2.4rem; }
 
-h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title {
+h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title, .bloque__title {
   font-size: 27px;
   font-size: 1.5625rem;
   line-height: 34px;
@@ -678,7 +690,7 @@ h4, .h4 {
   line-height: 27px;
   line-height: 1.6rem; }
 
-h5, .h5, .autor.autor--small, .autor--small.subcontenido__autor, .autor--small.articulo__fecha {
+h5, .h5, .autor.autor--small, .autor--small.subcontenido__autor, .autor--small.ademas__title, .autor--small.articulo__fecha {
   font-size: 17px;
   font-size: 1rem;
   line-height: 27px;
@@ -695,40 +707,40 @@ h2, .h2 {
   letter-spacing: -0.03em; }
 
 h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .subsection, .subcontenido__title, .ficha-autor__title, .h4, .h5, .autor.autor--small, .autor--small.subcontenido__autor, .autor--small.articulo__fecha, .h6, .section__patrocinador span, .imagen__caption, .pub__title {
+.h1, .h2, .h3, .subsection, .subcontenido__title, .ficha-autor__title, .bloque__title, .h4, .h5, .autor.autor--small, .autor--small.subcontenido__autor, .autor--small.ademas__title, .autor--small.articulo__fecha, .h6, .section__patrocinador span, .imagen__caption, .pub__title {
   color: #000;
   font-weight: normal; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
-  .h1 small, .h2 small, .h3 small, .subsection small, .subcontenido__title small, .ficha-autor__title small, .h4 small, .h5 small, .autor.autor--small small, .autor--small.subcontenido__autor small, .autor--small.articulo__fecha small, .h6 small, .section__patrocinador span small, .imagen__caption small, .pub__title small {
+  .h1 small, .h2 small, .h3 small, .subsection small, .subcontenido__title small, .ficha-autor__title small, .bloque__title small, .h4 small, .h5 small, .autor.autor--small small, .autor--small.subcontenido__autor small, .autor--small.ademas__title small, .autor--small.articulo__fecha small, .h6 small, .section__patrocinador span small, .imagen__caption small, .pub__title small {
     color: inherit;
     vertical-align: 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-  .h1 a, .h2 a, .h3 a, .subsection a, .subcontenido__title a, .ficha-autor__title a, .h4 a, .h5 a, .autor.autor--small a, .autor--small.subcontenido__autor a, .autor--small.articulo__fecha a, .h6 a, .section__patrocinador span a, .imagen__caption a, .pub__title a {
+  .h1 a, .h2 a, .h3 a, .subsection a, .subcontenido__title a, .ficha-autor__title a, .bloque__title a, .h4 a, .h5 a, .autor.autor--small a, .autor--small.subcontenido__autor a, .autor--small.ademas__title a, .autor--small.articulo__fecha a, .h6 a, .section__patrocinador span a, .imagen__caption a, .pub__title a {
     text-decoration: none; }
     h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus, h4 a:hover, h4 a:focus, h5 a:hover, h5 a:focus, h6 a:hover, h6 a:focus,
     .h1 a:hover,
-    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .subsection a:hover, .subcontenido__title a:hover, .ficha-autor__title a:hover, .h3 a:focus, .subsection a:focus, .subcontenido__title a:focus, .ficha-autor__title a:focus, .h4 a:hover, .h4 a:focus, .h5 a:hover, .autor.autor--small a:hover, .autor--small.subcontenido__autor a:hover, .autor--small.articulo__fecha a:hover, .h5 a:focus, .autor.autor--small a:focus, .autor--small.subcontenido__autor a:focus, .autor--small.articulo__fecha a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus {
+    .h1 a:focus, .h2 a:hover, .h2 a:focus, .h3 a:hover, .subsection a:hover, .subcontenido__title a:hover, .ficha-autor__title a:hover, .bloque__title a:hover, .h3 a:focus, .subsection a:focus, .subcontenido__title a:focus, .ficha-autor__title a:focus, .bloque__title a:focus, .h4 a:hover, .h4 a:focus, .h5 a:hover, .autor.autor--small a:hover, .autor--small.subcontenido__autor a:hover, .autor--small.ademas__title a:hover, .autor--small.articulo__fecha a:hover, .h5 a:focus, .autor.autor--small a:focus, .autor--small.subcontenido__autor a:focus, .autor--small.ademas__title a:focus, .autor--small.articulo__fecha a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus {
       text-decoration: none; }
   h1 a, h1 a:link, h2 a, h2 a:link, h3 a, h3 a:link, h4 a, h4 a:link, h5 a, h5 a:link, h6 a, h6 a:link,
   .h1 a,
-  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .subsection a, .subcontenido__title a, .ficha-autor__title a, .h3 a:link, .subsection a:link, .subcontenido__title a:link, .ficha-autor__title a:link, .h4 a, .h4 a:link, .h5 a, .autor.autor--small a, .autor--small.subcontenido__autor a, .autor--small.articulo__fecha a, .h5 a:link, .autor.autor--small a:link, .autor--small.subcontenido__autor a:link, .autor--small.articulo__fecha a:link, .h6 a, .section__patrocinador span a, .imagen__caption a, .pub__title a, .h6 a:link, .section__patrocinador span a:link, .imagen__caption a:link, .pub__title a:link {
+  .h1 a:link, .h2 a, .h2 a:link, .h3 a, .subsection a, .subcontenido__title a, .ficha-autor__title a, .bloque__title a, .h3 a:link, .subsection a:link, .subcontenido__title a:link, .ficha-autor__title a:link, .bloque__title a:link, .h4 a, .h4 a:link, .h5 a, .autor.autor--small a, .autor--small.subcontenido__autor a, .autor--small.ademas__title a, .autor--small.articulo__fecha a, .h5 a:link, .autor.autor--small a:link, .autor--small.subcontenido__autor a:link, .autor--small.ademas__title a:link, .autor--small.articulo__fecha a:link, .h6 a, .section__patrocinador span a, .imagen__caption a, .pub__title a, .h6 a:link, .section__patrocinador span a:link, .imagen__caption a:link, .pub__title a:link {
     color: #000; }
   h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited,
-  .h1 a:visited, .h2 a:visited, .h3 a:visited, .subsection a:visited, .subcontenido__title a:visited, .ficha-autor__title a:visited, .h4 a:visited, .h5 a:visited, .autor.autor--small a:visited, .autor--small.subcontenido__autor a:visited, .autor--small.articulo__fecha a:visited, .h6 a:visited, .section__patrocinador span a:visited, .imagen__caption a:visited, .pub__title a:visited {
+  .h1 a:visited, .h2 a:visited, .h3 a:visited, .subsection a:visited, .subcontenido__title a:visited, .ficha-autor__title a:visited, .bloque__title a:visited, .h4 a:visited, .h5 a:visited, .autor.autor--small a:visited, .autor--small.subcontenido__autor a:visited, .autor--small.ademas__title a:visited, .autor--small.articulo__fecha a:visited, .h6 a:visited, .section__patrocinador span a:visited, .imagen__caption a:visited, .pub__title a:visited {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .subcontenido__title a:focus, .ficha-autor__title a:focus, .h3 a:hover, .subsection a:hover, .subcontenido__title a:hover, .ficha-autor__title a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .autor.autor--small a:focus, .autor--small.subcontenido__autor a:focus, .autor--small.articulo__fecha a:focus, .h5 a:hover, .autor.autor--small a:hover, .autor--small.subcontenido__autor a:hover, .autor--small.articulo__fecha a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .subcontenido__title a:focus, .ficha-autor__title a:focus, .bloque__title a:focus, .h3 a:hover, .subsection a:hover, .subcontenido__title a:hover, .ficha-autor__title a:hover, .bloque__title a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .autor.autor--small a:focus, .autor--small.subcontenido__autor a:focus, .autor--small.ademas__title a:focus, .autor--small.articulo__fecha a:focus, .h5 a:hover, .autor.autor--small a:hover, .autor--small.subcontenido__autor a:hover, .autor--small.ademas__title a:hover, .autor--small.articulo__fecha a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover {
     color: #000; }
   h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active,
-  .h1 a:active, .h2 a:active, .h3 a:active, .subsection a:active, .subcontenido__title a:active, .ficha-autor__title a:active, .h4 a:active, .h5 a:active, .autor.autor--small a:active, .autor--small.subcontenido__autor a:active, .autor--small.articulo__fecha a:active, .h6 a:active, .section__patrocinador span a:active, .imagen__caption a:active, .pub__title a:active {
+  .h1 a:active, .h2 a:active, .h3 a:active, .subsection a:active, .subcontenido__title a:active, .ficha-autor__title a:active, .bloque__title a:active, .h4 a:active, .h5 a:active, .autor.autor--small a:active, .autor--small.subcontenido__autor a:active, .autor--small.ademas__title a:active, .autor--small.articulo__fecha a:active, .h6 a:active, .section__patrocinador span a:active, .imagen__caption a:active, .pub__title a:active {
     color: #000; }
   h1 a:focus, h1 a:hover, h2 a:focus, h2 a:hover, h3 a:focus, h3 a:hover, h4 a:focus, h4 a:hover, h5 a:focus, h5 a:hover, h6 a:focus, h6 a:hover,
   .h1 a:focus,
-  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .subcontenido__title a:focus, .ficha-autor__title a:focus, .h3 a:hover, .subsection a:hover, .subcontenido__title a:hover, .ficha-autor__title a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .autor.autor--small a:focus, .autor--small.subcontenido__autor a:focus, .autor--small.articulo__fecha a:focus, .h5 a:hover, .autor.autor--small a:hover, .autor--small.subcontenido__autor a:hover, .autor--small.articulo__fecha a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover {
+  .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .subcontenido__title a:focus, .ficha-autor__title a:focus, .bloque__title a:focus, .h3 a:hover, .subsection a:hover, .subcontenido__title a:hover, .ficha-autor__title a:hover, .bloque__title a:hover, .h4 a:focus, .h4 a:hover, .h5 a:focus, .autor.autor--small a:focus, .autor--small.subcontenido__autor a:focus, .autor--small.ademas__title a:focus, .autor--small.articulo__fecha a:focus, .h5 a:hover, .autor.autor--small a:hover, .autor--small.subcontenido__autor a:hover, .autor--small.ademas__title a:hover, .autor--small.articulo__fecha a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover {
     text-decoration: none; }
 
-.font-secondary, .autor, .subcontenido__autor, .articulo__fecha, .section__category, .section__subtitle,
+.font-secondary, .autor, .subcontenido__autor, .ademas__title, .articulo__fecha, .section__category, .section__subtitle,
 .section__suptitle, .subsection,
 nav {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -1997,21 +2009,21 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     line-height: 2rem; } }
 
 @media (max-width: 960px) {
-  h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title {
+  h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title, .bloque__title {
     font-size: 21px;
     font-size: 1.25rem;
     line-height: 27px;
     line-height: 1.6rem; } }
 
-.autor, .subcontenido__autor, .articulo__fecha {
+.autor, .subcontenido__autor, .ademas__title, .articulo__fecha {
   text-transform: uppercase; }
   @media (min-width: 960px) {
-    .autor, .subcontenido__autor, .articulo__fecha {
+    .autor, .subcontenido__autor, .ademas__title, .articulo__fecha {
       font-size: 21px;
       font-size: 1.25rem;
       line-height: 27px;
       line-height: 1.6rem; } }
-  .autor span + span:before, .subcontenido__autor span + span:before, .articulo__fecha span + span:before {
+  .autor span + span:before, .subcontenido__autor span + span:before, .ademas__title span + span:before, .articulo__fecha span + span:before {
     content: "/";
     padding: 0 5px; }
 
@@ -2530,7 +2542,7 @@ iframe {
     padding-bottom: 0; }
     .articulo .section .section__title {
       font-weight: bold; }
-    .articulo .section .autor, .articulo .section .subcontenido__autor, .articulo .section .articulo__fecha {
+    .articulo .section .autor, .articulo .section .subcontenido__autor, .articulo .section .ademas__title, .articulo .section .articulo__fecha {
       text-align: center; }
 
 .section__category {
@@ -2706,27 +2718,29 @@ iframe {
   .galeria__next:before {
     transform: rotate(45deg); }
 
-.box {
+.box, .bloque {
   padding: 1.6rem;
   margin-bottom: 2.4rem; }
   @media (min-width: 960px) {
-    .box {
+    .box, .bloque {
       margin-bottom: 4.8rem; } }
   @media (min-width: 1120px) {
-    .box {
+    .box, .bloque {
       padding: 3.2rem; } }
-  .box .ts:last-child,
+  .box .ts:last-child, .bloque .ts:last-child,
   .box .col2:last-child,
-  .box .col3:last-child {
+  .bloque .col2:last-child,
+  .box .col3:last-child,
+  .bloque .col3:last-child {
     margin-bottom: 1.6rem; }
-  .box.box--gray {
+  .box.box--gray, .box--gray.bloque {
     border: 0;
     background-color: #ececec; }
-    .box.box--gray .section__subtitle {
+    .box.box--gray .section__subtitle, .box--gray.bloque .section__subtitle {
       color: #000; }
-    .box.box--gray .ts-tab__category:before {
+    .box.box--gray .ts-tab__category:before, .box--gray.bloque .ts-tab__category:before {
       background-color: #ececec; }
-    .box.box--gray .ts-tab__triangle:before {
+    .box.box--gray .ts-tab__triangle:before, .box--gray.bloque .ts-tab__triangle:before {
       border-color: transparent transparent #ececec #ececec; }
 
 @media (min-width: 960px) {
@@ -2807,15 +2821,17 @@ iframe {
       .box--tab.box--tab--gray .box--tab__category .box--tab__triangle:before {
         border-color: transparent transparent #ececec #ececec; }
 
-.box.box--half {
+.box.box--half, .box--half.bloque {
   border-left: none;
   padding-left: 0.8rem;
   border-right: 0;
   padding-right: 0.8rem; }
 
-@media (min-width: 960px) {
-  .tienda .ts-tab {
-    margin-top: 0; } }
+.tienda {
+  margin-top: 3.2rem; }
+  @media (min-width: 960px) {
+    .tienda .ts-tab {
+      margin-top: 0; } }
 
 .icon-h1 {
   height: 2.44141rem;
@@ -2859,19 +2875,20 @@ iframe {
 
 .imagen__caption {
   padding: 0.8rem 0;
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   margin: 0; }
 
 .imagen__autor {
   text-transform: uppercase;
   font-weight: bold;
-  margin-left: auto; }
+  margin-left: auto;
+  padding-left: 0.8rem; }
 
 .cajita {
   background-color: #f4ecde;
   padding: 0.8rem 1.6rem;
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 2.4rem; }
   .cajita p:last-child {
     margin: 0; }
@@ -2886,16 +2903,23 @@ iframe {
   margin-bottom: 0.4rem; }
 
 .quote {
-  float: right;
+  font-size: 21px;
+  font-size: 1.25rem;
+  line-height: 27px;
+  line-height: 1.6rem;
   padding: 0.8rem 0.8rem 0.8rem 4rem;
-  font-size: 27px;
-  font-size: 1.5625rem;
-  line-height: 34px;
-  line-height: 2rem;
-  width: 45%;
-  border-left: 1px solid #2E2E2E;
-  position: relative;
-  margin: 0 0 1.6rem 1.6rem; }
+  position: relative; }
+  @media (min-width: 640px) {
+    .quote {
+      float: right;
+      padding: 0.8rem 0.8rem 0.8rem 4rem;
+      font-size: 27px;
+      font-size: 1.5625rem;
+      line-height: 34px;
+      line-height: 2rem;
+      width: 45%;
+      border-left: 1px solid #2E2E2E;
+      margin: 0 0 1.6rem 1.6rem; } }
   .quote:before {
     content: "“";
     font-size: 6rem;
@@ -2921,7 +2945,7 @@ iframe {
   padding: 0.8rem 1.6rem 0.8rem 4.8rem; }
 
 .subcontenido {
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .subcontenido__title {
   font-weight: bold;
@@ -2941,6 +2965,8 @@ iframe {
 
 .ficha-autor {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .ficha-autor .button, .ficha-autor input[type=file] + label {
+    white-space: nowrap; }
 
 .ficha-autor__category {
   text-transform: uppercase;
@@ -2950,15 +2976,25 @@ iframe {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   padding: 0.8rem 0;
-  display: flex;
-  align-items: center; }
+  text-align: center; }
+  @media (min-width: 640px) {
+    .ficha-autor__ficha {
+      text-align: left;
+      display: flex;
+      align-items: center; } }
 
 .ficha-autor__img {
-  border-radius: 50%;
-  overflow: hidden; }
+  display: inline-block;
+  margin-bottom: 1.6rem; }
+  .ficha-autor__img img {
+    border-radius: 50%; }
+  @media (min-width: 640px) {
+    .ficha-autor__img {
+      margin-bottom: 0; } }
 
-.ficha-autor__content {
-  margin-left: 3.2rem; }
+@media (min-width: 640px) {
+  .ficha-autor__content {
+    margin-left: 3.2rem; } }
 
 .ficha-autor__title {
   font-family: "Cheltenham CTXT", Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -2972,34 +3008,62 @@ iframe {
   line-height: 0.8rem; }
 
 .ficha-autor__meta {
-  display: flex;
-  align-items: center;
   font-size: 14px;
   font-size: 0.8rem;
   line-height: 14px;
   line-height: 0.8rem; }
+  @media (min-width: 640px) {
+    .ficha-autor__meta {
+      display: flex;
+      align-items: center; } }
 
 .ficha-autor__redes {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-top: 1.6rem;
+  justify-content: center; }
   .ficha-autor__redes li {
     list-style-type: none;
     display: inline-block; }
+  @media (min-width: 640px) {
+    .ficha-autor__redes {
+      margin-top: 0; } }
   .ficha-autor__redes li {
-    margin-left: 0.8rem;
+    margin: 0 0.8rem;
     margin-bottom: 0; }
+    @media (min-width: 640px) {
+      .ficha-autor__redes li {
+        margin: 0 0 0 0.8rem; } }
   .ficha-autor__redes a {
     display: block; }
+    .ficha-autor__redes a {
+      text-decoration: none; }
+      .ficha-autor__redes a:hover, .ficha-autor__redes a:focus {
+        text-decoration: underline;
+        background-color: transparent;
+        border-bottom: none;
+        padding-left: 0;
+        padding-right: 0; }
+        .ficha-autor__redes a:hover:after, .ficha-autor__redes a:focus:after {
+          display: none; }
+    .ficha-autor__redes a, .ficha-autor__redes a:link {
+      color: #000; }
+    .ficha-autor__redes a:visited {
+      color: #000; }
+    .ficha-autor__redes a:focus, .ficha-autor__redes a:hover {
+      color: #f01b4d; }
+    .ficha-autor__redes a:active {
+      color: #f01b4d; }
     .ficha-autor__redes a i {
       vertical-align: bottom; }
       .ficha-autor__redes a i svg {
         fill: #000; }
 
 .suscribete {
-  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .suscribete__title {
   text-transform: uppercase;
@@ -3017,6 +3081,67 @@ iframe {
 
 .suscribete__text {
   margin-top: 1.6rem; }
+
+.ademas {
+  padding: 1.6rem 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-bottom: 4.8rem; }
+  .ademas .separator:first-child {
+    margin-top: 0; }
+
+@media (min-width: 640px) {
+  .bloques {
+    display: grid;
+    grid-gap: 1.6rem;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 960px) {
+  .bloques {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (min-width: 1120px) {
+  .bloques {
+    grid-template-columns: repeat(5, 1fr); } }
+
+.bloque {
+  padding: 0.8rem; }
+
+.bloque__title {
+  border-bottom: 1px solid #000; }
+
+.bloque__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .bloque__list li {
+    list-style-type: none;
+    display: inline-block; }
+
+.bloque__item {
+  display: block;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #CCCCCA; }
+
+.bloque__autor {
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-size: 0.8rem;
+  line-height: 14px;
+  line-height: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold; }
+
+.bloque__item__title {
+  font-size: 17px;
+  font-size: 1rem;
+  line-height: 20px;
+  line-height: 1.2rem;
+  margin: 0; }
 
 .ts-flotante {
   border-top-width: 1px;
@@ -3325,7 +3450,7 @@ iframe {
 .col2--equal-heights > .col {
   display: flex;
   flex-direction: column; }
-  .col2--equal-heights > .col > .box {
+  .col2--equal-heights > .col > .box, .col2--equal-heights > .col > .bloque {
     flex: 1; }
 
 @media (min-width: 960px) {
@@ -3357,7 +3482,7 @@ iframe {
 .col3--equal-heights > .col {
   display: flex;
   flex-direction: column; }
-  .col3--equal-heights > .col > .box {
+  .col3--equal-heights > .col > .box, .col3--equal-heights > .col > .bloque {
     flex: 1; }
 
 @media (max-width: 1120px) {
@@ -3416,14 +3541,22 @@ iframe {
     flex: 1 0 25%; } }
 
 .articulo__content {
-  display: flex;
-  margin-bottom: 4.8rem; }
+  margin-bottom: 2.4rem; }
+  @media (min-width: 960px) {
+    .articulo__content {
+      display: flex;
+      margin-bottom: 4.8rem; } }
 
-.articulo__main {
-  width: 70%;
-  padding-right: 4.8rem;
-  border-right: 1px solid #000;
-  padding-top: 1.6rem; }
+@media (min-width: 960px) {
+  .articulo__main {
+    width: 70%;
+    padding-right: 2.4rem;
+    border-right: 1px solid #000;
+    padding-top: 1.6rem; } }
+
+@media (min-width: 1120px) {
+  .articulo__main {
+    padding-right: 4.8rem; } }
 
 .articulo__body {
   font-weight: lighter; }
@@ -3435,12 +3568,20 @@ iframe {
       line-height: 2rem; } }
 
 .articulo__sidebar {
-  width: 30%;
-  padding-left: 4.8rem;
   padding-top: 1.6rem; }
+  @media (min-width: 960px) {
+    .articulo__sidebar {
+      width: 30%;
+      padding-left: 2.4rem; } }
+  @media (min-width: 1120px) {
+    .articulo__sidebar {
+      padding-left: 4.8rem; } }
 
 .articulo__destacado {
-  margin-bottom: 4.8rem; }
+  margin-bottom: 2.4rem; }
+  @media (min-width: 960px) {
+    .articulo__destacado {
+      margin-bottom: 4.8rem; } }
   .articulo__destacado .imagen {
     margin: 0; }
 
@@ -3483,7 +3624,7 @@ iframe {
 .p0 {
   padding: 0; }
 
-.b, .box {
+.b, .box, .bloque {
   border: 1px solid #000; }
 
 .bt {
@@ -3589,9 +3730,9 @@ iframe {
   color: #fff; }
   .invert h1, .invert .h1,
   .invert h2, .invert .h2,
-  .invert h3, .invert .h3, .invert .subsection, .invert .subcontenido__title, .invert .ficha-autor__title,
+  .invert h3, .invert .h3, .invert .subsection, .invert .subcontenido__title, .invert .ficha-autor__title, .invert .bloque__title,
   .invert h4, .invert .h4,
-  .invert h5, .invert .h5, .invert .autor.autor--small, .invert .autor--small.subcontenido__autor, .invert .autor--small.articulo__fecha,
+  .invert h5, .invert .h5, .invert .autor.autor--small, .invert .autor--small.subcontenido__autor, .invert .autor--small.ademas__title, .invert .autor--small.articulo__fecha,
   .invert h6, .invert .h6, .invert .section__patrocinador span, .section__patrocinador .invert span, .invert .imagen__caption, .invert .pub__title {
     color: inherit; }
   .invert a {
@@ -3625,7 +3766,7 @@ iframe {
   list-style-type: none;
   margin: 0; }
 
-.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .subcontenido__autor, .cabecera_new .articulo__fecha, .cabecera_new .section__category, .cabecera_new .section__subtitle,
+.cabecera_new .font-secondary, .cabecera_new .autor, .cabecera_new .subcontenido__autor, .cabecera_new .ademas__title, .cabecera_new .articulo__fecha, .cabecera_new .section__category, .cabecera_new .section__subtitle,
 .cabecera_new .section__suptitle, .cabecera_new .subsection,
 .cabecera_new h1,
 .cabecera_new h2,

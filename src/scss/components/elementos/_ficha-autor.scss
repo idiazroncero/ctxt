@@ -1,5 +1,8 @@
 .ficha-autor {
     font-family: $font-secondary;
+    .button {
+        white-space: nowrap;
+    }
 }
 
 .ficha-autor__category {
@@ -10,18 +13,30 @@
 .ficha-autor__ficha{
     border-top: 1px solid $black;
     border-bottom: 1px solid $black;
-    padding: $gutter / 2 0;
-    display:flex;
-    align-items:center;
+    padding: $gutter / 2 0;    
+    text-align:center;
+    @include breakpoint($small) {
+        text-align:left;
+        display:flex;
+        align-items:center;
+    }
 }
 
 .ficha-autor__img {
-    border-radius:50%;
-    overflow:hidden;
+    img {
+        border-radius:50%;
+    }
+    display:inline-block;
+    margin-bottom: $gutter;
+    @include breakpoint($small) {
+        margin-bottom:0;
+    }
 }
 
 .ficha-autor__content {
-    margin-left: $gutter * 2;
+    @include breakpoint($small) {
+        margin-left: $gutter * 2;
+    }
 }
 
 .ficha-autor__title {
@@ -36,20 +51,36 @@
 }
 
 .ficha-autor__meta {
-    display:flex;
-    align-items:center;
+    @include breakpoint($small) {
+        display:flex;
+        align-items:center;
+    }
     @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
 }
 
 .ficha-autor__redes {
     @include inline-list();
     margin-left: auto;
+    margin-top: $gutter;
+    justify-content:center;
+    @include breakpoint($small) {
+        margin-top:0;
+    }
     li {
-        margin-left: $gutter / 2;
+        margin: 0 $gutter / 2;
+        @include breakpoint($small) {
+            margin: 0 0 0 $gutter / 2;
+        }
         margin-bottom:0;
     }
     a {
         display:block;
+        @include set-link(
+            $black,
+            $black,
+            get-color(base, primary),
+            get-color(base, primary)
+        )
         i {
             vertical-align:bottom;
             svg {

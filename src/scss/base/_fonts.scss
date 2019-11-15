@@ -15,6 +15,22 @@
 }
 
 @font-face {
+    font-family: 'Roboto';
+    src:    url('../fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+            url('../fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src:    url('../fonts/roboto/Roboto-Light.woff2') format('woff2'),
+            url('../fonts/roboto/Roboto-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Futura CTXT';
     src:    url('../fonts/futura/FuturaPT-Book.woff2') format('woff2'),
             url('../fonts/futura/FuturaPT-Book.woff2') format('woff');

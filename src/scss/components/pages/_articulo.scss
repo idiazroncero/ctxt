@@ -1,12 +1,20 @@
-.articulo__content {
-    display:flex;
-    margin-bottom: $articulo-spacer;
+.articulo__content {    
+    margin-bottom: $articulo-spacer / 2;
+    @include breakpoint($medium) {
+        display:flex;
+        margin-bottom: $articulo-spacer;
+    }
 }
 .articulo__main {
-    width:70%;
-    padding-right: $articulo-spacer;
-    border-right: 1px solid $black;
-    padding-top: $gutter;
+    @include breakpoint($medium) {
+        width:70%;
+        padding-right: $articulo-spacer / 2;
+        border-right: 1px solid $black;
+        padding-top: $gutter;
+    }
+    @include breakpoint($large) {
+        padding-right: $articulo-spacer;
+    }
 }
 
 .articulo__body {
@@ -17,13 +25,21 @@
 }
 
 .articulo__sidebar {
-    width:30%;
-    padding-left: $articulo-spacer;
+    @include breakpoint($medium) {
+        width:30%;
+        padding-left: $articulo-spacer / 2;
+    }
+    @include breakpoint($large) {
+        padding-left: $articulo-spacer;
+    }
     padding-top: $gutter;
 }
 
 .articulo__destacado {
-    margin-bottom: $articulo-spacer;
+    margin-bottom: $articulo-spacer / 2;
+    @include breakpoint($medium) {
+        margin-bottom: $articulo-spacer;
+    }
     .imagen {
         margin:0;
     }
