@@ -61,9 +61,9 @@
     @include breakpoint($small) {
         @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
     }
-    @include breakpoint($medium) {
-        @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
-    }
+    // @include breakpoint($medium) {
+    //     @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    // }
     text-align:center;
     margin:0;
     @extend .font-secondary;

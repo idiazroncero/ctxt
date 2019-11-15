@@ -648,33 +648,33 @@ figure {
 
 figcaption {
   display: block;
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 27px;
   line-height: 1.6rem;
   text-align: left; }
 
 h1, .h1 {
-  font-size: 49px;
-  font-size: 2.8561rem;
-  line-height: 61px;
-  line-height: 3.6rem; }
-
-h2, .h2 {
-  font-size: 37px;
-  font-size: 2.197rem;
+  font-size: 42px;
+  font-size: 2.44141rem;
   line-height: 48px;
   line-height: 2.8rem; }
 
-h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title {
-  font-size: 29px;
-  font-size: 1.69rem;
+h2, .h2 {
+  font-size: 33px;
+  font-size: 1.95312rem;
   line-height: 41px;
   line-height: 2.4rem; }
 
+h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title {
+  font-size: 27px;
+  font-size: 1.5625rem;
+  line-height: 34px;
+  line-height: 2rem; }
+
 h4, .h4 {
-  font-size: 22px;
-  font-size: 1.3rem;
+  font-size: 21px;
+  font-size: 1.25rem;
   line-height: 27px;
   line-height: 1.6rem; }
 
@@ -685,8 +685,8 @@ h5, .h5, .autor.autor--small, .autor--small.subcontenido__autor, .autor--small.a
   line-height: 1.6rem; }
 
 h6, .h6, .section__patrocinador span, .imagen__caption, .pub__title {
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 14px;
   line-height: 0.8rem; }
 
@@ -799,20 +799,20 @@ mark {
 
 small,
 .small {
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 20px;
   line-height: 1.2rem; }
 
 h1 small {
-  font-size: 29px;
-  font-size: 1.69rem;
+  font-size: 27px;
+  font-size: 1.5625rem;
   line-height: 34px;
   line-height: 2rem; }
 
 h2 small {
-  font-size: 22px;
-  font-size: 1.3rem;
+  font-size: 21px;
+  font-size: 1.25rem;
   line-height: 27px;
   line-height: 1.6rem; }
 
@@ -824,8 +824,8 @@ h3 small {
 
 sub,
 sup {
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 20px;
   line-height: 1.2rem;
   line-height: 0;
@@ -938,8 +938,8 @@ fieldset.fieldset--disabled {
   align-items: center; }
   .form-item label {
     flex: 0 1 auto;
-    font-size: 13px;
-    font-size: 0.76923rem;
+    font-size: 14px;
+    font-size: 0.8rem;
     line-height: 27px;
     line-height: 1.6rem;
     font-weight: bold;
@@ -1581,8 +1581,8 @@ a.button:focus, a.button:hover {
   display: inline-block;
   padding: 0;
   /* IE8 and FF freak out if this rule is within another selector */
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 27px;
   line-height: 1.6rem;
   text-transform: uppercase;
@@ -1601,11 +1601,11 @@ a.button:focus, a.button:hover {
     border: 0;
     background: none; }
   .button .icon, input[type=file] + label .icon {
-    font-size: 13px;
-    font-size: 0.76923rem;
+    font-size: 14px;
+    font-size: 0.8rem;
     line-height: 20px;
     line-height: 1.2rem;
-    height: 0.76923rem;
+    height: 0.8rem;
     line-height: 1; }
     .button .icon svg, input[type=file] + label .icon svg {
       fill: currentColor; }
@@ -1957,49 +1957,49 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   margin-bottom: 0; }
 
 .h0, .articulo .section .section__title, .section--especial .section__title {
-  font-size: 63px;
-  font-size: 3.71293rem;
-  line-height: 61px;
-  line-height: 3.6rem; }
+  font-size: 52px;
+  font-size: 3.05176rem;
+  line-height: 54px;
+  line-height: 3.2rem; }
   @media (max-width: 640px) {
     .h0, .articulo .section .section__title, .section--especial .section__title {
-      font-size: 49px;
-      font-size: 2.8561rem;
-      line-height: 61px;
-      line-height: 3.6rem; } }
+      font-size: 42px;
+      font-size: 2.44141rem;
+      line-height: 48px;
+      line-height: 2.8rem; } }
 
 @media (max-width: 640px) {
   h1, .h1 {
-    font-size: 29px;
-    font-size: 1.69rem;
-    line-height: 41px;
-    line-height: 2.4rem; } }
+    font-size: 27px;
+    font-size: 1.5625rem;
+    line-height: 34px;
+    line-height: 2rem; } }
 
 @media (min-width: 640px) and (max-width: 960px) {
   h1, .h1 {
-    font-size: 37px;
-    font-size: 2.197rem;
-    line-height: 48px;
-    line-height: 2.8rem; } }
+    font-size: 33px;
+    font-size: 1.95312rem;
+    line-height: 41px;
+    line-height: 2.4rem; } }
 
 @media (max-width: 640px) {
   h2, .h2 {
-    font-size: 22px;
-    font-size: 1.3rem;
+    font-size: 21px;
+    font-size: 1.25rem;
     line-height: 27px;
     line-height: 1.6rem; } }
 
 @media (min-width: 640px) and (max-width: 960px) {
   h2, .h2 {
-    font-size: 29px;
-    font-size: 1.69rem;
-    line-height: 41px;
-    line-height: 2.4rem; } }
+    font-size: 27px;
+    font-size: 1.5625rem;
+    line-height: 34px;
+    line-height: 2rem; } }
 
 @media (max-width: 960px) {
   h3, .h3, .subsection, .subcontenido__title, .ficha-autor__title {
-    font-size: 22px;
-    font-size: 1.3rem;
+    font-size: 21px;
+    font-size: 1.25rem;
     line-height: 27px;
     line-height: 1.6rem; } }
 
@@ -2007,8 +2007,8 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   text-transform: uppercase; }
   @media (min-width: 960px) {
     .autor, .subcontenido__autor, .articulo__fecha {
-      font-size: 22px;
-      font-size: 1.3rem;
+      font-size: 21px;
+      font-size: 1.25rem;
       line-height: 27px;
       line-height: 1.6rem; } }
   .autor span + span:before, .subcontenido__autor span + span:before, .articulo__fecha span + span:before {
@@ -2049,23 +2049,23 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
   font-weight: lighter; }
   @media (min-width: 960px) {
     .body, .section__body {
-      font-size: 22px;
-      font-size: 1.3rem;
+      font-size: 21px;
+      font-size: 1.25rem;
       line-height: 27px;
       line-height: 1.6rem; } }
 
 .body--big {
-  font-size: 22px;
-  font-size: 1.3rem;
+  font-size: 21px;
+  font-size: 1.25rem;
   line-height: 27px;
   line-height: 1.6rem;
   font-weight: lighter; }
   @media (min-width: 960px) {
     .body--big {
-      font-size: 29px;
-      font-size: 1.69rem;
-      line-height: 41px;
-      line-height: 2.4rem; } }
+      font-size: 27px;
+      font-size: 1.5625rem;
+      line-height: 34px;
+      line-height: 2rem; } }
 
 .separator {
   margin-top: 3.2rem;
@@ -2109,8 +2109,8 @@ iframe {
     margin: 0;
     position: relative;
     font-weight: bold;
-    font-size: 13px;
-    font-size: 0.76923rem;
+    font-size: 14px;
+    font-size: 0.8rem;
     line-height: 20px;
     line-height: 1.2rem;
     letter-spacing: 0.15em; }
@@ -2122,11 +2122,11 @@ iframe {
       width: 0;
       height: 0;
       border-color: transparent transparent #000 #000;
-      border-width: 1.23077rem 0.61538rem;
+      border-width: 1.28rem 0.64rem;
       border-style: solid; }
       @media (min-width: 640px) {
         .header__tagline p:before {
-          border-width: 0.61538rem; } }
+          border-width: 0.64rem; } }
   .header__tagline a {
     text-decoration: none; }
     .header__tagline a:hover, .header__tagline a:focus {
@@ -2205,7 +2205,7 @@ iframe {
     vertical-align: bottom; }
   .header__cart .icon {
     margin: 0 0 0 0.1rem;
-    height: 0.76923rem; }
+    height: 0.8rem; }
 
 .issue {
   background-color: #fff;
@@ -2300,8 +2300,8 @@ iframe {
         text-decoration: none; }
       @media (min-width: 750px) and (max-width: 1000px) {
         .main-menu__list > li > a {
-          font-size: 13px;
-          font-size: 0.76923rem;
+          font-size: 14px;
+          font-size: 0.8rem;
           line-height: 27px;
           line-height: 1.6rem; } }
     .main-menu__list > li:hover {
@@ -2336,8 +2336,8 @@ iframe {
         margin-bottom: 0; }
       @media (min-width: 750px) and (max-width: 960px) {
         .main-menu__list ul > li a {
-          font-size: 13px;
-          font-size: 0.76923rem;
+          font-size: 14px;
+          font-size: 0.8rem;
           line-height: 20px;
           line-height: 1.2rem;
           line-height: 1; } }
@@ -2420,8 +2420,8 @@ iframe {
   .footer__rrss p {
     font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 29px;
-    font-size: 1.69rem;
+    font-size: 27px;
+    font-size: 1.5625rem;
     line-height: 34px;
     line-height: 2rem; }
   .footer__rrss ul {
@@ -2483,8 +2483,8 @@ iframe {
 .footer__medios__title {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 29px;
-  font-size: 1.69rem;
+  font-size: 27px;
+  font-size: 1.5625rem;
   line-height: 34px;
   line-height: 2rem; }
 
@@ -2563,17 +2563,10 @@ iframe {
   @media (min-width: 640px) {
     .section__subtitle,
     .section__suptitle {
-      font-size: 22px;
-      font-size: 1.3rem;
+      font-size: 21px;
+      font-size: 1.25rem;
       line-height: 27px;
       line-height: 1.6rem; } }
-  @media (min-width: 960px) {
-    .section__subtitle,
-    .section__suptitle {
-      font-size: 29px;
-      font-size: 1.69rem;
-      line-height: 41px;
-      line-height: 2.4rem; } }
   .box--2col .section__subtitle, .box--2col
   .section__suptitle {
     margin-bottom: 0; }
@@ -2588,8 +2581,8 @@ iframe {
   line-height: 1.6rem; }
   @media (min-width: 960px) {
     .section__subtitle--small {
-      font-size: 22px;
-      font-size: 1.3rem;
+      font-size: 21px;
+      font-size: 1.25rem;
       line-height: 27px;
       line-height: 1.6rem; } }
 
@@ -2825,7 +2818,7 @@ iframe {
     margin-top: 0; } }
 
 .icon-h1 {
-  height: 2.8561rem;
+  height: 2.44141rem;
   width: auto;
   display: inline-block; }
   .icon-h1 svg {
@@ -2833,7 +2826,7 @@ iframe {
     width: auto; }
 
 .icon-h2 {
-  height: 2.197rem;
+  height: 1.95312rem;
   width: auto;
   display: inline-block; }
   .icon-h2 svg {
@@ -2841,7 +2834,7 @@ iframe {
     width: auto; }
 
 .icon-h3 {
-  height: 1.69rem;
+  height: 1.5625rem;
   width: auto;
   display: inline-block; }
   .icon-h3 svg {
@@ -2849,7 +2842,7 @@ iframe {
     width: auto; }
 
 .icon-h4 {
-  height: 1.3rem;
+  height: 1.25rem;
   width: auto;
   display: inline-block; }
   .icon-h4 svg {
@@ -2895,8 +2888,8 @@ iframe {
 .quote {
   float: right;
   padding: 0.8rem 0.8rem 0.8rem 4rem;
-  font-size: 29px;
-  font-size: 1.69rem;
+  font-size: 27px;
+  font-size: 1.5625rem;
   line-height: 34px;
   line-height: 2rem;
   width: 45%;
@@ -2973,16 +2966,16 @@ iframe {
   margin-bottom: 0.8rem; }
 
 .ficha-autor__body {
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 14px;
   line-height: 0.8rem; }
 
 .ficha-autor__meta {
   display: flex;
   align-items: center;
-  font-size: 13px;
-  font-size: 0.76923rem;
+  font-size: 14px;
+  font-size: 0.8rem;
   line-height: 14px;
   line-height: 0.8rem; }
 
@@ -3017,8 +3010,8 @@ iframe {
   padding: 0 5px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  font-size: 29px;
-  font-size: 1.69rem;
+  font-size: 27px;
+  font-size: 1.5625rem;
   line-height: 41px;
   line-height: 2.4rem; }
 
@@ -3245,8 +3238,8 @@ iframe {
 
 .ts-tab__meta {
   margin-bottom: 1.6rem;
-  font-size: 22px;
-  font-size: 1.3rem;
+  font-size: 21px;
+  font-size: 1.25rem;
   line-height: 27px;
   line-height: 1.6rem;
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -3436,8 +3429,8 @@ iframe {
   font-weight: lighter; }
   @media (min-width: 960px) {
     .articulo__body {
-      font-size: 22px;
-      font-size: 1.3rem;
+      font-size: 21px;
+      font-size: 1.25rem;
       line-height: 34px;
       line-height: 2rem; } }
 
