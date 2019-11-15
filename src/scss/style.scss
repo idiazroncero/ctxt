@@ -7,11 +7,16 @@
 @import "components/nav";
 @import "components/footer";
 
-@import "components/other/section";
-@import "components/other/carousel";
-@import "components/other/box";
-@import "components/other/tienda";
-@import "components/other/icon";
+@import "components/elementos/section";
+@import "components/elementos/carousel";
+@import "components/elementos/box";
+@import "components/elementos/tienda";
+@import "components/elementos/icon";
+@import "components/elementos/imagen";
+@import "components/elementos/cajita";
+@import "components/elementos/pub";
+@import "components/elementos/quote";
+@import "components/elementos/subcontenido";
 
 @import "components/teaser/flotante";
 @import "components/teaser/mitad";
@@ -21,6 +26,8 @@
 
 @import "components/layouts/cols";
 @import "components/layouts/flex";
+
+@import "components/pages/articulo";
 
 // Utility classes. Allow them to override the rest.
 @import "./node_modules/huesos/src/components/huesitos/huesitos";

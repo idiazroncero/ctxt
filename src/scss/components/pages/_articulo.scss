@@ -1,0 +1,35 @@
+.articulo__content {
+    display:flex;
+    margin-bottom: $articulo-spacer;
+}
+.articulo__main {
+    width:66.66%;
+    padding-right: $articulo-spacer;
+    border-right: 1px solid $black;
+    padding-top: $gutter;
+}
+
+.articulo__body {
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h4-font-size, 5);
+    }
+    font-weight:lighter;
+}
+
+.articulo__sidebar {
+    width:33.34%;
+    padding-left: $articulo-spacer;
+    padding-top: $gutter;
+}
+
+.articulo__destacado {
+    margin-bottom: $articulo-spacer;
+    .imagen {
+        margin:0;
+    }
+}
+
+.articulo__fecha {
+    @extend .autor;
+    font-weight:bold;
+}

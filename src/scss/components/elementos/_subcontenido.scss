@@ -1,0 +1,21 @@
+.subcontenido {
+    font-family: $font-tertiary;
+}
+
+.subcontenido__title {
+    @extend .h3;
+    font-weight:bold;
+    border-bottom: 3px dotted $black;
+    text-transform: uppercase;
+}
+
+.subcontenido__body {
+    @include ritmo-font-size($base-font-size, 4);
+    text-align:justify;
+}
+
+.subcontenido__autor {
+    @extend .autor;
+    text-align:center;
+    margin:0;
+}

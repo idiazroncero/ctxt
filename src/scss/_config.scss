@@ -67,8 +67,8 @@ $generate-color-classes: false;
 // Using Ritmo.scss
 // --------------------
 
-$base-font-size: 16px;
-$vertical-rhythm: 1.5;
+$base-font-size: 17px;
+$vertical-rhythm: 1.6;
 $base-line-height: $base-font-size * $vertical-rhythm;
 $base-line-multi: 4;
 $base-line-unit: $base-line-height / $base-line-multi;
@@ -122,7 +122,7 @@ $cheltenham: 'Cheltenham CTXT', $georgia;
 // Global variables. It is good practice (performance & design) to only use one or two typefaces.
 $font-main: $cheltenham;
 $font-secondary: $futura;
-$font-tertiary: $avenir;
+$font-tertiary: $helvetica;
 $font-monospace: $courier;
 
 // Setting custom values for bold and light (100, 500, etc) allow for more precise mapping
@@ -208,6 +208,7 @@ $h7-font-size: typeScale(0); // Extra small font
 // Set vetical rhythm using ritmo lines for headings
 // This might be needed to manually override automatic ritmo.scss calculations
 // For example: h1 and h2 legibility usually benefit from a reduced line height.
+$h0-ritmo-lines: 9;
 $h1-ritmo-lines: 9;
 $h2-ritmo-lines: 7;
 $h3-ritmo-lines: 6;
@@ -278,10 +279,10 @@ $link-border-inset-width: 0.33em;
 $link-border-inset-width-hover: 0.66em;
 
 // Link colors
-$link-color: $black;
-$link-visited: $black;
-$link-hover: get-color(base, primary);
-$link-active: get-color(base, primary);
+$link-color: get-color(base, primary);
+$link-visited: get-color(base, primary);
+$link-hover: $black;
+$link-active: $black;
 
 // BUILD YOUR OWN LINK
 // You can choose one strategy for every state!
@@ -448,7 +449,7 @@ $max-grid-cols: 6;
 // We asume a centered, responsive and max-width limited viewport.
 // ------
 
-$max-width: 1300px;
+$max-width: 1250px;
 $layout-align: center; // left, right
 $layout-padding: $spacer;
 
@@ -542,5 +543,6 @@ $card-shadow: true; // Aplies shadow-definition
 
 $ts-margin: $gutter * 4;
 $box-margin: $gutter * 3;
+$articulo-spacer: $gutter * 3;
 
 

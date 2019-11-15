@@ -1,0 +1,11 @@
+.pub {
+    margin-bottom: $articulo-spacer / 2;
+}
+
+.pub__title {
+    @extend .h6;
+    font-family: $font-secondary;
+    font-weight:bold;
+    text-transform: uppercase;
+    margin-bottom: $gutter / 4;
+}

@@ -1,3 +1,7 @@
+.carousel {
+    max-width:100%;
+}
+
 .carousel__slides {
     margin-bottom: $gutter;
 }
@@ -11,9 +15,14 @@
     text-align:center;
 }
 
+.carousel__item {
+    img {
+        max-width:100%;
+    }
+}
+
 .carousel__link {
     width:100%;
-
     a {
         display:inline-block;
         padding: 0 $gutter;

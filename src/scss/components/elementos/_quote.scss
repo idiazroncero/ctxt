@@ -1,0 +1,25 @@
+.quote {
+    float:right;
+    padding: $gutter / 2 $gutter / 2 $gutter / 2 $gutter * 2.5;
+    @include ritmo-font-size($h3-font-size, 5);
+    width: 45%;
+    border-left: 1px solid $gray9;
+    position:relative;
+    margin: 0 0 $gutter $gutter;
+    &:before {
+        content:"“";
+        font-size: 6rem;
+        line-height: 0.5;
+        position:absolute;
+        top:$gutter;
+        left:$gutter / 1.5;
+    }
+    &:after {
+        content:"”";
+        font-size: 6rem;
+        line-height: 0.5;
+        position:absolute;
+        bottom:-$gutter;
+        right:0;
+    }
+}

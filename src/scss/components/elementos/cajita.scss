@@ -1,0 +1,9 @@
+.cajita {
+    background-color: $sepia;
+    padding: $gutter / 2 $gutter;
+    font-family: $font-tertiary;
+    margin-bottom: $articulo-spacer / 2;
+    p:last-child {
+        margin:0;
+    }
+}

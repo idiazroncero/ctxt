@@ -17,6 +17,20 @@
             justify-content:center;
         }
     }
+    .articulo & {
+        border-bottom: none;
+        @include ritmo-top-border(1px, $lines:4);
+        border-top-style: solid;
+        border-top-color: $separator-color;
+        padding-bottom:0;
+        .section__title {
+            font-weight:bold;
+            @extend .h0;
+        }
+        .autor {
+            text-align:center;
+        }
+    }
 }
 
 
@@ -41,7 +55,8 @@
     font-weight:bold;
 }
 
-.section__subtitle {
+.section__subtitle,
+.section__suptitle {
     @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     @include breakpoint($small) {
         @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
@@ -61,6 +76,10 @@
     }
 }
 
+.section__suptitle {
+    margin-bottom: $gutter;
+}
+
 .section__subtitle--small {
     @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     @include breakpoint($medium) {
@@ -70,6 +89,14 @@
 
 .section__subtitle--gris {
     color: $gray;
+}
+
+.section__body {
+    @extend .body;
+    text-align:center;
+    max-width: 760px;
+    max-width: 75ch;
+    margin: 0 auto $gutter auto;
 }
 
 .section__patrocinador {

@@ -1,0 +1,17 @@
+.imagen {
+
+}
+
+.imagen__caption {
+    @extend .h6;
+    padding: $gutter / 2 0;
+    font-family: $font-tertiary;
+    display:flex;
+    margin:0;
+}
+
+.imagen__autor {
+    text-transform: uppercase;
+    font-weight:bold;
+    margin-left: auto;
+}
