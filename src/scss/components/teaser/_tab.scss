@@ -1,5 +1,5 @@
 .ts-tab {
-    border: 1px solid $black;
+    border: 1px solid $separator-color;
     position:relative;
     margin-top:$gutter * 3;
 }
@@ -29,7 +29,7 @@
     position:absolute;
     top: - ritmo(5);
     left: -1px;
-    border: 1px solid $black;
+    border: 1px solid $separator-color;
     border-bottom: none;
     padding: ritmo(2) $gutter / 2 0 $gutter;
     line-height:ritmo(3);
@@ -56,7 +56,7 @@
     width:0;
     height:0;
     border-width: ritmo(5) * 0.5 ritmo(1);
-    border-color: transparent transparent $black $black;
+    border-color: transparent transparent $separator-color $separator-color;
     border-style: solid;
     transform:translateX(1px);
     &:before {

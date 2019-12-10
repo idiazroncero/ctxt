@@ -12,7 +12,7 @@ $colors: (
 	base: (
 		"primary": $base,
 		"secondary": $base,
-		"separator": $black,
+		"separator": $gray1,
 		"black": $black,
 		"white": $white,
 	),
@@ -67,8 +67,8 @@ $generate-color-classes: false;
 // Using Ritmo.scss
 // --------------------
 
-$base-font-size: 17px;
-$vertical-rhythm: 1.6;
+$base-font-size: 16px;
+$vertical-rhythm: 1.4;
 $base-line-height: $base-font-size * $vertical-rhythm;
 $base-line-multi: 4;
 $base-line-unit: $base-line-height / $base-line-multi;
@@ -542,8 +542,11 @@ $card-shadow: true; // Aplies shadow-definition
 // Project-specific variables
 // ------
 
-$ts-margin: $gutter * 4;
-$box-margin: $gutter * 3;
-$articulo-spacer: $gutter * 3;
+$ts-margin: $gutter * 3;
+$box-margin: $gutter * 2;
+$box-padding: $gutter;
+$articulo-spacer: $gutter * 2;
+
+$size-ratios: 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80;
 
 

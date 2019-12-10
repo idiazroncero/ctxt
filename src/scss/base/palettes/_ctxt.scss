@@ -1,15 +1,30 @@
 // Ctxt-defined
 $base: #f01b4d;
+$hueso: #f4f1e5;
+$menta: #eef8f5;
+
 
 // Overrides
 $black: #000;
 $white: #fff;
 $gray: #a3a3a3;
-$gray1: #CCCCCA;
-$gray0: #ececec;
+$gray1: #CCCCCC;
+// $gray0: #ececec;
+$gray0: #f2f2f2;
 $gray5: #a7a7a7;
-$gray9: #2E2E2E;
+$gray6: #808080;
+// $gray9: #2E2E2E;
+$gray9: #474849;
 $sepia: #f4ecde;
+
+// Maps to loop over
+$ctxt-colors: (
+    blanco: $white,
+    hueso: $hueso,
+    gris-oscuro: $gray9,
+    gris-claro:$gray0,
+    menta:$menta
+);
 
 // $black: #4a3b3e;
 // $gray0: #faf8f9;

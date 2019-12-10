@@ -1,9 +1,9 @@
 .section {
-    margin-bottom: $gutter * 2;
-    @include ritmo-bottom-border(1px, $lines:8);
-    border-bottom-style: solid;
-    border-bottom-color: $separator-color;
+    margin-bottom: $gutter;
     position:relative;
+    display:flex;
+    flex-wrap:wrap;
+
     .box--2col & {
         @include breakpoint($medium) {
             height:100%;
@@ -50,13 +50,44 @@
     }
 }
 
+.section__title__wrapper {
+    width:100%;
+    padding-bottom: $gutter;
+    border-bottom: 3px dotted $separator-color;
+    
+    .section--border-none & {
+        border-bottom:none;
+        padding-bottom: 0;
+        margin-bottom:0;
+    }
+
+    .section--border-top & {
+        padding-top:$gutter;
+        border-top: 3px dotted $separator-color;
+        padding-bottom: 0;
+        margin-bottom:0;
+        border-bottom:none;
+    }
+
+    .section--border-all & {
+        padding-top:$gutter;
+        border-top: 3px dotted $separator-color;
+    }
+}
+
 .section__title {
     text-align:center;
     font-weight:bold;
+    margin-bottom: 0;
+    + .section__subtitle {
+        margin-top: $gutter / 2;
+    }
 }
+
 
 .section__subtitle,
 .section__suptitle {
+    width:100%;
     @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     @include breakpoint($small) {
         @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
@@ -102,13 +133,13 @@
 .section__patrocinador {
     text-align:center;
     margin-bottom: $gutter;
+    margin-left:auto;
 
-    @include breakpoint($medium) {
-        margin-bottom: 0;
-        position:absolute;
-        top: 0;
-        right: 0;
-    }
+    // @include breakpoint($medium) {
+    //     position:absolute;
+    //     top: 0;
+    //     right: 0;
+    // }
 
     span {
         font-family: $font-secondary;

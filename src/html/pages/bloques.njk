@@ -1,0 +1,34 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% block content%}
+
+<div id="main-wrapper">
+    <table class="font-secondary">
+        <thead>
+            <th>Bloque en maquetero<br> (por orden de aparición)</th>
+            <th>Equivalencia en HTML<br> (cómo reproducirlo usando combinaciones de clases)</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>G1</td>
+                <td>
+                    <p><code>.teaser-flex</code>, controlando la posición del texto con modificadores tipo <code>--top</code> y el ancho de la imagen usando modificadores <code>.mw-</code> o dejando que la propia imagen lo fije</p>
+                    <p><code>.teaser-mitad</code> para fijar exactamente 50% imagen y 50% texto.</p>
+                    <p>Uso de tamaños grandes (h1, h2) en titular.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>P1, P2, P3</td>
+                <td>
+                    <p><code>.teaser-flex</code>, controlando la posición del texto con modificadores tipo <code>--top</code> y el ancho de la imagen usando modificadores <code>.mw-</code> o dejando que la propia imagen lo fije</p>
+                    <p><code>.teaser-mitad</code> para fijar exactamente 50% imagen y 50% texto.</p>
+                    <p>Uso de tamaños pequeños (h3, h4) en titular.</p>
+                    <p>Uso de <code>.ts--reducido</code> para reducir el espaciado entre elementos</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}

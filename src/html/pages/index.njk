@@ -5,17 +5,75 @@
 
 <div id="main-wrapper">
 
+    <section class="box">
+        <header class="section">
+            <div class="section__category">
+                Bloque maestro
+            </div>
+            <div class="section__patrocinador">
+                <img src="http://placehold.it/150x25.jpg" alt="Patrocinador">
+            </div>
+            <div class="section__title__wrapper">
+                <h1 class="section__title">Lorem Ipsum</h1>
+                <p class="section__subtitle">Europa contra sí misma</p>
+            </div>
+        </header>
+        <article class="ts ts-flex ts-flex--top">
+            <div class="ts-flex__img">
+                <img src="http://placehold.it/500x300.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-flex__textos">
+                <h1 class="h1">
+                    Nigel Farage le regala a Boris Johnson el trono del populismo británico
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <p>
+                    <span class="autor">Pablo Casado</span>
+                    <span class="fecha">Madrid, 18/01/2018</span>
+                </p>
+            </div>
+        </article>
+        <div class="col2">
+            <div class="col">
+                <article class="ts ts-flex ts--reducido">
+                    <div class="ts-flex__img mw-40">
+                        <img src="http://placehold.it/1000x750.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <p class="subtitle">Imperios combatientes</p>
+                        <h1 class="h3">III. La ocasión perdida</h1>
+                        <p class="body body--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nesciunt pariatur officia</p>
+                        <div class="autor">
+                            <span>CTXT</span>
+                        </div> 
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="ts ts-flex ts--reducido">
+                    <div class="ts-flex__img mw-40">
+                        <img src="http://placehold.it/1000x750.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                        <p class="body body--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam nesciunt pariatur officia! Dolorem delectus eum pariatur necessitatibus.</p>
+                        <div class="autor">
+                            <span>CTXT</span>
+                        </div> 
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <div class="dev">
         <p>Todo el contenido debería ir rodeado de un #main-wrapper que limita el ancho máximo de la  página y establece el padding global.
         </p>
     </div>
 
     {% include "partials/header.njk" %}
-
-    <div class="col2 mb">
-        <div class="col"> <img src="http://placehold.it/700x350.jpg" alt=""> </div>
-        <div class="col"> <img src="http://placehold.it/700x350.jpg" alt=""> </div>
-    </div>
 
     <div class="dev">
         <p>
@@ -28,6 +86,90 @@
     </div>
 
     <main>
+        <div class="box">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x25.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box normal</h1>
+                    <p class="section__subtitle">Fondo blanco, posibilidad de patrocinador y categoría</p>
+                </div>
+            </header>
+        </div>
+        <div class="box box--gris-claro">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box gris claro</h1>
+                    <p class="section__subtitle">Fondo gris claro, posibilidad de patrocinador y categoría</p>
+                </div>
+            </header>
+        </div>
+        <div class="box box--gris-oscuro">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box gris oscuro</h1>
+                    <p class="section__subtitle">Fondo gris oscuro, posibilidad de patrocinador y categoría</p>
+                </div>
+            </header>
+        </div>
+        <div class="box box--menta">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box menta</h1>
+                    <p class="section__subtitle">Fondo menta, posibilidad de patrocinador y categoría</p>
+                </div>
+            </header>
+        </div>
+        <div class="box box--hueso">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box hueso</h1>
+                    <p class="section__subtitle">Fondo hueso, posibilidad de patrocinador y categoría</p>
+                </div>
+            </header>
+        </div>
+        <div class="box box--vacio">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box vacío</h1>
+                    <p class="section__subtitle">Un tipo de box especial sin fondo ni borde pero que mantiene el espaciado interno y externo</p>
+                </div>
+            </header>
+        </div>
         <section class="box">
             <div class="dev">
                 <p>La clase '.section' proporciona los elementos de cada cabecera</p>
@@ -36,8 +178,10 @@
                 <div class="section__category">
                     Política
                 </div>
-                <h1 class="section__title">España</h1>
-                <p class="section__subtitle">Nace la XVIII legislatura</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">España</h1>
+                    <p class="section__subtitle">Nace la XVIII legislatura</p>
+                </div>
             </header>
             <div class="dev">
                 <p>
@@ -50,12 +194,60 @@
                 <p>El diseño ts_flotante está preparado para que la imagen se alinee en la parte inferior y sobresalga por la parte superior. Dependiendo de la altura del texto que acompañe a la imagen, será necesario cambiar la relación de aspecto del recorte de imagen o modificar el texto.</p>
                 <p>También se pueden usar clases modificadoras para cambiar por donde sobresale la imagen. Más info y ejemplos en: <a href="./tsflotante.html" target="_blank" rel="noopener noreferrer">la documentación</a></p>
             </div>
+        </section> 
+
+        <div class="dev">
+            <p>Por defecto, section añade el filete inferior. Es posible usar los modificadores '.section--border-none', '.section--border-top' y '.section--border-all' para eliminar los filetes, usar solo el filete top o usar ambos filetes</p>
+        </div>
+
+        <section class="box box--menta">
+            <header class="section section--border-none">
+                <div class="section__category">
+                    Política
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Section border none</h1>
+                    <p class="section__subtitle">Nace la XVIII legislatura</p>
+                </div>
+            </header>
+        </section>
+        <section class="box box--menta">
+            <header class="section section--border-top">
+                <div class="section__category">
+                    Política
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Section Border Top</h1>
+                    <p class="section__subtitle">Nace la XVIII legislatura</p>
+                </div>
+            </header>
+        </section>
+        <section class="box box--menta">
+            <header class="section section--border-all">
+                <div class="section__category">
+                    Política
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Section Border All</h1>
+                    <p class="section__subtitle">Nace la XVIII legislatura</p>
+                </div>
+            </header>
         </section>
 
         <div class="dev left">
             <p>El tamaño de los titulares, así como muchos otros elementos (márgenes, bordes) pueden ser modificados usando "utility classes"</p>
             <p>Visita <a target="_blank" href="/docs.html">la documentación</a> para ver todas las 'utility classes'</p>
         </div>
+
 
         <section class="box">
             <div class="dev">
@@ -65,7 +257,9 @@
                 <div class="section__category">
                     Firmas
                 </div>
-                <h1 class="section__title">Editorial</h1>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Editorial</h1>
+                </div>
             </header>
             <div class="dev">
                 <p>El teaser "mitad" (ts_mitad) fuerza al contenido a dividirse en dos bloques siempre al 50% de ancho</p>
@@ -81,7 +275,9 @@
                 <div class="section__category">
                     Firmas
                 </div>
-                <h1 class="section__title">Tribunas y debates</h1>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Tribunas y debates</h1>
+                </div>
                 <div class="dev">
                     <p>En este subtítulo se puede ver en acción un modificador BEM (clase section__subtitle--gris) para lograr el color gris</p>
                 </div>
@@ -104,7 +300,7 @@
                         </div>
                         <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
                         <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-                        <p class="autor">Emmanuel Rodríguez</p>
+                        <p><span class="autor">Emmanuel Rodríguez</span><span class="fecha">Londres, 12/11/2016</span></p>
                     </article>
                 </div>
                 <div class="col">
@@ -114,7 +310,7 @@
                         </div>
                         <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
                         <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-                        <p class="autor">Jorge Lago</p>
+                        <p><span class="autor">Jorge Lago</span><span class="fecha">Londres, 12/11/2016</span></p>
                     </article>
                 </div>
             </div>
@@ -139,8 +335,10 @@
                 <div class="section__category">
                     Economía
                 </div>
-                <h1 class="section__title">Contexto Económico</h1>
-                <p class="section__subtitle">Estado del Poder 2019</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Contexto Económico</h1>
+                    <p class="section__subtitle">Estado del Poder 2019</p>
+                </div>
             </header>
 
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
@@ -154,7 +352,7 @@
                     <p class="body body--big">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
                     </p>
-                    <div class="autor autor--big">Walden Bello</div>
+                    <p><span class="autor autor--big">Walden Bello</span><span class="fecha">Londres, 12/11/2016</span></p>
                 </div>
             </article>
 
@@ -177,7 +375,7 @@
                         </div>
                         <h1 class="h2">Madrid o la incógnita del bocadillo de calamares</h1>
                         <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-                        <p class="autor">Emmanuel Rodríguez</p>
+                        <p><span class="autor">Emmanuel Rodríguez<span><span class="fecha"></span>Madrid, 18/01/2019</span></p>
                     </article>
                 </div>
                 <div class="col">
@@ -187,7 +385,7 @@
                         </div>
                         <h1 class="h2">La unidad de la izquierda o la Comunidad de Madrid </h1>
                         <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.  Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-                        <p class="autor">Jorge Lago</p>
+                        <p><span class="autor">Jorge Lago<span><span class="fecha"></span>Madrid, 18/01/2019</span></p>
                     </article>
                 </div>
             </div>
@@ -196,28 +394,30 @@
 
             <div class="col2">
                 <div class="col">
-                    <article class="ts ts-mitad ts-mitad--center">
+                    <article class="ts ts-mitad ts--reducido">
                         <div class="ts-mitad__img">
                             <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
                         </div>
                         <div class="ts-mitad__textos">
                             <h1 class="h3">Sánchez coquetea con el abismo</h1>
-                            <div class="autor">
-                                <span>CTXT</span>
-                            </div> 
+                            <p>
+                                <span class="autor">CTXT</span>
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
                         </div>
                     </article>
                 </div>
                 <div class="col">
-                    <article class="ts ts-mitad ts-mitad--center">
+                    <article class="ts ts-mitad ts--reducido">
                         <div class="ts-mitad__img">
                             <img src="http://placehold.it/2000x1500.jpg" alt="Imagen">
                         </div>
                         <div class="ts-mitad__textos">
                             <h1 class="h3">Sánchez coquetea con el abismo</h1>
-                            <div class="autor">
-                                <span>CTXT</span>
-                            </div> 
+                            <p>
+                                <span class="autor">CTXT</span>
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
                         </div>
                     </article>
                 </div>
@@ -234,13 +434,15 @@
 
         <div class="col2 col2--equal-heights">
             <div class="col">
-                <section class="box m0">
+                <section class="box">
                     <header class="section">
                         <div class="section__category">
                             Entrevistas
                         </div>
-                        <h1 class="section__title">Entrevista</h1>
-                        <p class="section__subtitle">Santiago Alba Rico / Filósofo</p>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title">Entrevista</h1>
+                            <p class="section__subtitle">Santiago Alba Rico / Filósofo</p>
+                        </div>
                     </header>
 
                     <article class="ts ts-vertical tc">
@@ -248,9 +450,10 @@
                             <img src="http://placehold.it/300x300.jpg" alt="Imagen">
                         </div>
                         <h1 class="h2">"Es mucho más peligrosa la islamofobia que el islamismo radical"</h1>
-                        <div class="autor">
-                            <span>Amanda Andrades / David Perejil</span>
-                        </div> 
+                        <p>
+                            <span class="autor">Amanda Andrades / David Perejil</span>
+                            <span class="fecha">Londres, 12/11/2016</span>
+                        </p> 
                     </article>
 
                     <div class="subsection">
@@ -307,8 +510,10 @@
                         <div class="section__category">
                             Internacional
                         </div>
-                        <h1 class="section__title">Oriente Medio</h1>
-                        <p class="section__subtitle">Gran Reportaje</p>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title">Oriente Medio</h1>
+                            <p class="section__subtitle">Gran Reportaje</p>
+                        </div>
                     </header>
 
                     <article class="ts ts-vertical tc">
@@ -344,8 +549,10 @@
                 <div class="section__category">
                     Comunicación
                 </div>
-                <h1 class="section__title">Comunicación</h1>
-                <p class="section__subtitle">Manifiesto</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Comunicación</h1>
+                    <p class="section__subtitle">Manifiesto</p>
+                </div>
             </header>
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
                 <div class="ts-flex__img">
@@ -375,8 +582,10 @@
                     <span>Sección patrocinada por:</span>
                     <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
                 </div>
-                <h1 class="section__title">Ciencia y tecnología</h1>
-                <p class="section__subtitle">Batalla Digital</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Ciencia y tecnología</h1>
+                    <p class="section__subtitle">Batalla Digital</p>
+                </div>
             </header>
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
                 <div class="ts-flex__img">
@@ -387,7 +596,9 @@
                         Huawei y el lobby chino de la seguridad contraatacan
                     </h1>
                     <p class="body">La tecnológica se convierte en el peón para que China sea líder mundial en ciberseguridad y tecnología 5G, y retome las antiguas rutas comerciales y económicas de la ruta de la seda que le permitan desembarcar en EEUU.</p>
-                    <div class="autor">Daniel Toledo</div>
+                    <p>
+                        <span class="autor">Daniel Toledo</span><span class="fecha">Londres, 12/11/2016</span>
+                    </p>
                 </div>
             </article> 
             <div class="separator"></div>
@@ -399,7 +610,10 @@
                         </div>
                         <div class="ts-flex__textos">
                             <h1 class="h3">La inteligencia artificial también cambia el periodismo</h1>
-                            <p class="autor">Silvia Nortes</p>
+                            <p>
+                                <span class="autor">Silvia Nortes</span>
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -410,7 +624,7 @@
                         </div>
                         <div class="ts-flex__textos">
                             <h1 class="h3">Diseñando mentes extendidas</h1>
-                            <p class="autor">Gloria Andrada</p>
+                            <p><span class="autor">Gloria Andrada</p>
                         </div>
 
                     </article>
@@ -428,8 +642,10 @@
                     <div class="section__category">
                         Especial
                     </div>
-                    <h1 class="section__title h2">The Baffler</h1>
-                    <p class="section__subtitle section__subtitle--small">Emociones en venta</p>
+                    <div class="section__title__wrapper">
+                        <h1 class="section__title h2">The Baffler</h1>
+                        <p class="section__subtitle section__subtitle--small">Emociones en venta</p>
+                    </div>
                 </header>
             </div>
             <div class="box--2col__right">
@@ -440,7 +656,7 @@
                     <div class="ts-flex__textos">
                         <h1 class="h3">Spotify, el Gran Hermano musical</h1>
                         <p class="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequiciu.</p>
-                        <p class="autor">Liz Pelly (The Baffler)</p>
+                        <p><span class="autor">Liz Pelly (The Baffler)</p>
                     </div>
                 </article>
             </div>
@@ -453,15 +669,17 @@
                         <div class="section__category">
                             Artes y Letras
                         </div>
-                        <h1 class="section__title h2">El Ministerio</h1>
-                        <p class="section__subtitle section__subtitle--gris section__subtitle--small">Carlos Barral / Editor y escritor </p>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title h2">El Ministerio</h1>
+                            <p class="section__subtitle section__subtitle--gris section__subtitle--small">Carlos Barral / Editor y escritor </p>
+                        </div>
                     </header>
                     <article class="ts ts-vertical tc">
                         <div class="ts-vertical__img">
                             <img src="http://placehold.it/400x300.jpg" alt="Imagen">
                         </div>
                         <h1 class="h3">"El barco-fantasma existe. Y los peces. Yo los he visto"</h1>
-                        <p class="autor">Constantino Bértolo</p>
+                        <p><span class="autor">Constantino Bértolo</p>
                     </article>
                 </section>
             
@@ -472,14 +690,16 @@
                         <div class="section__category">
                             Músicas
                         </div>
-                        <h1 class="section__title">Jazz</h1>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title">Jazz</h1>
+                        </div>
                     </header>
                     <article class="ts ts-vertical tc">
                         <div class="ts-vertical__img">
                             <img src="http://placehold.it/400x300.jpg" alt="Imagen">
                         </div>
                         <h1 class="h3">La quinta disminuida</h1>
-                        <p class="autor">Nicolás Peña</p>
+                        <p><span class="autor">Nicolás Peña</p>
                     </article>
                 </section>
             </div>
@@ -578,8 +798,10 @@
                         <div class="section__category">
                             Viñetas
                         </div>
-                        <h1 class="section__title">Viñeta del día</h1>
-                        <p class="section__subtitle section__subtitle--small section__subtitle--gris">Opinión Gráfica</p>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title">Viñeta del día</h1>
+                            <p class="section__subtitle section__subtitle--small section__subtitle--gris">Opinión Gráfica</p>
+                        </div>
                     </header>
                     <div class="dev">
                         <p>
@@ -617,8 +839,10 @@
                 <div class="section__category">
                     Cultural CTXT Fin de Semana
                 </div>
-                <h1 class="section__title">Testigo Ferlosio</h1>
-                <p class="section__subtitle">Especial El Dobladillo Nº 25</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Testigo Ferlosio</h1>
+                    <p class="section__subtitle">Especial El Dobladillo Nº 25</p>
+                </div>
             </header>
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
                 <div class="ts-flex__img">
@@ -658,7 +882,7 @@
                         </div>
                         <h1>El testigo incordiante</h1>
                         <p class="body body--big">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident labore dignissimos deleniti voluptatibus maxime, rerum voluptates nostrum dolores est quaerat corrupti dicta perferendis. Facilis aliquam a perspiciatis, omnis voluptates harum.</p>
-                        <p class="autor">Ignacio Echevarría</p>
+                        <p><span class="autor">Ignacio Echevarría</p>
                     </article>
                 </div>
                 <div class="col">
@@ -667,7 +891,7 @@
                             <img src="http://placehold.it/700x750.jpg" alt="Imagen">
                         </div>
                         <h1 class="h2">Pecios Escogidos</h1>
-                        <p class="autor">Rafael Sánchez Ferlosio</p>
+                        <p><span class="autor">Rafael Sánchez Ferlosio</p>
                     </article>
                     <div class="separator"></div>
                     <article class="ts ts-vertical tl">
@@ -676,7 +900,7 @@
                         </div>
                         <h1 class="h2">Una vida en el jardín</h1>
                         <p class="body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus rerum repellat numquam. </p>
-                        <p class="autor">Guillem Martínez</p>
+                        <p><span class="autor">Guillem Martínez</p>
                     </article>
                 </div>
             </div>
@@ -708,8 +932,10 @@
                     <span class="tl">Espacio de información <br> realizado con la colaboración de:</span>
                     <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
                 </div>
-                <h1 class="section__title">Observatorio</h1>
-                <p class="section__subtitle">El problema demográfico</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Observatorio</h1>
+                    <p class="section__subtitle">El problema demográfico</p>
+                </div>
             </header>
             <article class="ts ts-flex ts-flex--inverse ts-flex--expanded">
                 <div class="ts-flex__img">
@@ -732,7 +958,7 @@
                         </div>
                         <div class="ts-mitad__textos">
                             <h1 class="h3">La inteligencia artificial también cambia el periodismo</h1>
-                            <p class="autor">Silvia Nortes</p>
+                            <p><span class="autor">Silvia Nortes</p>
                         </div>
                     </article>
                 </div>
@@ -743,7 +969,7 @@
                         </div>
                         <div class="ts-mitad__textos">
                             <h1 class="h3">Diseñando mentes extendidas</h1>
-                            <p class="autor">Gloria Andrada</p>
+                            <p><span class="autor">Gloria Andrada</p>
                         </div>
 
                     </article>
@@ -758,8 +984,10 @@
                         <div class="section__category">
                             Deportes
                         </div>
-                        <h1 class="section__title">Ciclismo</h1>
-                        <p class="section__subtitle section__subtitle--gris">Crónicas sobre ruedas</p>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title">Ciclismo</h1>
+                            <p class="section__subtitle section__subtitle--gris">Crónicas sobre ruedas</p>
+                        </div>
                     </header>
                     <article class="ts ts-vertical">
                         <div class="ts-vertical__img">
@@ -780,8 +1008,10 @@
                         <div class="section__category">
                             Deportes
                         </div>
-                        <h1 class="section__title">La Colchonería</h1>
-                        <p class="section__subtitle">Nueva Temporada</p>
+                        <div class="section__title__wrapper">
+                            <h1 class="section__title">La Colchonería</h1>
+                            <p class="section__subtitle">Nueva Temporada</p>
+                        </div>
                     </header>
                     <article class="ts ts-vertical">
                         <div class="ts-vertical__img">
@@ -806,8 +1036,10 @@
                 <div class="section__category">
                     Multimedia
                 </div>
-                <h1 class="section__title h2">Encuesta posdebate electoral</h1>
-                <p class="section__subtitle section__subtitle--gris">Contéxtame si puedes</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title h2">Encuesta posdebate electoral</h1>
+                    <p class="section__subtitle section__subtitle--gris">Contéxtame si puedes</p>
+                </div>
             </header>
             <div class="dev">
                 <p>
@@ -867,8 +1099,10 @@
         </div>
         <section class="box box--gray">
             <header class="section">
-                <h1 class="section__title">El dobladillo</h1>
-                <p class="section__subtitle section__subtitle--small">Edición CTXT en papel</p>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">El dobladillo</h1>
+                    <p class="section__subtitle section__subtitle--small">Edición CTXT en papel</p>
+                </div>
             </header>
             <div class="dev">
                 <p>

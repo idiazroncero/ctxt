@@ -27,15 +27,16 @@
         order:unset;
         margin-bottom: 0;
         max-width:60%;
-        padding-left: $gutter * 2;
+        padding-left:0;
+        padding-right: $gutter * 2;
     }
 }
 
 .ts-flex--inverse {
     @include breakpoint($medium) {
         .ts-flex__img {
-            padding-left:0;
-            padding-right: $gutter * 2;
+            padding-left: $gutter * 2;
+            padding-right: 0;
         }
     }
 }

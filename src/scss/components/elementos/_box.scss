@@ -7,7 +7,7 @@
         margin-bottom: $box-margin;
     }
     @include breakpoint($large) {
-        padding: $gutter * 2;
+        padding: $box-padding;
     }
 
     .ts:last-child,
@@ -16,21 +16,31 @@
         margin-bottom: $gutter;
     }
 
-    &.box--gray {
-        border: 0;
-        background-color: $gray0;
-        
-        // Some overrides
-        .section__subtitle {
-            color: $black;
-        }
+    &.box--vacio {
+        border:none;
+    }
 
-        .ts-tab__category:before {
-            background-color: $gray0;
-        }
-        
-        .ts-tab__triangle:before {
-            border-color: transparent transparent $gray0 $gray0;
+    @each $name, $color in $ctxt-colors {
+        &.box--#{$name} {
+            border: 0;
+            background-color: $color;
+
+            @if $name == 'gris-oscuro' {
+                @extend %invert;
+            }
+            
+            // Some overrides
+            // .section__subtitle {
+            //     color: $color;
+            // }
+    
+            .ts-tab__category:before {
+                background-color: $color;
+            }
+            
+            .ts-tab__triangle:before {
+                border-color: transparent transparent $color $color;
+            }
         }
     }
 }

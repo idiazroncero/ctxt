@@ -38,11 +38,12 @@ h3,.h3 {
 // }
 
 .autor {
-    text-transform: uppercase;
-    @extend .font-secondary;
-    @include breakpoint($medium) {
-        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
-    }
+    @extend .font-tertiary;
+    font-weight:bold;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    // @include breakpoint($medium) {
+    //     @include ritmo-font-size($h5-font-size, $h4-ritmo-lines);
+    // }
     span + span {
         &:before {
             content: "/";
@@ -50,11 +51,24 @@ h3,.h3 {
         }
     }
     &.autor--big {
-        // @extend .h3;
+        @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     }
-    &.autor--small {
-        @extend .h5;
-    }
+}
+
+.fecha {
+    font-style:italic;
+    @extend .font-tertiary;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    color: $gray6;
+}
+
+.autor + .fecha,
+.fecha + .autor {
+    margin-left: $gutter / 2;
+}
+
+img {
+    vertical-align:bottom;
 }
 
 
@@ -85,6 +99,19 @@ h3,.h3 {
     }
 }
 
+.ts--reducido {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .subtitle,
+    .body {
+        margin-bottom: $gutter / 2;
+    }
+}
+
 .tl,
 .tc,
 .tr {
@@ -105,13 +132,17 @@ h3,.h3 {
     @include breakpoint($medium) {
         @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
     }
-    font-weight:lighter;
+}
+
+
+.body--small {
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
 }
 
 .separator {
     margin-top:$ts-margin / 2;
     margin-bottom: $ts-margin / 2;
-    border: 1px solid $gray;
+    border-bottom: 2px solid $separator-color;
 }
 
 .mb--big {
@@ -132,4 +163,46 @@ iframe {
     @include breakpoint(max-width $medium) {
         padding: $gutter / 2;
     }
+}
+
+%invert {
+    h1,.h1,
+    h2,.h2,
+    h3,.h3
+    h4,.h4
+    h5,.h5,
+    h6,.h6,
+    p,
+    span,
+    div {
+        color: $white;
+    }
+    a {
+        @include set-link(
+            $white,
+            $white,
+            $gray,
+            $gray
+        )
+    }
+}
+
+.font-tertiary {
+    font-family: $font-tertiary;
+}
+
+@each $size in $size-ratios {
+    .mw-#{$size} {
+        max-width: percentage($size/100) !important;
+    }
+}
+
+.subtitle {
+    font-family: $font-secondary;
+    color: $gray6;
+    text-transform: uppercase;
+}
+
+.m-half {
+    margin-bottom: $gutter / 2;
 }
