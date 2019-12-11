@@ -1,4 +1,4 @@
-## Cambios realizados para la versión 2
+## CHANGELOG: Historial de cambios realizados para la versión 2
 
 Si se necesitan cambios en la estructura HTML, se indica en negrita,
 
@@ -11,3 +11,6 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 - Se añade la clase `.subtitle` para poder añadir libremente subtítulos (del mismo modo que se añaden `.body` o `.autor` sin estar ligados a ningún teaser concreto).
 - Se añade la clase `.ts--reducido`, que reduce el espaciado interno entre elementos (para formatos pequeños)
 - Se invierte `.ts-flex--inverse`: normal es imagen a la izquierda, invertido es imagen a la derecha. **Requiere cambios en HTML** y se hace así porque el "estándar" se ha convertido la imagen a la izquierda.
+- `.ts-vertical` se alinea ahora por defecto a la izquierda, no al centro. Las clases `.tc` y `.tr` pueden modificar esto. **Puede requerir cambios en HTML**
+- Añade la clase modificadora `.col--expanded` que permite expandir (espaciar) los contenidos dentro de una columna.
+- Elimina el gutter (margen interno) por defecto entre los dos `.col` dentro de una `.col2`. Añade la clase modificadora `.col2--gutter`, que recupera este espaciado. **Puede requerir cambios en HTML**

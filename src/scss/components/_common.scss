@@ -142,7 +142,7 @@ img {
 .separator {
     margin-top:$ts-margin / 2;
     margin-bottom: $ts-margin / 2;
-    border-bottom: 2px solid $separator-color;
+    border-bottom: 1px solid $separator-color;
 }
 
 .mb--big {
@@ -172,8 +172,8 @@ iframe {
     h4,.h4
     h5,.h5,
     h6,.h6,
-    p,
-    span,
+    p:not(.subtitle),
+    span:not(.fecha),
     div {
         color: $white;
     }

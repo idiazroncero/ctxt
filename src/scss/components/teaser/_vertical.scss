@@ -1,5 +1,4 @@
 .ts-vertical {
-    text-align:center;
     @include breakpoint(max-width $medium) {
         .body {
             margin-left: auto;

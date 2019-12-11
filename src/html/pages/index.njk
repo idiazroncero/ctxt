@@ -5,6 +5,17 @@
 
 <div id="main-wrapper">
 
+    <div class="dev">
+        <p>Todo el contenido debería ir rodeado de un #main-wrapper que limita el ancho máximo de la  página y establece el padding global.
+        </p>
+    </div>
+
+    {% include "partials/header.njk" %}
+
+    <div class="box box--hueso font-secondary">
+        <h1 class="tc m0">Nuevo diseño</h1>
+    </div>
+
     <section class="box">
         <header class="section">
             <div class="section__category">
@@ -66,14 +77,108 @@
                 </article>
             </div>
         </div>
+        <div class="separator"></div>
+        <div class="box box--gris-oscuro">
+            <article class="ts ts-flex ts-flex--inverse m0">
+                <div class="ts-flex__textos">
+                    <p class="subtitle">Lorem Ipsum</p>
+                    <h1 class="h2">Lorem ipsum dolor BREXIT</h1>
+                    <p class="body body--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, maxime doloribus! Praesentium esse ut unde nobis assumenda, optio quam molestias cupiditate omnis, velit ipsa aperiam quae qui soluta, incidunt eos?</p>
+                    <p>
+                        <span class="autor">CTXT</span>
+                        <span class="fecha">Madrid, 18 de Brumario</span>
+                    </p> 
+                </div>
+                <div class="ts-flex__img">
+                    <img src="http://placehold.it/500x250.jpg" alt="Imagen">
+                </div>
+            </article>
+        </div> {# endbox #}
+        <hr class="separator">
+        <div class="col2 col2--separator">
+            <div class="col">
+                <article class="ts ts-vertical">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
+                    </div>
+                    <h1>
+                        <a href="articulo.html">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
+                    </h1>
+                    <p class="body">
+                        El liderl laborista muestra que Theresa May negoció con EEUU la inclusión del sistema de salud en las negociaciones comerciales tras el acuerdo del Brexit y asegura que Johnson también lo hará.
+                    </p>
+                    <div>
+                        <span class="autor">Guillem Martínez</span>
+                        <span class="fecha">Londres, 12/11/2016</span>
+                    </div> 
+                </article>
+            </div>
+            <div class="col col--expanded">
+                <article class="ts ts-flex ts--reducido">
+                    <div class="ts-flex__img mw-40">
+                        <img src="http://placehold.it/1000x750.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <p class="subtitle">Imperios Combatientes</p>
+                        <h1 class="h3">III. La ocasión perdida</h1>
+                        <p class="body body--small">Hace treinta años, Alemania y Europa dejaron pasar una oportunidad histórica para hacer las cosas mejor</p>
+                        <div>
+                            <span class="autor">Rafel Poch</span>
+                            <span class="fecha">Londres, 12/11/2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="ts ts-flex ts--reducido">
+                    <div class="ts-flex__img mw-40">
+                        <img src="http://placehold.it/1000x750.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <h1 class="h3">Lorem ipsum dolor sit amet</h1>
+                        <p class="body body--small">Hace treinta años, Alemania y Europa dejaron pasar.</p>
+                        <div>
+                            <span class="fecha">Londres, 12/11/2016</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="ts ts-flex ts--reducido">
+                    <div class="ts-flex__img mw-40">
+                        <img src="http://placehold.it/1000x750.jpg" alt="Imagen">
+                    </div>
+                    <div class="ts-flex__textos">
+                        <h1 class="h3">Lorem ipsum estoy hasta las narices de tí</h1>
+                        <p class="body body--small">Hace treinta años, Alemania y Europa dejaron pasar.</p>
+                        <div>
+                            <span class="autor">Guillem Martínez</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div> {# End col2 #}
+        <div class="separator"></div>
+        <div class="col2">
+            <div class="col">
+                <article class="ts ts-vertical">
+                    <div class="ts-vertical__img">
+                        <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
+                    </div>
+                    <h1>
+                        <a href="articulo.html">Nigel Farage le regala a Boris Johnson el trono del populismo británico</a>
+                    </h1>
+                    <p class="body">
+                        Al renunciar a presentarse en las circunscripciones `tories`, el Brexit Party consgra a Johnson como el gran líder de la demagogia en el Reino Unido
+                    </p>
+                    <div>
+                        <span class="autor">Walter Oppenheimer</span>
+                        <span class="fecha">Londres, 12/11/2016</span>
+                    </div> 
+                </article>
+            </div>
+            <div class="col">
+                
+            </div>
+        </div>
     </section>
 
-    <div class="dev">
-        <p>Todo el contenido debería ir rodeado de un #main-wrapper que limita el ancho máximo de la  página y establece el padding global.
-        </p>
-    </div>
-
-    {% include "partials/header.njk" %}
 
     <div class="dev">
         <p>
@@ -170,6 +275,30 @@
                 </div>
             </header>
         </div>
+
+        {#
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #
+         #} 
+        
+        
+        <div class="box box--hueso font-secondary">
+            <h1 class="tc m0">Viejo diseño, adaptado al nuevo</h1>
+        </div>
+
         <section class="box">
             <div class="dev">
                 <p>La clase '.section' proporciona los elementos de cada cabecera</p>
