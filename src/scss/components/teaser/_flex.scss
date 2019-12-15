@@ -29,6 +29,9 @@
         max-width:60%;
         padding-left:0;
         padding-right: $gutter * 2;
+        .ts--reducido & {
+            padding-right: $gutter;
+        }
     }
 }
 
@@ -37,6 +40,9 @@
         .ts-flex__img {
             padding-left: $gutter * 2;
             padding-right: 0;
+            .ts--reducido & {
+                padding-left: $gutter;
+            }
         }
     }
 }

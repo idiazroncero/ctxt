@@ -2,7 +2,7 @@
 .col2 {
 
     @include breakpoint($medium) {
-        margin-bottom: $box-margin;
+        margin-bottom: $ts-margin;
         display:flex;
         justify-content:space-between;
     }
@@ -32,7 +32,16 @@
     }
 
     &.col2--gutter {
-        max-width: calc(50% - #{$gutter});
+        max-width: calc(50% - #{$col-gutter / 2});
+    }
+
+    &.col2--gutter-left {
+        .col:first-child {
+            max-width:50%;
+        }
+        .col:last-child {
+            max-width: calc(50% - #{$col-gutter});
+        }
     }
 }
 
@@ -41,6 +50,16 @@
         display:flex;
         flex-direction:column;
         justify-content:space-between;
+        // Careful with margin collapsing!
+        .ts {
+            margin-bottom:0;
+        }
+    }
+    &.col--gutter-l {
+        margin-left: $col-gutter;
+    }
+    &.col--gutter-r {
+        margin-right: $col-gutter;
     }
 }
 
@@ -54,17 +73,18 @@
     }
 }
 
+
 .col2--separator {
     @include breakpoint($medium) {
         .col {
             max-width: 50%;
         }
         .col:first-child {
-            padding-right: $gutter * 2;
+            padding-right: $col-gutter;
             border-right:1px solid $separator-color;
         }
         .col:last-child {
-            padding-left: $gutter * 2;
+            padding-left: $col-gutter;
             border-left:1px solid $separator-color;
         }
     }
@@ -80,11 +100,11 @@
         justify-content:space-between;
     }
     > .col {
-        margin-bottom: $gutter;
+        margin-bottom: $col-gutter;
         @include breakpoint($medium) {
             margin-bottom:0;
             flex:1;
-            max-width: calc(33.33% - #{$gutter});
+            max-width: calc(33.33% - #{$col-gutter});
             > .ts {
                 margin-bottom:0;
             }
@@ -113,7 +133,7 @@
         .ts-flex__img,
         .ts-mitad__img, {
             order: -999;
-            margin-bottom: $gutter;
+            margin-bottom: $col-gutter;
             padding:0;
             max-width:100%;
             width:100%;
@@ -131,7 +151,7 @@
 
 .col2-old {
     column-count: 2;
-    column-gap: $gutter;
+    column-gap: $col-gutter;
     > div,
     > section,
     > article {

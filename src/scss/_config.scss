@@ -450,7 +450,7 @@ $max-grid-cols: 6;
 // We asume a centered, responsive and max-width limited viewport.
 // ------
 
-$max-width: 1250px;
+$max-width: 1300px;
 $layout-align: center; // left, right
 $layout-padding: $spacer;
 
@@ -542,10 +542,12 @@ $card-shadow: true; // Aplies shadow-definition
 // Project-specific variables
 // ------
 
-$ts-margin: $gutter * 3;
-$box-margin: $gutter * 2;
+$ts-margin: $gutter * 2;
+$col-gutter: $ts-margin;
+$box-margin: $gutter;
 $box-padding: $gutter;
-$articulo-spacer: $gutter * 2;
+$articulo-spacer: $ts-margin;
+$section-margin: $ts-margin;
 
 $size-ratios: 20, 25, 30, 33, 40, 50, 60, 66, 70, 75, 80;
 

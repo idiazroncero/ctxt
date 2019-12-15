@@ -40,16 +40,8 @@ h3,.h3 {
 .autor {
     @extend .font-tertiary;
     font-weight:bold;
-    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
-    // @include breakpoint($medium) {
-    //     @include ritmo-font-size($h5-font-size, $h4-ritmo-lines);
-    // }
-    span + span {
-        &:before {
-            content: "/";
-            padding: 0 5px;
-        }
-    }
+    margin:0;
+    @include ritmo-font-size($h6-font-size, $h5-ritmo-lines);
     &.autor--big {
         @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     }
@@ -62,9 +54,12 @@ h3,.h3 {
     color: $gray6;
 }
 
-.autor + .fecha,
-.fecha + .autor {
+.autor > .fecha {
     margin-left: $gutter / 2;
+}
+
+.autor br + .fecha {
+    margin-left:0;
 }
 
 img {
@@ -118,6 +113,11 @@ img {
     @include breakpoint(max-width $small) {
         text-align:center !important;
     }
+    .body,
+    &.body {
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 
 .body {
@@ -140,8 +140,8 @@ img {
 }
 
 .separator {
-    margin-top:$ts-margin / 2;
-    margin-bottom: $ts-margin / 2;
+    margin-top:$ts-margin;
+    margin-bottom: $ts-margin;
     border-bottom: 1px solid $separator-color;
 }
 
@@ -194,6 +194,13 @@ iframe {
 @each $size in $size-ratios {
     .mw-#{$size} {
         max-width: percentage($size/100) !important;
+    }
+    .ts-flex {
+        .mw-#{$size} {
+            @include breakpoint(max-width $medium) {
+                max-width:100% !important;
+            }
+        }
     }
 }
 

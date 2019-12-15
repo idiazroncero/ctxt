@@ -1,5 +1,5 @@
 .section {
-    margin-bottom: $gutter;
+    margin-bottom: $section-margin;
     position:relative;
     display:flex;
     flex-wrap:wrap;
@@ -37,7 +37,7 @@
 .section__category {
     text-transform: uppercase;
     @extend .font-secondary;
-    margin-bottom: $gutter;
+    margin-bottom: $gutter / 2;
     &:after {
         content:">";
     }
@@ -132,7 +132,7 @@
 
 .section__patrocinador {
     text-align:center;
-    margin-bottom: $gutter;
+    margin-bottom: $gutter / 2;
     margin-left:auto;
 
     // @include breakpoint($medium) {
