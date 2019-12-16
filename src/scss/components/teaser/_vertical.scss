@@ -3,16 +3,7 @@
         .body {
             margin-left: auto;
         }
-    }
-    // @include breakpoint($small) {
-    //     &.tc .body {
-    //         margin-bottom: $gutter * 2;
-    //         padding: 0 $gutter;
-    //     }
-    //     &.tc h1 {
-    //         padding: 0 $gutter;
-    //     }
-    // }
+    } 
     .body {
         margin-bottom: $gutter;
     }

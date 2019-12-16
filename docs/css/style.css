@@ -1167,7 +1167,7 @@ textarea {
     border-color: #6d6d6d; }
 
 #main-wrapper {
-  max-width: 1300px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.4rem; }
@@ -2050,18 +2050,6 @@ img {
   .ts img {
     margin: 0 auto;
     display: block; }
-  .ts .body, .ts .section__body {
-    max-width: 50ch;
-    margin-right: auto;
-    margin-left: auto; }
-    @media (min-width: 640px) {
-      .ts .body, .ts .section__body {
-        margin-left: 0; } }
-    @media (min-width: 1120px) {
-      .ts .body, .ts .section__body {
-        max-width: 65ch;
-        margin-left: initial;
-        margin-right: initial; } }
 
 .ts--reducido h1,
 .ts--reducido h2,
@@ -2265,6 +2253,11 @@ iframe {
 .m-half {
   margin-bottom: 0.7rem; }
 
+.h100 {
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: 0; }
+
 .header {
   margin-bottom: 1.4rem; }
   .header .button, .header input[type=file] + label {
@@ -2326,7 +2319,7 @@ iframe {
         display: inline; } }
 
 .header__top {
-  padding: 1.4rem;
+  padding: 0.93333rem;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
   background: linear-gradient(90deg, #fff 5px, transparent 1%) center, linear-gradient(#fff 5px, transparent 1%) center, #a3a3a3;
@@ -2357,7 +2350,7 @@ iframe {
       margin: 0; } }
   .header__logo img {
     max-width: 100%;
-    max-height: 5.6rem; }
+    max-height: 4.9rem; }
 
 @media (min-width: 960px) {
   .header__issue,
@@ -3507,6 +3500,21 @@ iframe {
   border: 1px solid #CCCCCC;
   position: relative;
   margin-top: 4.2rem; }
+  .ts-tab.ts--reducido .ts-tab__category {
+    padding-right: 0.35rem;
+    padding-left: 0.7rem;
+    height: 1.75rem;
+    font-size: 13px;
+    font-size: 0.8rem;
+    line-height: 6px;
+    line-height: 0.35rem; }
+  .ts-tab.ts--reducido .ts-tab__left {
+    padding: 1.4rem 0.7rem; }
+  @media (min-width: 960px) {
+    .ts-tab.ts--reducido .ts-tab__meta {
+      padding-right: 1.4rem; } }
+  .ts-tab.ts--reducido .ts-tab__title {
+    margin: 0; }
 
 .ts-tab--center .ts-tab__left {
   align-items: center; }
@@ -3588,13 +3596,8 @@ iframe {
       padding-right: 2.8rem;
       margin-bottom: 0; } }
 
-@media (min-width: 960px) {
-  .ts-tab__40 {
-    width: 40%; } }
-
-@media (min-width: 960px) {
-  .ts-tab__60 {
-    width: 60%; } }
+.ts-tab__title {
+  margin: 0; }
 
 .ts-tab__title {
   margin: 0; }

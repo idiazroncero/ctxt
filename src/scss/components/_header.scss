@@ -68,7 +68,7 @@ $dot-space: 6px;
         justify-content:space-between;
         flex-wrap:nowrap;
     }
-    padding: $gutter;
+    padding: $gutter / 1.5;
     border-left: 1px solid $black;
     border-right: 1px solid $black;
 
@@ -104,7 +104,7 @@ $dot-space: 6px;
 
     img {
         max-width:100%;
-        max-height: $gutter * 4;
+        max-height: $gutter * 3.5;
     }
 }
 

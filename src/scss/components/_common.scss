@@ -80,17 +80,18 @@ img {
         display:block;
     }
     .body {
-        max-width: 50ch;
-        margin-right:auto;
-        margin-left: auto;
-        @include breakpoint($small) {
-            margin-left: 0;   
-        }
-        @include breakpoint($large) {
-            max-width: 65ch;
-            margin-left:initial;
-            margin-right: initial;
-        }
+        // NO CH
+        // max-width: 50ch;
+        // margin-right:auto;
+        // margin-left: auto;
+        // @include breakpoint($small) {
+        //     margin-left: 0;   
+        // }
+        // @include breakpoint($large) {
+        //     max-width: 65ch;
+        //     margin-left:initial;
+        //     margin-right: initial;
+        // }
     }
 }
 
@@ -212,4 +213,10 @@ iframe {
 
 .m-half {
     margin-bottom: $gutter / 2;
+}
+
+.h100 {
+    height:100%;
+    margin-bottom:0;
+    margin-top:0;
 }

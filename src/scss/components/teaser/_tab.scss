@@ -2,6 +2,25 @@
     border: 1px solid $separator-color;
     position:relative;
     margin-top:$gutter * 3;
+    &.ts--reducido {
+        .ts-tab__category {
+            padding-right: $gutter / 4;
+            padding-left: $gutter / 2;
+            height: ritmo(5);
+            @include ritmo-font-size($h6-font-size, 1)
+        }
+        .ts-tab__left {
+            padding: $gutter $gutter / 2;
+        }
+        .ts-tab__meta {
+            @include breakpoint($medium) {
+                padding-right: $gutter;
+            }
+        }
+        .ts-tab__title {
+            margin:0;
+        }
+    }
 }
 
 .ts-tab--center {
@@ -99,21 +118,21 @@
     }
 }
 
-.ts-tab__40 {
-    @include breakpoint($medium) {
-        width:40%;
-    }
-}
+// .ts-tab__40 {
+//     @include breakpoint($medium) {
+//         width:40%;
+//     }
+// }
 
 .ts-tab__title {
-
+    margin:0;
 }
 
-.ts-tab__60 {
-    @include breakpoint($medium) {
-        width:60%;
-    }
-}
+// .ts-tab__60 {
+//     @include breakpoint($medium) {
+//         width:60%;
+//     }
+// }
 
 .ts-tab__title {
     margin:0;

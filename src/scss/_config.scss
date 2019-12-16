@@ -168,7 +168,7 @@ $list-separator: $gutter / 2;
 $list-padding: 1em;
 
 // Maximum characters per line, to apply using .max-ch class
-$max-ch: 65ch;
+// $max-ch: 65ch;
 
 // Mark padding
 $mark-padding: 2px;
@@ -450,7 +450,7 @@ $max-grid-cols: 6;
 // We asume a centered, responsive and max-width limited viewport.
 // ------
 
-$max-width: 1300px;
+$max-width: 1100px;
 $layout-align: center; // left, right
 $layout-padding: $spacer;
 
