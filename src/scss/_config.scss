@@ -141,7 +141,7 @@ $font-secondary-items:
 // Heading overrides
 // Select a font weight and an alternate line height for your headings
 $heading-font-weight: normal;
-$heading-letter-spacing: -0.03em; // Headings benefit of a reduced letter-spacing 
+$heading-letter-spacing: 0; // Headings benefit of a reduced letter-spacing 
 $heading-decorated-links: false; // Wether to decorate or not links inside headings
 
 // Text alignment for some elements

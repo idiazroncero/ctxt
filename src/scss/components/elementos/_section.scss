@@ -38,6 +38,7 @@
     text-transform: uppercase;
     @extend .font-secondary;
     margin-bottom: $gutter / 2;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines)
     &:after {
         content:">";
     }

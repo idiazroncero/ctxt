@@ -32,7 +32,9 @@
     }
 
     &.col2--gutter {
-        max-width: calc(50% - #{$col-gutter / 2});
+        .col {
+            max-width: calc(50% - #{$col-gutter / 2});
+        }
     }
 
     &.col2--gutter-left {

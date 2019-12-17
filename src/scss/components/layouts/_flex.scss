@@ -17,6 +17,14 @@
     .flex {
         display:flex;
         justify-content: space-between;
+        
+        &.flex--center {
+            align-items:center;
+        }
+
+        &.flex--bottom {
+            align-items:flex-end;
+        }
     }    
     
     @each $size in $size-ratios {

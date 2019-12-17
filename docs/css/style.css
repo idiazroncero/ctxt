@@ -698,7 +698,7 @@ h6, .h6, .section__patrocinador span, .imagen__caption, .pub__title {
 
 h1, .h1,
 h2, .h2 {
-  letter-spacing: -0.03em; }
+  letter-spacing: 0; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .subsection, .subcontenido__title, .ficha-autor__title, .bloque__title, .h4, .h5, .h6, .section__patrocinador span, .imagen__caption, .pub__title {
@@ -2258,6 +2258,36 @@ iframe {
   margin-bottom: 0;
   margin-top: 0; }
 
+.m2 {
+  margin: 2.8rem; }
+
+.mt2 {
+  margin-top: 2.8rem; }
+
+.mr2 {
+  margin-right: 2.8rem; }
+
+.mb2 {
+  margin-bottom: 2.8rem; }
+
+.ml2 {
+  margin-left: 2.8rem; }
+
+.m {
+  margin: 1.4rem; }
+
+.mt3 {
+  margin-top: 4.2rem; }
+
+.mr3 {
+  margin-right: 4.2rem; }
+
+.mb3 {
+  margin-bottom: 4.2rem; }
+
+.ml3 {
+  margin-left: 4.2rem; }
+
 .header {
   margin-bottom: 1.4rem; }
   .header .button, .header input[type=file] + label {
@@ -2702,7 +2732,11 @@ iframe {
 
 .section__category {
   text-transform: uppercase;
-  margin-bottom: 0.7rem; }
+  margin-bottom: 0.7rem;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 11px;
+  line-height: 0.7rem; }
   .section__category:after {
     content: ">"; }
   @media (min-width: 960px) {
@@ -2903,7 +2937,13 @@ iframe {
   .box .col2:last-child,
   .bloque .col2:last-child,
   .box .col3:last-child,
-  .bloque .col3:last-child {
+  .bloque .col3:last-child,
+  .box .flex:last-child,
+  .bloque .flex:last-child,
+  .box .box:last-child,
+  .bloque .box:last-child,
+  .box .bloque:last-child,
+  .bloque .bloque:last-child {
     margin-bottom: 0; }
   .box.box--vacio, .box--vacio.bloque {
     border: none; }
@@ -3353,8 +3393,8 @@ iframe {
   padding-top: 1.3375rem;
   border-bottom-width: 1px;
   border-bottom-width: 0.0625rem;
-  padding-bottom: 44px;
-  padding-bottom: 2.7375rem;
+  padding-bottom: 21px;
+  padding-bottom: 1.3375rem;
   border-top-color: #CCCCCC;
   border-bottom-color: #CCCCCC;
   border-top-style: solid;
@@ -3666,7 +3706,7 @@ iframe {
       .col2 > .col > .ts:last-child {
         margin-bottom: 0; } }
 
-.col2.col2--gutter {
+.col2.col2--gutter .col {
   max-width: calc(50% - 1.4rem); }
 
 .col2.col2--gutter-left .col:first-child {
@@ -3766,6 +3806,10 @@ iframe {
   .flex {
     display: flex;
     justify-content: space-between; }
+    .flex.flex--center {
+      align-items: center; }
+    .flex.flex--bottom {
+      align-items: flex-end; }
   .flex-20 {
     flex: 1 0 20%; }
   .flex-25 {
