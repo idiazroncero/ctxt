@@ -140,6 +140,10 @@ img {
     @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
 }
 
+.body--minimal {
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+}
+
 .separator {
     margin-top:$ts-margin;
     margin-bottom: $ts-margin;
@@ -258,4 +262,9 @@ iframe {
 
 .ml3 {
     margin-left: $gutter * 3;
+}
+
+.img-circle {
+    border-radius: 50%;
+    overflow:hidden;
 }

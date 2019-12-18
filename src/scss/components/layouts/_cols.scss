@@ -9,17 +9,21 @@
 
     > .col {
         margin-bottom: $box-margin / 2;
+        > div:last-child,
+        > section:last-child,
+        > article:last-child {
+            margin-bottom:0;
+        }
         // Enforces center until medium (instead of small) because cols have
         // less space available (they become "mobile" sooner)
-        > .ts {
-            margin-bottom: $box-margin;
-            @include breakpoint(max-width $medium) {
-                text-align:center;
-                .body {
-                    margin-left: auto;
-                }
-            }
-        }
+        // > .ts {
+        //     @include breakpoint(max-width $medium) {
+        //         text-align:center;
+        //         .body {
+        //             margin-left: auto;
+        //         }
+        //     }
+        // }
         @include breakpoint($medium) {
             margin-bottom: $box-margin;
             flex:1;

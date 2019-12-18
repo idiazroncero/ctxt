@@ -1,0 +1,13 @@
+.mensaje {
+    font-family: $font-secondary;
+    text-align:center;
+    margin: $gutter 0;
+    position:relative;
+}
+
+.mensaje__promo {
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+}

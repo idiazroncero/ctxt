@@ -17,3 +17,6 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 - Elimina el gutter (margen interno) por defecto entre los dos `.col` dentro de una `.col2`. Añade la clase modificadora `.col2--gutter`, que recupera este espaciado y la clase `.col2--gutter-left` que añade el espaciado pero en la columna derecha. **Puede requerir cambios en HTML**
 - Añade las clases `.col--gutter-l` y `.col--gutter-r` que permiten añadir manualmente espaciado vertical a las columnas.
 - Añade la clase genérica `.h100` que ayuda a que un elemento tome el 100% de la altura de su contenedor.
+- Añade la clase `.img-circle` para forzar el redondeado de imagenes cuadradas.
+- Añade la clase `.body--minimal` para tamaños de body enanos (util en teasers muy pequeños)
+- Creado un tipo especial de componente, `.mensaje`, para mensajes como el del top

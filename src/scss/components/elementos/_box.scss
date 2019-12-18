@@ -79,13 +79,37 @@
 .box--tab {
     position:relative;
     margin-top: $gutter * 1.5;
+
+    @each $name, $color in $ctxt-colors {
+        &.box--tab--#{$name} {
+            background-color: $color;
+            border: 1px solid $color;
+            .box--tab__category {
+                border-color: $color;
+                background-color: $color;
+                &:before {
+                    background-color: $color;
+                }
+            }
+            .box--tab__triangle {
+                border-color: transparent transparent $color $color;
+                &:before {
+                    border-color: transparent transparent $color $color;
+                }
+            }
+            &:before {
+                background-color: $color;
+            }
+        }
+
+    }
 }
 
 .box--tab__category {
     position:absolute;
     top: - ritmo(5);
     left: -1px;
-    border: 1px solid $black;
+    border: 1px solid $separator-color;
     border-bottom: none;
     padding: ritmo(2) $gutter / 2 0 $gutter;
     line-height:ritmo(3);
@@ -112,7 +136,7 @@
     width:0;
     height:0;
     border-width: ritmo(5) * 0.5 ritmo(1);
-    border-color: transparent transparent $black $black;
+    border-color: transparent transparent $separator-color $separator-color;
     border-style: solid;
     transform:translateX(1px);
     &:before {
@@ -126,26 +150,6 @@
         border-color: transparent transparent $white $white;
         border-style: solid;
         transform:translate(-1px, 1px);     
-    }
-}
-
-.box--tab.box--tab--gray {
-    background-color: $gray0;
-    border-color: $gray0;
-    .box--tab__category {
-        border-color: $gray0;
-        background-color: $gray0;
-        &:before,
-        &:after {
-            border-color: $gray0;
-            background-color: $gray0;
-        }
-        .box--tab__triangle {
-            border-color: transparent transparent $gray0 $gray0;
-            &:before {
-                border-color: transparent transparent $gray0 $gray0;
-            } 
-        }
     }
 }
 
