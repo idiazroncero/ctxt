@@ -145,8 +145,12 @@ img {
 }
 
 .separator {
-    margin-top:$ts-margin;
-    margin-bottom: $ts-margin;
+    margin-top:$ts-margin / 2;
+    margin-bottom: $ts-margin / 2;
+    @include breakpoint($medium) {
+        margin-top:$ts-margin;
+        margin-bottom: $ts-margin;      
+    }
     border-bottom: 1px solid $separator-color;
 }
 
@@ -200,7 +204,8 @@ iframe {
     .mw-#{$size} {
         max-width: percentage($size/100) !important;
     }
-    .ts-flex {
+    .ts,
+    .col2 {
         .mw-#{$size} {
             @include breakpoint(max-width $medium) {
                 max-width:100% !important;

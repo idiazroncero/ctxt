@@ -34,18 +34,20 @@ $dot-space: 6px;
         font-weight:bold;
         @include ritmo-font-size($h6-font-size);
         letter-spacing: $letter-spacing * 3;
-        &:before {
-            content:"";
-            position:absolute;
-            top:0;
-            left:100%;
-            width:0;
-            height:0;
-            border-color: transparent transparent $black $black;
-            border-width: ( $h6-font-size * $vertical-rhythm ) ( ( $h6-font-size * $vertical-rhythm ) / 2);
-            border-style:solid;
-            @include breakpoint($small) {
-                border-width: ( $h6-font-size * $vertical-rhythm ) / 2;
+        @include breakpoint($medium) {
+            &:before {
+                content:"";
+                position:absolute;
+                top:0;
+                left:100%;
+                width:0;
+                height:0;
+                border-color: transparent transparent $black $black;
+                border-width: ( $h6-font-size * $vertical-rhythm ) ( ( $h6-font-size * $vertical-rhythm ) / 2);
+                border-style:solid;
+                @include breakpoint($small) {
+                    border-width: ( $h6-font-size * $vertical-rhythm ) / 2;
+                }
             }
         }
     }

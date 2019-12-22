@@ -1,8 +1,12 @@
 .section {
-    margin-bottom: $section-margin;
+    margin-bottom: $section-margin / 2;
     position:relative;
     display:flex;
     flex-wrap:wrap;
+
+    @include breakpoint($medium) {
+        margin-bottom: $section-margin;
+    }
 
     .box--2col & {
         @include breakpoint($medium) {
@@ -38,9 +42,13 @@
     text-transform: uppercase;
     @extend .font-secondary;
     margin-bottom: $gutter / 2;
-    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines)
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    width:100%;
     &:after {
         content:">";
+    }
+    @include breakpoint($small) {
+        width:auto;
     }
     @include breakpoint($medium) {
         .box--2col & {
@@ -134,13 +142,10 @@
 .section__patrocinador {
     text-align:center;
     margin-bottom: $gutter / 2;
-    margin-left:auto;
 
-    // @include breakpoint($medium) {
-    //     position:absolute;
-    //     top: 0;
-    //     right: 0;
-    // }
+    @include breakpoint($small) {
+        margin-left:auto;
+    }
 
     span {
         font-family: $font-secondary;
