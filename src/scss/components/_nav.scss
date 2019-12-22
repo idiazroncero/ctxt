@@ -34,6 +34,7 @@ $hide-menu: 750px;
     order: 999;
     input {
         padding: 0;
+        border:none;
     }
     @include breakpoint($hide-menu) {
         margin-right: $gutter;
@@ -88,6 +89,7 @@ $hide-menu: 750px;
         @include breakpoint($hide-menu) {
             display:none;
             position:absolute;
+            z-index:9;
             top:100%;
             top: calc(100% - 1px);
             background-color: $white;

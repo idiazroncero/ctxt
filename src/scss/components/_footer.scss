@@ -1,10 +1,10 @@
 .footer {
     background-color: $gray9;
     padding: $gutter;
+    color: $gray5;
     @include breakpoint($medium) {
         padding: $gutter * 2;
     }
-    color: $gray5;
     .body {
         color: $gray5;
     }
@@ -26,7 +26,7 @@
     p {
         font-family: $font-secondary;
         text-transform: uppercase;
-        @include ritmo-font-size($h3-font-size);
+        @include ritmo-font-size($h5-font-size);
     }
     ul {
         @include inline-list();
@@ -91,7 +91,7 @@
 .footer__medios__title {
     font-family: $font-secondary;
     text-transform: uppercase;
-    @include ritmo-font-size($h3-font-size);
+    @include ritmo-font-size($h4-font-size);
 }
 
 .footer__medios__row {
