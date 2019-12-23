@@ -14,14 +14,15 @@ $gray0: #f2f2f2;
 $gray5: #a7a7a7;
 $gray6: #808080;
 // $gray9: #2E2E2E;
-$gray9: #474849;
+$gray8: #474849;
+$gray9: #2e2e2e;
 $sepia: #f4ecde;
 
 // Maps to loop over
 $ctxt-colors: (
     blanco: $white,
     hueso: $hueso,
-    gris-oscuro: $gray9,
+    gris-oscuro: $gray8,
     gris-claro:$gray0,
     menta:$menta
 );

@@ -12,9 +12,13 @@
         }
     }
 }
+.flex {
+
+}
 
 @include breakpoint($medium) {
     .flex {
+        margin-bottom: $ts-margin;
         display:flex;
         justify-content: space-between;
         

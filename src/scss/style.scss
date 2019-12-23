@@ -21,6 +21,7 @@
 @import "components/elementos/suscribete";
 @import "components/elementos/ademas";
 @import "components/elementos/mensaje";
+@import "components/elementos/ads";
 
 @import "components/teaser/flotante";
 @import "components/teaser/mitad";
@@ -34,7 +35,7 @@
 @import "components/pages/articulo";
 
 // Utility classes. Allow them to override the rest.
-@import "./node_modules/huesos/src/components/huesitos/huesitos";
+@import "overrides/huesitos";
 
 
 @import "adapt";

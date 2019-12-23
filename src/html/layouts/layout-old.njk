@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ctxt.es</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {# ESTE CÓDIGO NO DEBERÍA IR A PRODUCCIÓN #}
+    <style>
+      .dev {
+        padding: 10px 15px;
+        color: #7f656b;
+        background-color: #e6dee0;
+        border-radius: 6px;
+        font-family: monospace;
+        margin-bottom: 15px;
+        cursor: pointer;
+      }
+      .dev p {
+        margin-bottom: 10px;
+        line-height:1.1;
+      }
+      .dev p:first-child:before {
+        content:"!";
+        background-color: #bbf01b;
+        font-weight:bold;
+        color: #000;
+        width:1em;
+        height:1em;
+        line-height:1em;
+        text-align:center;
+        display:inline-block;
+        border-radius: 50%;
+        margin-right: 10px;
+
+      }
+      .dev p:last-child {
+        margin:0;
+      }
+      .debug {
+        position:fixed;
+        bottom:-15px;
+        left:5px;
+        font-family: "Futura CTXT";
+        margin:0;
+        padding:0;
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+      }
+      .debug li {
+        display:inline-block;
+        text-transform:uppercase;
+        padding: 0 15px 0 0;
+        margin:0;
+        cursor:pointer;
+      }
+      *[data-show] {
+        outline: 1px solid red;
+        position:relative;
+      }
+      *.col[data-show]:before {
+        top:0;
+        bottom: auto;
+      }
+      *[data-show]:hover {
+        outline: 1px solid green;
+      } 
+      *[data-show]:hover:before {
+        z-index:9999;
+        font-size:16px;
+        background-color: green;
+      }
+      *[data-show]:before {
+        content:"class | " attr(class);
+        background-color: red;
+        color: #fff;
+        font-family: Futura, sans-serif;
+        font-size:12px;
+        padding: 0px 5px;
+        position:absolute;
+        bottom:100%;
+        left: 10px;
+        text-transform: lowercase;
+        letter-spacing: 0;
+        font-weight:normal;
+      }
+      .minititle {
+        font-family: "Futura CTXT"
+      }
+      .doc-menu li a {
+        margin-right: 15px;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+
+    <script>
+      $(function(){
+
+        $('body').append('<ul class="debug"><li class="notas">Notas</li><li class="showitems">Estructura</li><li class="kill-link"><a href="./docs.html">Docs</a></li></ul>');
+        $('.notas').click(function(){
+          $('.dev').toggle();
+        })
+        $('.dev').click(function(){
+          $(this).remove();
+        })
+        $('.showitems').click(function(){
+          $('.ts, .section, .box, .separator, .col2, .col, .subsection, .footer')
+          .attr('data-show', true);
+        })
+      })
+
+    </script>
+    {# ESTE CÓDIGO NO DEBERÍA IR A PRODUCCIÓN #}
+
+    <script src="js/ctxt-bundle.js"></script>
+
+  </head>
+  <body>
+
+    {% block content %} {% endblock %}
+
+  </body>
+</html>

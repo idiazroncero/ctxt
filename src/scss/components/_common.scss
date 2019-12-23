@@ -79,20 +79,6 @@ img {
         margin: 0 auto;
         display:block;
     }
-    .body {
-        // NO CH
-        // max-width: 50ch;
-        // margin-right:auto;
-        // margin-left: auto;
-        // @include breakpoint($small) {
-        //     margin-left: 0;   
-        // }
-        // @include breakpoint($large) {
-        //     max-width: 65ch;
-        //     margin-left:initial;
-        //     margin-right: initial;
-        // }
-    }
 }
 
 .ts--reducido {
@@ -154,14 +140,6 @@ img {
     border-bottom: 1px solid $separator-color;
 }
 
-.mb--big {
-    margin-bottom: $ts-margin;
-}
-
-.mt--big {
-    margin-top: $ts-margin;
-}
-
 iframe {
     max-width:100%;
     display:block;
@@ -220,55 +198,10 @@ iframe {
     text-transform: uppercase;
 }
 
-.m-half {
-    margin-bottom: $gutter / 2;
-}
-
 .h100 {
     height:100%;
     margin-bottom:0;
     margin-top:0;
-}
-
-
-.m2 {
-    margin: $gutter * 2;
-}
-
-.mt2 {
-    margin-top: $gutter * 2;
-}
-
-.mr2 {
-    margin-right: $gutter * 2; 
-}
-
-.mb2 {
-    margin-bottom: $gutter * 2;
-}
-
-.ml2 {
-    margin-left: $gutter * 2;
-}    
-
-.m {
-    margin: $gutter;
-}
-
-.mt3 {
-    margin-top: $gutter * 3;
-}
-
-.mr3 {
-    margin-right: $gutter * 3;
-}
-
-.mb3 {
-    margin-bottom: $gutter * 3;
-}
-
-.ml3 {
-    margin-left: $gutter * 3;
 }
 
 .img-circle {

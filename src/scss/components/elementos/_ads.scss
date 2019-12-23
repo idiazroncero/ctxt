@@ -1,0 +1,6 @@
+.ad {
+    margin-bottom: $gutter;
+    @include breakpoint($medium) {
+        margin-bottom:0;
+    }
+}

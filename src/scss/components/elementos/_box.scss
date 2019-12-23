@@ -1,8 +1,7 @@
 .box {
-    @extend .b;
-
+    border: 1px solid $separator-color;
     padding: $gutter;
-    margin-bottom: $box-margin / 2;
+    margin-bottom: $box-margin;
     @include breakpoint($medium) {
         margin-bottom: $box-margin;
     }

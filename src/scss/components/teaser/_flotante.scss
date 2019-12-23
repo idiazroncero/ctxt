@@ -1,4 +1,7 @@
 .ts-flotante {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
     @include breakpoint($medium){
         @include ritmo-top-border($lines: $base-line-multi);
         @include ritmo-bottom-border($lines: $base-line-multi);
@@ -6,8 +9,7 @@
         border-bottom-color: $separator-color;
         border-top-style:solid;
         border-bottom-style:solid;
-        display:flex;
-        justify-content:space-between;
+        flex-direction: row;
         margin-top: $ts-margin * 2;
     } 
     @include breakpoint($large){
@@ -44,9 +46,13 @@
 }
 
 .ts-flotante__img {
+    order: -999;
+    margin-bottom: $gutter;
     @include breakpoint($medium){
+        order:initial;
         width:50%;
         position:relative;
+        margin-bottom:0;
         img {
             position:absolute;
             bottom:0;
