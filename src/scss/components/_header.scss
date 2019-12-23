@@ -129,11 +129,18 @@ $dot-space: 6px;
     @include breakpoint($medium) {
         justify-content:flex-end;
     }
+    .button {
+        text-transform: initial;
+        font-weight:normal;
+    }
+}
+
+.button--header {
+    background-color: $white;
 }
 
 .header__cart {
     margin: 0 0 0 ritmo(1);
-    background-color: $white;
     span,.icon {
         vertical-align:bottom;
     }
@@ -143,6 +150,18 @@ $dot-space: 6px;
     }
 }
 
+.header__search {
+    margin-left: $gutter / 4;
+    @include set-link(
+        $black,
+        $black,
+        get-color(base, primary),
+        get-color(base, primary),
+        false,
+        false
+    )
+}
+
 
 // ISSUE
 
@@ -150,8 +169,9 @@ $dot-space: 6px;
     background-color: $white;
     padding: 0 $gutter / 8;
     display:inline-block;
+    font-family: $futura;
 
-    button, div, ol, li, p {
+    div, ol, li, p {
         display:inline-block;
         vertical-align:top;
         padding:0;
@@ -159,11 +179,26 @@ $dot-space: 6px;
 }
 
 .issue__current {
-    font-family: $futura;
     text-transform: uppercase;
     margin:0;
 }
 
 .issue__number {
     color: get-color(base, primary);
+}
+
+.issue__next,
+.issue__prev {
+    font-weight:bold;
+    font-size: 0.75em;
+    display:inline-block;
+    vertical-align:top;
+}
+
+.issue__next {
+    padding: 0 0 0 $gutter / 4;
+}
+
+.issue__prev {
+    padding: 0 $gutter / 4 0 0;
 }

@@ -37,6 +37,11 @@ h3,.h3 {
 //     }
 // }
 
+input {
+    background-color: $white;
+    padding: ritmo($input-padding-lines);
+}
+
 .autor {
     @extend .font-tertiary;
     font-weight:bold;

@@ -69,8 +69,14 @@ $hide-menu: 750px;
         > a {
             display:block;
             padding: $gutter / 4 $gutter / 2;
-            font-weight:bold;
-            @include kill-link();
+            @include set-link(
+                $black,
+                $black,
+                get-color(base, primary),
+                get-color(base, primary),
+                false,
+                false
+            )
 
             @include breakpoint($hide-menu $scale-menu) {
                 @include ritmo-font-size($h6-font-size, 4);

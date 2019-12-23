@@ -1,0 +1,84 @@
+.login-page {
+    min-height: 100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: $menta;
+    @include breakpoint($small) {
+        background-color: transparent;
+    }
+}
+
+.login {
+    font-family: $font-tertiary;
+    color: $gray8;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    h1 {
+        color: $gray8;
+    }
+    input {
+        width:100%;
+    }
+    p {
+        margin-bottom: $gutter / 2;
+    }
+    .button {
+        padding-left: $gutter * 2;
+        padding-right: $gutter * 2;
+    }
+    margin:0;
+    a:not(.button) {
+        @include set-link(
+            $gray8,
+            $gray8,
+            get-color(base, primary),
+            get-color(base, primary),
+            'underline',
+            false
+        )
+    }
+
+    width:100%;
+    @include breakpoint($small) {
+        min-width: 480px;
+        width: auto;
+        height: auto;
+    }
+}
+
+.login__logo {
+    display:block;
+    text-align:center;
+    @include breakpoint($small) {
+        text-align:left;
+        img {
+            height: $gutter * 2;
+        }
+    }
+    img {
+        height: $gutter * 3;
+        display:inline-block;
+    }
+}
+
+.login__form {
+    text-align:center;
+    max-width: 250px;
+    margin: $gutter auto 0 auto;
+    input {
+        margin-bottom: $gutter;
+    }
+}
+
+.login__ventajas {
+    margin-top: $gutter * 2;
+    text-align:left;
+}
+
+.login__ventajas__title {
+    text-align:center;
+    font-weight:bold;
+    padding-bottom: $gutter / 2;
+    margin-bottom: $gutter / 2;
+    border-bottom: 3px dotted $gray6;
+}

@@ -331,13 +331,13 @@ $form-border-radius: 0;
 $label-as-minititle: true;
 
 // Inputs
-$input-border-strategy: full; // Options: full, bottom, none;
+$input-border-strategy: none; // Options: full, bottom, none;
 $input-border-color: $gray;
 $input-border-width: 1px;
 $input-padding-lines: 1;
 
 // Buttons
-$button-font-family: $futura;
+$button-font-family: $avenir;
 $button-font-size: $h6-font-size;
 $button-border-width: 1px;
 $button-ritmo-height: 6; // Ritmo line units

@@ -980,15 +980,7 @@ fieldset.fieldset--disabled {
   color: #d84818; }
 
 .form-item--label-inside {
-  border-radius: 0;
-  border-width: 1px;
-  border-width: 0.0625rem;
-  padding: 5px;
-  padding: 0.2875rem;
-  border-style: solid;
-  border-color: #a3a3a3; }
-  .form-item--label-inside:hover, .form-item--label-inside:focus {
-    border-color: #6d6d6d; }
+  border-radius: 0; }
   .form-item--label-inside input,
   .form-item--label-inside textarea {
     border: none;
@@ -1002,17 +994,9 @@ fieldset.fieldset--disabled {
   align-items: flex-end; }
 
 input {
-  border-width: 1px;
-  border-width: 0.0625rem;
-  padding: 5px;
-  padding: 0.2875rem;
-  border-style: solid;
-  border-color: #a3a3a3;
   /* Make webkit render the search input like a normal text field */
   /* Turn off the recent search for webkit. It adds about 15px padding on the left */
   /* Fix IE7 display bug */ }
-  input:hover, input:focus {
-    border-color: #6d6d6d; }
   input:focus {
     outline: 0; }
   input[type=checkbox], input[type=radio] {
@@ -1040,17 +1024,9 @@ input::-webkit-file-upload-button {
   border-right: 1px solid #a3a3a3; }
 
 .file-input {
-  border-width: 1px;
-  border-width: 0.0625rem;
-  padding: 5px;
-  padding: 0.2875rem;
-  border-style: solid;
-  border-color: #a3a3a3;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .file-input:hover, .file-input:focus {
-    border-color: #6d6d6d; }
   .file-input[data-file-input] {
     border: none;
     padding: 0; }
@@ -1116,17 +1092,9 @@ select {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
-  border-width: 1px;
-  border-width: 0.0625rem;
-  padding: 5px;
-  padding: 0.2875rem;
-  border-style: solid;
-  border-color: #a3a3a3;
   -webkit-appearance: none;
   appearance: none;
   width: 100%; }
-  select:hover, select:focus {
-    border-color: #6d6d6d; }
   select[multiple] {
     vertical-align: top; }
   select option {
@@ -1151,20 +1119,12 @@ select {
     left: auto; }
 
 textarea {
-  border-width: 1px;
-  border-width: 0.0625rem;
-  padding: 5px;
-  padding: 0.2875rem;
-  border-style: solid;
-  border-color: #a3a3a3;
   /* Move the label to the top */
   vertical-align: top;
   /* Turn off scroll bars in IE unless needed */
   overflow: auto;
   width: 100%;
   min-height: 2.8rem; }
-  textarea:hover, textarea:focus {
-    border-color: #6d6d6d; }
 
 #main-wrapper {
   max-width: 1100px;
@@ -1595,7 +1555,7 @@ a.button:focus, a.button:hover {
   letter-spacing: 0.05rem;
   vertical-align: bottom;
   font-weight: normal;
-  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Avenir Next Condensed", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .button::-moz-focus-inner, input[type=file] + label::-moz-focus-inner {
     border: 0;
     padding: 0; }
@@ -2009,6 +1969,10 @@ a.button--success--bg:hover:link, a.button--success--bg:hover:active, a.button--
     line-height: 22px;
     line-height: 1.4rem; } }
 
+input {
+  background-color: #fff;
+  padding: 0.35rem; }
+
 .autor, .subcontenido__autor, .ademas__title, .articulo__fecha {
   font-weight: bold;
   margin: 0;
@@ -2385,32 +2349,65 @@ iframe {
   @media (min-width: 900px) {
     .header__user {
       justify-content: flex-end; } }
+  .header__user .button, .header__user input[type=file] + label {
+    text-transform: initial;
+    font-weight: normal; }
+
+.button--header {
+  background-color: #fff; }
 
 .header__cart {
-  margin: 0 0 0 0.35rem;
-  background-color: #fff; }
+  margin: 0 0 0 0.35rem; }
   .header__cart span, .header__cart .icon {
     vertical-align: bottom; }
   .header__cart .icon {
     margin: 0 0 0 0.0875rem;
     height: 0.8rem; }
 
+.header__search {
+  margin-left: 0.35rem; }
+  .header__search {
+    text-decoration: none; }
+    .header__search:hover, .header__search:focus {
+      text-decoration: none; }
+  .header__search, .header__search:link {
+    color: #000; }
+  .header__search:visited {
+    color: #000; }
+  .header__search:focus, .header__search:hover {
+    color: #f01b4d; }
+  .header__search:active {
+    color: #f01b4d; }
+
 .issue {
   background-color: #fff;
   padding: 0 0.175rem;
-  display: inline-block; }
-  .issue button, .issue div, .issue ol, .issue li, .issue p {
+  display: inline-block;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .issue div, .issue ol, .issue li, .issue p {
     display: inline-block;
     vertical-align: top;
     padding: 0; }
 
 .issue__current {
-  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin: 0; }
 
 .issue__number {
   color: #f01b4d; }
+
+.issue__next,
+.issue__prev {
+  font-weight: bold;
+  font-size: 0.75em;
+  display: inline-block;
+  vertical-align: top; }
+
+.issue__next {
+  padding: 0 0 0 0.35rem; }
+
+.issue__prev {
+  padding: 0 0.35rem 0 0; }
 
 .main-menu {
   margin: 0;
@@ -2471,8 +2468,7 @@ iframe {
         flex: 0 0 14.28571%; } }
     .main-menu__list > li > a {
       display: block;
-      padding: 0.35rem 0.7rem;
-      font-weight: bold; }
+      padding: 0.35rem 0.7rem; }
       .main-menu__list > li > a {
         text-decoration: none; }
         .main-menu__list > li > a:hover, .main-menu__list > li > a:focus {
@@ -2482,11 +2478,9 @@ iframe {
       .main-menu__list > li > a:visited {
         color: #000; }
       .main-menu__list > li > a:focus, .main-menu__list > li > a:hover {
-        color: #000; }
+        color: #f01b4d; }
       .main-menu__list > li > a:active {
-        color: #000; }
-      .main-menu__list > li > a:focus, .main-menu__list > li > a:hover {
-        text-decoration: none; }
+        color: #f01b4d; }
       @media (min-width: 750px) and (max-width: 1000px) {
         .main-menu__list > li > a {
           font-size: 13px;
@@ -3976,6 +3970,88 @@ iframe {
 
 .articulo__fecha {
   font-weight: bold; }
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef8f5; }
+  @media (min-width: 640px) {
+    .login-page {
+      background-color: transparent; } }
+
+.login {
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #474849;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 17px;
+  line-height: 1.05rem;
+  margin: 0;
+  width: 100%; }
+  .login h1 {
+    color: #474849; }
+  .login input {
+    width: 100%; }
+  .login p {
+    margin-bottom: 0.7rem; }
+  .login .button, .login input[type=file] + label {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem; }
+  .login a:not(.button) {
+    text-decoration: underline;
+    background-color: transparent;
+    border-bottom: none;
+    padding-left: 0;
+    padding-right: 0; }
+    .login a:not(.button):after {
+      display: none; }
+    .login a:not(.button):hover, .login a:not(.button):focus {
+      text-decoration: none; }
+  .login a:not(.button), .login a:not(.button):link {
+    color: #474849; }
+  .login a:not(.button):visited {
+    color: #474849; }
+  .login a:not(.button):focus, .login a:not(.button):hover {
+    color: #f01b4d; }
+  .login a:not(.button):active {
+    color: #f01b4d; }
+  @media (min-width: 640px) {
+    .login {
+      min-width: 480px;
+      width: auto;
+      height: auto; } }
+
+.login__logo {
+  display: block;
+  text-align: center; }
+  @media (min-width: 640px) {
+    .login__logo {
+      text-align: left; }
+      .login__logo img {
+        height: 2.8rem; } }
+  .login__logo img {
+    height: 4.2rem;
+    display: inline-block; }
+
+.login__form {
+  text-align: center;
+  max-width: 250px;
+  margin: 1.4rem auto 0 auto; }
+  .login__form input {
+    margin-bottom: 1.4rem; }
+
+.login__ventajas {
+  margin-top: 2.8rem;
+  text-align: left; }
+
+.login__ventajas__title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 3px dotted #808080; }
 
 @media (min-width: 900px) {
   .m {
