@@ -2,6 +2,8 @@
 
 Si se necesitan cambios en la estructura HTML, se indica en negrita,
 
+# Ronda 1: portada y login
+
 - Se añaden varios subtipos de `.box` en forma de modificadores BEM (`.box--menta`, etc...).
 - Se añade un modificador `box--2xpadding` para duplicar el padding interno.
 - Se modifica el espacio blanco (whitespace) dentro de cada `.box`.
@@ -20,3 +22,7 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 - Añade la clase `.img-circle` para forzar el redondeado de imagenes cuadradas.
 - Añade la clase `.body--minimal` para tamaños de body enanos (util en teasers muy pequeños)
 - Creado un tipo especial de componente, `.mensaje`, para mensajes como el del top
+
+# Ronda 2: artículo
+
+- Se añade el bloque `.img-quote` para el nuevo caso de cita con imagen.

@@ -1,7 +1,6 @@
 .ademas {
     padding: $gutter 0;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
+    border-top: 2px solid $separator-color;
     margin-bottom: $articulo-spacer;
     .separator:first-child {
         margin-top:0;
@@ -9,7 +8,10 @@
 }
 
 .ademas__title {
-    @extend .autor;
+    font-weight:bold;
+    text-transform: uppercase;
+    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    font-family: $font-secondary;
 }
 
 .bloques {

@@ -1,0 +1,24 @@
+.comentarios {
+    @extend .ademas;
+}
+
+.comentarios__title {
+    @extend .h3;
+    margin:0;
+}
+
+.comentario {
+    border-bottom: 1px solid $separator-color;
+    padding-bottom: $gutter;
+    h1 {
+        @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+        font-weight:bold;
+        margin-bottom: $gutter / 2;
+    }
+    p {
+        margin-bottom: $gutter / 2;
+    }
+    .fecha {
+        margin-bottom:0;
+    }
+}

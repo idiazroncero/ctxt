@@ -1,0 +1,49 @@
+.sharer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    @include breakpoint($medium) {
+        top:50%;
+        bottom: auto;
+        right: auto;
+        transform:translateY(-50%);
+    }
+    ul {
+        margin:0;
+        padding:0;
+        display:flex;
+        @include breakpoint($medium) {
+            display:block;
+        }
+    }
+    li {
+        list-style-type:none;
+        background-color: $black;
+        margin:0;
+        display:inline-block;
+        flex:1 0 auto;
+        @include breakpoint($medium) {
+            display:block;
+        }
+    }
+    a {
+        display:block;
+        padding: $gutter / 2;
+        text-align:center;
+        &:hover, 
+        &:focus {
+            svg {
+                fill: get-color(base, primary);
+            }
+        }
+    }
+    svg {
+        width: auto;
+        height: $gutter / 1.5;
+        @include breakpoint($small) {
+            height: $gutter;
+        }
+        fill:$white;
+    }
+}

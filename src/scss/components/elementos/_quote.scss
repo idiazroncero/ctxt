@@ -6,7 +6,7 @@
         padding: $gutter / 2 $gutter / 2 $gutter / 2 $gutter * 2.5;
         @include ritmo-font-size($h3-font-size, 5);
         width: 45%;    
-        border-left: 1px solid $gray9;
+        border-left: 2px solid $separator-color;
         margin: 0 0 $gutter $gutter;
     }
     position:relative;
@@ -31,9 +31,77 @@
 .quote--full {
     float:none;
     width:100%;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
+    border-top: 1px solid $separator-color;
+    border-bottom: 1px solid $separator-color;
     border-left: none;
     margin: $gutter 0;
-    padding: $gutter / 2 $gutter $gutter / 2 $gutter * 3;
+    padding: $gutter $gutter * 2 $gutter $gutter * 3;
+}
+
+
+
+.img-quote {
+    @include breakpoint($small) {
+        display:flex;
+    }
+    padding: $gutter 0;
+    margin: $gutter 0;
+    border-top: 1px solid $separator-color;
+    border-bottom: 1px solid $separator-color;
+}
+
+.img-quote__img {
+    margin-bottom: $ts-margin / 2;
+    @include breakpoint($small) {
+        margin-bottom: 0;
+        padding-right: $col-gutter;
+    }
+    .imagen {
+        margin:0;
+    }
+    .imagen__caption {
+        display:block;
+        padding-bottom: 0;
+    }
+    .imagen__autor {
+        padding:0;
+    }
+}
+
+.img-quote__img,
+.img-quote__quote {
+    flex: 1 0 50%;
+}
+
+.img-quote__quote {
+    @include ritmo-font-size($h4-font-size, 4);
+    padding: $gutter / 2 $gutter * 2 $gutter / 2 $gutter * 2.25;
+    @include breakpoint($small) {
+        padding: $gutter / 2 $gutter * 2 $gutter / 2 $gutter * 2;
+        display:flex;
+        align-items:center;
+    }
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h3-font-size, 4);
+    }
+    @include breakpoint($large) {
+        @include ritmo-font-size($h2-font-size, 6);
+    }
+    position:relative;
+    &:before {
+        content:"“";
+        font-size: 8rem;
+        line-height: 0.5;
+        position:absolute;
+        top:$gutter;
+        left:-$gutter * 0.33;
+    }
+    &:after {
+        content:"”";
+        font-size: 8rem;
+        line-height: 0.5;
+        position:absolute;
+        bottom:-$gutter * 2;
+        right:0;
+    }
 }

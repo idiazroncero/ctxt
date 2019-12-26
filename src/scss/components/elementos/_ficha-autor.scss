@@ -7,13 +7,13 @@
 
 .ficha-autor__category {
     text-transform: uppercase;
-    margin:0;
+    margin-bottom: $gutter / 2;
 }
 
 .ficha-autor__ficha{
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
-    padding: $gutter / 2 0;    
+    border-top: 2px solid $separator-color;
+    border-bottom: 2px solid $separator-color;
+    padding: $gutter 0;    
     text-align:center;
     @include breakpoint($small) {
         text-align:left;

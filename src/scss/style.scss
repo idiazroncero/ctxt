@@ -1,4 +1,5 @@
 @import "./node_modules/huesos/dependencies";
+@import "./node_modules/flickity/css/flickity";
 @import "config";
 @import "huesos";
 
@@ -22,6 +23,8 @@
 @import "components/elementos/ademas";
 @import "components/elementos/mensaje";
 @import "components/elementos/ads";
+@import "components/elementos/comentarios";
+@import "components/elementos/sharer";
 
 @import "components/teaser/flotante";
 @import "components/teaser/mitad";

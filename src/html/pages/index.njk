@@ -12,7 +12,7 @@
             <img src="http://placehold.it/150x40.jpg" alt="Patrocinador">
         </div>
     </div>
-    <section class="box">
+    <section class="box box--vacio">
         <header class="section section--border-all">
             <div class="section__category">
                 Bloque maestro
@@ -31,7 +31,7 @@
             </div>
             <div class="ts-flex__textos">
                 <h1 class="h1">
-                    Nigel Farage le regala a Boris Johnson el trono del populismo británico
+                    <a href="articulo">Nigel Farage le regala a Boris Johnson el trono del populismo británico</a>
                 </h1>
                 <p class="body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
@@ -149,7 +149,7 @@
                         <img src="http://placehold.it/2000x1000.jpg" alt="Imagen">
                     </div>
                     <h1>
-                        <a href="articulo.html">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
+                        <a href="articulo">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
                     </h1>
                     <p class="body">
                         El liderl laborista muestra que Theresa May negoció con EEUU la inclusión del sistema de salud en las negociaciones comerciales tras el acuerdo del Brexit y asegura que Johnson también lo hará.
@@ -653,7 +653,7 @@
 
     <div class="col2 col2--gutter">
         <div class="col">
-            <section class="box box--vacio">
+            <section class="box box--blanco">
                 <header class="section">
                     <h1 class="section__category">
                         Firmas
@@ -874,67 +874,7 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="footer__info">
-            <img src="https://placehold.it/250x125/fff/000.jpg" alt="Imagen">
-            <p class="footer__desc">
-                CTXT es un medio independiente <br>
-                y crítico formado por periodistas <br>
-                con experiencia en grandes <br>
-                medios europeos
-            </p>
-            <div class="footer__rrss">
-                <p>Síguenos</p>
-                <ul>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
-                </ul>
-            </div>
-            <div class="footer__newsletter">
-                <p>Suscríbete a nuestra newsletter </p>
-                <form action="#">
-                    <input type="email" name="email" id="email" placeholder="tu@email.com">
-                    <input type="submit" value="enviar" class="button button--primary--bg">
-                </form>
-            </div>
-            <div class="footer__menu">
-                <ul>
-                    <li><a href="#">Política de Cookies</a></li>
-                    <li><a href="#">Quienes Somos / Cuentas 2018</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Licencia Creative Commons</a></li>
-                    <li><a href="#">Correo: info@ctxt.es</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__medios">
-            <div class="footer__medios__title">Medios asociados</div>
-            <div class="footer__medios__row">
-                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
-                <img src="http://placehold.it/200x200/000/fff.jpg" alt="">
-                <img src="http://placehold.it/400x150/000/fff.jpg" alt="">
-            </div>
-        </div>
-        <div class="footer__medios">
-            <div class="footer__medios__title">Medios amigos</div>
-            <div class="footer__medios__row">
-                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
-                <img src="http://placehold.it/200x100/000/fff.jpg" alt="">
-                <img src="http://placehold.it/400x300/000/fff.jpg" alt="">
-                <img src="http://placehold.it/350x130/000/fff.jpg" alt="">
-                <img src="http://placehold.it/100x250/000/fff.jpg" alt="">
-                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
-                <img src="http://placehold.it/400x300/000/fff.jpg" alt="">
-                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
-            </div>
-        </div>
-        <p class="m0 font-secondary up">(c)Revista Contexto, S.L. / Madrid / España/ info@ctxt.es</p>
-    </footer>
+    {% include 'partials/footer.njk' %}
 
     {#
      #
@@ -1003,6 +943,20 @@
                 </div>
             </header>
         </div>
+        <div class="box box--blanco">
+            <header class="section">
+                <div class="section__category">
+                    Ejemplo
+                </div>
+                <div class="section__patrocinador">
+                    <img src="http://placehold.it/150x50.jpg" alt="Patrocinador">
+                </div>
+                <div class="section__title__wrapper">
+                    <h1 class="section__title">Box blanco</h1>
+                    <p class="section__subtitle">Fondo blanco, mantiene espaciado interno. El fondo solo será visible si contrasta contra un fondo de otro color</p>
+                </div>
+            </header>
+        </div>
         <div class="box box--hueso">
             <header class="section">
                 <div class="section__category">
@@ -1017,7 +971,7 @@
                 </div>
             </header>
         </div>
-        <div class="box box--vacio">
+        <div class="box box--blanco">
             <header class="section">
                 <div class="section__category">
                     Ejemplo
@@ -1027,7 +981,7 @@
                 </div>
                 <div class="section__title__wrapper">
                     <h1 class="section__title">Box vacío</h1>
-                    <p class="section__subtitle">Un tipo de box especial sin fondo ni borde pero que mantiene el espaciado interno y externo</p>
+                    <p class="section__subtitle">Un tipo de box especial sin borde pero que mantiene el fondo blanco y la distancia con el resto de elementos</p>
                 </div>
             </header>
         </div>

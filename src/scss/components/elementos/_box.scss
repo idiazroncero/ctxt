@@ -2,6 +2,7 @@
     border: 1px solid $separator-color;
     padding: $gutter;
     margin-bottom: $box-margin;
+    background-color: $white;
     @include breakpoint($medium) {
         margin-bottom: $box-margin;
     }
@@ -19,6 +20,7 @@
 
     &.box--vacio {
         border:none;
+        padding: 0;
     }
 
     &.box--2xpadding {
@@ -77,7 +79,7 @@
 
 .box--tab {
     position:relative;
-    margin-top: $gutter * 1.5;
+    margin-top: $gutter + ritmo(5);
 
     @each $name, $color in $ctxt-colors {
         &.box--tab--#{$name} {
@@ -115,6 +117,7 @@
     height: ritmo(5);
     font-family: $futura;
     font-weight:bold;
+    font-size: ritmo(2.5);
     text-transform: uppercase;
     &:before {
         content:"";

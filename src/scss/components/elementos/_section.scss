@@ -21,11 +21,11 @@
             justify-content:center;
         }
     }
+    
     .articulo & {
-        border-bottom: none;
-        @include ritmo-top-border(1px, $lines:4);
-        border-top-style: solid;
-        border-top-color: $separator-color;
+        border-top: 2px solid $separator-color;
+        padding-top: $gutter;
+        @extend .section--border-none;
         padding-bottom:0;
         .section__title {
             font-weight:bold;
@@ -136,7 +136,7 @@
     text-align:center;
     max-width: 760px;
     max-width: 75ch;
-    margin: 0 auto $gutter auto;
+    margin: $gutter auto;
 }
 
 .section__patrocinador {
