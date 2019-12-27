@@ -1,0 +1,169 @@
+.page-seccion {
+    // Overrides sobre elementos ya existentes.
+    .section {
+        @extend .section--border-none;
+    }
+    .section__subtitle {
+        @extend .section__subtitle--gris;
+    }
+    .section__category {
+        color: $white;
+        background-color: $gray8;
+        padding: $gutter / 2 $gutter $gutter / 2 $gutter;
+        @include ritmo-font-size($h5-font-size, 3);
+        position:relative;
+        left: -$gutter;
+        a {
+            @include set-link(
+                $white,
+                $white,
+                $black,
+                $black,
+                false,
+                false
+            )
+        }
+        &:after {
+            display:none;
+        }
+        .section__decoration {
+            position:absolute;
+            top:0;
+            left: 100%;
+            width:50%;
+            height:100%;
+            overflow:hidden;
+            &:before {
+                content:"";
+                width: 200%;
+                height: 100%;
+                position: absolute;
+                transform: rotate(-75deg);
+                background-color: $gray8;
+                transform-origin: 0% 100%;
+            }
+        }
+        // &:before {
+        //     content:"";
+        //     position:absolute;
+        //     top:0;
+        //     left: 100%;
+        //     width:0;
+        //     height:0;
+        //     border-width: ritmo(3) ritmo(1);
+        //     border-style:solid;
+        //     border-color: $gray8 transparent transparent $gray8;
+        // }
+    }
+    .box {
+        position:relative;
+        overflow:hidden;
+    }
+}
+
+.nav-lateral {
+    position:absolute;
+    top: $gutter;
+    right:0;
+    transform: translateX( calc(100% - (#{$gutter} * 2) ) );
+    margin:0;
+    padding: $gutter / 2 $gutter $gutter / 2 $gutter * 2;
+    border: 1px solid $separator-color;
+    border-right:none;
+    min-height: 140px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        transform: translateX(0%);
+    }
+}
+
+.nav-lateral__title {
+    cursor:pointer;
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+    text-transform: uppercase;
+    position:absolute;
+    bottom:50%;
+    left:0;
+    margin:0;
+    transform: rotate(-90deg) translate(-50%, 150%);
+    transform-origin: 0 100%;
+    font-family: $futura;
+}
+
+.nav-lateral__menu {
+    margin:0;
+    padding:0;
+    font-family: $roboto;
+    li {
+        margin:0;
+    }
+    a {
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        @include set-link(
+            $black,
+            $black, 
+            get-color(base, primary),
+            get-color(base, primary),
+            false,
+            false
+        )
+    }
+}
+
+.scroll-list__wrapper {
+    position:relative;
+}
+
+.scroll-list__header {
+    position:sticky;
+    top:0px;
+    @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    text-align:center;
+    border-bottom: 3px dotted $separator-color;
+    z-index: 9;
+    padding-bottom: $gutter / 2;
+    margin-bottom: $gutter;
+    .box & {
+        background-color: $white;
+    }
+    @each $name, $color in $ctxt-colors {
+        .box--#{$name} & {
+            background-color: $color;
+        }
+    }
+}
+
+.scroll-list {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    padding-left: $gutter;
+    // overflow:scroll;
+    ul {
+        @include inline-list();
+    }
+}
+
+.scroll-list__item {
+    
+}
+
+
+.scroll-list__subtitulo {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    color: $gray;
+    @include ritmo-font-size($h6-font-size, 2);
+    margin-bottom: $gutter / 4;
+    font-weight:bold;
+}
+
+.scroll-list__title {
+    @include ritmo-font-size($h5-font-size, 3);
+    margin:0,
+}

@@ -44,6 +44,46 @@
         padding-left: $gutter;
     }
 
+    .p2 {
+        padding: $gutter * 2;
+    }
+
+    .pt2 {
+        padding-top: $gutter * 2;
+    }
+
+    .pr2 {
+        padding-right: $gutter * 2;
+    }
+
+    .pb2 {
+        padding-bottom: $gutter * 2;
+    }
+
+    .pl2 {
+        padding-left: $gutter * 2;
+    }
+
+    .p3 {
+        padding: $gutter * 3;
+    }
+
+    .pt3 {
+        padding-top: $gutter * 3;
+    }
+
+    .pr3 {
+        padding-right: $gutter * 3;
+    }
+
+    .pb3 {
+        padding-bottom: $gutter * 3;
+    }
+
+    .pl3 {
+        padding-left: $gutter * 3;
+    }
+
     .p0 {
         padding:0;
     }

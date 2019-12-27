@@ -1,6 +1,7 @@
 import Flickity from 'flickity';
 import FlickityImagesLoaded from 'flickity-imagesloaded';
 import jQueryBridget from 'jquery-bridget';
+import SimpleBar from 'simplebar';
 
 // make Flickity a jQuery plugin
 Flickity.setJQuery( $ );
@@ -8,6 +9,14 @@ jQueryBridget('flickity', Flickity, $ );
 
 
 $(function(){
+
+    $('.scroll-list').each(function(index, item){
+      new SimpleBar($(item)[0], {
+        autoHide: false,
+        forceVisible: 'y'
+      });
+    });
+
     $('.menu-toggle').click(function(){
       var $menu = $(this).parent('.main-menu');
       $menu.toggleClass('main-menu--open');

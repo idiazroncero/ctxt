@@ -120,6 +120,198 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1; }
 
+[data-simplebar] {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start; }
+
+.simplebar-wrapper {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  max-width: inherit;
+  max-height: inherit; }
+
+.simplebar-mask {
+  direction: inherit;
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: auto !important;
+  height: auto !important;
+  z-index: 0; }
+
+.simplebar-offset {
+  direction: inherit !important;
+  box-sizing: inherit !important;
+  resize: none !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch; }
+
+.simplebar-content-wrapper {
+  direction: inherit;
+  box-sizing: border-box !important;
+  position: relative;
+  display: block;
+  height: 100%;
+  /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+  visibility: visible;
+  max-width: 100%;
+  /* Not required for horizontal scroll to trigger */
+  max-height: 100%;
+  /* Needed for vertical scroll to trigger */
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
+.simplebar-content-wrapper::-webkit-scrollbar,
+.simplebar-hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0; }
+
+.simplebar-content:before,
+.simplebar-content:after {
+  content: ' ';
+  display: table; }
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  pointer-events: none; }
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  height: 100%;
+  width: 100%;
+  max-width: 1px;
+  position: relative;
+  float: left;
+  max-height: 1px;
+  overflow: hidden;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  flex-basis: 0; }
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000%;
+  width: 1000%;
+  min-height: 1px;
+  min-width: 1px;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1; }
+
+.simplebar-track {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden; }
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none; }
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all; }
+
+.simplebar-scrollbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  min-height: 10px; }
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: '';
+  background: black;
+  border-radius: 7px;
+  left: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity 0.2s linear; }
+
+.simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  transition: opacity 0s linear; }
+
+.simplebar-track.simplebar-vertical {
+  top: 0;
+  width: 11px; }
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 2px;
+  bottom: 2px; }
+
+.simplebar-track.simplebar-horizontal {
+  left: 0;
+  height: 11px; }
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+  height: 100%;
+  left: 2px;
+  right: 2px; }
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+  right: auto;
+  left: 0;
+  top: 2px;
+  height: 7px;
+  min-height: 0;
+  min-width: 10px;
+  width: auto; }
+
+/* Rtl support */
+[data-simplebar-direction='rtl'] .simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0; }
+
+.hs-dummy-scrollbar-size {
+  direction: rtl;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  height: 500px;
+  width: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll; }
+
+.simplebar-hide-scrollbar {
+  position: fixed;
+  left: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
 @font-face {
   font-family: 'Roboto';
   src: url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff");
@@ -2855,7 +3047,7 @@ iframe {
   width: 100%;
   padding-bottom: 1.4rem;
   border-bottom: 3px dotted #CCCCCC; }
-  .section--border-none .section__title__wrapper, .articulo .section .section__title__wrapper {
+  .section--border-none .section__title__wrapper, .articulo .section .section__title__wrapper, .page-seccion .section .section__title__wrapper {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0; }
@@ -2915,7 +3107,7 @@ iframe {
       line-height: 22px;
       line-height: 1.4rem; } }
 
-.section__subtitle--gris {
+.section__subtitle--gris, .page-seccion .section__subtitle {
   color: #a3a3a3; }
 
 .section__body {
@@ -3049,8 +3241,7 @@ iframe {
 .box, .bloque {
   border: 1px solid #CCCCCC;
   padding: 1.4rem;
-  margin-bottom: 2.8rem;
-  background-color: #fff; }
+  margin-bottom: 2.8rem; }
   @media (min-width: 900px) {
     .box, .bloque {
       margin-bottom: 2.8rem; } }
@@ -4324,6 +4515,168 @@ iframe {
   margin-bottom: 0.7rem;
   border-bottom: 3px dotted #808080; }
 
+.page-seccion .section__category {
+  color: #fff;
+  background-color: #474849;
+  padding: 0.7rem 1.4rem 0.7rem 1.4rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 17px;
+  line-height: 1.05rem;
+  position: relative;
+  left: -1.4rem; }
+  .page-seccion .section__category a {
+    text-decoration: none; }
+    .page-seccion .section__category a:hover, .page-seccion .section__category a:focus {
+      text-decoration: none; }
+  .page-seccion .section__category a, .page-seccion .section__category a:link {
+    color: #fff; }
+  .page-seccion .section__category a:visited {
+    color: #fff; }
+  .page-seccion .section__category a:focus, .page-seccion .section__category a:hover {
+    color: #000; }
+  .page-seccion .section__category a:active {
+    color: #000; }
+  .page-seccion .section__category:after {
+    display: none; }
+  .page-seccion .section__category .section__decoration {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden; }
+    .page-seccion .section__category .section__decoration:before {
+      content: "";
+      width: 200%;
+      height: 100%;
+      position: absolute;
+      transform: rotate(-75deg);
+      background-color: #474849;
+      transform-origin: 0% 100%; }
+
+.page-seccion .box, .page-seccion .bloque {
+  position: relative;
+  overflow: hidden; }
+
+.nav-lateral {
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  transform: translateX(calc(100% - (1.4rem * 2)));
+  margin: 0;
+  padding: 0.7rem 1.4rem 0.7rem 2.8rem;
+  border: 1px solid #CCCCCC;
+  border-right: none;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease-in-out; }
+  .nav-lateral:hover {
+    transform: translateX(0%); }
+
+.nav-lateral__title {
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  margin: 0;
+  transform: rotate(-90deg) translate(-50%, 150%);
+  transform-origin: 0 100%;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.nav-lateral__menu {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .nav-lateral__menu li {
+    margin: 0; }
+  .nav-lateral__menu a {
+    font-size: 13px;
+    font-size: 0.8rem;
+    line-height: 17px;
+    line-height: 1.05rem; }
+    .nav-lateral__menu a {
+      text-decoration: none; }
+      .nav-lateral__menu a:hover, .nav-lateral__menu a:focus {
+        text-decoration: none; }
+    .nav-lateral__menu a, .nav-lateral__menu a:link {
+      color: #000; }
+    .nav-lateral__menu a:visited {
+      color: #000; }
+    .nav-lateral__menu a:focus, .nav-lateral__menu a:hover {
+      color: #f01b4d; }
+    .nav-lateral__menu a:active {
+      color: #f01b4d; }
+
+.scroll-list__wrapper {
+  position: relative; }
+
+.scroll-list__header {
+  position: sticky;
+  top: 0px;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+  text-align: center;
+  border-bottom: 3px dotted #CCCCCC;
+  z-index: 9;
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.4rem; }
+  .box .scroll-list__header, .bloque .scroll-list__header {
+    background-color: #fff; }
+  .box--blanco .scroll-list__header {
+    background-color: #fff; }
+  .box--hueso .scroll-list__header {
+    background-color: #f4f1e5; }
+  .box--gris-oscuro .scroll-list__header {
+    background-color: #474849; }
+  .box--gris-claro .scroll-list__header {
+    background-color: #f2f2f2; }
+  .box--menta .scroll-list__header {
+    background-color: #eef8f5; }
+
+.scroll-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-left: 1.4rem; }
+  .scroll-list ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    .scroll-list ul li {
+      list-style-type: none;
+      display: inline-block; }
+
+.scroll-list__subtitulo {
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 11px;
+  line-height: 0.7rem;
+  margin-bottom: 0.35rem;
+  font-weight: bold; }
+
+.scroll-list__title {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 17px;
+  line-height: 1.05rem;
+  margin: 0; }
+
 @media (min-width: 900px) {
   .m {
     margin: 1.4rem; }
@@ -4347,6 +4700,26 @@ iframe {
     padding-bottom: 1.4rem; }
   .pl {
     padding-left: 1.4rem; }
+  .p2 {
+    padding: 2.8rem; }
+  .pt2 {
+    padding-top: 2.8rem; }
+  .pr2 {
+    padding-right: 2.8rem; }
+  .pb2 {
+    padding-bottom: 2.8rem; }
+  .pl2 {
+    padding-left: 2.8rem; }
+  .p3 {
+    padding: 4.2rem; }
+  .pt3 {
+    padding-top: 4.2rem; }
+  .pr3 {
+    padding-right: 4.2rem; }
+  .pb3 {
+    padding-bottom: 4.2rem; }
+  .pl3 {
+    padding-left: 4.2rem; }
   .p0 {
     padding: 0; }
   .b {
@@ -4443,6 +4816,26 @@ iframe {
 
 .sh {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1); }
+
+.simplebar-track.simplebar-vertical {
+  right: auto;
+  left: 0; }
+  .simplebar-track.simplebar-vertical:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: #CCCCCC; }
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  top: 10px;
+  bottom: 10px;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid #a7a7a7;
+  background-color: #f2f2f2; }
 
 #numeros div {
   display: inline-block; }

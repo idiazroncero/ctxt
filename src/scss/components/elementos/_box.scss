@@ -2,7 +2,6 @@
     border: 1px solid $separator-color;
     padding: $gutter;
     margin-bottom: $box-margin;
-    background-color: $white;
     @include breakpoint($medium) {
         margin-bottom: $box-margin;
     }

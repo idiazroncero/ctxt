@@ -1,0 +1,444 @@
+<!-- index.nunjucks -->
+{% extends "layouts/layout.njk" %}
+
+{% block content%}
+
+<div id="main-wrapper" class="page-seccion">
+
+    {% include "partials/header.njk" %}
+
+    <div class="box box--gris-claro">
+        <header class="section">
+            <div class="section__category">
+                Internacional<br>
+                en una o varias <br>
+                lineas
+                <div class="section__decoration"></div>
+            </div>
+            <div class="section__title__wrapper">
+                <h1 class="section__title">Lorem Ipsum</h1>
+                <p class="section__subtitle">Europa contra sí misma</p>
+            </div>
+        </header>
+        <nav class="nav-lateral">
+            <h1 class="nav-lateral__title">Política</h1>
+            <ul class="nav-lateral__menu">
+                <li><a href="#">Internacional</a></li>
+                <li><a href="#">España</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Comunicación</a></li>
+            </ul>
+        </nav>
+        <article class="ts ts-flex ts-flex--expanded">
+            <div class="ts-flex__img">
+                <img src="http://placehold.it/500x300.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-flex__textos">
+                <h1 class="h2">
+                    <a href="articulo">Nigel Farage le regala a Boris Johnson el trono del populismo británico</a>
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <p class="autor">
+                    <span>Pablo Casado</span>
+                    <span class="fecha">Madrid, 18/01/2018</span>
+                </p>
+            </div>
+        </article>
+        <div class="box">
+            <article class="ts ts-flex ts-flex--inverse m0">
+                <div class="ts-flex__textos">
+                    <p class="subtitle">Lorem Ipsum</p>
+                    <h1 class="h2">Lorem ipsum dolor BREXIT</h1>
+                    <p class="body body--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, maxime doloribus! Praesentium esse ut unde nobis assumenda, optio quam molestias cupiditate omnis, velit ipsa aperiam quae qui soluta, incidunt eos?</p>
+                    <p class="autor">
+                        CTXT
+                        <span class="fecha">Madrid, 18 de Brumario</span>
+                    </p> 
+                </div>
+                <div class="ts-flex__img">
+                    <img src="http://placehold.it/500x250.jpg" alt="Imagen">
+                </div>
+            </article>
+        </div> {# endbox #}
+        <div class="flex">
+            <div class="flex-66 pr2">
+                <div class="col2 col2--gutter">
+                    <div class="col">
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x200.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                El liderl laborista muestra que Theresa May negoció con EEUU la inclusión del sistema de salud en las negociaciones comerciales tras el acuerdo del Brexit y asegura que Johnson también lo hará.
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x300.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Corbyn acusa a Johnson</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                El liderl laborista muestra que Theresa May negoció con EEUU 
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x300.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Sistema de salud británico a Estados Unidos</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x300.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                El liderl laborista muestra que Theresa May negoció con EEUU la inclusión del sistema de salud en las negociaciones comerciales tras el acuerdo del Brexit y asegura que Johnson también lo hará.
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex-33 scroll-list__wrapper">
+                <div class="scroll-list">
+                    <div class="scroll-list__header">Más en internacional</div>
+                    <ul>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>                                                                                                                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <header class="section">
+            <div class="section__category">
+                Internacional<br>
+                en una o varias <br>
+                lineas
+                <div class="section__decoration"></div>
+            </div>
+            <div class="section__title__wrapper">
+                <h1 class="section__title">Lorem Ipsum</h1>
+                <p class="section__subtitle">Europa contra sí misma</p>
+            </div>
+        </header>
+        <nav class="nav-lateral">
+            <h1 class="nav-lateral__title">Política</h1>
+            <ul class="nav-lateral__menu">
+                <li><a href="#">Internacional</a></li>
+                <li><a href="#">España</a></li>
+                <li><a href="#">Economía</a></li>
+                <li><a href="#">Comunicación</a></li>
+            </ul>
+        </nav>
+        <article class="ts ts-flex ts-flex--expanded">
+            <div class="ts-flex__img">
+                <img src="http://placehold.it/500x300.jpg" alt="Imagenes">
+            </div>
+            <div class="ts-flex__textos">
+                <h1 class="h2">
+                    <a href="articulo">Nigel Farage le regala a Boris Johnson el trono del populismo británico</a>
+                </h1>
+                <p class="body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, libero ipsum facere quod fuga minus repellat quibusdam voluptas magnam sequi dolorem vero eius nam architecto adipisci veniam sunt sint. Optio!
+                </p>
+                <p class="autor">
+                    <span>Pablo Casado</span>
+                    <span class="fecha">Madrid, 18/01/2018</span>
+                </p>
+            </div>
+        </article>
+        <div class="box">
+            <article class="ts ts-flex ts-flex--inverse m0">
+                <div class="ts-flex__textos">
+                    <p class="subtitle">Lorem Ipsum</p>
+                    <h1 class="h2">Lorem ipsum dolor BREXIT</h1>
+                    <p class="body body--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, maxime doloribus! Praesentium esse ut unde nobis assumenda, optio quam molestias cupiditate omnis, velit ipsa aperiam quae qui soluta, incidunt eos?</p>
+                    <p class="autor">
+                        CTXT
+                        <span class="fecha">Madrid, 18 de Brumario</span>
+                    </p> 
+                </div>
+                <div class="ts-flex__img">
+                    <img src="http://placehold.it/500x250.jpg" alt="Imagen">
+                </div>
+            </article>
+        </div> {# endbox #}
+        <div class="flex">
+            <div class="flex-66 pr2">
+                <div class="col2 col2--gutter">
+                    <div class="col">
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x200.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                El liderl laborista muestra que Theresa May negoció con EEUU la inclusión del sistema de salud en las negociaciones comerciales tras el acuerdo del Brexit y asegura que Johnson también lo hará.
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x300.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Corbyn acusa a Johnson</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                El liderl laborista muestra que Theresa May negoció con EEUU 
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x300.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Sistema de salud británico a Estados Unidos</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                        <article class="ts ts-vertical ts--reducido">
+                            <div class="ts-vertical__img">
+                                <img src="http://placehold.it/500x300.jpg" alt="Imagen">
+                            </div>
+                            <h1 class="h4">
+                                <a href="articulo">Corbyn acusa a Johnson de querer vender el sistema de salud británico a Estados Unidos</a>
+                            </h1>
+                            <p class="body body--minimal">
+                                El liderl laborista muestra que Theresa May negoció con EEUU la inclusión del sistema de salud en las negociaciones comerciales tras el acuerdo del Brexit y asegura que Johnson también lo hará.
+                            </p>
+                            <p class="autor">
+                                Guillem Martínez
+                                <span class="fecha">Londres, 12/11/2016</span>
+                            </p> 
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex-33 scroll-list__wrapper">
+                <div class="scroll-list">
+                    <div class="scroll-list__header">Más en internacional</div>
+                    <ul>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">"Necesitamos una grand red de solidaridad es para combatir el capitalismo y la destrucción del planeta"</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">El vicio del capitalismo</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>
+                        <li class="scroll-list__item">
+                            <p class="scroll-list__subtitulo">Lorem Ipsum</p>
+                            <h1 class="scroll-list__title"><a href="">¿Un New Green Deal para España?</a></h1>
+                            <p class="autor">Walter Oppenheimer <span class="fecha">18/04/1986</span></p>
+                        </li>                                                                                                                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'partials/footer.njk' %}
+
+</div> <!-- MAIN WRAPPER -->
+
+{% endblock %}

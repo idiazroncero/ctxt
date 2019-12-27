@@ -1,5 +1,6 @@
 @import "./node_modules/huesos/dependencies";
 @import "./node_modules/flickity/css/flickity";
+@import "./node_modules/simplebar/src/simplebar";
 @import "config";
 @import "huesos";
 
@@ -37,9 +38,12 @@
 
 @import "components/pages/articulo";
 @import "components/pages/login";
+@import "components/pages/seccion";
 
 // Utility classes. Allow them to override the rest.
 @import "overrides/huesitos";
+// Custom simplebar
+@import "overrides/simplebar";
 
 
 @import "adapt";
