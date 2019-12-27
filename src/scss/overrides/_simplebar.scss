@@ -20,3 +20,9 @@
     border: 1px solid $gray5;
     background-color: $gray0;
 }
+
+.scroll-list:hover .simplebar-scrollbar:before {
+    border-color: $gray5;
+    background-color: $gray5;
+}
+

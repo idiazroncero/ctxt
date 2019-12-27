@@ -68,8 +68,8 @@
     transform: translateX( calc(100% - (#{$gutter} * 2) ) );
     margin:0;
     padding: $gutter / 2 $gutter $gutter / 2 $gutter * 2;
-    border: 1px solid $separator-color;
-    border-right:none;
+    border-top: 1px solid $separator-color;
+    border-bottom: 1px solid $separator-color;
     min-height: 140px;
     display:flex;
     flex-direction:column;
@@ -77,6 +77,38 @@
     transition: all 0.5s ease-in-out;
     &:hover {
         transform: translateX(0%);
+    }
+}
+
+$ratio: 53.25%;
+.nav-lateral__flecha {
+    position:absolute;
+    top:-2px;
+    bottom:-2px;
+    right: 100%;
+    width: $gutter * 2;
+    overflow:hidden;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 50%;
+        height: $ratio;
+        border-left: 1px solid $separator-color;
+        transform-origin: 0 0;
+        transform: rotate(20deg);
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+        width: 50%;
+        height: $ratio;
+        border-left: 1px solid $separator-color;
+        transform-origin: 0% 100%;
+        transform: rotate(-20deg);
     }
 }
 
