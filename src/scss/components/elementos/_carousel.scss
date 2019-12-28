@@ -1,5 +1,23 @@
 .carousel {
     max-width:100%;
+    position: relative;
+    &.carousel--flechas {
+        .carousel__prev {
+            position:absolute;
+            left: 0;
+            top: 50%;
+            font-size: $gutter * 1.5;
+        }
+        .carousel__next {
+            position:absolute;
+            right: 0;
+            top: 50%;
+            font-size: $gutter * 1.5;
+        }
+        .carousel__slides {
+            margin: 0 $gutter * 3 $gutter $gutter * 3;
+        }
+    }
 }
 
 .carousel__slides {

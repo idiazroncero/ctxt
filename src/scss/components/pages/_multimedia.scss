@@ -1,0 +1,35 @@
+.vineta {
+    text-align:center;
+
+}
+
+.vineta__caption {
+    padding-top: $gutter / 2;
+    @include breakpoint($small) {
+        display:flex;   
+    }
+    .autor,
+    .fecha {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
+}
+
+.vineta__title {
+    margin-left: auto;
+    margin-bottom:0;
+    font-style: italic;
+    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+}
+
+.vineta--small {
+    padding-top: $gutter / 2;
+    .vineta__title {
+        @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+    }
+    .autor,
+    .fecha {
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        display:block;
+        margin:0;
+    }
+}
