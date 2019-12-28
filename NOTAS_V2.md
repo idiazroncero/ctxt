@@ -26,7 +26,7 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 # Ronda 2: artículo y sección
 
 - Se añade el bloque `.img-quote` para el nuevo caso de cita con imagen.
-- Se añade la clase `.page-seccion` que, aplicada a la página o al `#main-wrapper`, produce los cambios de estilo necesarios en elementos como las `.section__category`, entre otros (de este modo no hay que cambiar tanto HTML).
+- Se añade la clase modificadora `.box--seccion` que, aplicado a un `.box`, produce los cambios de estilo necesarios en secciones en elementos como las `.section__category`, entre otros.
 - Se añade el `.section__decorator` para añadir una cenefa triangular a `.section__category`. **Requiere cambios en HTML**
 - Añade elemento `.nav-lateral` para un menú que se despliega desde la derecha en seccion.
 - Añade elemento `.scroll-list` para lista scrollable de items en secciones

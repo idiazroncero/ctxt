@@ -2549,7 +2549,8 @@ iframe {
 
 .img-circle {
   border-radius: 50%;
-  overflow: hidden; }
+  overflow: hidden;
+  display: inline-block; }
 
 .header {
   margin-bottom: 1.4rem; }
@@ -3047,7 +3048,7 @@ iframe {
   width: 100%;
   padding-bottom: 1.4rem;
   border-bottom: 3px dotted #CCCCCC; }
-  .section--border-none .section__title__wrapper, .articulo .section .section__title__wrapper, .page-seccion .section .section__title__wrapper {
+  .section--border-none .section__title__wrapper, .articulo .section .section__title__wrapper, .box--seccion .section .section__title__wrapper {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0; }
@@ -3107,7 +3108,7 @@ iframe {
       line-height: 22px;
       line-height: 1.4rem; } }
 
-.section__subtitle--gris, .page-seccion .section__subtitle {
+.section__subtitle--gris, .box--seccion .section__subtitle {
   color: #a3a3a3; }
 
 .section__body {
@@ -3803,13 +3804,11 @@ iframe {
   border-bottom: 1px solid #000; }
 
 .bloque__list {
-  margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap; }
+  margin: 0; }
   .bloque__list li {
-    list-style-type: none;
-    display: inline-block; }
+    display: block;
+    list-style-type: none; }
 
 .bloque__item {
   display: block;
@@ -4515,51 +4514,56 @@ iframe {
   margin-bottom: 0.7rem;
   border-bottom: 3px dotted #808080; }
 
-.page-seccion .section__category {
-  color: #fff;
-  background-color: #474849;
-  padding: 0.7rem 1.4rem 0.7rem 1.4rem;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 17px;
-  line-height: 1.05rem;
-  position: relative;
-  left: -1.4rem; }
-  .page-seccion .section__category a {
-    text-decoration: none; }
-    .page-seccion .section__category a:hover, .page-seccion .section__category a:focus {
-      text-decoration: none; }
-  .page-seccion .section__category a, .page-seccion .section__category a:link {
-    color: #fff; }
-  .page-seccion .section__category a:visited {
-    color: #fff; }
-  .page-seccion .section__category a:focus, .page-seccion .section__category a:hover {
-    color: #000; }
-  .page-seccion .section__category a:active {
-    color: #000; }
-  .page-seccion .section__category:after {
-    display: none; }
-  .page-seccion .section__category .section__decoration {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 50%;
-    height: 100%;
-    overflow: hidden; }
-    .page-seccion .section__category .section__decoration:before {
-      content: "";
-      width: 200%;
-      height: 100%;
-      position: absolute;
-      transform: rotate(-75deg);
-      background-color: #474849;
-      transform-origin: 0% 100%; }
-
-.page-seccion .box, .page-seccion .bloque {
+.box--seccion {
   position: relative;
   overflow: hidden; }
+  .box--seccion .section__category {
+    color: #fff;
+    background-color: #474849;
+    padding: 0.7rem 1.4rem 0.7rem 1.4rem;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 17px;
+    line-height: 1.05rem;
+    position: relative;
+    margin-right: 0.7rem; }
+    @media (min-width: 640px) {
+      .box--seccion .section__category {
+        margin-right: 0;
+        left: -1.4rem;
+        max-width: 200px; } }
+    .box--seccion .section__category a {
+      text-decoration: none; }
+      .box--seccion .section__category a:hover, .box--seccion .section__category a:focus {
+        text-decoration: none; }
+    .box--seccion .section__category a, .box--seccion .section__category a:link {
+      color: #fff; }
+    .box--seccion .section__category a:visited {
+      color: #fff; }
+    .box--seccion .section__category a:focus, .box--seccion .section__category a:hover {
+      color: #000; }
+    .box--seccion .section__category a:active {
+      color: #000; }
+    .box--seccion .section__category:after {
+      display: none; }
+    .box--seccion .section__category .section__decoration {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 50%;
+      height: 100%;
+      overflow: hidden; }
+      .box--seccion .section__category .section__decoration:before {
+        content: "";
+        width: 200%;
+        height: 100%;
+        position: absolute;
+        transform: rotate(-75deg);
+        background-color: #474849;
+        transform-origin: 0% 100%; }
 
 .nav-lateral {
+  display: none;
   position: absolute;
   top: 1.4rem;
   right: 0;
@@ -4569,10 +4573,12 @@ iframe {
   border-top: 1px solid #CCCCCC;
   border-bottom: 1px solid #CCCCCC;
   min-height: 140px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   transition: all 0.5s ease-in-out; }
+  @media (min-width: 900px) {
+    .nav-lateral {
+      display: flex; } }
   .nav-lateral:hover {
     transform: translateX(0%); }
 
@@ -4671,21 +4677,27 @@ iframe {
   .box--menta .scroll-list__header {
     background-color: #eef8f5; }
 
-.scroll-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-left: 1.4rem; }
-  .scroll-list ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; }
-    .scroll-list ul li {
-      list-style-type: none;
-      display: inline-block; }
+@media (min-width: 900px) {
+  .scroll-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 1.4rem; } }
+
+.scroll-list ul {
+  padding: 0;
+  margin: 0; }
+
+.scroll-list li {
+  display: block;
+  list-style-type: none; }
+
+.scroll-list__item {
+  margin-bottom: 1.05rem; }
+  .scroll-list__item .autor, .scroll-list__item .subcontenido__autor, .scroll-list__item .articulo__fecha {
+    color: #808080; }
 
 .scroll-list__subtitulo {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4846,8 +4858,12 @@ iframe {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1); }
 
 .simplebar-track.simplebar-vertical {
+  display: none;
   right: auto;
   left: 0; }
+  @media (min-width: 900px) {
+    .simplebar-track.simplebar-vertical {
+      display: block; } }
   .simplebar-track.simplebar-vertical:before {
     content: "";
     position: absolute;

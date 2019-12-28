@@ -1,4 +1,8 @@
 .simplebar-track.simplebar-vertical {
+    display:none;
+    @include breakpoint($medium) {
+        display:block;
+    }
     right: auto;
     left:0;
     &:before {

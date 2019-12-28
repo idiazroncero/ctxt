@@ -1,4 +1,6 @@
-.page-seccion {
+.box--seccion {
+    position:relative;
+    overflow:hidden;
     // Overrides sobre elementos ya existentes.
     .section {
         @extend .section--border-none;
@@ -12,7 +14,12 @@
         padding: $gutter / 2 $gutter $gutter / 2 $gutter;
         @include ritmo-font-size($h5-font-size, 3);
         position:relative;
-        left: -$gutter;
+        margin-right: $gutter / 2;
+        @include breakpoint($small) {
+            margin-right:0;
+            left: -$gutter;
+            max-width: 200px;
+        }
         a {
             @include set-link(
                 $white,
@@ -55,13 +62,13 @@
         //     border-color: $gray8 transparent transparent $gray8;
         // }
     }
-    .box {
-        position:relative;
-        overflow:hidden;
-    }
 }
 
 .nav-lateral {
+    display:none;
+    @include breakpoint($medium) {
+        display:flex;
+    }
     position:absolute;
     top: $gutter;
     right:0;
@@ -71,7 +78,6 @@
     border-top: 1px solid $separator-color;
     border-bottom: 1px solid $separator-color;
     min-height: 140px;
-    display:flex;
     flex-direction:column;
     justify-content: center;
     transition: all 0.5s ease-in-out;
@@ -169,20 +175,30 @@ $ratio: 53.25%;
 }
 
 .scroll-list {
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    padding-left: $gutter;
+    @include breakpoint($medium) {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        padding-left: $gutter;
+    }
     // overflow:scroll;
     ul {
-        @include inline-list();
+        padding:0;
+        margin:0;
+    }
+    li {
+        display:block;
+        list-style-type: none;
     }
 }
 
 .scroll-list__item {
-    
+    margin-bottom: $gutter * 0.75;
+    .autor {
+        color: $gray6;
+    }
 }
 
 

@@ -39,7 +39,12 @@
 }
 
 .bloque__list {
-    @include inline-list();
+    padding:0;
+    margin:0;
+    li {
+        display:block;
+        list-style-type: none;
+    }
 }
 
 .bloque__item {
