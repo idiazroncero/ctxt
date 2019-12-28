@@ -1,5 +1,6 @@
 .ad {
     margin-bottom: $gutter;
+    text-align:center;
     @include breakpoint($medium) {
         margin-bottom:0;
     }
