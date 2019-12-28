@@ -1,0 +1,31 @@
+.vineta-header {
+    text-align:center;
+}
+.vineta-header__category {
+    @extend .section__category;
+    text-align:left;
+}
+
+.vineta-header__title {
+    @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    border-bottom: 1px solid $separator-color;
+    margin-bottom:$gutter / 2;
+    padding-bottom: $gutter / 2;
+    display:inline-block;
+    min-width: 30%;
+    font-style:italic;
+}
+
+.vineta-header__autor {
+    font-family: $roboto;
+    font-weight:bold;
+    @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
+    margin-bottom: $gutter / 4;
+}
+
+.vineta-header__fecha {
+    font-style:italic;
+    @extend .font-tertiary;
+    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    color: $gray6;
+}

@@ -6,13 +6,26 @@
     @extend .h6;
     padding: $gutter / 2 0;
     font-family: $font-tertiary;
-    display:flex;
+    @include breakpoint($medium) {
+        display:flex;
+        .articulo--vineta & {
+            justify-content: flex-end;
+        }
+    }
     margin:0;
+    .articulo--vineta & {
+        text-align:right;
+    }
 }
 
 .imagen__autor {
     text-transform: uppercase;
     font-weight:bold;
-    margin-left: auto;
-    padding-left: $gutter / 2;
+    @include breakpoint($medium) {
+        padding-left: $gutter / 2;
+        margin-left: auto;
+        .articulo--vineta & {
+            margin-left: 0;
+        }
+    }
 }

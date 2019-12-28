@@ -1047,7 +1047,7 @@ h1, h2, h3, h4, h5, h6,
   .h1 a:hover, .h2 a:focus, .h2 a:hover, .h3 a:focus, .subsection a:focus, .ficha-autor__title a:focus, .bloque__title a:focus, .comentarios__title a:focus, .h3 a:hover, .subsection a:hover, .ficha-autor__title a:hover, .bloque__title a:hover, .comentarios__title a:hover, .h4 a:focus, .subcontenido__title a:focus, .h4 a:hover, .subcontenido__title a:hover, .h5 a:focus, .h5 a:hover, .h6 a:focus, .section__patrocinador span a:focus, .imagen__caption a:focus, .pub__title a:focus, .h6 a:hover, .section__patrocinador span a:hover, .imagen__caption a:hover, .pub__title a:hover {
     text-decoration: none; }
 
-.font-secondary, .section__category, .section__subtitle,
+.font-secondary, .section__category, .vineta-header__category, .section__subtitle,
 .section__suptitle, .subsection,
 nav {
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -2446,7 +2446,7 @@ iframe {
 .box.box--gris-oscuro a:active, .box--gris-oscuro.bloque a:active {
   color: #a3a3a3; }
 
-.font-tertiary, .autor, .subcontenido__autor, .articulo__fecha, .fecha {
+.font-tertiary, .autor, .subcontenido__autor, .articulo__fecha, .fecha, .vineta-header__fecha {
   font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .mw-20 {
@@ -3025,7 +3025,7 @@ iframe {
     .articulo .section .autor, .articulo .section .subcontenido__autor, .articulo .section .articulo__fecha {
       text-align: center; }
 
-.section__category {
+.section__category, .vineta-header__category {
   text-transform: uppercase;
   margin-bottom: 0.7rem;
   font-size: 13px;
@@ -3033,13 +3033,13 @@ iframe {
   line-height: 17px;
   line-height: 1.05rem;
   width: 100%; }
-  .section__category:after {
+  .section__category:after, .vineta-header__category:after {
     content: ">"; }
   @media (min-width: 640px) {
-    .section__category {
+    .section__category, .vineta-header__category {
       width: auto; } }
   @media (min-width: 900px) {
-    .box--2col .section__category {
+    .box--2col .section__category, .box--2col .vineta-header__category {
       position: absolute;
       top: 0;
       left: 0; } }
@@ -3156,7 +3156,7 @@ iframe {
   padding-top: 2.55rem;
   border-top-style: dotted;
   border-top-color: #CCCCCC; }
-  .section--especial .section__category {
+  .section--especial .section__category, .section--especial .vineta-header__category {
     position: absolute;
     top: -2.8rem;
     left: 0; }
@@ -3493,14 +3493,24 @@ iframe {
 .imagen__caption {
   padding: 0.7rem 0;
   font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: flex;
   margin: 0; }
+  @media (min-width: 900px) {
+    .imagen__caption {
+      display: flex; }
+      .articulo--vineta .imagen__caption {
+        justify-content: flex-end; } }
+  .articulo--vineta .imagen__caption {
+    text-align: right; }
 
 .imagen__autor {
   text-transform: uppercase;
-  font-weight: bold;
-  margin-left: auto;
-  padding-left: 0.7rem; }
+  font-weight: bold; }
+  @media (min-width: 900px) {
+    .imagen__autor {
+      padding-left: 0.7rem;
+      margin-left: auto; }
+      .articulo--vineta .imagen__autor {
+        margin-left: 0; } }
 
 .cajita {
   background-color: #f4ecde;
@@ -4423,12 +4433,13 @@ iframe {
       padding-left: 2.8rem; } }
 
 .articulo__destacado {
-  margin-bottom: 1.4rem; }
+  margin-bottom: 1.4rem;
+  text-align: center; }
   @media (min-width: 900px) {
     .articulo__destacado {
       margin-bottom: 2.8rem; } }
   .articulo__destacado .imagen {
-    margin: 0; }
+    margin: 0 auto; }
 
 .articulo__fecha {
   font-weight: bold; }
@@ -4518,7 +4529,7 @@ iframe {
 .box--seccion {
   position: relative;
   overflow: hidden; }
-  .box--seccion .section__category {
+  .box--seccion .section__category, .box--seccion .vineta-header__category {
     color: #fff;
     background-color: #474849;
     padding: 0.7rem 1.4rem 0.7rem 1.4rem;
@@ -4529,32 +4540,32 @@ iframe {
     position: relative;
     margin-right: 0.7rem; }
     @media (min-width: 640px) {
-      .box--seccion .section__category {
+      .box--seccion .section__category, .box--seccion .vineta-header__category {
         margin-right: 0;
         left: -1.4rem;
         max-width: 200px; } }
-    .box--seccion .section__category a {
+    .box--seccion .section__category a, .box--seccion .vineta-header__category a {
       text-decoration: none; }
-      .box--seccion .section__category a:hover, .box--seccion .section__category a:focus {
+      .box--seccion .section__category a:hover, .box--seccion .vineta-header__category a:hover, .box--seccion .section__category a:focus, .box--seccion .vineta-header__category a:focus {
         text-decoration: none; }
-    .box--seccion .section__category a, .box--seccion .section__category a:link {
+    .box--seccion .section__category a, .box--seccion .vineta-header__category a, .box--seccion .section__category a:link, .box--seccion .vineta-header__category a:link {
       color: #fff; }
-    .box--seccion .section__category a:visited {
+    .box--seccion .section__category a:visited, .box--seccion .vineta-header__category a:visited {
       color: #fff; }
-    .box--seccion .section__category a:focus, .box--seccion .section__category a:hover {
+    .box--seccion .section__category a:focus, .box--seccion .vineta-header__category a:focus, .box--seccion .section__category a:hover, .box--seccion .vineta-header__category a:hover {
       color: #000; }
-    .box--seccion .section__category a:active {
+    .box--seccion .section__category a:active, .box--seccion .vineta-header__category a:active {
       color: #000; }
-    .box--seccion .section__category:after {
+    .box--seccion .section__category:after, .box--seccion .vineta-header__category:after {
       display: none; }
-    .box--seccion .section__category .section__decoration {
+    .box--seccion .section__category .section__decoration, .box--seccion .vineta-header__category .section__decoration {
       position: absolute;
       top: 0;
       left: 100%;
       width: 50%;
       height: 100%;
       overflow: hidden; }
-      .box--seccion .section__category .section__decoration:before {
+      .box--seccion .section__category .section__decoration:before, .box--seccion .vineta-header__category .section__decoration:before {
         content: "";
         width: 200%;
         height: 100%;
@@ -4717,6 +4728,41 @@ iframe {
   line-height: 17px;
   line-height: 1.05rem;
   margin: 0; }
+
+.vineta-header {
+  text-align: center; }
+
+.vineta-header__category {
+  text-align: left; }
+
+.vineta-header__title {
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 28px;
+  line-height: 1.75rem;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
+  display: inline-block;
+  min-width: 30%;
+  font-style: italic; }
+
+.vineta-header__autor {
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 31px;
+  font-size: 1.95312rem;
+  line-height: 34px;
+  line-height: 2.1rem;
+  margin-bottom: 0.35rem; }
+
+.vineta-header__fecha {
+  font-style: italic;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 22px;
+  line-height: 1.4rem;
+  color: #808080; }
 
 @media (min-width: 900px) {
   .m {
@@ -4898,7 +4944,7 @@ iframe {
   list-style-type: none;
   margin: 0; }
 
-.cabecera_new .font-secondary, .cabecera_new .section__category, .cabecera_new .section__subtitle,
+.cabecera_new .font-secondary, .cabecera_new .section__category, .cabecera_new .vineta-header__category, .cabecera_new .section__subtitle,
 .cabecera_new .section__suptitle, .cabecera_new .subsection,
 .cabecera_new h1,
 .cabecera_new h2,

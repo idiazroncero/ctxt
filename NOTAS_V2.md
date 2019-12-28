@@ -30,3 +30,5 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 - Se añade el `.section__decorator` para añadir una cenefa triangular a `.section__category`. **Requiere cambios en HTML**
 - Añade elemento `.nav-lateral` para un menú que se despliega desde la derecha en seccion.
 - Añade elemento `.scroll-list` para lista scrollable de items en secciones
+- Añade elemento `.vineta-header` para el encabezado de artículos de tipo viñeta.
+- Añade modificador `.articulo--vineta` para los pequeños cambios necesarios en elementos de artículo.
