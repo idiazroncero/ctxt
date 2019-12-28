@@ -3047,20 +3047,20 @@ iframe {
 .section__title__wrapper {
   width: 100%;
   padding-bottom: 1.4rem;
-  border-bottom: 3px dotted #CCCCCC; }
+  border-bottom: 1px solid #CCCCCC; }
   .section--border-none .section__title__wrapper, .articulo .section .section__title__wrapper, .box--seccion .section .section__title__wrapper {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0; }
   .section--border-top .section__title__wrapper {
     padding-top: 1.4rem;
-    border-top: 3px dotted #CCCCCC;
+    border-top: 1px solid #CCCCCC;
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: none; }
   .section--border-all .section__title__wrapper {
     padding-top: 1.4rem;
-    border-top: 3px dotted #CCCCCC; }
+    border-top: 1px solid #CCCCCC; }
 
 .section__title {
   text-align: center;
@@ -3445,7 +3445,7 @@ iframe {
   padding-right: 0.7rem; }
 
 .tienda {
-  margin-top: 2.8rem; }
+  margin-top: 4.2rem; }
   @media (min-width: 900px) {
     .tienda .ts-tab {
       margin-top: 0; } }
@@ -3643,7 +3643,7 @@ iframe {
 .subcontenido__title {
   font-weight: bold;
   padding-bottom: 0.7rem;
-  border-bottom: 3px dotted #000;
+  border-bottom: 1px solid #CCCCCC;
   text-transform: uppercase; }
 
 .subcontenido__body {
@@ -3667,8 +3667,8 @@ iframe {
   margin-bottom: 0.7rem; }
 
 .ficha-autor__ficha {
-  border-top: 2px solid #CCCCCC;
-  border-bottom: 2px solid #CCCCCC;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
   padding: 1.4rem 0;
   text-align: center; }
   @media (min-width: 640px) {
@@ -3758,6 +3758,7 @@ iframe {
 
 .suscribete {
   margin-top: 5.6rem;
+  margin-bottom: 2.8rem;
   font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .suscribete__title {
@@ -3785,7 +3786,6 @@ iframe {
     margin-top: 0; }
 
 .ademas__title {
-  font-weight: bold;
   text-transform: uppercase;
   font-size: 20px;
   font-size: 1.25rem;
@@ -4672,7 +4672,7 @@ iframe {
   line-height: 28px;
   line-height: 1.75rem;
   text-align: center;
-  border-bottom: 3px dotted #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
   z-index: 9;
   padding-bottom: 0.7rem;
   margin-bottom: 1.4rem; }
@@ -4705,6 +4705,43 @@ iframe {
 .scroll-list li {
   display: block;
   list-style-type: none; }
+
+.scroll-list__todos {
+  text-align: center;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.7rem 0.7rem 0 0.7rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 9;
+  background-color: #fff; }
+  .box--blanco .scroll-list__todos {
+    background-color: #fff; }
+  .box--hueso .scroll-list__todos {
+    background-color: #f4f1e5; }
+  .box--gris-oscuro .scroll-list__todos {
+    background-color: #474849; }
+  .box--gris-claro .scroll-list__todos {
+    background-color: #f2f2f2; }
+  .box--menta .scroll-list__todos {
+    background-color: #eef8f5; }
+  .scroll-list__todos a {
+    text-decoration: underline;
+    background-color: transparent;
+    border-bottom: none;
+    padding-left: 0;
+    padding-right: 0; }
+    .scroll-list__todos a:after {
+      display: none; }
+    .scroll-list__todos a:hover, .scroll-list__todos a:focus {
+      text-decoration: none; }
+  .scroll-list__todos a, .scroll-list__todos a:link {
+    color: #000; }
+  .scroll-list__todos a:visited {
+    color: #000; }
+  .scroll-list__todos a:focus, .scroll-list__todos a:hover {
+    color: #f01b4d; }
+  .scroll-list__todos a:active {
+    color: #f01b4d; }
 
 .scroll-list__item {
   margin-bottom: 1.05rem; }
@@ -4763,6 +4800,52 @@ iframe {
   line-height: 22px;
   line-height: 1.4rem;
   color: #808080; }
+
+.page-autor .ficha-autor__ficha {
+  border: 1px solid #CCCCCC;
+  padding: 1.4rem; }
+
+.page-autor .ficha-autor__body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.4rem; }
+
+.page-autor .ficha-autor__content {
+  flex: 1; }
+
+.page-autor .ademas, .page-autor .comentarios {
+  border-top: none; }
+
+.page-autor .ficha-autor__category {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 22px;
+  line-height: 1.4rem;
+  margin: 2.8rem 0; }
+
+.page-autores .ficha-autor__body {
+  margin: 0; }
+
+.page-autores .ficha-autor {
+  margin: 0; }
+
+.page-autores .ficha-autor__ficha {
+  border-bottom: none; }
+
+.page-autores__title, .page-listado__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 22px;
+  line-height: 1.4rem;
+  margin: 2.8rem 0;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase; }
+
+.page-listado .ts {
+  padding-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  border-top: 1px solid #CCCCCC; }
 
 @media (min-width: 900px) {
   .m {

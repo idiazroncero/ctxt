@@ -6,7 +6,7 @@
     @extend .h4;
     font-weight:bold;
     padding-bottom: $gutter / 2;
-    border-bottom: 3px dotted $black;
+    border-bottom: $filete;
     text-transform: uppercase;
 }
 

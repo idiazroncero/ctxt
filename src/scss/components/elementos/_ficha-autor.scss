@@ -11,8 +11,8 @@
 }
 
 .ficha-autor__ficha{
-    border-top: 2px solid $separator-color;
-    border-bottom: 2px solid $separator-color;
+    border-top: 1px solid $separator-color;
+    border-bottom: 1px solid $separator-color;
     padding: $gutter 0;    
     text-align:center;
     @include breakpoint($small) {

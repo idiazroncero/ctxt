@@ -1,0 +1,11 @@
+.page-listado__title {
+   @extend .page-autores__title;
+}
+
+.page-listado {
+    .ts {
+        padding-top: $gutter;
+        margin-bottom: $gutter;
+        border-top: $filete;
+    }
+}

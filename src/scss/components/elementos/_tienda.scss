@@ -1,5 +1,5 @@
 .tienda {
-    margin-top: $gutter * 2;
+    margin-top: $ts-margin + $gutter;
     .ts-tab {
         @include breakpoint($medium) {
             margin-top: 0;

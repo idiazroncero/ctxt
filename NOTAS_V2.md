@@ -32,3 +32,4 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 - Añade elemento `.scroll-list` para lista scrollable de items en secciones
 - Añade elemento `.vineta-header` para el encabezado de artículos de tipo viñeta.
 - Añade modificador `.articulo--vineta` para los pequeños cambios necesarios en elementos de artículo.
+- Añade clase `.page-autor`para los pequeños cambios necesarios en la página de artículo.

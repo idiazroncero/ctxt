@@ -160,7 +160,7 @@ $ratio: 53.25%;
     top:0px;
     @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
     text-align:center;
-    border-bottom: 3px dotted $separator-color;
+    border-bottom: $filete;
     z-index: 9;
     padding-bottom: $gutter / 2;
     margin-bottom: $gutter;
@@ -191,6 +191,31 @@ $ratio: 53.25%;
     li {
         display:block;
         list-style-type: none;
+    }
+}
+
+.scroll-list__todos {
+    text-align:center;
+    font-family: $font-secondary;
+    padding: $gutter/ 2 $gutter/ 2 0 $gutter/ 2;
+    position:sticky;
+    bottom:0;
+    z-index:9;
+    background-color: $white;
+    @each $name, $color in $ctxt-colors {
+        .box--#{$name} & {
+            background-color: $color;
+        }
+    }
+    a {
+        @include set-link(
+            $black,
+            $black,
+            get-color(base, primary),
+            get-color(base, primary),
+            underline,
+            false
+        )
     }
 }
 

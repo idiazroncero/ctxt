@@ -1,0 +1,39 @@
+.page-autor {
+    .ficha-autor__ficha {
+        border: 1px solid $separator-color;
+        padding: $gutter;
+    }
+    .ficha-autor__body {
+        @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+    }
+    .ficha-autor__content {
+        flex:1;
+    }
+    .ademas {
+        border-top: none;
+    }
+    .ficha-autor__category {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+        margin: $gutter * 2 0;
+    }
+}
+
+
+.page-autores {
+    .ficha-autor__body {
+        margin:0;
+    }
+    .ficha-autor {
+        margin:0;
+    }
+    .ficha-autor__ficha {
+        border-bottom: none;
+    }
+}
+
+.page-autores__title {
+    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    margin: $gutter * 2 0;
+    font-family: $font-secondary;
+    text-transform: uppercase;
+}

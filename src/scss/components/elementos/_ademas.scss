@@ -8,7 +8,6 @@
 }
 
 .ademas__title {
-    font-weight:bold;
     text-transform: uppercase;
     @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
     font-family: $font-secondary;

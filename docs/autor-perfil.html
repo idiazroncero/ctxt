@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ctxt.es</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+
+    <script src="js/ctxt-bundle.js"></script>
+
+  </head>
+  <body>
+
+    
+
+<div id="main-wrapper">
+
+    <header class="header">
+    <div class="header__tagline">
+        <p><a href="#"><span>Orgullosas de llegar tarde</span> <span>a las últimas noticias</span></a></p>
+    </div>
+
+    <div class="header__inner">
+
+        <div class="header__top">
+
+            <div class="header__issue">
+                <div class="issue numeros" id="numeros">
+                    <button class="issue__prev">
+                        <span class="visually-hidden">Anterior</span>
+                        <
+                    </button>
+                    <div>
+                        <ol>
+                            <li>
+                                <p class="issue__current">
+                                     Número <span class="issue__number">1</span> · 21/06/2019
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <button class="issue__next">
+                        <span class="visually-hidden">Siguiente</span>
+                        >
+                    </button>
+                </div>
+                <a href="#" class="header__search">
+                    <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    </i>
+                </a>
+            </div>
+
+            <div class="header__logo">
+                <a href="/ctxt">
+                    <img src="./images/logos/logo_ctxt.png" alt="CTXT">
+                </a>
+            </div>
+
+            <div class="header__user">
+                <a href="#" class="button button--primary--bg">Suscríbete</a>
+                <a href="/ctxt/login.html" class="button button--default button--header"> Inicio de sesión</a>
+                <a href="#" class="button button--default button--header header__cart">
+                    <span>Tienda</span>
+                    <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                    </i>
+                </a>
+            </div>
+        
+        </div>
+
+        <div class="header__nav">
+            <nav class="main-menu">
+    <button class="menu-toggle">
+        <span class="visually-hidden">Mostrar menú</span>
+        <i class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </i>
+    </button>
+    <div class="main-menu__wrapper">
+        <div class="main-menu__actions">
+            <form class="main-menu__search" action="">
+                <i class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                </i>
+                <input type="search" name="search" id="search">
+            </form>
+            <a href="#" class="button button--default">Subscribete</a>
+        </div>
+        <ul class="main-menu__list">
+            <li>
+                <a href="#">Política</a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Segundo item</a></li>
+                    <li><a href="#">Hola que tal</a></li>
+                    <li><a href="#">Item especialmente largo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Firmas</a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Segundo item</a></li>
+                    <li><a href="#">Hola que tal</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Culturas</a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Segundo item</a></li>
+                    <li><a href="#">Hola que tal</a></li>
+                    <li><a href="#">Item especialmente largo</a></li>
+                    <li><a href="#">Yo tengo un item mas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Deportes</a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Segundo item</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Viñetas</a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Segundo item</a></li>
+                    <li><a href="#">Hola que tal</a></li>
+                    <li><a href="#">Item especialmente largo</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Segundo item</a></li>
+                    <li><a href="#">Hola que tal</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Especiales</a>
+            </li>
+            <li>
+                <a href="#">Autores</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        </div>
+
+    </div>
+
+</header>
+
+    <main class="page-autor">
+        <article>
+            <h1 class="visually-hidden">Guillem Martínez</h1>
+
+            <section class="ficha-autor">
+                <p class="ficha-autor__category">Autores / Perfil ></p>
+                <div class="ficha-autor__ficha">
+                    <div class="ficha-autor__img">
+                        <img src="http://placehold.it/100x100.jpg" alt="">
+                    </div>
+                    <div class="ficha-autor__content">
+                        <h1 class="ficha-autor__title">La boca del logo</h1>
+                        <p class="ficha-autor__body">
+                            PAGINAS AMARILLAS / Pictodramas, teletipos, clasificados, avisos urgentes. Por Alberto Fernández.
+                        </p>
+                        <div class="ficha-autor__meta">
+                            <a href="#" class="button button--default">Ver más artículos</a>
+                            <ul class="ficha-autor__redes">
+                                <li>
+                                    <a href="">
+                                        <i class="icon-h5">
+                                            <svg viewBox="0 0 24 28">
+                                                <path
+                                                    d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z">
+                                                </path>
+                                            </svg>
+                                        </i>
+                                        @guillemmatinez
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon-h5">
+                                            <svg id="icon-facebook-square" viewBox="0 0 24 28">
+                                                <path
+                                                    d="M19.5 2c2.484 0 4.5 2.016 4.5 4.5v15c0 2.484-2.016 4.5-4.5 4.5h-2.938v-9.297h3.109l0.469-3.625h-3.578v-2.312c0-1.047 0.281-1.75 1.797-1.75l1.906-0.016v-3.234c-0.328-0.047-1.469-0.141-2.781-0.141-2.766 0-4.672 1.687-4.672 4.781v2.672h-3.125v3.625h3.125v9.297h-8.313c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15z">
+                                                </path>
+                                            </svg>
+                                        </i>
+                                        @guillemmatinez
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="icon-ig" href="">
+                                        <i class="icon-h5">
+                                            <svg id="icon-twitter-square" viewBox="0 0 24 28">
+                                                <path
+                                                    d="M20 9.531c-0.594 0.266-1.219 0.438-1.891 0.531 0.688-0.406 1.203-1.062 1.453-1.828-0.641 0.375-1.344 0.656-2.094 0.797-0.594-0.641-1.453-1.031-2.391-1.031-1.813 0-3.281 1.469-3.281 3.281 0 0.25 0.016 0.516 0.078 0.75-2.734-0.141-5.156-1.437-6.781-3.437-0.281 0.484-0.453 1.062-0.453 1.656 0 1.141 0.531 2.141 1.422 2.734-0.547-0.016-1.062-0.172-1.563-0.406v0.031c0 1.594 1.203 2.922 2.703 3.219-0.281 0.078-0.5 0.125-0.797 0.125-0.203 0-0.406-0.031-0.609-0.063 0.422 1.297 1.625 2.25 3.063 2.281-1.125 0.875-2.531 1.406-4.078 1.406-0.266 0-0.531-0.016-0.781-0.047 1.453 0.922 3.172 1.469 5.031 1.469 6.031 0 9.344-5 9.344-9.344 0-0.141 0-0.281-0.016-0.422 0.641-0.453 1.203-1.031 1.641-1.703zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z">
+                                                </path>
+                                            </svg>
+                                        </i>
+                                        @guillemmatinez
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+        <section class="ademas">
+            <h1 class="ademas__title">Artículos Publicados ></h1>
+            
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="separator"></div>
+                    <article class="ts ts-flex ts--reducido m0">
+                        <div class="ts-flex__img mw-40">
+                            <img src="http://placehold.it/140x140.jpg" alt="Imagen">
+                        </div>
+                        <div class="ts-flex__textos">
+                            <h1 class="h3">Sánchez coquetea con el abismo</h1>
+                            <div class="fecha">
+                                <span>16 Octubre 2019</span>
+                            </div>
+                        </div>
+                    </article>
+                
+        </section>
+
+        <div class="cajita">
+            <p>
+                Ya está abierto el Taller de CTXT, el local para nuestra comunidad lectora, en el barrio de Chamberí
+                (C/ Juan de Austria, 30). Pásate y disfruta de debates, presentaciones de libros, talleres,
+                agitación y eventos culturales de toda índole. Si te haces socia/o en <a href="#">este enlace</a>,
+                tendrás descuentos del 50% en todas las actividades.
+            </p>
+        </div>
+        <section class="suscribete">
+            <h1 class="visually-hidden">Suscríbete a CTXT</h1>
+            <p class="suscribete__title">
+                Orgullosas<br>
+                de llegar tarde<br>
+                a las últimas noticias<br>
+            </p>
+            <p class="suscribete__text">
+                Gracias a tu suscripción podemos ejerecer un periodismo púiblico y en libertad.<br>
+                ¿Quieres suscribirte a CTXT por solo 6 euros al mes? <a href="#">Pulsa aquí</a>
+            </p>
+        </section>
+        <div class="sharer">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="visually-hidden">Imprimir</span>
+                        <svg viewBox="0 0 32 32">
+                            <path d="M8 2h16v4h-16v-4z"></path>
+                            <path
+                                d="M30 8h-28c-1.1 0-2 0.9-2 2v10c0 1.1 0.9 2 2 2h6v8h16v-8h6c1.1 0 2-0.9 2-2v-10c0-1.1-0.9-2-2-2zM4 14c-1.105 0-2-0.895-2-2s0.895-2 2-2 2 0.895 2 2-0.895 2-2 2zM22 28h-12v-10h12v10z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visually-hidden">Twitter</span>
+                        <svg id="icon-twitter" viewBox="0 0 32 32">
+                            <path
+                                d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z">
+                            </path>
+                        </svg>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visually-hidden">Facebook</span>
+                        <svg id="icon-facebook" viewBox="0 0 32 32">
+                            <path
+                                d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visually-hidden">Whatsapp</span>
+                        <svg id="icon-whatsapp" viewBox="0 0 32 32">
+                            <path
+                                d="M27.281 4.65c-2.994-3-6.975-4.65-11.219-4.65-8.738 0-15.85 7.112-15.85 15.856 0 2.794 0.731 5.525 2.119 7.925l-2.25 8.219 8.406-2.206c2.319 1.262 4.925 1.931 7.575 1.931h0.006c0 0 0 0 0 0 8.738 0 15.856-7.113 15.856-15.856 0-4.238-1.65-8.219-4.644-11.219zM16.069 29.050v0c-2.369 0-4.688-0.637-6.713-1.837l-0.481-0.288-4.987 1.306 1.331-4.863-0.313-0.5c-1.325-2.094-2.019-4.519-2.019-7.012 0-7.269 5.912-13.181 13.188-13.181 3.519 0 6.831 1.375 9.319 3.862 2.488 2.494 3.856 5.8 3.856 9.325-0.006 7.275-5.919 13.188-13.181 13.188zM23.294 19.175c-0.394-0.2-2.344-1.156-2.706-1.288s-0.625-0.2-0.894 0.2c-0.262 0.394-1.025 1.288-1.256 1.556-0.231 0.262-0.462 0.3-0.856 0.1s-1.675-0.619-3.188-1.969c-1.175-1.050-1.975-2.35-2.206-2.744s-0.025-0.613 0.175-0.806c0.181-0.175 0.394-0.463 0.594-0.694s0.262-0.394 0.394-0.662c0.131-0.262 0.069-0.494-0.031-0.694s-0.894-2.15-1.219-2.944c-0.319-0.775-0.65-0.669-0.894-0.681-0.231-0.012-0.494-0.012-0.756-0.012s-0.694 0.1-1.056 0.494c-0.363 0.394-1.387 1.356-1.387 3.306s1.419 3.831 1.619 4.1c0.2 0.262 2.794 4.269 6.769 5.981 0.944 0.406 1.681 0.65 2.256 0.837 0.95 0.3 1.813 0.256 2.494 0.156 0.762-0.113 2.344-0.956 2.675-1.881s0.331-1.719 0.231-1.881c-0.094-0.175-0.356-0.275-0.756-0.475z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="visually-hidden">Telegram</span>
+                        <svg viewBox="0 0 32 32">
+                            <path
+                                d="M31.88 5.053l-4.813 22.733c-0.333 1.613-1.307 2-2.667 1.253l-7.333-5.427-3.547 3.427c-0.4 0.4-0.733 0.747-1.467 0.747-0.96 0-0.8-0.36-1.12-1.267l-2.533-8.253-7.267-2.267c-1.573-0.467-1.587-1.547 0.347-2.333l28.347-10.933c1.293-0.573 2.533 0.32 2.040 2.307z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <section class="flex tienda">
+        <div class="flex-66 pr">
+            <article class="ts ts-tab ts-tab--center ts-tab--sepia">
+                <div class="ts-tab__category">
+                    Tienda
+                    <span class="ts-tab__triangle"></span>
+                </div>
+                <div class="ts-tab__content">
+                    <div class="ts-tab__left">
+                        <div class="ts-tab__40 pr tc">
+                            Visita nuestra tienda: libros, tazas, bolsas, camisetas, agendas
+                            <div>
+                                <i class="icon icon-h1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path fill="none" d="M0 0h24v24H0V0z" />
+                                        <path
+                                            d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                                        </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="ts-tab__60">
+                            <img src="http://placehold.it/600x200/000/fff.jpg" alt="Icono">
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="flex-33">
+            <img src="http://placehold.it/500x250.jpg">
+        </div>
+    </section>
+
+        <footer class="footer">
+        <div class="footer__info">
+            <img src="https://placehold.it/250x125/fff/000.jpg" alt="Imagen">
+            <p class="footer__desc">
+                CTXT es un medio independiente <br>
+                y crítico formado por periodistas <br>
+                con experiencia en grandes <br>
+                medios europeos
+            </p>
+            <div class="footer__rrss">
+                <p>Síguenos</p>
+                <ul>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer__newsletter">
+                <p>Suscríbete a nuestra newsletter </p>
+                <form action="#">
+                    <input type="email" name="email" id="email" placeholder="tu@email.com">
+                    <input type="submit" value="enviar" class="button button--primary--bg">
+                </form>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Quienes Somos / Cuentas 2018</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Licencia Creative Commons</a></li>
+                    <li><a href="#">Correo: info@ctxt.es</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__medios">
+            <div class="footer__medios__title">Medios asociados</div>
+            <div class="footer__medios__row">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/200x200/000/fff.jpg" alt="">
+                <img src="http://placehold.it/400x150/000/fff.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer__medios">
+            <div class="footer__medios__title">Medios amigos</div>
+            <div class="footer__medios__row">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/200x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/400x300/000/fff.jpg" alt="">
+                <img src="http://placehold.it/350x130/000/fff.jpg" alt="">
+                <img src="http://placehold.it/100x250/000/fff.jpg" alt="">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/400x300/000/fff.jpg" alt="">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+            </div>
+        </div>
+        <p class="m0 font-secondary up">(c)Revista Contexto, S.L. / Madrid / España/ info@ctxt.es</p>
+    </footer>
+
+</div> <!-- MAIN WRAPPER -->
+
+
+
+  </body>
+</html>
