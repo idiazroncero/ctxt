@@ -1,6 +1,6 @@
 # Front-end Ctxt.es 
 
-# Enlaces
+## Enlaces
 
 -  [Portada](https://idiazroncero.github.io/ctxt/)
 -  [Artículo](https://idiazroncero.github.io/ctxt/articulo)
