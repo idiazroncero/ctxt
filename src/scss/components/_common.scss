@@ -214,3 +214,8 @@ iframe {
     overflow:hidden;
     display:inline-block;
 }
+
+.link-layer {
+    @include layer();
+    z-index:1;
+}

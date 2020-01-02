@@ -2552,6 +2552,15 @@ iframe {
   overflow: hidden;
   display: inline-block; }
 
+.link-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  z-index: 1; }
+
 .header {
   margin-bottom: 1.4rem; }
   .header .button, .header input[type=file] + label {
@@ -4241,6 +4250,44 @@ iframe {
   margin-bottom: 1.4rem; }
   .ts-vertical__img img {
     margin: 0 auto; }
+
+.ts-especial {
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  @media (min-width: 900px) {
+    .ts-especial {
+      flex-direction: row; } }
+
+.ts-especial__textos {
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 1.4rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 900px) {
+    .ts-especial__textos {
+      flex: 0 0 57%;
+      padding-right: 13%; } }
+
+.ts-especial__title {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 22px;
+  line-height: 1.4rem;
+  font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase; }
+
+.ts-especial__piezas {
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 17px;
+  line-height: 1.05rem;
+  color: #808080;
+  margin: auto 0 0 0; }
 
 @media (min-width: 900px) {
   .col2 {

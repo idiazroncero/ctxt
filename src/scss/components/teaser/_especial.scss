@@ -1,0 +1,35 @@
+.ts-especial {
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    @include breakpoint($medium) {
+        flex-direction:row;
+    }
+}
+
+.ts-especial__textos {
+    font-family: $font-secondary;
+    padding: $gutter;
+    background-color: $white;
+    display:flex;
+    flex-direction:column;
+    @include breakpoint($medium) {
+        flex: 0 0 57%;
+        padding-right: 13%;
+    }
+}
+
+.ts-especial__title {
+    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    font-family: $font-secondary;
+    padding-bottom: $gutter / 2;
+    border-bottom: 1px solid $black;
+    text-transform: uppercase;
+}
+
+.ts-especial__piezas {
+    font-family: $font-tertiary;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    color: $gray6;
+    margin:auto 0 0 0;
+}

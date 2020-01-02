@@ -32,6 +32,7 @@
 @import "components/teaser/flex";
 @import "components/teaser/tab";
 @import "components/teaser/vertical";
+@import "components/teaser/especial";
 
 @import "components/layouts/cols";
 @import "components/layouts/flex";
@@ -43,6 +44,7 @@
 @import "components/pages/autor";
 @import "components/pages/listado";
 @import "components/pages/multimedia";
+@import "components/pages/especial";
 
 // Utility classes. Allow them to override the rest.
 @import "overrides/huesitos";

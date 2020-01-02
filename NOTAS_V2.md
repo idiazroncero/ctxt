@@ -34,3 +34,6 @@ Si se necesitan cambios en la estructura HTML, se indica en negrita,
 - Añade modificador `.articulo--vineta` para los pequeños cambios necesarios en elementos de artículo.
 - Añade clase `.page-autor`para los pequeños cambios necesarios en la página de artículo.
 - Añade `.vineta` para las viñetas en seccion multimedia
+
+# Ronda 3: especiales
+- Añade el teaser `.ts--especial` para los contenidos especiales
