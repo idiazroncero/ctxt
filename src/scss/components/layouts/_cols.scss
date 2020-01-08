@@ -127,7 +127,7 @@
         @include breakpoint($medium) {
             margin-bottom:0;
             flex:1;
-            max-width: calc(33.33% - #{$col-gutter});
+            max-width: calc(33.33% - #{$col-gutter / 2});
             > .ts {
                 margin-bottom:0;
             }

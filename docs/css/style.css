@@ -4350,7 +4350,7 @@ iframe {
       .col3 > .col {
         margin-bottom: 0;
         flex: 1;
-        max-width: calc(33.33% - 2.8rem); }
+        max-width: calc(33.33% - 1.4rem); }
         .col3 > .col > .ts {
           margin-bottom: 0; } }
 
