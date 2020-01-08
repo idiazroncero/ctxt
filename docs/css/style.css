@@ -2562,12 +2562,26 @@ iframe {
 .header {
   margin-bottom: 1.4rem;
   text-align: center; }
+  @media (min-width: 900px) {
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: #fff;
+      z-index: 999; } }
   .header .button, .header input[type=file] + label {
     line-height: 1;
     font-weight: bold; }
+  @media (min-width: 900px) {
+    .header.header--mini .header__patrocinado,
+    .header.header--mini .header__tagline {
+      display: none; }
+    .header.header--mini .header__logo img {
+      max-height: 2.8rem; }
+    .header.header--mini .header__top {
+      padding: 0.7rem 1.4rem; } }
 
 .header__tagline {
-  font-family: "Avenir Next Condensed", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #fff;
   line-height: 1; }
@@ -2576,24 +2590,23 @@ iframe {
     padding: 0 1.4rem 0.7rem 1.4rem;
     margin: 0;
     position: relative;
-    font-weight: bold;
-    font-size: 13px;
-    font-size: 0.8rem;
-    line-height: 22px;
-    line-height: 1.4rem;
+    font-size: 10px;
+    font-size: 0.64rem;
+    line-height: 17px;
+    line-height: 1.05rem;
     letter-spacing: 0.2em; }
   .header__tagline a {
     text-decoration: none; }
     .header__tagline a:hover, .header__tagline a:focus {
       text-decoration: none; }
   .header__tagline a, .header__tagline a:link {
-    color: #808080; }
+    color: #474849; }
   .header__tagline a:visited {
-    color: #808080; }
+    color: #474849; }
   .header__tagline a:focus, .header__tagline a:hover {
-    color: #808080; }
+    color: #474849; }
   .header__tagline a:active {
-    color: #808080; }
+    color: #474849; }
   .header__tagline a:focus, .header__tagline a:hover {
     text-decoration: none; }
 
@@ -2603,7 +2616,7 @@ iframe {
   @media (min-width: 900px) {
     .header__top {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: nowrap; } }
 
 .header__issue {
@@ -2612,6 +2625,9 @@ iframe {
     .header__issue {
       display: block;
       text-align: left; } }
+
+.header__issue__selector {
+  margin-bottom: 0.35rem; }
 
 @media (min-width: 900px) {
   .header__issue,
@@ -2626,7 +2642,8 @@ iframe {
       margin: 0; } }
   .header__logo img {
     max-width: 100%;
-    max-height: 4.9rem; }
+    max-height: 5.6rem;
+    transition: max-height 0.25s linear; }
 
 @media (min-width: 900px) {
   .header__issue,
