@@ -7,7 +7,8 @@ $dot-size: 1px;
 $dot-space: 6px;
 
 .header {
-    margin-bottom: $gutter;
+    margin-bottom:0;
+    text-align:center;
     .button {
         line-height:1;
         font-weight:bold;
@@ -15,8 +16,8 @@ $dot-space: 6px;
 }
 
 .header__inner {
-    border-top: $gutter / 2 solid $black;
-    margin-top: -$gutter / 2;
+    // border-top: $gutter / 2 solid $black;
+    // margin-top: -$gutter / 2;
 }
 
 .header__tagline {
@@ -24,62 +25,57 @@ $dot-space: 6px;
     text-transform: uppercase;
     color: $white;
     line-height:1;
+
     
     p {
-        background-color: $black;
+        // background-color: $black;
         display:inline-block;
-        padding: $gutter / 8 $gutter / 2;
+        padding:0 $gutter $gutter / 2 $gutter;
         margin:0;
         position:relative;
         font-weight:bold;
         @include ritmo-font-size($h6-font-size);
-        letter-spacing: $letter-spacing * 3;
-        @include breakpoint($medium) {
-            &:before {
-                content:"";
-                position:absolute;
-                top:0;
-                left:100%;
-                width:0;
-                height:0;
-                border-color: transparent transparent $black $black;
-                border-width: ( $h6-font-size * $vertical-rhythm ) ( ( $h6-font-size * $vertical-rhythm ) / 2);
-                border-style:solid;
-                @include breakpoint($small) {
-                    border-width: ( $h6-font-size * $vertical-rhythm ) / 2;
-                }
-            }
-        }
+        letter-spacing: $letter-spacing * 4;
+        // @include breakpoint($medium) {
+        //     &:before {
+        //         content:"";
+        //         position:absolute;
+        //         top:0;
+        //         left:100%;
+        //         width:0;
+        //         height:0;
+        //         border-color: transparent transparent $black $black;
+        //         border-width: ( $h6-font-size * $vertical-rhythm ) ( ( $h6-font-size * $vertical-rhythm ) / 2);
+        //         border-style:solid;
+        //         @include breakpoint($small) {
+        //             border-width: ( $h6-font-size * $vertical-rhythm ) / 2;
+        //         }
+        //     }
+        // }
     }
 
     a {
-        @include kill-link($white);
-    }
-
-    span {
-        display:block;
-        @include breakpoint($small) {
-            display:inline;
-        }
+        @include kill-link($gray6);
     }
 }
 
 .header__top {
+    // max-width: $max-width;
+    margin: 0 auto;
     @include breakpoint($medium) {
         display:flex;
         justify-content:space-between;
         flex-wrap:nowrap;
     }
-    padding: $gutter / 1.5;
-    border-left: 1px solid $black;
-    border-right: 1px solid $black;
+    padding: $gutter $gutter $gutter / 2 $gutter;
+    // border-right: 1px solid $black;
 
-    background:
-        linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-        linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-        $dot-color;
+    // background:
+    //     linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    //     linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    //     $dot-color;
     
-    background-size: $dot-space $dot-space;
+    // background-size: $dot-space $dot-space;
 }
 
 .header__issue {
@@ -119,7 +115,12 @@ $dot-space: 6px;
 }
 
 .header__nav {
-    border: 1px solid $black;
+    border-top: 1px solid $separator-color;
+    nav {
+        max-width: $max-width;
+        margin:0 auto;
+        padding: 0 $gutter;
+    }
 }
 
 .header__user {

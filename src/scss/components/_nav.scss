@@ -68,7 +68,7 @@ $hide-menu: 750px;
         text-transform: uppercase;
         > a {
             display:block;
-            padding: $gutter / 4 $gutter / 2;
+            padding: $gutter / 2 $gutter / 2;
             @include set-link(
                 $black,
                 $black,
@@ -83,8 +83,9 @@ $hide-menu: 750px;
             }
         }
         &:hover {
-            border-left: 1px solid $black;
-            border-right: 1px solid $black;
+            border: 1px solid $separator-color;
+            border-top: none;
+            margin-bottom:-1px;
             ul {
                 display:block;
             }
@@ -101,7 +102,7 @@ $hide-menu: 750px;
             background-color: $white;
             left:-1px;
             right:-1px;
-            border: 1px solid $black;
+            border: 1px solid $separator-color;
             border-top: none;
         }
         padding: $gutter / 2;
@@ -183,7 +184,7 @@ $hide-menu: 750px;
 }
 
 .menu-toggle {
-    padding:ritmo(0.5) $gutter / 2;
+    padding:$gutter / 3 $gutter / 2;
 
     .icon {
         margin:0;
