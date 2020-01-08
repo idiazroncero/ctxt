@@ -7,7 +7,7 @@ $dot-size: 1px;
 $dot-space: 6px;
 
 .header {
-    margin-bottom:0;
+    margin-bottom:$gutter;
     text-align:center;
     .button {
         line-height:1;

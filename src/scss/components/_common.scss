@@ -152,8 +152,9 @@ iframe {
 }
 
 #main-wrapper {
+    padding: 0 $gutter $gutter $gutter;
     @include breakpoint(max-width $medium) {
-        padding: $gutter / 2;
+        padding: 0 $gutter / 2 $gutter / 2 $gutter / 2;
     }
 }
 

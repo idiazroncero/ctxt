@@ -1,15 +1,19 @@
+blockquote,
 .quote {
     @include ritmo-font-size($h4-font-size, 4);
-    padding: $gutter / 2 $gutter / 2 $gutter / 2 $gutter * 2.5;
+    padding: $gutter / 2 $gutter $gutter / 2 $gutter * 2.5;
     @include breakpoint($small) {
         float:right;
-        padding: $gutter / 2 $gutter / 2 $gutter / 2 $gutter * 2.5;
+        padding: $gutter / 2 $gutter $gutter / 2 $gutter * 2.5;
         @include ritmo-font-size($h3-font-size, 5);
         width: 45%;    
         border-left: 2px solid $separator-color;
         margin: 0 0 $gutter $gutter;
     }
     position:relative;
+    p {
+        margin:0;
+    }
     &:before {
         content:"“";
         font-size: 6rem;
