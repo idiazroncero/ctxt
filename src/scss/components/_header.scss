@@ -163,7 +163,7 @@ $hide-menu: 750px;
         margin-right: $gutter / 2;
         @include breakpoint($medium) {
             @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
-            margin-left: $gutter;
+            margin-left: $gutter / 1.5;
             margin-right:0;
         }
     }
