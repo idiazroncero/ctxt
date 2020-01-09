@@ -136,14 +136,10 @@ $dot-space: 6px;
         width: 33%;
     }
 }
-
+$scale-menu: 1000px;
+$hide-menu: 750px;
 .header__nav {
     border-top: 1px solid $separator-color;
-    nav {
-        max-width: $max-width;
-        margin:0 auto;
-        padding: 0 $gutter;
-    }
 }
 
 .header__user {
@@ -153,9 +149,22 @@ $dot-space: 6px;
     @include breakpoint($medium) {
         justify-content:flex-end;
     }
-    .button {
-        text-transform: initial;
-        font-weight:normal;
+    a {
+        font-family: $avenir;
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        @include set-link(
+            $black,
+            $black, 
+            get-color(base, primary),
+            get-color(base, primary),
+            false, underline
+        );
+        margin-left: $gutter / 2;
+        margin-right: $gutter / 2;
+        @include breakpoint($medium) {
+            @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+            margin-left: $gutter;
+        }
     }
 }
 
@@ -164,13 +173,14 @@ $dot-space: 6px;
 }
 
 .header__cart {
-    margin: 0 0 0 ritmo(1);
     span,.icon {
-        vertical-align:bottom;
+        vertical-align:baseline;
     }
     .icon {
-        margin:0 0 0 ritmo(0.25);
         height: $h6-font-size;
+        @include breakpoint($medium) {
+            height: $h5-font-size;
+        }
     }
 }
 
@@ -205,6 +215,16 @@ $dot-space: 6px;
 .issue__current {
     text-transform: uppercase;
     margin:0;
+    a {
+        @include set-link(
+            $black,
+            $black,
+            get-color(base, primary),
+            get-color(base, primary),
+            false,
+            false
+        )
+    }
 }
 
 .issue__number {

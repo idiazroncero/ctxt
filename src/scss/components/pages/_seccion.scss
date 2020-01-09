@@ -15,9 +15,12 @@
         @include ritmo-font-size($h5-font-size, 3);
         position:relative;
         margin-right: $gutter / 2;
+        top:-$gutter;
+        left: -$gutter;
         @include breakpoint($small) {
             margin-right:0;
             left: -$gutter;
+            top:0;
             max-width: 200px;
         }
         a {

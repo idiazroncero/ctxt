@@ -47,6 +47,16 @@
     &:after {
         content:">";
     }
+    a {
+        @include set-link(
+            $black,
+            $black,
+            get-color(base, primary),
+            get-color(base, primary),
+            false,
+            underline
+        )
+    }
     @include breakpoint($small) {
         width:auto;
     }
