@@ -2693,7 +2693,8 @@ iframe {
         font-size: 1rem;
         line-height: 22px;
         line-height: 1.4rem;
-        margin-left: 1.4rem; } }
+        margin-left: 1.4rem;
+        margin-right: 0; } }
 
 .button--header {
   background-color: #fff; }
