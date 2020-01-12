@@ -1,8 +1,13 @@
 .footer {
+    border-top: $gutter / 2 solid $black;
     background-color: $gray9;
-    padding: $gutter;
+    padding: $gutter $gutter / 2;
     color: $gray5;
     margin:0;
+    font-family: $roboto;
+    @include breakpoint($small) {
+        padding: $gutter;
+    }
     @include breakpoint($medium) {
         padding: $gutter * 2;
     }
@@ -11,100 +16,201 @@
     }
 }
 
-.footer__info {
-    @include breakpoint($medium) {
-        max-width: 45%; 
+.footer__secciones {
+    column-count: 2;
+    column-gap: $gutter / 2;
+    @include breakpoint($small) {
+        column-count: 3;
+        column-gap: $gutter;
     }
-    margin-bottom: $gutter * 2;
+    @include breakpoint($medium) {
+        column-count: 4;
+    }
+    @include breakpoint($large) {
+        column-count: 5;
+    }
 }
 
-.footer__desc {
-    margin: $gutter * 2 0;
-} 
-
-.footer__rrss {
-    margin: $gutter * 2 0;
-    p {
-        font-family: $font-secondary;
+.footer__seccion {
+    margin-bottom:$gutter / 2;
+    display:inline-block;
+    width:100%;
+    h1 {
+        font-weight:bold;
         text-transform: uppercase;
-        @include ritmo-font-size($h5-font-size);
-    }
-    ul {
-        @include inline-list();
-        flex-wrap:nowrap;
-    }
-    li {
-        margin-right:$gutter / 2;
-        &:last-child {
-            margin:0;
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        margin-bottom:$gutter / 4;
+        a {
+            @include set-link(
+                $gray2,
+                $gray2,
+                $white,
+                $white,
+                false,
+                underline
+            )
         }
     }
-    a {
-
+    ul {
+        margin:0;
+        padding:0;
+    }
+    ul ul {
+        padding-left: $gutter / 2;
+    }
+    li {
+        margin:0;
+        list-style-type:none;
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        a {
+            @include set-link(
+                $gray5,
+                $gray5,
+                $white,
+                $white,
+                false,
+                underline
+            )
+        }
     }
 }
 
-.footer__newsletter {
-    margin: $gutter * 2 0;
-    padding: $gutter;
-    border: 1px solid $gray5;
-    p {
-        font-family: $font-secondary;
+.footer__info {
+    margin-top: $gutter;
+    padding: $gutter / 2;
+    @include breakpoint($small) {
+        padding: $gutter;
+    }
+    border: 1px solid $gray7;
+    h1 {
+        @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
         text-transform: uppercase;
-    }
-    input {
-        width:60%;
-        margin: 0 0 0 auto;
-        display:block;
-    }
-    input[type="email"] {
-        background-color: $gray5;
-        border-color: $gray5;
+        color: $gray2;
         margin-bottom: $gutter / 2;
+        font-weight:bold;
     }
 }
 
 .footer__menu {
-    margin: $gutter * 2 0;
+    margin-bottom: $gutter;
     ul {
-
+        @include inline-list();
     }
     li {
-        list-style-type: disc;
-    }
+        margin:0;
+    } 
     a {
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        margin-right: $gutter;
         @include set-link(
             $gray5,
             $gray5,
-            $base,
-            $base,
+            $white,
+            $white,
             false,
-            'underline'
+            underline
         )
+    }
+} 
+
+.footer__contacto {
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    margin:0;
+    p {
+        margin:0;
     }
 }
 
+// .footer__info {
+//     @include breakpoint($medium) {
+//         max-width: 45%; 
+//     }
+//     margin-bottom: $gutter * 2;
+// }
 
-.footer__medios {
-    margin: $gutter * 2 0;
-}
+// .footer__desc {
+//     margin: $gutter * 2 0;
+// } 
+
+// .footer__rrss {
+//     margin: $gutter * 2 0;
+//     p {
+//         font-family: $font-secondary;
+//         text-transform: uppercase;
+//         @include ritmo-font-size($h5-font-size);
+//     }
+//     ul {
+//         @include inline-list();
+//         flex-wrap:nowrap;
+//     }
+//     li {
+//         margin-right:$gutter / 2;
+//         &:last-child {
+//             margin:0;
+//         }
+//     }
+//     a {
+
+//     }
+// }
+
+// .footer__newsletter {
+//     margin: $gutter * 2 0;
+//     padding: $gutter;
+//     border: 1px solid $gray5;
+//     p {
+//         font-family: $font-secondary;
+//         text-transform: uppercase;
+//     }
+//     input {
+//         width:60%;
+//         margin: 0 0 0 auto;
+//         display:block;
+//     }
+//     input[type="email"] {
+//         background-color: $gray5;
+//         border-color: $gray5;
+//         margin-bottom: $gutter / 2;
+//     }
+// }
+
+// .footer__menu {
+//     margin: $gutter * 2 0;
+//     ul {
+
+//     }
+//     li {
+//         list-style-type: disc;
+//     }
+//     a {
+//         @include set-link(
+//             $gray5,
+//             $gray5,
+//             $base,
+//             $base,
+//             false,
+//             'underline'
+//         )
+//     }
+// }
+
+
+// .footer__medios {
+//     margin: $gutter * 2 0;
+// }
 
 .footer__medios__title {
-    font-family: $font-secondary;
     text-transform: uppercase;
-    @include ritmo-font-size($h4-font-size);
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+    margin-bottom: $gutter / 2;
 }
 
 .footer__medios__row {
-    padding: $gutter 0 0 0;
-    border-top: 1px solid $gray5;
-    border-bottom: 1px solid $gray5;
-
     display:flex;
     flex-wrap: wrap;
 
     img {
-        max-height: 75px;
+        max-height: 50px;
         margin-right: $gutter;
         margin-bottom: $gutter;
     }

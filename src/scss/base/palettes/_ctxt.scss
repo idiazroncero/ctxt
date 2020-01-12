@@ -7,16 +7,19 @@ $menta: #eef8f5;
 // Overrides
 $black: #000;
 $white: #fff;
-$gray: #a3a3a3;
-$gray1: #CCCCCC;
-// $gray0: #ececec;
 $gray0: #f2f2f2;
+$gray1: #CCCCCC;
+$gray2: #a3a3a3;
+$gray3: #a3a3a3;
+$gray4: #a3a3a3;
 $gray5: #a7a7a7;
 $gray6: #808080;
-// $gray9: #2E2E2E;
+$gray7: #808080;
 $gray8: #474849;
 $gray9: #2e2e2e;
 $sepia: #f4ecde;
+
+$gray: $gray4;
 
 // Maps to loop over
 $ctxt-colors: (
