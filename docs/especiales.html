@@ -44,11 +44,7 @@
                             >
                         </button>
                     </div>
-                    <a href="#" class="header__search">
-                        <i class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                        </i>
-                    </a>
+                    
                 </div>
                 <div class="header__patrocinado">
                     <img src="http://placehold.it/200x50" alt="">
@@ -62,14 +58,28 @@
             </div>
 
             <div class="header__user">
-                <a href="#">Suscríbete</a>
-                <a href="/ctxt/login.html"> Inicio de sesión</a>
-                <a href="#" class="header__cart">
-                    <span>Tienda</span>
+                <div class="header__links">
+                    <a href="#">Suscríbete</a>
+                    <a href="/ctxt/login.html">Inicio de sesión</a>
+                    <a href="/ctxt/login.html">Inicio de sesión</a>
+                    <a href="#" class="header__cart">
+                        <span>Tienda</span>
+                        <i class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                        </i>
+                    </a>
+                </div>
+
+                <form class="header__search" action="">
                     <i class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" d="M0 0h24v24H0V0z" />
+                            <path
+                                d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                            </svg>
                     </i>
-                </a>
+                    <input type="search" name="search" id="search">
+                </form>
             </div>
             
         
@@ -84,72 +94,67 @@
     <button class="menu-toggle">
         <span class="visually-hidden">Mostrar menú</span>
         <i class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
         </i>
     </button>
     <div class="main-menu__wrapper">
         <div class="main-menu__actions">
             <form class="main-menu__search" action="">
                 <i class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        </svg>
                 </i>
                 <input type="search" name="search" id="search">
             </form>
             <a href="#" class="button button--default">Subscribete</a>
         </div>
         <ul class="main-menu__list">
+
             <li>
-                <a href="#">Política</a>
-                <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Segundo item</a></li>
-                    <li><a href="#">Hola que tal</a></li>
-                    <li><a href="#">Item especialmente largo</a></li>
-                </ul>
+
+                <a href="http://test.ctxt.es/es/20190227/política/">Contextos</a>
             </li>
             <li>
-                <a href="#">Firmas</a>
-                <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Segundo item</a></li>
-                    <li><a href="#">Hola que tal</a></li>
-                </ul>
+
+                <a href="http://test.ctxt.es/es/20190227/firmas/">Firmas</a>
+
             </li>
             <li>
-                <a href="#">Culturas</a>
-                <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Segundo item</a></li>
-                    <li><a href="#">Hola que tal</a></li>
-                    <li><a href="#">Item especialmente largo</a></li>
-                    <li><a href="#">Yo tengo un item mas</a></li>
-                </ul>
+
+                <a href="http://test.ctxt.es/es/20190227/culturas/">Ministerio</a>
             </li>
             <li>
-                <a href="#">Deportes</a>
-                <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Segundo item</a></li>
-                </ul>
+                <a href="/es/?tpid=113&amp;tpl=22">Editoriales</a>
             </li>
             <li>
-                <a href="#">Viñetas</a>
-                <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Segundo item</a></li>
-                    <li><a href="#">Hola que tal</a></li>
-                    <li><a href="#">Item especialmente largo</a></li>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Segundo item</a></li>
-                    <li><a href="#">Hola que tal</a></li>
-                </ul>
+                <a href="/es/?tpl=77&amp;tpid=403">Crisis Ecosocial</a>
+
             </li>
             <li>
-                <a href="#">Especiales</a>
+                <a href="/es/?tpl=77&amp;tpid=393">Feminismos</a>
             </li>
             <li>
-                <a href="#">Autores</a>
+                <a href="/es/?tpl=77&amp;tpid=181">Entrevistas</a>
             </li>
+            <li>
+
+                <a href="http://test.ctxt.es/es/20190227/deportes/">Deportes</a>
+            </li>
+            <li>
+                <a href="/es/?tpid=299&amp;tpl=22">Viñetas</a>
+            </li>
+            <li>
+                <a href="https://ctxt.cat/" target="_blank">Ctxt.cat</a>
+            </li>
+            <li>
+                <a href="/es/?tpid=312&amp;tpl=22">Ctxtán TV</a>
+            </li>
+
         </ul>
     </div>
 </nav>
@@ -401,5 +406,67 @@
 
 
 
+        <footer class="footer">
+        <div class="footer__info">
+            <img src="https://placehold.it/250x125/fff/000.jpg" alt="Imagen">
+            <p class="footer__desc">
+                CTXT es un medio independiente <br>
+                y crítico formado por periodistas <br>
+                con experiencia en grandes <br>
+                medios europeos
+            </p>
+            <div class="footer__rrss">
+                <p>Síguenos</p>
+                <ul>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="http://placehold.it/50x50/fff/000.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="footer__newsletter">
+                <p>Suscríbete a nuestra newsletter </p>
+                <form action="#">
+                    <input type="email" name="email" id="email" placeholder="tu@email.com">
+                    <input type="submit" value="enviar" class="button button--primary--bg">
+                </form>
+            </div>
+            <div class="footer__menu">
+                <ul>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Quienes Somos / Cuentas 2018</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Licencia Creative Commons</a></li>
+                    <li><a href="#">Correo: info@ctxt.es</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__medios">
+            <div class="footer__medios__title">Medios asociados</div>
+            <div class="footer__medios__row">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/200x200/000/fff.jpg" alt="">
+                <img src="http://placehold.it/400x150/000/fff.jpg" alt="">
+            </div>
+        </div>
+        <div class="footer__medios">
+            <div class="footer__medios__title">Medios amigos</div>
+            <div class="footer__medios__row">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/200x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/400x300/000/fff.jpg" alt="">
+                <img src="http://placehold.it/350x130/000/fff.jpg" alt="">
+                <img src="http://placehold.it/100x250/000/fff.jpg" alt="">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+                <img src="http://placehold.it/400x300/000/fff.jpg" alt="">
+                <img src="http://placehold.it/300x100/000/fff.jpg" alt="">
+            </div>
+        </div>
+        <p class="m0 font-secondary up">(c)Revista Contexto, S.L. / Madrid / España/ info@ctxt.es</p>
+    </footer>
+    
   </body>
 </html>

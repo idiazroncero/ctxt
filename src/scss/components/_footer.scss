@@ -2,6 +2,7 @@
     background-color: $gray9;
     padding: $gutter;
     color: $gray5;
+    margin:0;
     @include breakpoint($medium) {
         padding: $gutter * 2;
     }

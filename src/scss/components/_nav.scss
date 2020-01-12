@@ -1,5 +1,4 @@
-$scale-menu: 1000px;
-$hide-menu: 750px;
+
 
 .main-menu {
     margin:0;
@@ -35,10 +34,6 @@ $hide-menu: 750px;
     padding: ritmo(1) $gutter * 2;
     margin-bottom: $gutter / 2;
     display:none;
-    @include breakpoint($hide-menu) {
-        flex-direction:row;
-        padding: ritmo(1) $gutter / 2;
-    }
 }
 
 .main-menu__search {
@@ -74,9 +69,10 @@ $hide-menu: 750px;
     }
 
     > li {
-        @include breakpoint($hide-menu) {
-            flex: 0 0 (100% / 7); // 100% / 7;
-        }
+        // @include breakpoint($hide-menu) {
+        //     flex: 0 0 (100% / 7); // 100% / 7;
+        // }
+        flex: 1;
         white-space:nowrap;
         margin:0;
         text-align:center;
@@ -93,65 +89,67 @@ $hide-menu: 750px;
                 false,
                 false
             )
-
-            @include breakpoint($hide-menu $scale-menu) {
+            @include breakpoint($hide-menu) {
+                @include ritmo-font-size($h7-font-size, 4);
+            }
+            @include breakpoint($scale-menu) {
                 @include ritmo-font-size($h6-font-size, 4);
             }
         }
         &:hover {
-            border: 1px solid $separator-color;
-            border-top: none;
-            margin-bottom:-1px;
-            ul {
-                display:block;
-            }
+            // border: 1px solid $separator-color;
+            // border-top: none;
+            // margin-bottom:-1px;
+            // ul {
+            //     display:block;
+            // }
         }
     }
     // Second-level menu
-    ul {
-        @include breakpoint($hide-menu) {
-            display:none;
-            position:absolute;
-            z-index:9;
-            top:100%;
-            top: calc(100% - 1px);
-            background-color: $white;
-            left:-1px;
-            right:-1px;
-            border: 1px solid $separator-color;
-            border-top: none;
-        }
-        padding: $gutter / 2;
-        margin:0;
-        > li {
-            display:block;
-            text-transform: initial;
-            white-space:normal;
-            margin-bottom: ritmo(2);
-            line-height: 1;
-            @include breakpoint($hide-menu) {
-                text-align:left;
-            }
-            &:last-child {
-                margin-bottom:0;
-            }
-            a {
-                @include breakpoint($hide-menu $medium) {
-                    @include ritmo-font-size($h6-font-size);
-                    line-height: 1;
-                }
+    // ul {
+    //     @include breakpoint($hide-menu) {
+    //         display:none;
+    //         position:absolute;
+    //         z-index:9;
+    //         top:100%;
+    //         top: calc(100% - 1px);
+    //         background-color: $white;
+    //         left:-1px;
+    //         right:-1px;
+    //         border: 1px solid $separator-color;
+    //         border-top: none;
+    //     }
+    //     padding: $gutter / 2;
+    //     margin:0;
+    //     > li {
+    //         display:block;
+    //         text-transform: initial;
+    //         white-space:normal;
+    //         margin-bottom: ritmo(2);
+    //         line-height: 1;
+    //         @include breakpoint($hide-menu) {
+    //             text-align:left;
+    //         }
+    //         &:last-child {
+    //             margin-bottom:0;
+    //         }
+    //         a {
+    //             @include breakpoint($hide-menu) {
+    //                 @include ritmo-font-size($h6-font-size);
+    //                 line-height: 1;
+    //             }
 
-                @include set-link(
-                    $black,
-                    $black,
-                    $gray,
-                    $gray,
-                    false,
-                    false,
-                )
-            }
-        }
-    }
+    //             @include set-link(
+    //                 $black,
+    //                 $black,
+    //                 $gray,
+    //                 $gray,
+    //                 false,
+    //                 false,
+    //             )
+    //         }
+    //     }
+    // }
 }
 
 .main-menu--open {
@@ -202,7 +200,7 @@ $hide-menu: 750px;
     left:0;
     z-index: 9;
     @include breakpoint($hide-menu) {
-        position:static;
+        display:none;
     }
     .icon {
         margin:0;

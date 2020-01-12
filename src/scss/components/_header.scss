@@ -31,6 +31,12 @@ $dot-space: 6px;
             .header__top {
                 padding: $gutter / 2 $gutter;
             }
+            .header__links a {
+                @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+            }
+            .header__links {
+                margin:0;
+            }
         }
     }
 }
@@ -81,7 +87,7 @@ $dot-space: 6px;
 .header__top {
     // max-width: $max-width;
     margin: 0 auto;
-    @include breakpoint($medium) {
+    @include breakpoint($hide-menu) {
         display:flex;
         justify-content:center;
         flex-wrap:nowrap;
@@ -99,7 +105,7 @@ $dot-space: 6px;
 
 .header__issue {
     display:none;
-    @include breakpoint($medium) {
+    @include breakpoint($hide-menu) {
         display:block;
         text-align:left;
     }
@@ -110,7 +116,7 @@ $dot-space: 6px;
 }
 .header__issue,
 .header__user {
-    @include breakpoint($medium) {
+    @include breakpoint($hide-menu) {
         width:50%;
     }
 }
@@ -118,7 +124,7 @@ $dot-space: 6px;
 .header__logo {
     text-align:center;
     margin: 0 0 $gutter 0;
-    @include breakpoint($medium) {
+    @include breakpoint($hide-menu) {
         margin: 0;
     }
 
@@ -132,23 +138,27 @@ $dot-space: 6px;
 .header__issue,
 .header__logo,
 .header__user {
-    @include breakpoint($medium) {
+    @include breakpoint($hide-menu) {
         width: 33%;
     }
 }
-$scale-menu: 1000px;
-$hide-menu: 750px;
 .header__nav {
     border-top: 1px solid $separator-color;
 }
 
 .header__user {
     display:flex;
-    justify-content:center;
-    align-items: flex-start;
-    @include breakpoint($medium) {
-        justify-content:flex-end;
+    flex-direction:column;
+    align-items:center;
+    @include breakpoint($hide-menu) {
+        flex-direction:column;
+        align-items:flex-end;
     }
+}
+
+.header__links {
+    margin-bottom: $gutter / 4;
+    white-space:nowrap;
     a {
         font-family: $avenir;
         @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
@@ -161,10 +171,20 @@ $hide-menu: 750px;
         );
         margin-left: $gutter / 2;
         margin-right: $gutter / 2;
-        @include breakpoint($medium) {
+        @include breakpoint($hide-menu) {
+            margin-right: $gutter / 4;
+            padding-right: $gutter / 4;
+            margin-left:0;
+            position:relative;
+            border-right: 1px solid $gray1;
+            &:last-child {
+                margin:0;
+                padding:0;
+                border:none;
+            }
+        }
+        @include breakpoint($large) {
             @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
-            margin-left: $gutter / 1.5;
-            margin-right:0;
         }
     }
 }
@@ -174,27 +194,31 @@ $hide-menu: 750px;
 }
 
 .header__cart {
+    white-space:nowrap;
     span,.icon {
         vertical-align:baseline;
     }
     .icon {
         height: $h6-font-size;
-        @include breakpoint($medium) {
+        margin:0;
+        @include breakpoint($large) {
             height: $h5-font-size;
         }
     }
 }
 
 .header__search {
-    margin-left: $gutter / 4;
-    @include set-link(
-        $black,
-        $black,
-        get-color(base, primary),
-        get-color(base, primary),
-        false,
-        false
-    )
+    display:none;
+    align-items:center;
+    border-bottom: 1px solid $gray;
+    max-width:200px;
+    @include breakpoint($small) {
+        display:flex;
+    }
+    input {
+        padding: 0;
+        border:none;
+    }
 }
 
 
