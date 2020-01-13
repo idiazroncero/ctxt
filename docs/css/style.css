@@ -2856,7 +2856,7 @@ iframe {
     text-transform: uppercase; }
     .main-menu__list > li a {
       display: block;
-      padding: 0.7rem 0.35rem; }
+      padding: 0.7rem 0.7rem; }
       .main-menu__list > li a {
         text-decoration: none; }
         .main-menu__list > li a:hover, .main-menu__list > li a:focus {
