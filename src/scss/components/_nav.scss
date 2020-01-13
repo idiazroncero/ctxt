@@ -63,6 +63,7 @@
     display:none;
     padding:0;
 
+
     @include breakpoint($hide-menu) {
         display:flex;
         margin-right: -1px;
@@ -78,14 +79,33 @@
         text-align:center;
         position:relative;
         text-transform: uppercase;
-        > a {
+        a {
             display:block;
-            padding: $gutter / 2 $gutter / 2;
+            padding: $gutter / 2 $gutter / 4;
             @include set-link(
                 $black,
                 $black,
                 get-color(base, primary),
                 get-color(base, primary),
+                false,
+                false
+            )
+            @include breakpoint($hide-menu) {
+                @include ritmo-font-size($h7-font-size, 4);
+            }
+            @include breakpoint($scale-menu) {
+                @include ritmo-font-size($h6-font-size, 4);
+            }
+        }
+        a.button {
+            padding: $gutter / 6 $gutter / 2;
+            margin: $gutter / 3 0 $gutter / 3 $gutter / 3;
+            font-family: $futura;
+            @include set-link(
+                $white,
+                $white,
+                darken(get-color(base, primary), 25%),
+                darken(get-color(base, primary), 25%),
                 false,
                 false
             )

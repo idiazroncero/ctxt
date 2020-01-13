@@ -162,6 +162,8 @@ $dot-space: 6px;
     a {
         font-family: $avenir;
         @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        margin-left: $gutter / 2;
+        margin-right: $gutter / 2;
         @include set-link(
             $black,
             $black, 
@@ -169,8 +171,6 @@ $dot-space: 6px;
             get-color(base, primary),
             false, underline
         );
-        margin-left: $gutter / 2;
-        margin-right: $gutter / 2;
         @include breakpoint($hide-menu) {
             margin-right: $gutter / 4;
             padding-right: $gutter / 4;
@@ -181,6 +181,10 @@ $dot-space: 6px;
                 margin:0;
                 padding:0;
                 border:none;
+            }
+            &:hover:not(:last-child),
+            &:focus:not(:last-child) {
+                padding-right: $gutter / 4;
             }
         }
         @include breakpoint($large) {
