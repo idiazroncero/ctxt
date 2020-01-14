@@ -33,6 +33,7 @@
         }
         .autor {
             text-align:center;
+            margin-top: $gutter;
         }
     }
 }
@@ -174,12 +175,12 @@
     @extend .font-secondary;
     color: $black;
     text-transform: uppercase;
-    @extend .h3;
+    @extend .h4;
     letter-spacing: $letter-spacing;
     font-weight:bold;
     margin-bottom: $ts-margin / 2;
     padding-bottom: $ts-margin / 2;
-    border-bottom: 5px dotted $black;
+    border-bottom: 1px solid $separator-color;
 }
 
 // ESPECIAL
@@ -188,10 +189,10 @@
     margin-bottom: $gutter * 2;
     margin-top: $gutter * 2;
     @include ritmo-bottom-border(4px, $lines:8);
-    border-bottom-style: dotted;
+    border-bottom-style: solid;
     border-bottom-color: $separator-color;
     @include ritmo-top-border(4px, $lines:8);
-    border-top-style: dotted;
+    border-top-style: solid;
     border-top-color: $separator-color;
 
     .section__title {

@@ -8,12 +8,12 @@
 .suscribete__title {
     text-transform: uppercase;
     font-weight: bold;
-    color: $white;
-    background-color: $black;
+    // color: $white;
+    color: get-color(base, primary);
     display:inline;
-    padding: 0 5px;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
+    // padding: 0 5px;
+    // box-decoration-break: clone;
+    // -webkit-box-decoration-break: clone;
     @include ritmo-font-size($h3-font-size, 6);
 }
 
