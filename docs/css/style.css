@@ -350,7 +350,7 @@ https://flickity.metafizzy.co
 
 @font-face {
   font-family: 'Cheltenham CTXT';
-  src: url("../fonts/cheltenham/CheltenhamBook.woff2") format("woff2"), url("../fonts/cheltenham/CheltenhamBook.woff") format("woff");
+  src: url("../fonts/cheltenham/CheltenhamBold.woff2") format("woff2"), url("../fonts/cheltenham/CheltenhamBold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
@@ -3150,7 +3150,7 @@ iframe {
     padding-top: 1.4rem;
     padding-bottom: 0; }
     .articulo .section .section__title {
-      font-weight: bold; }
+      font-weight: normal; }
     .articulo .section .autor, .articulo .section .subcontenido__autor, .articulo .section .articulo__fecha {
       text-align: center;
       margin-top: 1.4rem; }
@@ -3212,7 +3212,7 @@ iframe {
 
 .section__title {
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter;
   margin-bottom: 0; }
   .section__title + .section__subtitle {
     margin-top: 0.7rem; }
@@ -3304,6 +3304,8 @@ iframe {
   padding-top: 2.55rem;
   border-top-style: solid;
   border-top-color: #CCCCCC; }
+  .section--especial .section__title {
+    font-weight: lighter; }
   .section--especial .section__category, .section--especial .vineta-header__category {
     position: absolute;
     top: -2.8rem;

@@ -28,7 +28,7 @@
         @extend .section--border-none;
         padding-bottom:0;
         .section__title {
-            font-weight:bold;
+            font-weight:normal;
             @extend .h0;
         }
         .autor {
@@ -97,7 +97,7 @@
 
 .section__title {
     text-align:center;
-    font-weight:bold;
+    font-weight:lighter;
     margin-bottom: 0;
     + .section__subtitle {
         margin-top: $gutter / 2;
@@ -196,6 +196,7 @@
     border-top-color: $separator-color;
 
     .section__title {
+        font-weight:lighter;
         @extend .h0;
     }
 
