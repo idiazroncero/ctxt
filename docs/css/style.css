@@ -2323,6 +2323,8 @@ img {
   .ts img {
     margin: 0 auto;
     display: block; }
+  .ts .body, .ts .section__body {
+    margin-bottom: 1.4rem; }
 
 .ts--reducido h1,
 .ts--reducido h2,
@@ -2882,9 +2884,13 @@ iframe {
           line-height: 22px;
           line-height: 1.4rem; } }
     .main-menu__list > li a.button {
-      padding: 0.23333rem 0.7rem;
+      padding: 0.7rem 0.7rem;
       margin: 0.46667rem 0 0.46667rem 0.46667rem;
-      font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      display: inline-block; }
+      @media (min-width: 950px) {
+        .main-menu__list > li a.button {
+          padding: 0.23333rem 0.7rem; } }
       .main-menu__list > li a.button {
         text-decoration: none; }
         .main-menu__list > li a.button:hover, .main-menu__list > li a.button:focus {
@@ -3484,7 +3490,7 @@ iframe {
 
 .box--tab {
   position: relative;
-  margin-top: 3.15rem; }
+  border-top: 2.45rem solid #fff !important; }
   .box--tab.box--tab--blanco {
     background-color: #fff;
     border: 1px solid #fff; }
@@ -3558,17 +3564,19 @@ iframe {
 
 .box--tab__category {
   position: absolute;
-  top: -1.75rem;
+  bottom: 100%;
   left: -1px;
   border: 1px solid #CCCCCC;
   border-bottom: none;
-  padding: 0.7rem 0.7rem 0 1.4rem;
-  line-height: 1.05rem;
-  height: 1.75rem;
+  padding: 1.4rem 0.7rem 0 1.4rem;
+  margin: 0;
   font-family: "Futura CTXT", "Futura", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
   font-size: 0.875rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 13px;
+  font-size: 0.8rem;
+  line-height: 17px;
+  line-height: 1.05rem; }
   .box--tab__category:before {
     content: "";
     position: absolute;
@@ -3585,7 +3593,7 @@ iframe {
   left: 100%;
   width: 0;
   height: 0;
-  border-width: 0.875rem 0.35rem;
+  border-width: 1.225rem 0.35rem;
   border-color: transparent transparent #CCCCCC #CCCCCC;
   border-style: solid;
   transform: translateX(1px); }

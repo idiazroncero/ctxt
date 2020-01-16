@@ -98,9 +98,13 @@
             }
         }
         a.button {
-            padding: $gutter / 6 $gutter / 2;
+            padding: $gutter / 2 $gutter / 2;
+            @include breakpoint($hide-menu) {
+                padding: $gutter / 6 $gutter / 2;
+            }
             margin: $gutter / 3 0 $gutter / 3 $gutter / 3;
             font-family: $futura;
+            display:inline-block;
             @include set-link(
                 $white,
                 $white,
