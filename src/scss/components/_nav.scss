@@ -218,17 +218,20 @@
 }
 
 .menu-toggle {
-    padding:$gutter / 3 $gutter / 2;
+    padding:$gutter / 4 $gutter / 4;
     position:fixed;
     top:0;
     left:0;
     z-index: 9;
+    line-height:0;
+    background-color: $white;
     @include breakpoint($hide-menu) {
         display:none;
     }
     .icon {
         margin:0;
-        height: ritmo(5);
+        height: ritmo(4.5);
         vertical-align:middle;
+        display:block;
     }
 }

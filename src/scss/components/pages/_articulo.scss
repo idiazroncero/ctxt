@@ -31,12 +31,14 @@
         text-align:center;
     }
     @include breakpoint($medium) {
-        flex: 0 0 300px;
-        padding-left: $articulo-spacer / 2;
+        width:300px;
+        flex: 1 0 300px;
+        padding-left: 0;
         padding-top: 0;
+        margin-left: $articulo-spacer / 2;
     }
     @include breakpoint($large) {
-        padding-left: $articulo-spacer;
+        margin-left: $articulo-spacer;
     }
 }
 

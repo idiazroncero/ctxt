@@ -1436,7 +1436,7 @@ textarea {
   min-height: 2.8rem; }
 
 #main-wrapper {
-  max-width: 1100px;
+  max-width: 1175px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.4rem; }
@@ -2794,7 +2794,7 @@ iframe {
   display: flex;
   align-items: flex-start;
   position: relative;
-  max-width: 1100px;
+  max-width: 1175px;
   margin: 0 auto;
   padding: 0 1.4rem; }
   @media (max-width: 950px) {
@@ -2949,18 +2949,21 @@ iframe {
         text-align: left; } }
 
 .menu-toggle {
-  padding: 0.46667rem 0.7rem;
+  padding: 0.35rem 0.35rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9; }
+  z-index: 9;
+  line-height: 0;
+  background-color: #fff; }
   @media (min-width: 950px) {
     .menu-toggle {
       display: none; } }
   .menu-toggle .icon {
     margin: 0;
-    height: 1.75rem;
-    vertical-align: middle; }
+    height: 1.575rem;
+    vertical-align: middle;
+    display: block; }
 
 .footer {
   border-top: 0.7rem solid #000;
@@ -4464,11 +4467,11 @@ blockquote,
 
 @media (min-width: 900px) {
   .col2.col2--gutter .col {
-    max-width: calc(50% - 0.7rem); } }
+    max-width: calc(50% - 1.4rem); } }
 
 @media (min-width: 1120px) {
   .col2.col2--gutter .col {
-    max-width: calc(50% - 1.4rem); } }
+    max-width: calc(50% - 2.8rem); } }
 
 @media (min-width: 900px) {
   .col2.col2--gutter-left .col:first-child {
@@ -4523,7 +4526,7 @@ blockquote,
       .col3 > .col {
         margin-bottom: 0;
         flex: 1;
-        max-width: calc(33.33% - 1.4rem); }
+        max-width: calc(33.33% - 2.8rem); }
         .col3 > .col > .ts {
           margin-bottom: 0; } }
 
@@ -4637,12 +4640,14 @@ blockquote,
     text-align: center; }
   @media (min-width: 900px) {
     .articulo__sidebar {
-      flex: 0 0 300px;
-      padding-left: 1.4rem;
-      padding-top: 0; } }
+      width: 300px;
+      flex: 1 0 300px;
+      padding-left: 0;
+      padding-top: 0;
+      margin-left: 1.4rem; } }
   @media (min-width: 1120px) {
     .articulo__sidebar {
-      padding-left: 2.8rem; } }
+      margin-left: 2.8rem; } }
 
 .articulo__destacado {
   margin-bottom: 1.4rem;
