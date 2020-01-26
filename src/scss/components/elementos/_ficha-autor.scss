@@ -31,6 +31,9 @@
     @include breakpoint($small) {
         margin-bottom:0;
     }
+    .ts-flex__img & {
+        margin-bottom:0;
+    }
 }
 
 .ficha-autor__content {

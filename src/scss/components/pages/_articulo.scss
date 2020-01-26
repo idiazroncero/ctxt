@@ -18,8 +18,12 @@
 }
 
 .articulo__body {
+    @include ritmo-font-size(18px, 5);
+    @include breakpoint($small) {
+        @include ritmo-font-size($h4-font-size, $h3-ritmo-lines);
+    }
     @include breakpoint($medium) {
-        @include ritmo-font-size($h4-font-size, 5);
+        @include ritmo-font-size(23px, 6.5);
     }
     font-weight:lighter;
 }

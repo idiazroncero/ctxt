@@ -3710,6 +3710,7 @@ blockquote,
   line-height: 22px;
   line-height: 1.4rem;
   padding: 0.7rem 1.4rem 0.7rem 3.5rem;
+  margin: 0 0 1.4rem 0;
   position: relative; }
   @media (min-width: 640px) {
     blockquote,
@@ -3866,6 +3867,8 @@ blockquote,
   @media (min-width: 640px) {
     .ficha-autor__img {
       margin-bottom: 0; } }
+  .ts-flex__img .ficha-autor__img {
+    margin-bottom: 0; }
 
 @media (min-width: 640px) {
   .ficha-autor__content {
@@ -4466,11 +4469,11 @@ blockquote,
         margin-bottom: 0; } }
 
 @media (min-width: 900px) {
-  .col2.col2--gutter .col {
+  .col2.col2--gutter:not(.col2--separator) .col {
     max-width: calc(50% - 1.4rem); } }
 
 @media (min-width: 1120px) {
-  .col2.col2--gutter .col {
+  .col2.col2--gutter:not(.col2--separator) .col {
     max-width: calc(50% - 2.8rem); } }
 
 @media (min-width: 900px) {
@@ -4626,13 +4629,23 @@ blockquote,
     padding-right: 2.8rem; } }
 
 .articulo__body {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 28px;
+  line-height: 1.75rem;
   font-weight: lighter; }
-  @media (min-width: 900px) {
+  @media (min-width: 640px) {
     .articulo__body {
       font-size: 20px;
       font-size: 1.25rem;
       line-height: 28px;
       line-height: 1.75rem; } }
+  @media (min-width: 900px) {
+    .articulo__body {
+      font-size: 23px;
+      font-size: 1.4375rem;
+      line-height: 36px;
+      line-height: 2.275rem; } }
 
 .articulo__sidebar {
   padding-top: 1.4rem; }

@@ -35,7 +35,7 @@
         }
     }
 
-    &.col2--gutter {
+    &.col2--gutter:not(.col2--separator) {
         .col {
             @include breakpoint($medium) {
                 max-width: calc(50% - #{$col-gutter / 2});
