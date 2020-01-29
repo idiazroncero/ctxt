@@ -7,7 +7,7 @@
 }
 
 .vineta-header__title {
-    @include ritmo-font-size($h3-font-size, $h3-ritmo-lines);
+    @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
     border-bottom: 1px solid $separator-color;
     margin-bottom:$gutter / 2;
     padding-bottom: $gutter / 2;
@@ -19,13 +19,13 @@
 .vineta-header__autor {
     font-family: $roboto;
     font-weight:bold;
-    @include ritmo-font-size($h2-font-size, $h2-ritmo-lines);
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     margin-bottom: $gutter / 4;
 }
 
 .vineta-header__fecha {
     font-style:italic;
     @extend .font-tertiary;
-    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
     color: $gray6;
 }

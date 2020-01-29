@@ -34,6 +34,10 @@
         .autor {
             text-align:center;
             margin-top: $gutter;
+            @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+        }
+        .fecha {
+            @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
         }
     }
 }

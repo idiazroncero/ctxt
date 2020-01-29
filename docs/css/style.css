@@ -3162,7 +3162,16 @@ iframe {
       font-weight: normal; }
     .articulo .section .autor, .articulo .section .subcontenido__autor, .articulo .section .articulo__fecha {
       text-align: center;
-      margin-top: 1.4rem; }
+      margin-top: 1.4rem;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 22px;
+      line-height: 1.4rem; }
+    .articulo .section .fecha {
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 22px;
+      line-height: 1.4rem; }
 
 .section__category, .vineta-header__category {
   text-transform: uppercase;
@@ -3709,14 +3718,14 @@ blockquote,
   font-size: 1.25rem;
   line-height: 22px;
   line-height: 1.4rem;
-  padding: 0.7rem 1.4rem 0.7rem 3.5rem;
+  padding: 0.7rem 2.8rem 0.7rem 2.8rem;
   margin: 0 0 1.4rem 0;
   position: relative; }
   @media (min-width: 640px) {
     blockquote,
     .quote {
       float: right;
-      padding: 0.7rem 1.4rem 0.7rem 3.5rem;
+      padding: 0.7rem 2.8rem 0.7rem 3.5rem;
       font-size: 25px;
       font-size: 1.5625rem;
       line-height: 28px;
@@ -3733,16 +3742,26 @@ blockquote,
     font-size: 6rem;
     line-height: 0.5;
     position: absolute;
-    top: 1.4rem;
-    left: 0.93333rem; }
+    top: 0.93333rem;
+    left: 0; }
+    @media (min-width: 640px) {
+      blockquote:before,
+      .quote:before {
+        top: 1.4rem;
+        left: 0.93333rem; } }
   blockquote:after,
   .quote:after {
     content: "”";
     font-size: 6rem;
     line-height: 0.5;
     position: absolute;
-    bottom: -1.4rem;
+    bottom: -2.1rem;
     right: 0; }
+    @media (min-width: 640px) {
+      blockquote:after,
+      .quote:after {
+        bottom: -1.4rem;
+        right: 0.35rem; } }
 
 .quote--full {
   float: none;
@@ -5035,10 +5054,10 @@ blockquote,
   text-align: left; }
 
 .vineta-header__title {
-  font-size: 25px;
-  font-size: 1.5625rem;
-  line-height: 28px;
-  line-height: 1.75rem;
+  font-size: 31px;
+  font-size: 1.95312rem;
+  line-height: 34px;
+  line-height: 2.1rem;
   border-bottom: 1px solid #CCCCCC;
   margin-bottom: 0.7rem;
   padding-bottom: 0.7rem;
@@ -5049,16 +5068,16 @@ blockquote,
 .vineta-header__autor {
   font-family: "Roboto", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 31px;
-  font-size: 1.95312rem;
-  line-height: 34px;
-  line-height: 2.1rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 22px;
+  line-height: 1.4rem;
   margin-bottom: 0.35rem; }
 
 .vineta-header__fecha {
   font-style: italic;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   line-height: 1.4rem;
   color: #808080; }
@@ -5119,19 +5138,34 @@ blockquote,
       display: flex; } }
   .vineta__caption .autor, .vineta__caption .subcontenido__autor, .vineta__caption .articulo__fecha,
   .vineta__caption .fecha {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 22px;
-    line-height: 1.4rem; }
+    font-size: 13px;
+    font-size: 0.8rem;
+    line-height: 17px;
+    line-height: 1.05rem;
+    display: block;
+    margin: 0; }
+    @media (min-width: 900px) {
+      .vineta__caption .autor, .vineta__caption .subcontenido__autor, .vineta__caption .articulo__fecha,
+      .vineta__caption .fecha {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 22px;
+        line-height: 1.4rem; } }
 
 .vineta__title {
   margin-left: auto;
   margin-bottom: 0;
   font-style: italic;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 22px;
   line-height: 1.4rem; }
+  @media (min-width: 900px) {
+    .vineta__title {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 22px;
+      line-height: 1.4rem; } }
 
 .vineta--small {
   padding-top: 0.7rem; }

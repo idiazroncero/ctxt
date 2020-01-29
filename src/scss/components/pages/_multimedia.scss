@@ -10,7 +10,12 @@
     }
     .autor,
     .fecha {
-        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+        @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
+        display:block;
+        margin:0;
+        @include breakpoint($medium) {
+            @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+        }
     }
 }
 
@@ -18,7 +23,10 @@
     margin-left: auto;
     margin-bottom:0;
     font-style: italic;
-    @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    @include ritmo-font-size($h5-font-size, $h5-ritmo-lines);
+    @include breakpoint($medium) {
+        @include ritmo-font-size($h4-font-size, $h4-ritmo-lines);
+    }
 }
 
 .vineta--small {
