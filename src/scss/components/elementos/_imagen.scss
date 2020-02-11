@@ -3,7 +3,7 @@
 }
 
 .imagen__caption {
-    @extend .h6;
+    @include ritmo-font-size($h6-font-size, $h6-ritmo-lines);
     padding: $gutter / 2 0;
     font-family: $font-tertiary;
     @include breakpoint($medium) {
@@ -16,11 +16,17 @@
     .articulo--vineta & {
         text-align:right;
     }
+    p {
+        margin:0;
+        display:inline;
+    }
 }
 
 .imagen__autor {
     text-transform: uppercase;
     font-weight:bold;
+    float:right;
+    @include ritmo-font-size($h7-font-size, $h6-ritmo-lines);
     @include breakpoint($medium) {
         padding-left: $gutter / 2;
         margin-left: auto;
